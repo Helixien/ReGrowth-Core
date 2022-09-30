@@ -1,28 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThingDef ParentName="PlantFoodRawBase">
-		<defName>RG_RawCactus</defName>
-		<label>raw cactus</label>
-		<description>Raw cactus.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/PlantFoodRaw/RawCactus</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>0.4</MarketValue>
-			<Nutrition>0.05</Nutrition>
-			<FoodPoisonChanceFixedHuman>0.04</FoodPoisonChanceFixedHuman>
-		</statBases>
-		<ingestible>
-			<foodType>VegetableOrFruit</foodType>
-		</ingestible>
-		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>30</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
-		</comps>
-	</ThingDef>
-	<ThingDef ParentName="PlantFoodRawBase">
 		<defName>RG_RawRaspberries</defName>
 		<label>raspberries</label>
 		<description>Assorted berries. Nice to eat, even when raw.</description>

@@ -185,33 +185,15 @@
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_PincushionCactus"]/plant/visualSizeRange</xpath>
 				<value>
-					<plant>
-						<lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
-						<fertilityMin>0.05</fertilityMin>
-						<fertilitySensitivity>0</fertilitySensitivity>
-						<growDays>5</growDays>
-						<leaflessGraphicPath>Things/Plant/Leafless/SaguaroCactus_Leafless</leaflessGraphicPath>
-						<topWindExposure>0.08</topWindExposure>
-						<wildClusterRadius>-1</wildClusterRadius>
-					</plant>
+					<visualSizeRange>0.4~0.65</visualSizeRange>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_PincushionCactus"]/plant</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant/leaflessGraphicPath</xpath>
 				<value>
-					<plant>
-						<fertilityMin>0.05</fertilityMin>
-						<fertilitySensitivity>0</fertilitySensitivity>
-						<growDays>2.5</growDays>
-						<visualSizeRange>0.40~0.65</visualSizeRange>
-						<topWindExposure>0.0</topWindExposure>
-						<wildClusterRadius>4</wildClusterRadius>
-						<wildClusterWeight>4</wildClusterWeight>
-						<maxMeshCount>4</maxMeshCount>
-						<wildOrder>2</wildOrder>
-					</plant>
+						<leaflessGraphicPath>Things/Plant/Leafless/SaguaroCactus_Leafless</leaflessGraphicPath>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">

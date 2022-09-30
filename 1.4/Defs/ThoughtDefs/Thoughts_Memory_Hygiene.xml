@@ -1,16 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThoughtDef>
-		<defName>RG_HotSpringThought</defName>
-		<durationDays>0.5</durationDays>
+		<defName>RG_HotSpringBathingThought</defName>
+		<durationDays>0.8</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
-				<label>hot spring</label>
-				<description>I had a nice time in hot springs.</description>
+				<label>Relaxing bath</label>
+				<description>I had a nice relaxing time bathing in a hot springs.</description>
 				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
-		<showBubble>true</showBubble>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>RG_BathingThought</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>Relaxing bath</label>
+				<description>I had a nice relaxing time bathing.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
 	</ThoughtDef>
 </Defs>

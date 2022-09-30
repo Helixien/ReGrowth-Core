@@ -47,56 +47,6 @@
 			</li>
 		</terrainComps>
 	</VFECore.ActiveTerrainDef>
-	<!-- ================ Anima Springs ================ -->
-	<VFECore.ActiveTerrainDef ParentName="WaterShallowBase">
-		<defName>RG_AnimaSpring</defName>
-		<label>anima spring</label>
-		<texturePath>Terrain/Surfaces/AnimaSpring</texturePath>
-		<waterDepthShader>Map/WaterDepth</waterDepthShader>
-		<renderPrecedence>394</renderPrecedence>
-		<driesTo>RG_HotSpringSand</driesTo>
-		<traversedThought>RG_HotSpringWet</traversedThought>
-		<tickerType>Rare</tickerType>
-		<terrainComps>
-			<li Class="VFECore.TerrainCompProperties_MoteSpawner">
-				<moteDef>RG_Mote_WaterFog</moteDef>
-				<tickInterval>60~500</tickInterval>
-				<size>2~8</size>
-				<rotationRate>0</rotationRate>
-				<velocityAngle>0~360</velocityAngle>
-				<velocitySpeed>0.05~0.1</velocitySpeed>
-				<instanceColor>(0.75,0.75,0.75)</instanceColor>
-				<reqTempRangeToSpawn>-200~15</reqTempRangeToSpawn>
-				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
-				<spawnChance>0.04</spawnChance>
-			</li>
-			<li Class="VFECore.TerrainCompProperties_Healer">
-				<amountToHeal>0.5</amountToHeal>
-			</li>
-		</terrainComps>
-	</VFECore.ActiveTerrainDef>
-	<VFECore.ActiveTerrainDef ParentName="WaterDeepBase">
-		<defName>RG_AnimaSpringDeep</defName>
-		<label>deep anima spring</label>
-		<texturePath>Terrain/Surfaces/AnimaSpringDeep</texturePath>
-		<waterDepthShader>Map/WaterDepth</waterDepthShader>
-		<renderPrecedence>395</renderPrecedence>
-		<tickerType>Rare</tickerType>
-		<terrainComps>
-			<li Class="VFECore.TerrainCompProperties_MoteSpawner">
-				<moteDef>RG_Mote_WaterFog</moteDef>
-				<tickInterval>60~500</tickInterval>
-				<size>6~30</size>
-				<rotationRate>0</rotationRate>
-				<velocityAngle>0~360</velocityAngle>
-				<velocitySpeed>0.05~0.1</velocitySpeed>
-				<instanceColor>(0.75,0.75,0.75)</instanceColor>
-				<reqTempRangeToSpawn>-200~15</reqTempRangeToSpawn>
-				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
-				<spawnChance>0.10</spawnChance>
-			</li>
-		</terrainComps>
-	</VFECore.ActiveTerrainDef>
 	<!-- ================ Toxic Waste ================ -->
 	<TerrainDef Abstract="True" Name="RG_ToxicWasteBase">
 		<edgeType>Water</edgeType>

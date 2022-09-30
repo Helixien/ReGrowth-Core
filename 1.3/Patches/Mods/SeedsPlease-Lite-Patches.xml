@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>SeedsPlease Lite</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="SeedBase">
+					<defName>Seed_RG_Raspberry</defName>
+					<label>rg_raspberry seeds</label>
+					<descriptionHyperlinks>
+						<ThingDef>RG_Plant_Raspberry</ThingDef>
+					</descriptionHyperlinks>
+					<modExtensions>
+						<li Class="SeedsPleaseLite.Seed">
+							<sources>
+								<li>RG_Plant_Raspberry</li>
+							</sources>
+						</li>
+					</modExtensions>
+				</ThingDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

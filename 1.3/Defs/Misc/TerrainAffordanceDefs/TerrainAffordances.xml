@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<TerrainAffordanceDef>
+		<defName>RG_Lava</defName>
+		<label>lava</label>
+		<order>2100</order>
+		<visualizeOnAffordanceOverlay>true</visualizeOnAffordanceOverlay>
+		<affordanceOverlayColor>(0,0,100)</affordanceOverlayColor>
+	</TerrainAffordanceDef>
+</Defs>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--============================================== ReGrowth: Aspen Forests ==============================================-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Aspen Forests</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- ================ Biome Apsen Forest ================ -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "RG-AF_AspenForest"]/wildPlants</xpath>
+					<value>
+						<RG_Plant_Raspberry>0.03</RG_Plant_Raspberry>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<!--============================================== ReGrowth: Wastelands ==============================================-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Wastelands</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- ================ Biome Wasteland ================ -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName = "RG-W_Wasteland"]/baseWeatherCommonalities</xpath>
+					<value>
+						<RG_Drizzle>2</RG_Drizzle>
+						<RG_FoggySnow>2</RG_FoggySnow>
+						<RG_Overcast>6</RG_Overcast>
+						<RG_Windy>8</RG_Windy>
+						<RG_Blizzard>0.5</RG_Blizzard>
+						<RG_Monsoon>0.5</RG_Monsoon>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

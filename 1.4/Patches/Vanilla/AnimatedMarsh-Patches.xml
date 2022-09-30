@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/TerrainDef[defName="Marsh"]/waterDepthShader</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]/waterDepthShader</xpath>
+					<value>
+						<waterDepthShader>Map/WaterDepth</waterDepthShader>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]</xpath>
+					<value>
+						<waterDepthShader>Map/WaterDepth</waterDepthShader>
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/TerrainDef[defName="Marsh"]/takeSplashes</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]/takeSplashes</xpath>
+					<value>
+						<takeSplashes>true</takeSplashes>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]</xpath>
+					<value>
+						<takeSplashes>true</takeSplashes>
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/TerrainDef[defName="Marsh"]/edgeType</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]/edgeType</xpath>
+					<value>
+						<edgeType>Water</edgeType>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]/edgeType</xpath>
+					<value>
+						<edgeType>Water</edgeType>
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TerrainDef[defName = "Sand"]/fertility</xpath>
+				<value>
+					<fertility>0</fertility>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="BaseFilth">
+		<defName>RG_Filth_LeavesTreeOak</defName>
+		<label>leaves</label>
+		<graphicData>
+			<texPath>Things/Filth/LeafShapeOne</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.3</hideAtSnowDepth>
+		<filth>
+			<disappearsInDays>45~50</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<rainWashes>false</rainWashes>
+		</filth>
+	</ThingDef>
+	<ThingDef ParentName="BaseFilth">
+		<defName>RG_Filth_LeavesTreePopolar</defName>
+		<label>leaves</label>
+		<graphicData>
+			<texPath>Things/Filth/LeafShapeTwo</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.3</hideAtSnowDepth>
+		<filth>
+			<disappearsInDays>45~50</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<rainWashes>false</rainWashes>
+		</filth>
+	</ThingDef>
+	<ThingDef ParentName="BaseFilth">
+		<defName>RG_Filth_LeavesTreeBirch</defName>
+		<label>leaves</label>
+		<graphicData>
+			<texPath>Things/Filth/LeafShapeThree</texPath>
+		</graphicData>
+		<hideAtSnowDepth>0.3</hideAtSnowDepth>
+		<filth>
+			<disappearsInDays>45~50</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<rainWashes>false</rainWashes>
+		</filth>
+	</ThingDef>
+</Defs>

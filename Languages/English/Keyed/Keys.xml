@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<RG.SpawnAutumnLeaves>Spawn autumn leaves</RG.SpawnAutumnLeaves>
+	<RG.SpawnLeaves>Spawn aspen leaves</RG.SpawnLeaves>
+	<RG.ColdFog>Cold fog</RG.ColdFog>
+	<RG.IceLayer>Ice layer</RG.IceLayer>
+	<RG.RainWaterPuddles>Rain water puddles</RG.RainWaterPuddles>
+	<RG.RainCleanWaterPuddles>Clean water puddles</RG.RainCleanWaterPuddles>
+	<RG.FogVelocity>Fog velocity</RG.FogVelocity>
+	<RG.FogTemp>Fog temperature</RG.FogTemp>
+	<RG.PuddleChance>Puddle spawn chance</RG.PuddleChance>
+	<RG.SpawnFogOnHotSprings>Spawn fogs on hot springs</RG.SpawnFogOnHotSprings>
+	<RG.SandDevilLeftTheMap>The dust devil has left the map.</RG.SandDevilLeftTheMap>
+	<RG.SandDevilDissipated>The dust devil has dissipated.</RG.SandDevilDissipated>
+	<RG.DisableHailDamage>Disable hail damage</RG.DisableHailDamage>
+</LanguageData>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.6~1.0</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/cavePlantWeight</xpath>
+				<value>
+					<cavePlantWeight>0.12</cavePlantWeight>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Chokevine"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Chokevine_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant</xpath>
+				<value>
+					<plant>
+						<lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
+						<fertilityMin>0.05</fertilityMin>
+						<fertilitySensitivity>0</fertilitySensitivity>
+						<growDays>5</growDays>
+						<leaflessGraphicPath>Things/Plant/Leafless/SaguaroCactus_Leafless</leaflessGraphicPath>
+						<topWindExposure>0.08</topWindExposure>
+						<wildClusterRadius>-1</wildClusterRadius>
+					</plant>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_PincushionCactus"]/plant</xpath>
+				<value>
+					<plant>
+						<fertilityMin>0.05</fertilityMin>
+						<fertilitySensitivity>0</fertilitySensitivity>
+						<growDays>2.5</growDays>
+						<visualSizeRange>0.40~0.65</visualSizeRange>
+						<topWindExposure>0.0</topWindExposure>
+						<wildClusterRadius>4</wildClusterRadius>
+						<wildClusterWeight>4</wildClusterWeight>
+						<maxMeshCount>4</maxMeshCount>
+						<wildOrder>2</wildOrder>
+					</plant>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Agave_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.6~1.0</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Brambles"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Brambles_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant</xpath>
+				<value>
+					<visualSizeRange>0.4~0.8</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Bush_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreePopolar</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeBirch</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Moss"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Moss_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/BerryPlant_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/immatureGraphicPath</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/Immature/BerryPlant_Immature</immatureGraphicPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

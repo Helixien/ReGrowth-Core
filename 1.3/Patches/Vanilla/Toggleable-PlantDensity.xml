@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>Enable high plant density</label>
+		<operations>
+			<!-- ================ Biome Boreal Forest ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "BorealForest"]/plantDensity</xpath>
+				<value>
+					<plantDensity>1.0</plantDensity>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_Grass>10.0</Plant_Grass>
+						<Plant_TallGrass>2.5</Plant_TallGrass>
+						<Plant_Brambles>2.0</Plant_Brambles>
+						<Plant_Moss>4.0</Plant_Moss>
+						<Plant_Bush>1.2</Plant_Bush>
+						<Plant_TreeBirch>0.4</Plant_TreeBirch>
+						<Plant_Berry>0.06</Plant_Berry>
+						<RG_Plant_Raspberry>0.06</RG_Plant_Raspberry>
+						<Plant_TreePine>1.4</Plant_TreePine>
+						<Plant_HealrootWild>0.05</Plant_HealrootWild>
+					</wildPlants>
+				</value>
+			</li>
+			<!-- ================ Biome Boreal Tundra ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "Tundra"]/plantDensity</xpath>
+				<value>
+					<plantDensity>0.6</plantDensity>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "Tundra"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_Grass>20.0</Plant_Grass>
+						<Plant_TallGrass>3.5</Plant_TallGrass>
+						<Plant_Moss>6.5</Plant_Moss>
+						<Plant_Bush>4.5</Plant_Bush>
+						<Plant_Brambles>4.0</Plant_Brambles>
+						<Plant_Dandelion>0.5</Plant_Dandelion>
+						<Plant_TreePine>0.08</Plant_TreePine>
+						<Plant_TreeBirch>0.08</Plant_TreeBirch>
+						<Plant_Berry>1.0</Plant_Berry>
+						<RG_Plant_Raspberry>0.3</RG_Plant_Raspberry>
+						<Plant_HealrootWild>0.05</Plant_HealrootWild>
+					</wildPlants>
+				</value>
+			</li>
+			<!-- ================ Biome Cold Bog ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/plantDensity</xpath>
+				<value>
+					<plantDensity>0.6</plantDensity>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_Chokevine>3.0</Plant_Chokevine>
+						<Plant_Grass>15.0</Plant_Grass>
+						<Plant_TallGrass>2.5</Plant_TallGrass>
+						<Plant_Moss>3.0</Plant_Moss>
+						<Plant_Bush>0.3</Plant_Bush>
+						<Plant_Astragalus>0.1</Plant_Astragalus>
+						<Plant_TreePine>0.2</Plant_TreePine>
+						<Plant_Berry>0.05</Plant_Berry>
+						<RG_Plant_Raspberry>0.02</RG_Plant_Raspberry>
+						<Plant_HealrootWild>0.05</Plant_HealrootWild>
+						<Plant_TreeMaple>0.1</Plant_TreeMaple>
+					</wildPlants>
+				</value>
+			</li>
+			<!-- ================ Biome Arid Shrubland ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/plantDensity</xpath>
+				<value>
+					<plantDensity>0.72</plantDensity>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_Grass>10.0</Plant_Grass>
+						<Plant_Dandelion>0.8</Plant_Dandelion>
+						<Plant_Bush>0.7</Plant_Bush>
+						<Plant_PincushionCactus>0.6</Plant_PincushionCactus>
+						<Plant_Agave>0.16</Plant_Agave>
+						<Plant_SaguaroCactus>0.26</Plant_SaguaroCactus>
+						<Plant_TreeDrago>0.20</Plant_TreeDrago>
+						<Plant_Berry>0.7</Plant_Berry>
+					</wildPlants>
+				</value>
+			</li>
+			<!-- ================ Biome Desert ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "Desert"]/plantDensity</xpath>
+				<value>
+					<plantDensity>0.45</plantDensity>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_Grass>16.0</Plant_Grass>
+						<Plant_PincushionCactus>1.5</Plant_PincushionCactus>
+						<Plant_SaguaroCactus>0.8</Plant_SaguaroCactus>
+						<Plant_TreeDrago>0.50</Plant_TreeDrago>
+						<Plant_Agave>0.05</Plant_Agave>
+						<Plant_Bush>0.50</Plant_Bush>
+					</wildPlants>
+				</value>
+			</li>
+			<!-- ================ Biome Desert Extreme Desert ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/plantDensity</xpath>
+				<value>
+					<plantDensity>0.008</plantDensity>
+				</value>
+			</li>
+			<!-- ================ Biome Tropical Rainforest ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/plantDensity</xpath>
+				<value>
+					<plantDensity>1.85</plantDensity>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_Grass>8.0</Plant_Grass>
+						<Plant_TallGrass>3.0</Plant_TallGrass>
+						<Plant_ShrubLow>3.0</Plant_ShrubLow>
+						<Plant_Alocasia>0.8</Plant_Alocasia>
+						<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
+						<Plant_TreePalm>0.3</Plant_TreePalm>
+						<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
+						<Plant_TreeTeak>0.2</Plant_TreeTeak>
+						<Plant_Bush>0.45</Plant_Bush>
+						<Plant_Clivia>0.07</Plant_Clivia>
+						<Plant_Berry>0.08</Plant_Berry>
+						<Plant_Rafflesia>0.0008</Plant_Rafflesia>
+					</wildPlants>
+				</value>
+			</li>
+			<!-- ================ Biome Tropical Swamp================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/plantDensity</xpath>
+				<value>
+					<plantDensity>1.90</plantDensity>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_Grass>6.0</Plant_Grass>
+						<Plant_TallGrass>1.5</Plant_TallGrass>
+						<Plant_ShrubLow>2.0</Plant_ShrubLow>
+						<Plant_Bush>0.45</Plant_Bush>
+						<Plant_TreeWillow>1.92</Plant_TreeWillow>
+						<Plant_TreeCypress>1.92</Plant_TreeCypress>
+						<Plant_Alocasia>0.9</Plant_Alocasia>
+						<Plant_TreeCecropia>1.0</Plant_TreeCecropia>
+						<Plant_Chokevine>1.5</Plant_Chokevine>
+						<Plant_TreePalm>0.3</Plant_TreePalm>
+						<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
+						<Plant_TreeTeak>0.2</Plant_TreeTeak>
+						<Plant_Clivia>0.14</Plant_Clivia>
+						<Plant_Berry>0.03</Plant_Berry>
+						<Plant_Rafflesia>0.010</Plant_Rafflesia>
+					</wildPlants>
+				</value>
+			</li>
+			<!-- ================ Biome Temperate Forest ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/plantDensity</xpath>
+				<value>
+					<plantDensity>0.9</plantDensity>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_Grass>7.0</Plant_Grass>
+						<Plant_TallGrass>2.0</Plant_TallGrass>
+						<Plant_Brambles>1.0</Plant_Brambles>
+						<Plant_Dandelion>0.5</Plant_Dandelion>
+						<Plant_Bush>1.2</Plant_Bush>
+						<Plant_TreeOak>0.9</Plant_TreeOak>
+						<Plant_TreePoplar>0.9</Plant_TreePoplar>
+						<Plant_TreeTeak>0.2</Plant_TreeTeak>
+						<Plant_Berry>0.07</Plant_Berry>
+						<RG_Plant_Raspberry>0.03</RG_Plant_Raspberry>
+						<Plant_TreePine>0.8</Plant_TreePine>
+						<Plant_HealrootWild>0.05</Plant_HealrootWild>
+					</wildPlants>
+				</value>
+			</li>
+			<!-- ================ Biome Temperate Swamp ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/plantDensity</xpath>
+				<value>
+					<plantDensity>1.8</plantDensity>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

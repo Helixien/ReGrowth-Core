@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--=============== Mushroom Cultivation ==============-->
+	<ResearchProjectDef>
+		<defName>RG_MushroomCultivation</defName>
+		<label>mushroom cultivation</label>
+		<description>Cultivate and grow wild mushrooms.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+			<li>TribalStart</li>
+		</tags>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</ResearchProjectDef>
+</Defs>

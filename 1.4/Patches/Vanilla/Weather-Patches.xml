@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- ================ Biome Boreal Forest ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "BorealForest"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Boreal Tundra ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "Tundra"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Cold Bog ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Ice Sheet ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "IceSheet"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_FoggySnow>20</RG_FoggySnow>
+					<RG_Overcast>8</RG_Overcast>
+					<RG_Windy>6</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Sea Ice ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "SeaIce"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_FoggySnow>6</RG_FoggySnow>
+					<RG_Overcast>8</RG_Overcast>
+					<RG_Windy>6</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Arid Shrubland ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Monsoon>0.3</RG_Monsoon>
+					<RG_SandStorm>4</RG_SandStorm>
+					<RG_SandStormHard>2</RG_SandStormHard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Desert ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "Desert"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Monsoon>0.3</RG_Monsoon>
+					<RG_SandStorm>3</RG_SandStorm>
+					<RG_SandStormHard>1</RG_SandStormHard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Desert Extreme Desert ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
+				<value>
+					<Plant_PincushionCactus>1.2</Plant_PincushionCactus>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Monsoon>0.3</RG_Monsoon>
+					<RG_SandStorm>3</RG_SandStorm>
+					<RG_SandStormHard>1</RG_SandStormHard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Tropical Rainforest ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Tropical Swamp================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Temperate Forest ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Temperate Swamp ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimJobWorld</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="HumpShroom"]/label</xpath>
+					<value>
+						<label>humpokus</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="HumpShroom"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="HumpShroom"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Item/Drug/HumpshroomCollected</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="PlantHumpShroom"]/label</xpath>
+					<value>
+						<label>humpokus</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="PlantHumpShroom"]/graphicData/graphicClass</xpath>
+					<value>
+						<graphicClass>Graphic_Random</graphicClass>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="PlantHumpShroom"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Plant/Humpshroom</texPath>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="PlantHumpShroom"]/plant/visualSizeRange</xpath>
+					<value>
+						<visualSizeRange>0.5~0.8</visualSizeRange>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="PlantHumpShroom"]/plant</xpath>
+					<value>
+						<maxMeshCount>9</maxMeshCount>
+						<wildClusterRadius>6</wildClusterRadius>
+						<wildClusterWeight>0.5</wildClusterWeight>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

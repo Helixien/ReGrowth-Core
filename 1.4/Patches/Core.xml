@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- ================================ Patches in new weather ====================== -->
+			<!-- ================ Biome Boreal Forest ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "BorealForest"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Boreal Tundra ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "Tundra"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Cold Bog ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Ice Sheet ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "IceSheet"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_FoggySnow>20</RG_FoggySnow>
+					<RG_Overcast>8</RG_Overcast>
+					<RG_Windy>6</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Sea Ice ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "SeaIce"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_FoggySnow>6</RG_FoggySnow>
+					<RG_Overcast>8</RG_Overcast>
+					<RG_Windy>6</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Arid Shrubland ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Monsoon>0.3</RG_Monsoon>
+					<RG_SandStorm>1</RG_SandStorm>
+					<RG_SandStormHard>0.5</RG_SandStormHard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Desert ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "Desert"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Monsoon>0.3</RG_Monsoon>
+					<RG_SandStorm>1</RG_SandStorm>
+					<RG_SandStormHard>0.5</RG_SandStormHard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Desert Extreme Desert ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Monsoon>0.3</RG_Monsoon>
+					<RG_SandStorm>1</RG_SandStorm>
+					<RG_SandStormHard>0.5</RG_SandStormHard>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Tropical Rainforest ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Tropical Swamp ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Temperate Forest ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================ Biome Temperate Swamp ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_Hail>1</RG_Hail>
+				</value>
+			</li>
+			<!-- ================================ Plant Patches	====================== -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
+				<value>
+					<Plant_PincushionCactus>1.2</Plant_PincushionCactus>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/cavePlantWeight</xpath>
+				<value>
+					<cavePlantWeight>0.12</cavePlantWeight>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.6~1.0</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant</xpath>
+				<value>
+					<visualSizeRange>0.4~0.8</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.6~1.0</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant</xpath>
+				<value>
+					<plant>
+						<lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
+						<fertilityMin>0.05</fertilityMin>
+						<fertilitySensitivity>0</fertilitySensitivity>
+						<growDays>5</growDays>
+						<leaflessGraphicPath>Things/Plant/Leafless/SaguaroCactus_Leafless</leaflessGraphicPath>
+						<topWindExposure>0.08</topWindExposure>
+						<wildClusterRadius>-1</wildClusterRadius>
+					</plant>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_PincushionCactus"]/plant</xpath>
+				<value>
+					<plant>
+						<fertilityMin>0.05</fertilityMin>
+						<fertilitySensitivity>0</fertilitySensitivity>
+						<growDays>2.5</growDays>
+						<visualSizeRange>0.40~0.65</visualSizeRange>
+						<topWindExposure>0.0</topWindExposure>
+						<wildClusterRadius>4</wildClusterRadius>
+						<wildClusterWeight>4</wildClusterWeight>
+						<maxMeshCount>4</maxMeshCount>
+						<wildOrder>2</wildOrder>
+					</plant>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Chokevine"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Chokevine_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Agave_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Brambles"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Brambles_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Bush_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Moss"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Moss_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/BerryPlant_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/immatureGraphicPath</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/Immature/BerryPlant_Immature</immatureGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ Leaf Spawner for Autumn leafs	====================== -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreePopolar</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeBirch</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<!-- ================================ Animated Marsh ====================== -->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/TerrainDef[defName="Marsh"]/waterDepthShader</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]/waterDepthShader</xpath>
+					<value>
+						<waterDepthShader>Map/WaterDepth</waterDepthShader>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]</xpath>
+					<value>
+						<waterDepthShader>Map/WaterDepth</waterDepthShader>
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/TerrainDef[defName="Marsh"]/takeSplashes</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]/takeSplashes</xpath>
+					<value>
+						<takeSplashes>true</takeSplashes>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]</xpath>
+					<value>
+						<takeSplashes>true</takeSplashes>
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/TerrainDef[defName="Marsh"]/edgeType</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]/edgeType</xpath>
+					<value>
+						<edgeType>Water</edgeType>
+					</value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>/Defs/TerrainDef[defName="Marsh"]/edgeType</xpath>
+					<value>
+						<edgeType>Water</edgeType>
+					</value>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/TerrainDef[defName = "Sand"]/fertility</xpath>
+				<value>
+					<fertility>0</fertility>
+				</value>
+			</li>
+			<!-- ================================ Herd Migration ====================== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/IncidentDef[defName="HerdMigration"]/allowedBiomes</xpath>
+				<value>
+					<li>BorealForest</li>
+					<li>AridShrubland</li>
+				</value>
+			</li>
+			<!-- ================================ Thought expansion for rain ====================== -->
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThoughtDef[defName="SoakingWet"]</xpath>
+				<value>
+					<li Class="VFECore.ThoughtExtensions">
+						<removeThoughtsWhenAdded>
+							<li>RG_Wet</li>
+							<li>RG_ExtremelyWet</li>
+						</removeThoughtsWhenAdded>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ HD vanilla berries ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RawBerries"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Resource/PlantFoodRaw/VanillaBerries</texPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

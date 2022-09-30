@@ -1,26 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationAddModExtension">
-				<xpath>/Defs/ThoughtDef[defName="SoakingWet"]</xpath>
-				<value>
-					<li Class="VFECore.ThoughtExtensions">
-						<removeThoughtsWhenAdded>
-							<li>RG_Wet</li>
-							<li>RG_ExtremelyWet</li>
-						</removeThoughtsWhenAdded>
-					</li>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="RawBerries"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Item/Resource/PlantFoodRaw/VanillaBerries</texPath>
-				</value>
-			</li>
-		</operations>
-	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[@Name = "BaseFilth"]/filth/rainWashes</xpath>
 		<nomatch Class="PatchOperationAdd">
@@ -80,23 +59,6 @@
 			</li>
 			<li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>/Defs/ThingDef[defName = "Filth_OilSmear"]/filth/disappearsInDays</xpath>
-			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/IncidentDef[defName="HerdMigration"]/allowedBiomes</xpath>
-				<value>
-					<li>BorealForest</li>
-					<li>AridShrubland</li>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd" MayRequire="ReGrowth.BOTR.Wastelands">
-				<xpath>Defs/IncidentDef[defName="HerdMigration"]/allowedBiomes</xpath>
-				<value>
-					<li>RG-W_Wasteland</li>
-				</value>
 			</li>
 		</operations>
 	</Operation>

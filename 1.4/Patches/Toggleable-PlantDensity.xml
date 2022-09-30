@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>True</enabled>
-		<label>Enable high plant density</label>
+		<label>Increase vanilla plant density</label>
 		<operations>
 			<!-- ================ Biome Boreal Forest ================ -->
 			<li Class="PatchOperationReplace">

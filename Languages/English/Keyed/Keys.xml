@@ -14,4 +14,9 @@
 	<RG.SandDevilLeftTheMap>The dust devil has left the map.</RG.SandDevilLeftTheMap>
 	<RG.SandDevilDissipated>The dust devil has dissipated.</RG.SandDevilDissipated>
 	<RG.DisableHailDamage>Disable hail damage</RG.DisableHailDamage>
+	<RG.BatheZone>Bathe zone</RG.BatheZone>
+	<RG.DesignatorBatheZoneDesc>text.todo</RG.DesignatorBatheZoneDesc>
+	<RG.StoppedBathingMessage>{PAWN_nameDef} stopped bathing. Reason: {1}.</RG.StoppedBathingMessage>
+	<RG.TooCold>Too cold</RG.TooCold>
+	<RG.TooHot>Too hot</RG.TooHot>
 </LanguageData>

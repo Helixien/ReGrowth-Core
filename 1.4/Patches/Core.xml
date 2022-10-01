@@ -378,6 +378,14 @@
 					<texPath>Things/Item/Resource/PlantFoodRaw/VanillaBerries</texPath>
 				</value>
 			</li>
+			
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[text()="Designator_ZoneAdd_Growing"]</xpath>
+				<order>Append</order>
+				<value>
+					<li>ReGrowthCore.Designator_ZoneAdd_Bathe</li>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

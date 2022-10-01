@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
-using Verse.AI;
-using Verse.Sound;
 
 namespace ReGrowthCore
 {
@@ -19,7 +14,7 @@ namespace ReGrowthCore
 		//
 		//public static ThingDef RG_Mote_FrostGlow;
 
-        public static TerrainDef RG_Lava;
+		public static TerrainDef RG_Lava;
 
 		public static ThingDef RG_DustDevil;
 
@@ -31,11 +26,15 @@ namespace ReGrowthCore
 
 		public static TerrainDef RG_HotSpring;
 
-		public static JobDef RG_SwimInHotSpring;
+		public static JobDef RG_Bathe;
 
-		public static ThoughtDef RG_HotSpringThought;
+		public static ThoughtDef RG_HotSpringBathingThought;
+
+		public static ThoughtDef RG_BathingThought;
 
 		public static GameConditionDef Aurora;
+
+		public static WeatherDef RG_Windy;
 	}
 }
 

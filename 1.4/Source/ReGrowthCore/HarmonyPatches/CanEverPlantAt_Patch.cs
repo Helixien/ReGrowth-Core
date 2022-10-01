@@ -5,7 +5,7 @@ using Verse;
 
 namespace ReGrowthCore
 {
-    [HarmonyPatch(typeof(PlantUtility), "CanEverPlantAt", 
+    [HarmonyPatch(typeof(PlantUtility), "CanEverPlantAt",
         new Type[] { typeof(ThingDef), typeof(IntVec3), typeof(Map), typeof(Thing), typeof(bool), typeof(bool) },
         new ArgumentType[] { ArgumentType.Normal, ArgumentType.Normal, ArgumentType.Normal, ArgumentType.Out, ArgumentType.Normal, ArgumentType.Normal }
         )]

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchTabDef>
+		<defName>RG_ReGrowth</defName>
+		<label>ReGrowth</label>
+	</ResearchTabDef>
+</Defs>

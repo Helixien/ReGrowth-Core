@@ -7,10 +7,11 @@
 		<description>Cultivate and grow wild mushrooms.</description>
 		<baseCost>600</baseCost>
 		<techLevel>Neolithic</techLevel>
+		<tab>RG_ReGrowth</tab>
 		<tags>
 			<li>TribalStart</li>
 		</tags>
 		<researchViewX>0.00</researchViewX>
-		<researchViewY>5.00</researchViewY>
+		<researchViewY>1.40</researchViewY>
 	</ResearchProjectDef>
 </Defs>

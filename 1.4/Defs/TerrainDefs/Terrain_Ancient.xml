@@ -16,7 +16,7 @@
 	</TerrainDef>
 	<TerrainDef ParentName="RG_AncientFloorBase">
 		<defName>RG_AncientConcrete</defName>
-		<label>ancient concrete</label>
+		<label>broken concrete</label>
 		<description>Rough concrete. Broken due to lack of maintenance.</description>
 		<texturePath>Terrain/Surfaces/CrackedConcrete</texturePath>
 		<edgeType>Hard</edgeType>

@@ -4,6 +4,9 @@
 		<defName>RG_Wet</defName>
 		<durationDays>0.1</durationDays>
 		<stackLimit>1</stackLimit>
+		<nullifyingPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">RoughLiving_Welcomed</li>
+		</nullifyingPrecepts>
 		<stages>
 			<li>
 				<label>wet</label>
@@ -24,6 +27,9 @@
 		<defName>RG_ExtremelyWet</defName>
 		<durationDays>0.3</durationDays>
 		<stackLimit>1</stackLimit>
+		<nullifyingPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">RoughLiving_Welcomed</li>
+		</nullifyingPrecepts>
 		<stages>
 			<li>
 				<label>extremely wet</label>
@@ -44,6 +50,9 @@
 		<defName>RG_Sandy</defName>
 		<durationDays>0.5</durationDays>
 		<stackLimit>1</stackLimit>
+		<nullifyingPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">RoughLiving_Welcomed</li>
+		</nullifyingPrecepts>
 		<stages>
 			<li>
 				<label>sandy</label>

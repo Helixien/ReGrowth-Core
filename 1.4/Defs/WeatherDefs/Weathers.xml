@@ -58,7 +58,7 @@
 		<windSpeedFactor>1.8</windSpeedFactor>
 		<accuracyMultiplier>0.75</accuracyMultiplier>
 		<ambientSounds>
-			<li>Ambient_Wind_Storm</li>
+			<li>Ambient_Wind_Desolate</li>
 		</ambientSounds>
 		<skyColorsDay>
 			<sky>(1,1,1)</sky>

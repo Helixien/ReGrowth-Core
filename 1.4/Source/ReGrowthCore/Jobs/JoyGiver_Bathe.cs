@@ -22,20 +22,29 @@ namespace ReGrowthCore
             return null;
         }
 
-        public static bool IsGoodSpotForBathing(Pawn pawn, IntVec3 cell, StringBuilder failReason = null)
+        public static FloatRange GetComfortTempRange(Pawn pawn)
         {
-            var mapHeld = pawn.MapHeld;
-            if (cell.UsesOutdoorTemperature(mapHeld) && !JoyUtility.EnjoyableOutsideNow(mapHeld, failReason))
+            var comfortRange = pawn != null ? ComfortableTemperatureRange(pawn) : GenTemperature.ComfortableTemperatureRange(ThingDefOf.Human);
+            comfortRange.min -= 10f;
+            comfortRange.max += 10f;
+            return comfortRange;
+        }
+
+        public static bool IsGoodSpotForBathing(Map map, IntVec3 cell, FloatRange comfortRange, StringBuilder failReason = null)
+        {
+            if (cell.GetZone(map) is not Zone_Bathe)
+            {
+                failReason?.Append("RG.BathingZoneRemoved".Translate());
+                return false;
+            }
+            if (cell.UsesOutdoorTemperature(map) && !JoyUtility.EnjoyableOutsideNow(map, failReason))
             {
                 return false;
             }
-            var comfortRange = GenTemperature.ComfortableTemperatureRange(pawn.def, null);
-            comfortRange.min -= 10f;
-            comfortRange.max += 10f;
-            float temp = cell.GetTemperature(mapHeld);
+            float temp = cell.GetTemperature(map);
             if (!comfortRange.Includes(temp))
             {
-                var terrain = pawn.Position.GetTerrain(mapHeld);
+                var terrain = cell.GetTerrain(map);
                 if (comfortRange.min > temp && terrain != RGDefOf.RG_HotSpring)
                 {
                     failReason?.Append("RG.TooCold".Translate());
@@ -48,6 +57,15 @@ namespace ReGrowthCore
                 }
             }
             return true;
+        }
+
+        private static FloatRange ComfortableTemperatureRange(Pawn p)
+        {
+            var oldApparelTracker = p.apparel;
+            p.apparel = new Pawn_ApparelTracker(p);
+            var result = new FloatRange(p.GetStatValue(StatDefOf.ComfyTemperatureMin), p.GetStatValue(StatDefOf.ComfyTemperatureMax));
+            p.apparel = oldApparelTracker;
+            return result;
         }
 
         public int NearbyWaterCount(IntVec3 cell, Map map)
@@ -65,10 +83,10 @@ namespace ReGrowthCore
         }
         public IntVec3 FindSpotToBathe(Pawn pawn)
         {
+            var comfortRange = GetComfortTempRange(pawn);
             bool CellValidator(IntVec3 x)
             {
-                if (x.GetZone(pawn.Map) is Zone_Bathe && !PawnUtility.KnownDangerAt(x, pawn.Map, pawn)
-                    && IsGoodSpotForBathing(pawn, x) && pawn.CanReserve(x))
+                if (IsGoodSpotForBathing(pawn.Map, x, comfortRange) && pawn.CanReserve(x))
                 {
                     foreach (var adj in GenAdj.AdjacentCells)
                     {

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
@@ -244,7 +244,7 @@
 				<value>
 					<comps>
 						<li Class="CompProperties_Spawner">
-							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
 							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
 							<spawnCount>1</spawnCount>
 							<spawnIntervalRange>3000~8000</spawnIntervalRange>
@@ -259,7 +259,7 @@
 				<value>
 					<comps>
 						<li Class="CompProperties_Spawner">
-							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
 							<thingToSpawn>RG_Filth_LeavesTreePopolar</thingToSpawn>
 							<spawnCount>1</spawnCount>
 							<spawnIntervalRange>3000~8000</spawnIntervalRange>
@@ -274,7 +274,7 @@
 				<value>
 					<comps>
 						<li Class="CompProperties_Spawner">
-							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
 							<thingToSpawn>RG_Filth_LeavesTreeBirch</thingToSpawn>
 							<spawnCount>1</spawnCount>
 							<spawnIntervalRange>3000~8000</spawnIntervalRange>
@@ -289,7 +289,7 @@
 				<value>
 					<comps>
 						<li Class="CompProperties_Spawner">
-							<compClass>VFECore.CompAutumnLeavesSpawner</compClass>
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
 							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
 							<spawnCount>1</spawnCount>
 							<spawnIntervalRange>3000~8000</spawnIntervalRange>

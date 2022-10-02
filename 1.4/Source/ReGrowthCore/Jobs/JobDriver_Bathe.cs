@@ -35,8 +35,9 @@ namespace ReGrowthCore
             this.FailOn(delegate
             {
                 var failReason = new StringBuilder();
-                bool isGoodSpot = JoyGiver_Bathe.IsGoodSpotForBathing(pawn, TargetA.Cell, failReason);
-                if (isGoodSpot is false)
+                bool isGoodSpot = JoyGiver_Bathe.IsGoodSpotForBathing(pawn.Map, TargetA.Cell, JoyGiver_Bathe.GetComfortTempRange(pawn), failReason);
+                //if (IsBathingNow() && isGoodSpot is false && failReason.Length > 0)
+                if (isGoodSpot is false && failReason.Length > 0)
                 {
                     Messages.Message("RG.StoppedBathingMessage".Translate(pawn.Named("PAWN"), failReason.ToString()), pawn, MessageTypeDefOf.NeutralEvent);
                 }

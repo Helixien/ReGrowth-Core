@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using Multiplayer.API;
 using Verse;
 
 namespace ReGrowthCore
@@ -13,9 +12,9 @@ namespace ReGrowthCore
             {
                 return;
             }
-            MP.RegisterSyncMethod(typeof(DevilDust_Tornado), "Tick", null);
-            var devilDust_Tornado = AccessTools.Method(typeof(DevilDust_Tornado), "Tick", null, null);
-            harmony.Patch(devilDust_Tornado, new HarmonyMethod(typeof(MultiplayerSupport), "FixRNGPre", null), new HarmonyMethod(typeof(MultiplayerSupport), "FixRNGPos", null), null, null);
+            MP.RegisterSyncMethod(typeof(CompAutumnLeavesSpawner), "TryFindSpawnCell", null);
+            var tryFindSpawnCell = AccessTools.Method(typeof(CompAutumnLeavesSpawner), "TryFindSpawnCell", null, null);
+            harmony.Patch(tryFindSpawnCell, new HarmonyMethod(typeof(MultiplayerSupport), "FixRNGPre", null), new HarmonyMethod(typeof(MultiplayerSupport), "FixRNGPos", null), null, null);
         }
 
         private static void FixRNGPre()
@@ -28,7 +27,6 @@ namespace ReGrowthCore
             Rand.PopState();
         }
 
-        private static readonly Harmony harmony = new Harmony("rimworld.regrowthcore.multiplayersupport");
+        private static readonly Harmony harmony = new Harmony("ReGrowthCore.multiplayersupport");
     }
 }
-

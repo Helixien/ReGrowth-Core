@@ -45,11 +45,11 @@
 						<Plant_Bush>4.5</Plant_Bush>
 						<Plant_Brambles>4.0</Plant_Brambles>
 						<Plant_Dandelion>0.5</Plant_Dandelion>
-						<Plant_TreePine>0.08</Plant_TreePine>
-						<Plant_TreeBirch>0.08</Plant_TreeBirch>
+						<Plant_TreePine>0.16</Plant_TreePine>
+						<Plant_TreeBirch>0.1</Plant_TreeBirch>
 						<Plant_Berry>1.0</Plant_Berry>
 						<RG_Plant_Raspberry>0.3</RG_Plant_Raspberry>
-						<Plant_HealrootWild>0.05</Plant_HealrootWild>
+						<Plant_HealrootWild>0.18</Plant_HealrootWild>
 					</wildPlants>
 				</value>
 			</li>

@@ -400,6 +400,14 @@
 					</prerequisites>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ResearchProjectDef[defName="Plant_Strawberry"]</xpath>
+				<value>
+					<prerequisites>
+						<li>RG_BerryCultivation</li>
+					</prerequisites>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

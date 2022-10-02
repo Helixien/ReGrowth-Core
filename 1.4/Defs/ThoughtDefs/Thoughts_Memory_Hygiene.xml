@@ -1,7 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<ThoughtDef>
-		<defName>RG_HotSpringBathingThought</defName>
+		<defName>RG_BathingMarsh</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>Relaxing bath</label>
+				<description>I had a nice relaxing time bathing.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>RG_BathingWater</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>Relaxing bath</label>
+				<description>I had a nice relaxing time bathing.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>RG_BathingOcean</defName>
+		<durationDays>0.3</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>Relaxing bath</label>
+				<description>I had a nice relaxing time bathing.</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>RG_HotSpringBathing</defName>
 		<durationDays>0.8</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
@@ -13,14 +49,14 @@
 		</stages>
 	</ThoughtDef>
 	<ThoughtDef>
-		<defName>RG_BathingThought</defName>
-		<durationDays>0.3</durationDays>
+		<defName>RG_HotSpringBathingWaste</defName>
+		<durationDays>0.8</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
 			<li>
 				<label>Relaxing bath</label>
-				<description>I had a nice relaxing time bathing.</description>
-				<baseMoodEffect>2</baseMoodEffect>
+				<description>I had a nice relaxing time bathing in a hot springs.</description>
+				<baseMoodEffect>5</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

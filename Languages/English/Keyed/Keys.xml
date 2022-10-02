@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-
-	<RG.SpawnAutumnLeaves>Spawn autumn leaves</RG.SpawnAutumnLeaves>
-	<RG.SpawnLeaves>Spawn aspen leaves</RG.SpawnLeaves>
+	<RG.SpawnAutumnLeaves>Enable autumn leaf filth spawning.</RG.SpawnAutumnLeaves>
+	<RG.SpawnLeaves>Enable aspen leaf spawning.</RG.SpawnLeaves>
 	<RG.ColdFog>Cold fog</RG.ColdFog>
 	<RG.IceLayer>Ice layer</RG.IceLayer>
 	<RG.RainWaterPuddles>Rain water puddles</RG.RainWaterPuddles>

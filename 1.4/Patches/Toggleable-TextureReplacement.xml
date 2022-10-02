@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>Enable new worldmap textures.</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "Tundra"]/texture</xpath>
+				<value>
+					<texture>World/Biomes/Replace/Tundra</texture>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

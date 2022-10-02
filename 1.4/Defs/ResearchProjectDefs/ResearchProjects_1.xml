@@ -5,13 +5,27 @@
 		<defName>RG_MushroomCultivation</defName>
 		<label>mushroom cultivation</label>
 		<description>Cultivate and grow wild mushrooms.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>RG_ReGrowth</tab>
+		<tags>
+			<li>TribalStart</li>
+		</tags>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.1</researchViewY>
+	</ResearchProjectDef>
+	<!--=============== Berry Cultivation ==============-->
+	<ResearchProjectDef>
+		<defName>RG_BerryCultivation</defName>
+		<label>berry cultivation</label>
+		<description>Cultivate and grow wild berry bushes.</description>
 		<baseCost>600</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<tab>RG_ReGrowth</tab>
 		<tags>
 			<li>TribalStart</li>
 		</tags>
-		<researchViewX>0.00</researchViewX>
-		<researchViewY>1.40</researchViewY>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.65</researchViewY>
 	</ResearchProjectDef>
 </Defs>

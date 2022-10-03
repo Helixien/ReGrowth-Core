@@ -17,7 +17,7 @@ namespace ReGrowthCore
             var result = FindSpotToBathe(pawn);
             if (result.IsValid)
             {
-                return JobMaker.MakeJob(RGDefOf.RG_Bathe, result);
+                return JobMaker.MakeJob(RG_DefOf.RG_Bathe, result);
             }
             return null;
         }
@@ -45,12 +45,13 @@ namespace ReGrowthCore
             if (!comfortRange.Includes(temp))
             {
                 var terrain = cell.GetTerrain(map);
-                if (comfortRange.min > temp && terrain != RGDefOf.RG_HotSpring)
+                bool isHotSpring = terrain.IsHotSpring();
+                if (comfortRange.min > temp && isHotSpring is false)
                 {
                     failReason?.Append("RG.TooCold".Translate());
                     return false;
                 }
-                else if (temp > comfortRange.max && terrain == RGDefOf.RG_HotSpring)
+                else if (temp > comfortRange.max && isHotSpring)
                 {
                     failReason?.Append("RG.TooHot".Translate());
                     return false;

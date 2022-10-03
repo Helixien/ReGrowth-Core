@@ -400,12 +400,44 @@
 					</prerequisites>
 				</value>
 			</li>
+			
+			<!-- doesn't work, disabled the patch
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ResearchProjectDef[defName="Plant_Strawberry"]</xpath>
 				<value>
 					<prerequisites>
 						<li>RG_BerryCultivation</li>
 					</prerequisites>
+				</value>
+			</li> -->
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep" or defName="WaterShallow" or defName="WaterMovingShallow"]</xpath>
+				<value>
+					<li Class="ReGrowthCore.BatheExtension">
+						<thoughtAfterBathing>RG_BathingWater</thoughtAfterBathing>
+						<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/TerrainDef[defName="WaterOceanShallow"]</xpath>
+				<value>
+					<li Class="ReGrowthCore.BatheExtension">
+						<thoughtAfterBathing>RG_BathingOcean</thoughtAfterBathing>
+						<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/TerrainDef[defName="Marsh"]</xpath>
+				<value>
+					<li Class="ReGrowthCore.BatheExtension">
+						<thoughtAfterBathing>RG_BathingMarsh</thoughtAfterBathing>
+						<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+					</li>
 				</value>
 			</li>
 		</operations>

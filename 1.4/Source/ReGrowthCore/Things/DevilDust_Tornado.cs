@@ -205,7 +205,7 @@ namespace ReGrowthCore
 		{
 			if (loc.ShouldSpawnMotesAt(map) && !map.moteCounter.SaturatedLowPriority)
 			{
-				MoteThrown obj = (MoteThrown)ThingMaker.MakeThing(RGDefOf.RG_Mote_DevilDustPuff);
+				MoteThrown obj = (MoteThrown)ThingMaker.MakeThing(RG_DefOf.RG_Mote_DevilDustPuff);
 				obj.Scale = 1.9f * scale;
 				obj.rotationRate = Rand.Range(-60, 60);
 				obj.exactPosition = loc;
@@ -273,7 +273,7 @@ namespace ReGrowthCore
 		{
 			LongEventHandler.ExecuteWhenFinished(delegate
 			{
-				SoundDef tornado = RGDefOf.RG_Ambient_DustDevil;
+				SoundDef tornado = RG_DefOf.RG_Ambient_DustDevil;
 				sustainer = tornado.TrySpawnSustainer(SoundInfo.InMap(this));
 				UpdateSustainerVolume();
 			});

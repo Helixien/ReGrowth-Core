@@ -4,7 +4,7 @@ using Verse;
 namespace ReGrowthCore
 {
 	[DefOf]
-	public static class RGDefOf
+	public static class RG_DefOf
 	{
 		//public static ThingDef RG_Filth_Water;
 		//
@@ -24,13 +24,11 @@ namespace ReGrowthCore
 
 		public static WeatherDef RG_Hail;
 
+		public static TerrainDef RG_HotSpringDeep;
+
 		public static TerrainDef RG_HotSpring;
 
 		public static JobDef RG_Bathe;
-
-		public static ThoughtDef RG_HotSpringBathingThought;
-
-		public static ThoughtDef RG_BathingThought;
 
 		public static GameConditionDef Aurora;
 

@@ -34,8 +34,8 @@ namespace ReGrowthCore
                 {
                     int endDay = (bathingPeriodEnd - bathingPeriodStart) / GenDate.TicksPerDay;
                     int startDay = Mathf.Max(0, Mathf.Min(endDay, (Find.TickManager.TicksAbs - bathingPeriodStart) / GenDate.TicksPerDay));
-                    sb.AppendLine("RG.BathingPeriod".Translate(startDay, endDay, GenDate.DateFullStringAt(bathingPeriodStart, Find.WorldGrid.LongLatOf(Map.Tile)),
-                        GenDate.DateFullStringAt(bathingPeriodEnd, Find.WorldGrid.LongLatOf(Map.Tile))));
+                    sb.AppendLine("RG.BathingPeriod".Translate(startDay, endDay, GenDate.QuadrumDateStringAt(bathingPeriodStart, Find.WorldGrid.LongLatOf(Map.Tile).x),
+                        GenDate.QuadrumDateStringAt(bathingPeriodEnd, Find.WorldGrid.LongLatOf(Map.Tile).x)));
                 }
             }
 

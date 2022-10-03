@@ -4,11 +4,17 @@ using Verse;
 
 namespace ReGrowthCore
 {
+    [StaticConstructorOnStartup]
     public static class ReGrowthUtils
     {
-        public static bool IsBathing(this Pawn pawn)
+        public static bool IsHotSpring(this TerrainDef terrainDef)
         {
-            return pawn.CurJobDef == RGDefOf.RG_Bathe && pawn.pather.moving is false;
+            return terrainDef == RG_DefOf.RG_HotSpring || terrainDef == RG_DefOf.RG_HotSpringDeep;
+        }
+
+        public static bool IsBathingNow(this Pawn pawn)
+        {
+            return pawn.CurJobDef == RG_DefOf.RG_Bathe && pawn.pather.moving is false;
         }
         private static Dictionary<Material, Material> materials = new();
         public static Material GetBatheMat(Material baseMat)

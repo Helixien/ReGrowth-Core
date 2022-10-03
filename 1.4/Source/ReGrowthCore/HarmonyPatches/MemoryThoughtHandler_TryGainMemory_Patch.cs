@@ -14,9 +14,17 @@ namespace ReGrowthCore
     {
         private static bool Prefix(MemoryThoughtHandler __instance, ref Thought_Memory newThought, Pawn otherPawn)
         {
-            if (__instance.pawn.IsBathing() && newThought.def == ThoughtDefOf.SoakingWet)
+            if (__instance.pawn.CurJobDef == RG_DefOf.RG_Bathe && newThought.def == ThoughtDefOf.SoakingWet)
             {
                 return false;
+            }
+            foreach (var hediff in __instance.pawn.health.hediffSet.hediffs)
+            {
+                var comp = hediff.TryGetComp<HediffCompPreventThought>();
+                if (comp != null && comp.PreventsThought(newThought.def))
+                {
+                    return false;
+                }
             }
             return true;
         }

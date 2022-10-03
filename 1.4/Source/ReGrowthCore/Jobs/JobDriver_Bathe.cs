@@ -59,10 +59,10 @@ namespace ReGrowthCore
                     {
                         ClearCache();
                     }
-                    var terrain = pawn.Position.GetTerrain(Map);
                     if (pawn.IsHashIntervalTick(60))
                     {
-                        if (terrain == RGDefOf.RG_HotSpring)
+                        var terrain = pawn.Position.GetTerrain(Map);
+                        if (terrain.IsHotSpring())
                         {
                             var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Hypothermia);
                             if (hediff != null)
@@ -87,24 +87,18 @@ namespace ReGrowthCore
                             }
                         }
                     }
+                    pawn.GainComfortFromCellIfPossible(false);
                     if (Find.TickManager.TicksGame > bathStartTick + job.def.joyDuration)
                     {
-                        if (terrain == RGDefOf.RG_HotSpring)
-                        {
-                            pawn.needs?.mood?.thoughts.memories.TryGainMemory(RGDefOf.RG_HotSpringBathingThought);
-                        }
-                        else if (terrain.IsWater)
-                        {
-                            pawn.needs?.mood?.thoughts.memories.TryGainMemory(RGDefOf.RG_BathingThought);
-                        }
+                        DoBatheEffects();
                         OnComplection();
                         EndJobWith(JobCondition.Succeeded);
                     }
-                    else
+                    else if (JoyUtility.JoyTickCheckEnd(pawn))
                     {
-                        JoyUtility.JoyTickCheckEnd(pawn);
+                        DoBatheEffects();
+                        OnComplection();
                     }
-                    pawn.GainComfortFromCellIfPossible(false);
                 }
             };
             batheToil.AddFinishAction(delegate
@@ -121,6 +115,23 @@ namespace ReGrowthCore
                 }
             };
             yield return batheToil;
+        }
+
+        private void DoBatheEffects()
+        {
+            var terrain = pawn.Position.GetTerrain(Map);
+            var batheExtension = terrain.GetModExtension<BatheExtension>();
+            if (batheExtension != null)
+            {
+                if (batheExtension.thoughtAfterBathing != null)
+                {
+                    pawn.needs?.mood?.thoughts.memories.TryGainMemory(batheExtension.thoughtAfterBathing);
+                }
+                if (batheExtension.hediffAfterBathing != null)
+                {
+                    pawn.health.AddHediff(batheExtension.hediffAfterBathing);
+                }
+            }
         }
 
         private void ClearCache()

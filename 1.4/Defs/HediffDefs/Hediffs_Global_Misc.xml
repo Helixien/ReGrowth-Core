@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HediffDef>
+		<defName>RG_PreventSoakingWetThought</defName>
+		<label>...</label>
+		<description>...</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<makesSickThought>false</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2500</disappearsAfterTicks>
+			</li>
+			<li Class="ReGrowthCore.HediffCompProperties_PreventThoughts">
+				<thoughtsToPrevent>
+					<li>SoakingWet</li>
+				</thoughtsToPrevent>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

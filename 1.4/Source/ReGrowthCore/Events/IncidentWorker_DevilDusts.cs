@@ -16,7 +16,7 @@ namespace ReGrowthCore
             var takenCells = new List<IntVec3>();
             for (int i = 0; i < devilDustCount; i++)
             {
-                var devilDust = ThingMaker.MakeThing(RGDefOf.RG_DustDevil);
+                var devilDust = ThingMaker.MakeThing(RG_DefOf.RG_DustDevil);
                 if (CellFinder.TryFindRandomCellNear(spawnCenter, map, 50, (IntVec3 c) => c.Standable(map) && !c.Roofed(map) && !c.Fogged(map)
                 && !map.areaManager.Home.ActiveCells.Contains(c) && !takenCells.Contains(c), out var result))
                 {

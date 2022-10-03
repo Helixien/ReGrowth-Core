@@ -9,8 +9,8 @@ namespace ReGrowthCore
     {
         private static bool Prefix(Pawn pawn, HediffDef hdDef, float sevOffset)
         {
-            if (sevOffset > 0 && pawn.IsBathing() &&
-                ((pawn.Position.GetTerrain(pawn.Map) == RGDefOf.RG_HotSpring && hdDef == HediffDefOf.Hypothermia)
+            if (sevOffset > 0 && pawn.IsBathingNow() &&
+                ((pawn.Position.GetTerrain(pawn.Map).IsHotSpring() && hdDef == HediffDefOf.Hypothermia)
                 || (pawn.Position.GetTerrain(pawn.Map).IsWater && hdDef == HediffDefOf.Heatstroke)))
             {
                 return false;

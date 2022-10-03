@@ -13,8 +13,8 @@ namespace ReGrowthCore
     {
         private static bool Prefix(Pawn_HealthTracker __instance, Pawn ___pawn, Hediff hediff, BodyPartRecord part = null, DamageInfo? dinfo = null, DamageWorker.DamageResult result = null)
         {
-            if (___pawn.IsBathing() &&
-                ((___pawn.Position.GetTerrain(___pawn.Map) == RGDefOf.RG_HotSpring && hediff.def == HediffDefOf.Hypothermia)
+            if (___pawn.IsBathingNow() &&
+                ((___pawn.Position.GetTerrain(___pawn.Map).IsHotSpring() && hediff.def == HediffDefOf.Hypothermia)
                 || (___pawn.Position.GetTerrain(___pawn.Map).IsWater && hediff.def == HediffDefOf.Heatstroke)))
             {
                 return false;

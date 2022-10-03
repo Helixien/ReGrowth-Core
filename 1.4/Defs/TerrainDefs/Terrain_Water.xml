@@ -24,6 +24,12 @@
 				<spawnChance>0.04</spawnChance>
 			</li>
 		</terrainComps>
+		<modExtensions>
+			<li Class="ReGrowthCore.BatheExtension">
+				<thoughtAfterBathing>RG_HotSpringBathing</thoughtAfterBathing>
+				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+			</li>
+		</modExtensions>
 	</VFECore.ActiveTerrainDef>
 	<VFECore.ActiveTerrainDef ParentName="WaterDeepBase">
 		<defName>RG_HotSpringDeep</defName>
@@ -46,6 +52,12 @@
 				<spawnChance>0.10</spawnChance>
 			</li>
 		</terrainComps>
+		<modExtensions>
+			<li Class="ReGrowthCore.BatheExtension">
+				<thoughtAfterBathing>RG_HotSpringBathing</thoughtAfterBathing>
+				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+			</li>
+		</modExtensions>
 	</VFECore.ActiveTerrainDef>
 	<!-- ================ Toxic Waste ================ -->
 	<TerrainDef Abstract="True" Name="RG_ToxicWasteBase">
@@ -89,5 +101,11 @@
 			<Beauty>-6</Beauty>
 			<Cleanliness>-8</Cleanliness>
 		</statBases>
+		<modExtensions>
+			<li Class="ReGrowthCore.BatheExtension">
+				<thoughtAfterBathing>RG_WasteBathing</thoughtAfterBathing>
+				<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+			</li>
+		</modExtensions>
 	</TerrainDef>
 </Defs>

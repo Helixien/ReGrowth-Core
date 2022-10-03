@@ -315,6 +315,7 @@
     <Compile Include="HarmonyPatches\PawnRenderer_OverrideMaterialIfNeeded_Patch.cs" />
     <Compile Include="HarmonyPatches\Pawn_HealthTracker_AddHediff_Patch.cs" />
     <Compile Include="Events\IncidentWorker_DevilDusts.cs" />
+    <Compile Include="HarmonyPatches\ReplaceConcreteWithAncientConcrete.cs" />
     <Compile Include="HediffCompPreventThought.cs" />
     <Compile Include="ModExtensions\BathingExtension.cs" />
     <Compile Include="ReGrowthSettings.cs" />

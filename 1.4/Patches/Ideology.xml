@@ -22,6 +22,14 @@
 						</sowResearchPrerequisites>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ComplexRoomDef[@Name="UtilityRoom"]/floorTypes/li[text()="Concrete"]</xpath>
+					<value>
+						<li>RG_AncientConcrete</li>
+					</value>
+				</li>
+				
 			</operations>
 		</match>
 	</Operation>

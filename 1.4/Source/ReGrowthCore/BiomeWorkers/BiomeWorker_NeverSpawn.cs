@@ -1,8 +1,7 @@
-﻿using System;
-using RimWorld;
+﻿using RimWorld;
 using RimWorld.Planet;
 
-namespace RGW_Wasteland
+namespace ReGrowthCore
 {
 	public class BiomeWorker_NeverSpawn : BiomeWorker
 	{

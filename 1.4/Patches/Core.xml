@@ -244,6 +244,12 @@
 					<immatureGraphicPath>Things/Plant/Immature/BerryPlant_Immature</immatureGraphicPath>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant/immatureGraphicPath</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/Immature/StrawberryPlant_Immature</immatureGraphicPath>
+				</value>
+			</li>
 			<!-- ================================ Leaf Spawner for Autumn leafs	====================== -->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]</xpath>

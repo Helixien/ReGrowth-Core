@@ -401,13 +401,14 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant</xpath>
 				<value>
 					<sowResearchPrerequisites>
 						<li>RG_BerryCultivation</li>
 					</sowResearchPrerequisites>
 				</value>
 			</li>
+			<!-- ================================ Bathing thoughts ====================== -->
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep" or defName="WaterShallow" or defName="WaterMovingShallow"]</xpath>
 				<value>

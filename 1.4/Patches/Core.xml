@@ -401,11 +401,11 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ResearchProjectDef[defName="Plant_Strawberry"]</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]</xpath>
 				<value>
-					<prerequisites>
+					<sowResearchPrerequisites>
 						<li>RG_BerryCultivation</li>
-					</prerequisites>
+					</sowResearchPrerequisites>
 				</value>
 			</li>
 		</operations>

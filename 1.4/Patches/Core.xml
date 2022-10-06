@@ -50,18 +50,14 @@
 						<Plant_Brambles>1</Plant_Brambles>
 						<Plant_Moss>1</Plant_Moss>
 						<Plant_Bush>1.6</Plant_Bush>
-
 						<Plant_Dandelion>0.5</Plant_Dandelion>
+						<Plant_TreePoplar>0.6</Plant_TreePoplar>
+						<Plant_TreePine>0.8</Plant_TreePine>
+						<Plant_TreeOak>0.9</Plant_TreeOak>
+						<Plant_TreeTeak>0.1</Plant_TreeTeak>
 						<Plant_Berry>0.07</Plant_Berry>
 						<RG_Plant_Raspberry>0.05</RG_Plant_Raspberry>
 						<Plant_HealrootWild>0.05</Plant_HealrootWild>
-
-<!--					
-						<Plant_TreeOak>0.9</Plant_TreeOak>
-						<Plant_TreePoplar>0.9</Plant_TreePoplar>
-						<Plant_TreeTeak>0.2</Plant_TreeTeak>
-						<Plant_TreePine>0.8</Plant_TreePine>
-						<Plant_HealrootWild>0.05</Plant_HealrootWild>-->
 					</wildPlants>
 				</value>
 			</li>
@@ -409,6 +405,18 @@
 				<xpath>/Defs/ThingDef[defName="Plant_TreeOak"]/plant/leaflessGraphicPath</xpath>
 				<value>
 					<leaflessGraphicPath>Things/Plant/Leafless/TreeOak_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreePoplar"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreePoplar_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeTeak"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreeTeak_Leafless</leaflessGraphicPath>
 				</value>
 			</li>
 			<!-- ================================ Leaf Spawner for Autumn leafs	====================== -->

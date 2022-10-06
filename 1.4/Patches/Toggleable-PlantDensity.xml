@@ -11,7 +11,7 @@
 					<plantDensity>1.0</plantDensity>
 				</value>
 			</li>
-			<!-- ================ Biome Boreal Tundra ================ -->
+			<!-- ================ Biome Tundra ================ -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "Tundra"]/plantDensity</xpath>
 				<value>
@@ -65,6 +65,13 @@
 				<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/plantDensity</xpath>
 				<value>
 					<plantDensity>0.9</plantDensity>
+				</value>
+			</li>
+			<!-- ================ Biome Grassland ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "RG_TemperateGrasslands"]/plantDensity</xpath>
+				<value>
+					<plantDensity>1.5</plantDensity>
 				</value>
 			</li>
 			<!-- ================ Biome Temperate Swamp ================ -->

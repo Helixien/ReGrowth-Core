@@ -303,6 +303,7 @@
     <Compile Include="BiomeWorkers\BiomeWorker_BlackSwamp.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_AspenForest.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_NeverSpawn.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_TemperateGrasslands.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_VolcanicIceSheet.cs" />
     <Compile Include="Comps\CompAutumnLeavesSpawner.cs" />
     <Compile Include="Comps\CompLeavesSpawner.cs" />

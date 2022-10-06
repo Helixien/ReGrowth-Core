@@ -50,10 +50,12 @@
 						<Plant_Brambles>1</Plant_Brambles>
 						<Plant_Moss>1</Plant_Moss>
 						<Plant_Bush>1.6</Plant_Bush>
-						<Plant_Dandelion>0.4</Plant_Dandelion>
+
+						<Plant_Dandelion>0.5</Plant_Dandelion>
 						<Plant_Berry>0.07</Plant_Berry>
 						<RG_Plant_Raspberry>0.05</RG_Plant_Raspberry>
-						<Plant_TreeOak>0.9</Plant_TreeOak>
+						<Plant_HealrootWild>0.05</Plant_HealrootWild>
+
 <!--					
 						<Plant_TreeOak>0.9</Plant_TreeOak>
 						<Plant_TreePoplar>0.9</Plant_TreePoplar>
@@ -401,6 +403,12 @@
 				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant/immatureGraphicPath</xpath>
 				<value>
 					<immatureGraphicPath>Things/Plant/Immature/StrawberryPlant_Immature</immatureGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeOak"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreeOak_Leafless</leaflessGraphicPath>
 				</value>
 			</li>
 			<!-- ================================ Leaf Spawner for Autumn leafs	====================== -->

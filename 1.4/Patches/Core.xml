@@ -94,7 +94,7 @@
 			</li>
 			<!-- ================ Biome Temperate Grassland ================ -->
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName = "RG_TemperateGrassland"]/baseWeatherCommonalities</xpath>
+				<xpath>/Defs/BiomeDef[defName = "RG_TemperateGrasslands"]/baseWeatherCommonalities</xpath>
 				<value>
 					<RG_Drizzle>2</RG_Drizzle>
 					<RG_FoggySnow>2</RG_FoggySnow>

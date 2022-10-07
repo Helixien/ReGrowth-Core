@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<BiomeDef>
-		<defName>RG_TemperateGrassland</defName>
-		<label>grasslands</label>
+		<defName>RG_TemperateGrasslands</defName>
+		<label>grassland</label>
 		<description>Vast swathes of open plains filled with grasses, bushes and shrubbery. Very few, if any, trees grow here and plenty of herbivores graze the lands, with carnivores waiting in ambush.</description>
 		<workerClass>ReGrowthCore.BiomeWorker_TemperateGrasslands</workerClass>
 		<animalDensity>3.7</animalDensity>

@@ -4,7 +4,7 @@ using Verse;
 
 namespace ReGrowthCore
 {
-    public class BiomeWorker_TemperateGrasslands : BiomeWorker
+    public class BiomeWorker_TemperateGrassland : BiomeWorker
     {
         public override float GetScore(Tile tile, int tileID)
         {
@@ -21,7 +21,7 @@ namespace ReGrowthCore
                 return 0f;
             }
             var tileCenter = Find.WorldGrid.GetTileCenter(tileID);
-            float value = BiomePerlin.GetNoiseFor(BiomeDef.Named("RG_TemperateGrasslands")).GetValue(tileCenter);
+            float value = BiomePerlin.GetNoiseFor(BiomeDef.Named("RG_TemperateGrassland")).GetValue(tileCenter);
             float score = 15f + (tile.temperature - 7f) + ((tile.rainfall - 600f) / 180f);
             if (value >= 0.4f && score >= 0)
             {

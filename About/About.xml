@@ -13,8 +13,8 @@
 	<description>ReGrowth: Core is both a content mod and a small framework, aiming to overhaul and improve on Rimworlds vanilla biomes, add new and unique features and biomes, replace many of the vanilla plant textures with HD ones and, in combination with its companion mods, add new plants that fit perfectly into the vanilla artstyle. On top of that, it adds a lot of new weather types, many with custom visual effects to spice up your game.</description>
 	<modDependencies>
 		<li>
-			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
 			<downloadUrl>https://github.com/AndroidQuazar/VanillaExpandedFramework</downloadUrl>
 		</li>

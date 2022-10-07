@@ -170,4 +170,32 @@
 			</operations>
 		</match>
 	</Operation>
+	<!--============================================== Vanilla Factions Expanded - Medieval ==============================================-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/VFEMedieval.TerrainListDef[defName="VFEM_MoatableTerrain"]/terrainDefs</xpath>
+					<value>
+						<li>RG_HotSpringSand</li>
+						<li>RG_AnimaSpringSand</li>
+						<li>RG_TundraSoil</li>
+						<li>RG_TemperateSoil</li>
+						<li>RG_BorealSoil</li>
+						<li>RG_AspenSoil</li>
+						<li>RG_AnimaSoil</li>
+						<li>RG_AnimaSoilEnchanted</li>
+						<li>RG_AnimaSoilCracked</li>
+						<li>RG_DepletedSoil</li>
+						<li>RG_RubbleSoil</li>
+						<li>RG_DepletedMossy</li>
+						<li>RG_DepletedGravel</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--============================= Bushes ================================-->
+	<!--============================= Raspberry Bush ================================-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_Raspberry</defName>
 		<label>raspberry bush</label>
 		<description>A bushy wild plant which yields delicious red berries. Berries can be cooked, but they're also good to eat even when raw.</description>
 		<statBases>
-			<MaxHitPoints>120</MaxHitPoints>
-			<Nutrition>0.35</Nutrition>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/RaspberryPlant</texPath>
@@ -19,28 +19,25 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
-		<fillPercent>0.20</fillPercent>
-		<pathCost>30</pathCost>
+		<fillPercent>0.2</fillPercent>
+		<pathCost>25</pathCost>
 		<plant>
-			<fertilityMin>0.5</fertilityMin>
-			<fertilitySensitivity>0.5</fertilitySensitivity>
+			<fertilityMin>0.4</fertilityMin>
+			<fertilitySensitivity>0.4</fertilitySensitivity>
 			<growDays>4</growDays>
 			<leaflessGraphicPath>Things/Plant/Leafless/RaspberryPlant_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Immature/RaspberryPlant_Immature</immatureGraphicPath>
-			<harvestYield>6</harvestYield>
-			<harvestWork>210</harvestWork>
+			<harvestYield>7</harvestYield>
+			<harvestWork>200</harvestWork>
 			<harvestTag>Standard</harvestTag>
-			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			<harvestAfterGrowth>0.3</harvestAfterGrowth>
 			<harvestedThingDef>RG_RawRaspberries</harvestedThingDef>
 			<wildClusterRadius>5</wildClusterRadius>
 			<wildClusterWeight>250</wildClusterWeight>
 			<visualSizeRange>0.7~1.2</visualSizeRange>
-			<topWindExposure>0.3</topWindExposure>
+			<topWindExposure>0.25</topWindExposure>
 			<wildOrder>2</wildOrder>
 			<purpose>Food</purpose>
-			<humanFoodPlant>true</humanFoodPlant>
-			<mustBeWildToSow>true</mustBeWildToSow>
-			<sowResearchPrerequisites/>
 		</plant>
 	</ThingDef>
 </Defs>

@@ -1,5 +1,119 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!-- ================ Tundra Soil ================ -->
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>RG_TundraSoil</defName>
+		<label>soil</label>
+		<texturePath>Terrain/Surfaces/TundraSoil</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+	</TerrainDef>
+	<!-- ================ Boreal Soil ================ -->
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>RG_BorealSoil</defName>
+		<label>soil</label>
+		<texturePath>Terrain/Surfaces/BorealSoil</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+	</TerrainDef>
+	<!-- ================ Temperate Soil ================ -->
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>RG_TemperateSoil</defName>
+		<label>soil</label>
+		<texturePath>Terrain/Surfaces/TemperateSoil</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-2</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+	</TerrainDef>
 	<!-- ================ Vulcanic rock ================ -->
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>RG_LavaRock</defName>
@@ -62,74 +176,6 @@
 					<li>KickMaterialInEyes</li>
 				</capacities>
 				<hediff>SandInEyes</hediff>
-				<cooldownTime>1.5</cooldownTime>
-			</li>
-		</tools>
-	</TerrainDef>
-	<!-- ================ Tundra Soil ================ -->
-	<TerrainDef ParentName="NaturalTerrainBase">
-		<defName>RG_TundraSoil</defName>
-		<label>moss-covered soil</label>
-		<texturePath>Terrain/Surfaces/TundraSoil</texturePath>
-		<edgeType>FadeRough</edgeType>
-		<renderPrecedence>340</renderPrecedence>
-		<pathCost>2</pathCost>
-		<statBases>
-			<Beauty>-1</Beauty>
-			<Cleanliness>-1</Cleanliness>
-		</statBases>
-		<scatterType>Rocky</scatterType>
-		<affordances>
-			<li>Light</li>
-			<li>Medium</li>
-			<li>Heavy</li>
-			<li>GrowSoil</li>
-			<li>Diggable</li>
-		</affordances>
-		<generatedFilth>Filth_Dirt</generatedFilth>
-		<fertility>1.0</fertility>
-		<takeFootprints>True</takeFootprints>
-		<tools>
-			<li>
-				<label>dirt</label>
-				<capacities>
-					<li>KickMaterialInEyes</li>
-				</capacities>
-				<hediff>DirtInEyes</hediff>
-				<cooldownTime>1.5</cooldownTime>
-			</li>
-		</tools>
-	</TerrainDef>
-	<!-- ================ Temperate Soil ================ -->
-	<TerrainDef ParentName="NaturalTerrainBase">
-		<defName>RG_TemperateSoil</defName>
-		<label>moss-covered soil</label>
-		<texturePath>Terrain/Surfaces/TemperateSoil</texturePath>
-		<edgeType>FadeRough</edgeType>
-		<renderPrecedence>340</renderPrecedence>
-		<pathCost>2</pathCost>
-		<statBases>
-			<Beauty>-1</Beauty>
-			<Cleanliness>-1</Cleanliness>
-		</statBases>
-		<scatterType>Rocky</scatterType>
-		<affordances>
-			<li>Light</li>
-			<li>Medium</li>
-			<li>Heavy</li>
-			<li>GrowSoil</li>
-			<li>Diggable</li>
-		</affordances>
-		<generatedFilth>Filth_Dirt</generatedFilth>
-		<fertility>1.0</fertility>
-		<takeFootprints>True</takeFootprints>
-		<tools>
-			<li>
-				<label>dirt</label>
-				<capacities>
-					<li>KickMaterialInEyes</li>
-				</capacities>
-				<hediff>DirtInEyes</hediff>
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>

@@ -56,7 +56,7 @@
 		<repeatable>true</repeatable>
 		<favorability>Neutral</favorability>
 		<windSpeedFactor>1.8</windSpeedFactor>
-		<accuracyMultiplier>0.75</accuracyMultiplier>
+		<accuracyMultiplier>0.9</accuracyMultiplier>
 		<ambientSounds>
 			<li>Ambient_Wind_Desolate</li>
 		</ambientSounds>
@@ -84,80 +84,6 @@
 			<overlay>(0.6,0.6,0.6)</overlay>
 			<saturation>1.25</saturation>
 		</skyColorsNightMid>
-	</WeatherDef>
-	<WeatherDef>
-		<defName>RG_Hail</defName>
-		<label>hail</label>
-		<description>Hard, frozen rain that can injure exposed pawns.</description>
-		<temperatureRange>-999~1.5</temperatureRange>
-		<windSpeedFactor>1.0</windSpeedFactor>
-		<accuracyMultiplier>0.6</accuracyMultiplier>
-		<favorability>Bad</favorability>
-		<perceivePriority>2</perceivePriority>
-		<rainRate>1.0</rainRate>
-		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
-		<commonalityRainfallFactor>
-			<points>
-				<li>(0, 0)</li>
-				<li>(1300, 1)</li>
-				<li>(4000, 2.0)</li>
-			</points>
-		</commonalityRainfallFactor>
-		<ambientSounds>
-			<li>RG_Ambient_Hail</li>
-		</ambientSounds>
-		<overlayClasses>
-			<li>VFECore.WeatherOverlay_Custom</li>
-			<li>VFECore.WeatherOverlay_Effects</li>
-		</overlayClasses>
-		<skyColorsDay>
-			<sky>(0.8,0.8,0.8)</sky>
-			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.7,0.7,0.7)</overlay>
-			<saturation>0.9</saturation>
-		</skyColorsDay>
-		<skyColorsDusk>
-			<sky>(1,1,1)</sky>
-			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.6,0.6,0.6)</overlay>
-			<saturation>0.9</saturation>
-		</skyColorsDusk>
-		<skyColorsNightEdge>
-			<sky>(0.35,0.40,0.45)</sky>
-			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.5,0.5,0.5)</overlay>
-			<saturation>0.9</saturation>
-		</skyColorsNightEdge>
-		<skyColorsNightMid>
-			<sky>(0.35,0.40,0.45)</sky>
-			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.5,0.5,0.5)</overlay>
-			<saturation>0.9</saturation>
-		</skyColorsNightMid>
-		<modExtensions>
-			<li Class="VFECore.WeatherLetterExtensions">
-				<letterDef>NeutralEvent</letterDef>
-				<letterTitle>Hail</letterTitle>
-				<letterText>Numerous pellets of ice fall from cumulonimbus clouds, the randomness of their sizes can cause injuries to those not under a roof.</letterText>
-			</li>
-			<li Class="VFECore.WeatherOverlayExtension">
-				<overlayPath>Weather/HailWorldOverlay</overlayPath>
-				<copyPropertiesFrom>Weather/SnowOverlayWorld</copyPropertiesFrom>
-				<worldOverlayPanSpeed1>0.008</worldOverlayPanSpeed1>
-				<worldPanDir1>(-0.5, -1)</worldPanDir1>
-				<worldOverlayPanSpeed2>0.009</worldOverlayPanSpeed2>
-				<worldPanDir2>(-0.48, -1)</worldPanDir2>
-			</li>
-			<li Class="VFECore.WeatherEffectsExtension">
-				<ticksInterval>300~600</ticksInterval>
-				<killsPlants>false</killsPlants>
-				<damageToApply>Blunt</damageToApply>
-				<damageRange>0.1~0.5</damageRange>
-				<percentOfPawnsToDealDamage>0.1</percentOfPawnsToDealDamage>
-				<activeOnWeatherPerceived>RG_Hail</activeOnWeatherPerceived>
-				<worksOnNonFleshPawns>false</worksOnNonFleshPawns>
-			</li>
-		</modExtensions>
 	</WeatherDef>
 	<!-- ================ New rain weathers ================ -->
 	<WeatherDef>
@@ -226,12 +152,12 @@
 		<description>Extremely intense rainfall and strong winds, extinguishes fires and severely reduces ranged weapon accuracy and movement speed.</description>
 		<temperatureRange>-1~999</temperatureRange>
 		<windSpeedFactor>1.5</windSpeedFactor>
-		<accuracyMultiplier>0.3</accuracyMultiplier>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
 		<exposedThought>RG_ExtremelyWet</exposedThought>
 		<rainRate>3.0</rainRate>
-		<moveSpeedMultiplier>0.3</moveSpeedMultiplier>
+		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>
 				<li>(0, 0)</li>
@@ -308,7 +234,7 @@
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<snowRate>1.2</snowRate>
 		<rainRate>1</rainRate>
-		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<ambientSounds>
 			<li>Ambient_Wind_Fog</li>
 			<li>Ambient_Wind_Storm</li>
@@ -356,11 +282,11 @@
 		<temperatureRange>-999~-0.5</temperatureRange>
 		<snowRate>2.5</snowRate>
 		<windSpeedFactor>2.0</windSpeedFactor>
-		<accuracyMultiplier>0.2</accuracyMultiplier>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
 		<rainRate>1.0</rainRate>
-		<moveSpeedMultiplier>0.2</moveSpeedMultiplier>
+		<moveSpeedMultiplier>0.65</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>
 				<li>(0, 0)</li>
@@ -542,7 +468,7 @@
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
 		<exposedThought>RG_Sandy</exposedThought>
-		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
+		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>
 				<li>(0, 0)</li>

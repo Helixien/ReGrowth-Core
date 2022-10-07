@@ -69,7 +69,7 @@
 			</li>
 			<!-- ================ Biome Grassland ================ -->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/BiomeDef[defName = "RG_TemperateGrasslands"]/plantDensity</xpath>
+				<xpath>/Defs/BiomeDef[defName = "RG_TemperateGrassland"]/plantDensity</xpath>
 				<value>
 					<plantDensity>1.5</plantDensity>
 				</value>

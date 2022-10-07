@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<BiomeDef>
-		<defName>RG_TemperateGrasslands</defName>
+		<defName>RG_TemperateGrassland</defName>
 		<label>grassland</label>
 		<description>Vast swathes of open plains filled with grasses, bushes and shrubbery. Very few, if any, trees grow here and plenty of herbivores graze the lands, with carnivores waiting in ambush.</description>
 		<workerClass>ReGrowthCore.BiomeWorker_TemperateGrassland</workerClass>
@@ -105,25 +105,27 @@
 			<SnowHard>4</SnowHard>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<Plant_Grass>15.0</Plant_Grass>
-			<Plant_TallGrass>8.0</Plant_TallGrass>
-			<Plant_Brambles>1.0</Plant_Brambles>
+			<Plant_Grass>20</Plant_Grass>
+			<Plant_TallGrass>8</Plant_TallGrass>
+			<Plant_Moss>2.5</Plant_Moss>
+			<Plant_Brambles>2</Plant_Brambles>
 			<Plant_Dandelion>0.5</Plant_Dandelion>
-			<Plant_Bush>0.6</Plant_Bush>
-			<Plant_Berry>0.05</Plant_Berry>
+			<Plant_Bush>0.8</Plant_Bush>
+			<Plant_TreeBirch>0.05</Plant_TreeBirch>
+			<Plant_TreePoplar>0.05</Plant_TreePoplar>
+			<Plant_TreeOak>0.05</Plant_TreeOak>
+			<Plant_TreeTeak>0.02</Plant_TreeTeak>
+			<Plant_TreePine>0.01</Plant_TreePine>
+			<Plant_Berry>0.3</Plant_Berry>
+			<RG_Plant_Raspberry>1</RG_Plant_Raspberry>
 			<Plant_HealrootWild>0.05</Plant_HealrootWild>
 		</wildPlants>
 		<wildAnimals>
-			<Donkey>0.20</Donkey>
-			<GuineaPig>0.45</GuineaPig>
 			<Yak>0.06</Yak>
 			<Bison>0.07</Bison>
 			<Horse>0.20</Horse>
 			<Hare>1.0</Hare>
-			<Squirrel>1.0</Squirrel>
-			<Rat>1.0</Rat>
 			<Deer>0.5</Deer>
-			<WildBoar>0.5</WildBoar>
 			<Turkey>0.5</Turkey>
 			<Raccoon>0.5</Raccoon>
 			<Ibex>0.5</Ibex>
@@ -132,14 +134,10 @@
 			<Boomalope>0.4</Boomalope>
 			<Boomrat>0.4</Boomrat>
 			<Tortoise>0.3</Tortoise>
-			<Gazelle>0.3</Gazelle>
 			<Megasloth>0.2</Megasloth>
-			<Rhinoceros>0.1</Rhinoceros>
-			<Bear_Grizzly>0.07</Bear_Grizzly>
 			<Wolf_Timber>0.07</Wolf_Timber>
 			<Fox_Red>0.07</Fox_Red>
 			<Cougar>0.07</Cougar>
-			<Lynx>0.07</Lynx>
 			<Warg>0.07</Warg>
 		</wildAnimals>
 		<allowedPackAnimals>

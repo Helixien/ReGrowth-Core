@@ -30,6 +30,7 @@
 			<fertilityMin>0.4</fertilityMin>
 			<fertilitySensitivity>0.4</fertilitySensitivity>
 			<growDays>4</growDays>
+			<sowMinSkill>5</sowMinSkill>
 			<leaflessGraphicPath>Things/Plant/Leafless/RaspberryPlant_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/Immature/RaspberryPlant_Immature</immatureGraphicPath>
 			<harvestYield>8</harvestYield>
@@ -74,6 +75,7 @@
 			<fertilityMin>0.5</fertilityMin>
 			<fertilitySensitivity>0.5</fertilitySensitivity>
 			<growDays>5</growDays>
+			<sowMinSkill>5</sowMinSkill>
 			<leaflessGraphicPath>Things/Plant/BerryPlant_Leafless</leaflessGraphicPath>
 			<immatureGraphicPath>Things/Plant/BerryPlant_Immature</immatureGraphicPath>
 			<harvestYield>10</harvestYield>

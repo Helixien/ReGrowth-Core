@@ -10,6 +10,11 @@ namespace ReGrowthCore
     {
         public override Job TryGiveJob(Pawn pawn)
         {
+            if (!CanBathe(pawn))
+            {
+                return null;
+            }
+
             if (PawnUtility.WillSoonHaveBasicNeed(pawn))
             {
                 return null;
@@ -20,6 +25,22 @@ namespace ReGrowthCore
                 return JobMaker.MakeJob(RG_DefOf.RG_Bathe, result);
             }
             return null;
+        }
+
+        public static bool CanBathe(Pawn pawn)
+        {
+            if (pawn.apparel?.WornApparel != null)
+            {
+                foreach (var apparel in pawn.apparel.WornApparel)
+                {
+                    var type = apparel.def.GetType();
+                    if (type.Name.Contains("WarcasketDef"))
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
 
         public static FloatRange GetComfortTempRange(Pawn pawn)

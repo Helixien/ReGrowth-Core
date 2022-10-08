@@ -17,7 +17,7 @@ namespace ReGrowthCore
         public override string NewZoneLabel => "RG.BatheZone".Translate();
         public Designator_ZoneAdd_Bathe()
         {
-            zoneTypeToPlace = typeof(Zone_Growing);
+            zoneTypeToPlace = typeof(Zone_Bathe);
             defaultLabel = "RG.BatheZone".Translate();
             defaultDesc = "RG.DesignatorBatheZoneDesc".Translate();
             icon = ContentFinder<Texture2D>.Get("UI/Zones/ZoneCreate_Bathe");

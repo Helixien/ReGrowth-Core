@@ -23,7 +23,7 @@ namespace ReGrowthCore
 			var tileCenter = Find.WorldGrid.GetTileCenter(tileID);
 			float value = BiomePerlin.GetNoiseFor(BiomeDef.Named("RG_AspenForest")).GetValue(tileCenter);
 			float tileTemperature = 0f - tile.temperature;
-			if (value >= 0.2 && tileTemperature >= 0)
+			if (value >= 0.05f && tileTemperature >= 0)
 			{
 				return tileTemperature + value;
 			}

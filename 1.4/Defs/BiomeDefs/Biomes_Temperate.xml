@@ -109,11 +109,11 @@
 			<Plant_TallGrass>8</Plant_TallGrass>
 			<Plant_Moss>2.5</Plant_Moss>
 			<Plant_Brambles>2</Plant_Brambles>
-			<Plant_Dandelion>0.5</Plant_Dandelion>
+<!--			<Plant_Dandelion>0.5</Plant_Dandelion>-->
 			<Plant_Bush>0.8</Plant_Bush>
-			<Plant_TreeBirch>0.05</Plant_TreeBirch>
-			<Plant_TreePoplar>0.05</Plant_TreePoplar>
-			<Plant_TreeOak>0.05</Plant_TreeOak>
+			<Plant_TreeBirch>0.03</Plant_TreeBirch>
+			<Plant_TreePoplar>0.03</Plant_TreePoplar>
+			<Plant_TreeOak>0.03</Plant_TreeOak>
 			<Plant_TreeTeak>0.02</Plant_TreeTeak>
 			<Plant_TreePine>0.01</Plant_TreePine>
 			<Plant_Berry>0.3</Plant_Berry>

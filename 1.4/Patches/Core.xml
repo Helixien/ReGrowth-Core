@@ -321,6 +321,12 @@
 					<visualSizeRange>0.95~1.5</visualSizeRange>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="HealrootBase"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.3~0.8</visualSizeRange>
+				</value>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant</xpath>
 				<value>

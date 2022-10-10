@@ -60,6 +60,36 @@
 					<RG_Blizzard>0.5</RG_Blizzard>
 				</value>
 			</li>
+			<!-- ================ Biome Cold Bog ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_Chokevine>3</Plant_Chokevine>
+						<Plant_Grass>15</Plant_Grass>
+						<Plant_TallGrass>2.5</Plant_TallGrass>
+						<Plant_Moss>3</Plant_Moss>
+						<Plant_Bush>0.3</Plant_Bush>
+						<Plant_Astragalus>0.1</Plant_Astragalus>
+<!--						<Plant_TreePine>0.2</Plant_TreePine>
+						<Plant_TreeMaple>0.1</Plant_TreeMaple>-->
+						<Plant_Berry>0.05</Plant_Berry>
+						<RG_Plant_Raspberry>0.02</RG_Plant_Raspberry>
+						<Plant_HealrootWild>0.05</Plant_HealrootWild>
+
+					</wildPlants>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/baseWeatherCommonalities</xpath>
+				<value>
+					<RG_Drizzle>2</RG_Drizzle>
+					<RG_FoggySnow>2</RG_FoggySnow>
+					<RG_Overcast>6</RG_Overcast>
+					<RG_Windy>8</RG_Windy>
+					<RG_Blizzard>0.5</RG_Blizzard>
+				</value>
+			</li>
 			<!-- ================ Biome Temperate Forest ================ -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants</xpath>
@@ -115,35 +145,6 @@
 					<RG_Windy>8</RG_Windy>
 					<RG_Blizzard>0.5</RG_Blizzard>
 					<RG_Monsoon>0.5</RG_Monsoon>
-				</value>
-			</li>
-			<!-- ================ Biome Cold Bog ================ -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
-				<value>
-					<wildPlants>
-						<Plant_Chokevine>3</Plant_Chokevine>
-						<Plant_Grass>15</Plant_Grass>
-						<Plant_TallGrass>2.5</Plant_TallGrass>
-						<Plant_Moss>3</Plant_Moss>
-						<Plant_Bush>0.3</Plant_Bush>
-						<Plant_Astragalus>0.1</Plant_Astragalus>
-						<Plant_TreePine>0.2</Plant_TreePine>
-						<Plant_Berry>0.05</Plant_Berry>
-						<RG_Plant_Raspberry>0.02</RG_Plant_Raspberry>
-						<Plant_HealrootWild>0.05</Plant_HealrootWild>
-						<Plant_TreeMaple>0.1</Plant_TreeMaple>
-					</wildPlants>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/baseWeatherCommonalities</xpath>
-				<value>
-					<RG_Drizzle>2</RG_Drizzle>
-					<RG_FoggySnow>2</RG_FoggySnow>
-					<RG_Overcast>6</RG_Overcast>
-					<RG_Windy>8</RG_Windy>
-					<RG_Blizzard>0.5</RG_Blizzard>
 				</value>
 			</li>
 			<!-- ================ Biome Arid Shrubland ================ -->
@@ -337,6 +338,12 @@
 				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant/visualSizeRange</xpath>
 				<value>
 					<visualSizeRange>0.6~1.0</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Chokevine"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.35~0.6</visualSizeRange>
 				</value>
 			</li>
 			<li Class="PatchOperationReplace">

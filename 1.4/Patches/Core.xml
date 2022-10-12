@@ -18,6 +18,9 @@
 						<Plant_Berry>0.06</Plant_Berry>
 						<RG_Plant_Raspberry>0.06</RG_Plant_Raspberry>
 						<Plant_HealrootWild>0.05</Plant_HealrootWild>
+						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">4</Plant_Ripthorn>
+						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">10</Plant_GrayGrass>
+						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">4</Plant_TreeGrayPine>
 					</wildPlants>
 				</value>
 			</li>
@@ -47,6 +50,9 @@
 						<Plant_Berry>1</Plant_Berry>
 						<RG_Plant_Raspberry>0.3</RG_Plant_Raspberry>
 						<Plant_HealrootWild>0.18</Plant_HealrootWild>
+						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">10</Plant_GrayGrass>
+						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">4</Plant_Ripthorn>
+						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.16</Plant_TreeGrayPine>
 					</wildPlants>
 				</value>
 			</li>
@@ -65,18 +71,22 @@
 				<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
 				<value>
 					<wildPlants>
-						<Plant_Chokevine>3</Plant_Chokevine>
+						<Plant_Chokevine>3.5</Plant_Chokevine>
 						<Plant_Grass>15</Plant_Grass>
 						<Plant_TallGrass>2.5</Plant_TallGrass>
 						<Plant_Moss>3</Plant_Moss>
-						<Plant_Bush>0.3</Plant_Bush>
-						<Plant_Astragalus>0.1</Plant_Astragalus>
-<!--						<Plant_TreePine>0.2</Plant_TreePine>
-						<Plant_TreeMaple>0.1</Plant_TreeMaple>-->
+						<Plant_Bush>0.8</Plant_Bush>
+						<Plant_Astragalus>0.3</Plant_Astragalus>
+						<Plant_TreeWillow>0.6</Plant_TreeWillow>
+						<Plant_TreeCypress>0.6</Plant_TreeCypress>
+						<Plant_TreeMaple>0.6</Plant_TreeMaple>
+						<Plant_TreePine>0.4</Plant_TreePine>
 						<Plant_Berry>0.05</Plant_Berry>
 						<RG_Plant_Raspberry>0.02</RG_Plant_Raspberry>
 						<Plant_HealrootWild>0.05</Plant_HealrootWild>
-
+						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">7</Plant_GrayGrass>
+						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">5</Plant_Ripthorn>
+						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.2</Plant_TreeGrayPine>
 					</wildPlants>
 				</value>
 			</li>
@@ -109,6 +119,10 @@
 						<Plant_Berry>0.07</Plant_Berry>
 						<RG_Plant_Raspberry>0.05</RG_Plant_Raspberry>
 						<Plant_HealrootWild>0.05</Plant_HealrootWild>
+						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
+						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
+						<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Witchwood>
+						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_TreeGrayPine>
 					</wildPlants>
 				</value>
 			</li>
@@ -136,6 +150,25 @@
 				</value>
 			</li>
 			<!-- ================ Biome Temperate Swamp ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_TallGrass>3.2</Plant_TallGrass>
+						<Plant_Chokevine>0.8</Plant_Chokevine>
+						<Plant_Bush>0.2</Plant_Bush>
+						<Plant_TreeWillow>1.0</Plant_TreeWillow>
+						<Plant_TreeCypress>1.0</Plant_TreeCypress>
+						<Plant_TreeMaple>1.0</Plant_TreeMaple>
+						<Plant_Berry>0.05</Plant_Berry>
+						<Plant_HealrootWild>0.05</Plant_HealrootWild>
+						<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">1.0</Plant_Witchwood>
+						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
+						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
+						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_TreeGrayPine>
+					</wildPlants>
+				</value>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/baseWeatherCommonalities</xpath>
 				<value>
@@ -160,6 +193,8 @@
 						<Plant_SaguaroCactus>0.26</Plant_SaguaroCactus>
 						<Plant_TreeDrago>0.20</Plant_TreeDrago>
 						<Plant_Berry>0.7</Plant_Berry>
+						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
+						<Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_PebbleCactus>
 					</wildPlants>
 				</value>
 			</li>
@@ -186,6 +221,8 @@
 						<Plant_TreeDrago>0.50</Plant_TreeDrago>
 						<Plant_Agave>0.05</Plant_Agave>
 						<Plant_Bush>0.50</Plant_Bush>
+						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">8</Plant_GrayGrass>
+						<Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">1</Plant_PebbleCactus>
 					</wildPlants>
 				</value>
 			</li>
@@ -231,6 +268,8 @@
 						<Plant_Clivia>0.07</Plant_Clivia>
 						<Plant_Berry>0.08</Plant_Berry>
 						<Plant_Rafflesia>0.0008</Plant_Rafflesia>
+						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">4</Plant_GrayGrass>
+						<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">0.3</Plant_RatPalm>
 					</wildPlants>
 				</value>
 			</li>
@@ -264,6 +303,8 @@
 						<Plant_Clivia>0.14</Plant_Clivia>
 						<Plant_Berry>0.03</Plant_Berry>
 						<Plant_Rafflesia>0.010</Plant_Rafflesia>
+						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">3</Plant_GrayGrass>
+						<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">1.5</Plant_RatPalm>
 					</wildPlants>
 				</value>
 			</li>

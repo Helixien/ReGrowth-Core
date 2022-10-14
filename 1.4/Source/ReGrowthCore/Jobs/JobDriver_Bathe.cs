@@ -34,7 +34,7 @@ namespace ReGrowthCore
         {
             this.FailOn(delegate
             {
-                var failReason = new StringBuilder();
+                StringBuilder failReason = new();
                 bool isGoodSpot = JoyGiver_Bathe.IsGoodSpotForBathing(pawn.Map, TargetA.Cell, JoyGiver_Bathe.GetComfortTempRange(pawn), failReason);
                 //if (IsBathingNow() && isGoodSpot is false && failReason.Length > 0)
                 if (isGoodSpot is false && failReason.Length > 0)
@@ -43,9 +43,9 @@ namespace ReGrowthCore
                 }
                 return isGoodSpot is false;
             });
-            var goToil = Toils_Goto.GotoCell(TargetIndex.A, PathEndMode.OnCell);
+            Toil goToil = Toils_Goto.GotoCell(TargetIndex.A, PathEndMode.OnCell);
             yield return goToil;
-            var batheToil = new Toil
+            Toil batheToil = new()
             {
                 initAction = delegate
                 {
@@ -59,12 +59,16 @@ namespace ReGrowthCore
                     {
                         ClearCache();
                     }
+                    if (ModCompatibility.DubsBadHygieneActive)
+                    {
+                        ModCompatibility.CleanHygiene(pawn);
+                    }
                     if (pawn.IsHashIntervalTick(60))
                     {
-                        var terrain = pawn.Position.GetTerrain(Map);
+                        TerrainDef terrain = pawn.Position.GetTerrain(Map);
                         if (terrain.IsHotSpring())
                         {
-                            var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Hypothermia);
+                            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Hypothermia);
                             if (hediff != null)
                             {
                                 float value = hediff.Severity * 0.027f;
@@ -74,7 +78,7 @@ namespace ReGrowthCore
                         }
                         else if (terrain.IsWater)
                         {
-                            var hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Heatstroke);
+                            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Heatstroke);
                             if (hediff != null)
                             {
                                 float ambientTemperature = pawn.AmbientTemperature;
@@ -119,8 +123,8 @@ namespace ReGrowthCore
 
         private void DoBatheEffects()
         {
-            var terrain = pawn.Position.GetTerrain(Map);
-            var batheExtension = terrain.GetModExtension<BatheExtension>();
+            TerrainDef terrain = pawn.Position.GetTerrain(Map);
+            BatheExtension batheExtension = terrain.GetModExtension<BatheExtension>();
             if (batheExtension != null)
             {
                 if (batheExtension.thoughtAfterBathing != null)

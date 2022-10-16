@@ -60,6 +60,7 @@
 			<li>Fox_Fennec</li>
 			<li>Fox_Red</li>
 			<li>Fox_Arctic</li>
+<!--			<li MayRequire="ReGrowth.BOTR.AspenForest">RG_Frostbiter</li>-->
 		</toggleablePawns>							
 	</AnimalBehaviours.GenericToggleableAnimalDef>
 </Defs>

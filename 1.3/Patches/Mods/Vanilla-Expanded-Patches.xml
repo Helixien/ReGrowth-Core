@@ -201,13 +201,13 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/TerrainDef[defName = "RG_TundraSoil" or defName="RG_LavaRock" or defName="RG_DepletedSoil" or defName="RG_DepletedMossy" or defName="RG_DepletedGravel" or defName="RG_AspenSoil" or defName="RG_HotSpringSand"]/affordances/</xpath>
+					<xpath>/Defs/TerrainDef[defName = "RG_TundraSoil" or defName="RG_LavaRock" or defName="RG_DepletedSoil" or defName="RG_DepletedMossy" or defName="RG_DepletedGravel" or defName="RG_AspenSoil" or defName="RG_HotSpringSand"]/affordances</xpath>
 					<value>
 						<li>VFEArch_Foundation</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/TerrainDef[defName = "RG_TundraSoil" or defName="RG_DepletedSoil" or defName="RG_AspenSoil"]/affordances/</xpath>
+					<xpath>/Defs/TerrainDef[defName = "RG_TundraSoil" or defName="RG_DepletedSoil" or defName="RG_AspenSoil"]/affordances</xpath>
 					<value>
 						<li>VFEArch_Soil</li>
 					</value>

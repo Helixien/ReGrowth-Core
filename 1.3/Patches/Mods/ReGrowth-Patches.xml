@@ -3,7 +3,7 @@
 	<!--============================================== ReGrowth: Aspen Forests ==============================================-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>ReGrowth: Aspen Forests</li>
+			<li>ReGrowth: Aspen</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>

@@ -124,6 +124,12 @@
 						<li>RG_HotSpringDeep</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
+					<value>
+						<li>RG_TemperateGrassland</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

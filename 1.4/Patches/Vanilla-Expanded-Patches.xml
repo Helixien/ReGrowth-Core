@@ -48,6 +48,17 @@
 						</thingCategories>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/VanillaPlantsExpanded.TillableTerrainDef[defName="VCE_AcceptedTillableTerrains"]/terrains</xpath>
+					<value>
+						<li>RG_TundraSoil</li>
+						<li>RG_BorealSoil</li>
+						<li>RG_TemperateSoil</li>
+						<li>RG_DepletedSoil</li>
+						<li>RG_AspenSoil</li>
+						<li>RG_AnimaSoil</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

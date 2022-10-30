@@ -25,6 +25,8 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>VanillaExpanded.VCEF</li>
+		<li>DakkPasserida.GauranlenReplant</li>
+		<li>DakkPasserida.AnimaReplant</li>
 	</loadAfter>
 	<loadBefore>
 		<li>Balthoraz.RimUniverse.BiomesModule</li>

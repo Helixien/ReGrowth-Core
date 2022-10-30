@@ -645,13 +645,30 @@
 					</prerequisites>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant</xpath>
-				<value>
-					<sowResearchPrerequisites>
-						<li>RG_BerryCultivation</li>
-					</sowResearchPrerequisites>
-				</value>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath>
+							<value>
+								<li>RG_BerryCultivation</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant</xpath>
+							<value>
+								<sowResearchPrerequisites>
+									<li>RG_BerryCultivation</li>
+								</sowResearchPrerequisites>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
 			</li>
 			<!-- ================================ Bathing thoughts ====================== -->
 			<li Class="PatchOperationAddModExtension">

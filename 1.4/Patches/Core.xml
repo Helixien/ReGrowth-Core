@@ -637,13 +637,30 @@
 				</value>
 			</li>
 			<!-- ================================ Integrate research ====================== -->
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
-				<value>
-					<prerequisites>
-						<li>RG_MushroomCultivation</li>
-					</prerequisites>
-				</value>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]/prerequisites</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]/prerequisites</xpath>
+							<value>
+								<li>RG_MushroomCultivation</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
+							<value>
+								<prerequisites>
+									<li>RG_MushroomCultivation</li>
+								</prerequisites>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
 			</li>
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath>

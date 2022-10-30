@@ -28,8 +28,15 @@
 						<li>RG_AncientConcrete</li>
 					</value>
 				</li>
-				<li Class="PatchOperationRemove">
+				<li Class="PatchOperationConditional">
 					<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/minifiedDef</xpath>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationRemove">
+								<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/minifiedDef</xpath>
+							</li>
+						</operations>
+					</match>
 				</li>
 			</operations>
 		</match>

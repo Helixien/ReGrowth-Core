@@ -6,8 +6,15 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationRemove">
+				<li Class="PatchOperationConditional">
 					<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/minifiedDef</xpath>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationRemove">
+								<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/minifiedDef</xpath>
+							</li>
+						</operations>
+					</match>
 				</li>
 			</operations>
 		</match>

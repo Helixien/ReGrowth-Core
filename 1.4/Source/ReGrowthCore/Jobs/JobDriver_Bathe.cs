@@ -35,7 +35,8 @@ namespace ReGrowthCore
             this.FailOn(delegate
             {
                 StringBuilder failReason = new();
-                bool isGoodSpot = JoyGiver_Bathe.IsGoodSpotForBathing(pawn.Map, TargetA.Cell, JoyGiver_Bathe.GetComfortTempRange(pawn), failReason);
+                bool isGoodSpot = JoyGiver_Bathe.IsGoodSpotForBathing(pawn.Map, TargetA.Cell, 
+                    JoyGiver_Bathe.GetComfortTempRange(pawn), failReason, pawn);
                 //if (IsBathingNow() && isGoodSpot is false && failReason.Length > 0)
                 if (isGoodSpot is false && failReason.Length > 0)
                 {

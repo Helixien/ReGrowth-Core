@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System;
 using System.Linq;
 using System.Text;
 using Verse;
@@ -51,13 +52,20 @@ namespace ReGrowthCore
             return comfortRange;
         }
 
-        public static bool IsGoodSpotForBathing(Map map, IntVec3 cell, FloatRange comfortRange, StringBuilder failReason = null)
+        public static bool IsGoodSpotForBathing(Map map, IntVec3 cell, FloatRange comfortRange, 
+            StringBuilder failReason = null, Pawn pawn = null)
         {
             if (cell.GetZone(map) is not Zone_Bathe)
             {
                 failReason?.Append("RG.BathingZoneRemoved".Translate());
                 return false;
             }
+
+            if (pawn != null && cell.InAllowedArea(pawn) is false)
+            {
+                return false;
+            }
+
             if (cell.UsesOutdoorTemperature(map) && !JoyUtility.EnjoyableOutsideNow(map, failReason))
             {
                 return false;
@@ -108,7 +116,7 @@ namespace ReGrowthCore
             var comfortRange = GetComfortTempRange(pawn);
             bool CellValidator(IntVec3 x)
             {
-                if (IsGoodSpotForBathing(pawn.Map, x, comfortRange) && pawn.CanReserve(x))
+                if (IsGoodSpotForBathing(pawn.Map, x, comfortRange, pawn: pawn) && pawn.CanReserve(x))
                 {
                     foreach (var adj in GenAdj.AdjacentCells)
                     {

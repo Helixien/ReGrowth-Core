@@ -56,6 +56,31 @@
 						</operations>
 					</nomatch>
 				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant/sowTags</xpath>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant/sowTags</xpath>
+								<value>
+									<li>Ground</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
+								<value>
+									<sowTags>
+										<li>Ground</li>
+									</sowTags>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ComplexRoomDef[@Name="UtilityRoom"]/floorTypes/li[text()="Concrete"]</xpath>
 					<value>

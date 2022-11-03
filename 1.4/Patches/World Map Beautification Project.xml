@@ -10,7 +10,6 @@
 				<li Class="BiomesKit.BiomesKitControls">
 					<forested>true</forested>
 					<uniqueHills>true</uniqueHills>
-					<forestSnowyBelow>0</forestSnowyBelow>
 					<forestSparseBelow>1100</forestSparseBelow>
 					<forestDenseAbove>1500</forestDenseAbove>
 					<mountainsSemiSnowyBelow>10</mountainsSemiSnowyBelow>

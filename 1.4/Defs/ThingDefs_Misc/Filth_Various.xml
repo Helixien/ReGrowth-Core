@@ -12,6 +12,10 @@
 			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
 			<rainWashes>false</rainWashes>
 		</filth>
+		<statBases>
+			<Beauty>-8</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+		</statBases>
 	</ThingDef>
 	<ThingDef ParentName="BaseFilth">
 		<defName>RG_Filth_LeavesTreePopolar</defName>
@@ -25,6 +29,10 @@
 			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
 			<rainWashes>false</rainWashes>
 		</filth>
+		<statBases>
+			<Beauty>-8</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+		</statBases>
 	</ThingDef>
 	<ThingDef ParentName="BaseFilth">
 		<defName>RG_Filth_LeavesTreeBirch</defName>
@@ -38,5 +46,9 @@
 			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
 			<rainWashes>false</rainWashes>
 		</filth>
+		<statBases>
+			<Beauty>-8</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+		</statBases>
 	</ThingDef>
 </Defs>

@@ -20,7 +20,7 @@ namespace ReGrowthCore
 
         public static bool IsBathingNow(this Pawn pawn)
         {
-            return pawn.jobs.curDriver is JobDriver_Bathe driver_Bathe && driver_Bathe.IsBathingNow();
+            return pawn?.jobs?.curDriver is JobDriver_Bathe driver_Bathe && driver_Bathe.IsBathingNow();
         }
         private static Dictionary<Material, Material> materials = new();
         public static Material GetBatheMat(Material baseMat)

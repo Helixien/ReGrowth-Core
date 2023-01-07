@@ -1,9 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
 namespace ReGrowthCore
 {
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct)]
+    public class HotSwappableAttribute : Attribute
+    {
+    }
+    [HotSwappable]
     [StaticConstructorOnStartup]
     public static class ReGrowthUtils
     {
@@ -14,7 +20,7 @@ namespace ReGrowthCore
 
         public static bool IsBathingNow(this Pawn pawn)
         {
-            return pawn.CurJobDef == RG_DefOf.RG_Bathe && pawn.pather.moving is false;
+            return pawn.jobs.curDriver is JobDriver_Bathe driver_Bathe && driver_Bathe.IsBathingNow();
         }
         private static Dictionary<Material, Material> materials = new();
         public static Material GetBatheMat(Material baseMat)

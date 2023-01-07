@@ -7,6 +7,7 @@ using Verse.AI;
 
 namespace ReGrowthCore
 {
+    [HotSwappable]
     public class JobDriver_Bathe : JobDriver
     {
         private int bathStartTick = -1;
@@ -15,7 +16,7 @@ namespace ReGrowthCore
             return pawn.Reserve(TargetA, job);
         }
 
-        private bool IsBathingNow()
+        public bool IsBathingNow()
         {
             return CurToilIndex == 2 && pawn.pather.moving is false;
         }
@@ -24,10 +25,6 @@ namespace ReGrowthCore
         {
             base.ExposeData();
             Scribe_Values.Look(ref bathStartTick, "bathStartTick", -1);
-            if (Scribe.mode == LoadSaveMode.PostLoadInit && IsBathingNow())
-            {
-                ClearCache();
-            }
         }
 
         public override IEnumerable<Toil> MakeNewToils()
@@ -37,7 +34,6 @@ namespace ReGrowthCore
                 StringBuilder failReason = new();
                 bool isGoodSpot = JoyGiver_Bathe.IsGoodSpotForBathing(pawn.Map, TargetA.Cell, 
                     JoyGiver_Bathe.GetComfortTempRange(pawn), failReason, pawn);
-                //if (IsBathingNow() && isGoodSpot is false && failReason.Length > 0)
                 if (isGoodSpot is false && failReason.Length > 0)
                 {
                     Messages.Message("RG.StoppedBathingMessage".Translate(pawn.Named("PAWN"), failReason.ToString()), pawn, MessageTypeDefOf.NeutralEvent);
@@ -52,14 +48,9 @@ namespace ReGrowthCore
                 {
                     bathStartTick = Find.TickManager.TicksGame;
                     pawn.jobs.posture = Rand.Bool ? PawnPosture.LayingOnGroundNormal : PawnPosture.LayingOnGroundFaceUp;
-                    ClearCache();
                 },
                 tickAction = delegate
                 {
-                    if (pawn.Drawer.renderer.graphics.cachedMatsBodyBaseHash != -1)
-                    {
-                        ClearCache();
-                    }
                     if (ModCompatibility.DubsBadHygieneActive)
                     {
                         ModCompatibility.CleanHygiene(pawn);
@@ -137,12 +128,6 @@ namespace ReGrowthCore
                     pawn.health.AddHediff(batheExtension.hediffAfterBathing);
                 }
             }
-        }
-
-        private void ClearCache()
-        {
-            pawn.Drawer.renderer.graphics.ClearCache();
-            pawn.Drawer.renderer.graphics.apparelGraphics.Clear();
         }
         private void OnComplection()
         {

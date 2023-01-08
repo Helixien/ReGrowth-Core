@@ -10,7 +10,7 @@ namespace ReGrowthCore
 
     public class Zone_Bathe : Zone
     {
-        public override bool IsMultiselectable => true;
+        public override bool IsMultiselectable => false;
         public Color BaseColor = Color.blue;
         public override Color NextZoneColor => new(BaseColor.r, BaseColor.g, BaseColor.b, 0.09f);
         public Zone_Bathe()

@@ -162,8 +162,13 @@
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName="VCE_CookDessertSimple" or 
-						defName="VCE_CookDessertSimpleBulk" or 
-						defName="VCE_CanFruit"]/ingredients//thingDefs</xpath>
+						defName="VCE_CookDessertSimpleBulk"]/ingredients//thingDefs</xpath>
+					<value>
+						<li>RG_RawRaspberries</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName="VCE_CanFruit"]/ingredients/li[1]/filter/thingDefs</xpath>
 					<value>
 						<li>RG_RawRaspberries</li>
 					</value>

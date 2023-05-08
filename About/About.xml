@@ -34,6 +34,14 @@
 		<li>VanillaExpanded.VPlantsE</li>
 		<li>sarg.rimbees</li>
 	</loadBefore>
+	<forceLoadBefore>
+		<li>ReGrowth.BOTR.AspenForest</li>
+		<li>ReGrowth.BOTR.BorealForestExpansion</li>
+		<li>ReGrowth.BOTR.ExtinctAnimalsPack</li>
+		<li>ReGrowth.BOTR.SwampExpansion</li>
+		<li>ReGrowth.BOTR.TemperateForestExpansion</li>
+		<li>ReGrowth.BOTR.TundraExpansion</li>
+	</forceLoadBefore>
 	<incompatibleWith>
 		<li>HerdMigration.velcroboy333</li>
 		<li>ONegative.AnimatedMarshes</li>

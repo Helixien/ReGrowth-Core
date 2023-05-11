@@ -11,6 +11,7 @@ namespace ReGrowthCore
             base.ExposeData();
             Scribe_Values.Look(ref enableLeaveSpawners, "enableLeaveSpawners", true, true);
             Scribe_Values.Look(ref enableAutumnLeaveSpawners, "enableAutumnLeaveSpawners", true, true);
+            Scribe_Values.Look(ref RG_DefOf.RG_BatheJoyGiver.baseChance, "RG_BatheJoyGiver_baseChance");
         }
     }
 }

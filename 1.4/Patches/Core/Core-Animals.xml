@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- ================================ Animal Patches	====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName = "Muffalo"]/lifeStages/li[1]/bodyGraphicData</xpath>
+				<value>
+					<bodyGraphicData>
+						<texPath>Things/Pawn/Animal/Muffalo/CalfMufallo</texPath>
+						<drawSize>1.5</drawSize>
+						<shadowData>
+							<volume>(0.4, 0.3, 0.3)</volume>
+							<offset>(0,0,-0.2)</offset>
+						</shadowData>
+					</bodyGraphicData>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName = "Muffalo"]/lifeStages/li[1]/dessicatedBodyGraphicData</xpath>
+				<value>
+					<dessicatedBodyGraphicData>
+						<texPath>Things/Pawn/Animal/Muffalo/Dessicated_Muffalo</texPath>
+						<drawSize>1.5</drawSize>
+					</dessicatedBodyGraphicData>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

@@ -4,7 +4,7 @@
 		<defName>RG_SandstormVulnerability</defName>
 		<label>Sandstorm vulnerability</label>
 		<description>Androids are susceptible to sand and will suffer occasional micro short-circuits when exposed to sandstorms. This will result in increased power drain and occasional explosions that may damage the android biocomponents.</description>
-		<geneClass>VREAndroids.Gene_RainVulnerability</geneClass>
+		<geneClass>VREAndroidsRegrowthCore.Gene_SandstormVulnerability</geneClass>
 		<!--<iconPath>UI/Icons/Genes/Subroutines/Gene_RainVulnerability</iconPath>-->
 		<iconPath>placeholder</iconPath>
 		<displayOrderInCategory>5</displayOrderInCategory>

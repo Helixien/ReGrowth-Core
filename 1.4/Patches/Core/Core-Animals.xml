@@ -2,7 +2,8 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<!-- ================================ Animal Patches	====================== -->
+			<!-- ================================ Animal Patches ====================== -->
+			<!-- ================================ Muffalo ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName = "Muffalo"]/lifeStages/li[1]/bodyGraphicData</xpath>
 				<value>
@@ -23,6 +24,40 @@
 						<texPath>Things/Pawn/Animal/Muffalo/Dessicated_Muffalo</texPath>
 						<drawSize>1.5</drawSize>
 					</dessicatedBodyGraphicData>
+				</value>
+			</li>
+			<!-- ================================ Boomalope ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName = "Boomalope"]/lifeStages/li[1]/bodyGraphicData</xpath>
+				<value>
+					<bodyGraphicData>
+						<texPath>Things/Pawn/Animal/Boomalope/CalfBoomalope</texPath>
+						<color>(176,150,106)</color>
+						<drawSize>1.2</drawSize>
+						<shaderType>CutoutComplex</shaderType>
+						<shadowData>
+							<volume>(0.4, 0.3, 0.3)</volume>
+							<offset>(0,0,-0.2)</offset>
+						</shadowData>
+					</bodyGraphicData>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName = "Boomalope"]/lifeStages/li[1]/dessicatedBodyGraphicData</xpath>
+				<value>
+					<dessicatedBodyGraphicData>
+						<texPath>Things/Pawn/Animal/Boomalope/CalfBoomalope_dessicated</texPath>
+						<drawSize>1.2</drawSize>
+					</dessicatedBodyGraphicData>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName = "Boomalope"]/lifeStages/li[1]/corpseGraphicData</xpath>
+				<value>
+					<corpseGraphicData>
+						<texPath>Things/Pawn/Animal/Boomalope/CalfBoomalope_corpse</texPath>
+						<drawSize>1.2</drawSize>
+					</corpseGraphicData>
 				</value>
 			</li>
 		</operations>

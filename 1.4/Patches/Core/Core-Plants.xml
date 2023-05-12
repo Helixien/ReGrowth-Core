@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- ================================ Plant Patches	====================== -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
+				<value>
+					<Plant_PincushionCactus>1.2</Plant_PincushionCactus>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/cavePlantWeight</xpath>
+				<value>
+					<cavePlantWeight>0.12</cavePlantWeight>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.6~1.0</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.95~1.5</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="HealrootBase"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.3~0.8</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant</xpath>
+				<value>
+					<visualSizeRange>0.4~0.8</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.6~1.0</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Chokevine"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.35~0.6</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_PincushionCactus"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.4~0.65</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Astragalus"]/plant/maxMeshCount</xpath>
+				<value>
+					<maxMeshCount>16</maxMeshCount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/SaguaroCactus_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Chokevine"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Chokevine_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Agave_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Brambles"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Brambles_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Bush_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Moss"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Moss_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/BerryPlant_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/immatureGraphicPath</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/Immature/BerryPlant_Immature</immatureGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant/immatureGraphicPath</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/Immature/StrawberryPlant_Immature</immatureGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeOak"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreeOak_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreePoplar"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreePoplar_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeTeak"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreeTeak_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeMaple"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreeMaple_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeCypress"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreeCypress_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeWillow"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreeWillow_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ Leaf Spawner for Autumn leafs	====================== -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreePopolar</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeBirch</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<!-- ================================ HD vanilla berries ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RawBerries"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Resource/PlantFoodRaw/VanillaBerries</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[text()="Designator_ZoneAdd_Growing"]</xpath>
+				<order>Append</order>
+				<value>
+					<li>ReGrowthCore.Designator_ZoneAdd_Bathe</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

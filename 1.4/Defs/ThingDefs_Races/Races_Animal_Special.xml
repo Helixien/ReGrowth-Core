@@ -31,6 +31,7 @@
 				<BorealForest>0.05</BorealForest>
 				<Tundra>0.2</Tundra>
 				<ColdBog>0.01</ColdBog>
+				<RG_AspenForest MayRequire="ReGrowth.BOTR.AspenForest">0.05</RG_AspenForest>
 			</wildBiomes>
 			<lifeStageAges>
 				<li>

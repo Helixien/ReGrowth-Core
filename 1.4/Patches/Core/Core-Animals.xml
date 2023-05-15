@@ -21,8 +21,31 @@
 				<xpath>/Defs/PawnKindDef[defName = "Muffalo"]/lifeStages/li[1]/dessicatedBodyGraphicData</xpath>
 				<value>
 					<dessicatedBodyGraphicData>
-						<texPath>Things/Pawn/Animal/Muffalo/Dessicated_Muffalo</texPath>
+						<texPath>Things/Pawn/Animal/Muffalo/CalfMufallo_dessicated</texPath>
 						<drawSize>1.5</drawSize>
+					</dessicatedBodyGraphicData>
+				</value>
+			</li>
+			<!-- ================================ Thrumbo ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName = "Thrumbo"]/lifeStages/li[1]/bodyGraphicData</xpath>
+				<value>
+					<bodyGraphicData>
+						<texPath>Things/Pawn/Animal/Thrumbo/CalfThrumbo</texPath>
+						<drawSize>2</drawSize>
+						<shadowData>
+							<volume>(0.4, 0.3, 0.3)</volume>
+							<offset>(0,0,-0.2)</offset>
+						</shadowData>
+					</bodyGraphicData>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName = "Thrumbo"]/lifeStages/li[1]/dessicatedBodyGraphicData</xpath>
+				<value>
+					<dessicatedBodyGraphicData>
+						<texPath>Things/Pawn/Animal/Thrumbo/CalfThrumbo_dessicated</texPath>
+						<drawSize>2</drawSize>
 					</dessicatedBodyGraphicData>
 				</value>
 			</li>
@@ -58,6 +81,65 @@
 						<texPath>Things/Pawn/Animal/Boomalope/CalfBoomalope_corpse</texPath>
 						<drawSize>1.2</drawSize>
 					</corpseGraphicData>
+				</value>
+			</li>
+			<!-- ================================ Bear Grizzly ====================== -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Bear_Grizzly"]/race[not(packAnimal)]</xpath>
+				<value>
+					<packAnimal>true</packAnimal>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName = "Bear_Grizzly"]/lifeStages</xpath>
+				<value>
+					<lifeStages>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/ReGrowth_Grizzly/GrizzlyCub</texPath>
+								<drawSize>1.4</drawSize>
+								<color>(112,82,65)</color>
+								<shadowData>
+									<volume>(0.4, 0.3, 0.3)</volume>
+									<offset>(0,0,-0.2)</offset>
+								</shadowData>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/ReGrowth_Grizzly/GrizzlyCub_dessicated</texPath>
+								<drawSize>1.4</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/ReGrowth_Grizzly/GrizzlyBear</texPath>
+								<drawSize>2</drawSize>
+								<color>(112,82,65)</color>
+								<shadowData>
+									<volume>(0.6, 0.45, 0.45)</volume>
+									<offset>(0,0,-0.25)</offset>
+								</shadowData>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/ReGrowth_Grizzly/GrizzlyBear_dessicated</texPath>
+								<drawSize>2</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/ReGrowth_Grizzly/GrizzlyBear</texPath>
+								<drawSize>2.7</drawSize>
+								<color>(112,82,65)</color>
+								<shadowData>
+									<volume>(0.8, 0.6, 0.6)</volume>
+									<offset>(0,0,-0.3)</offset>
+								</shadowData>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/ReGrowth_Grizzly/GrizzlyBear_dessicated</texPath>
+								<drawSize>2.7</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+					</lifeStages>
 				</value>
 			</li>
 		</operations>

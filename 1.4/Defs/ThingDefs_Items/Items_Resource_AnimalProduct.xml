@@ -9,7 +9,7 @@
       <texPath>Things/Item/Resource/AnimalProductRaw/MoaEgg</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
 			<color>(76,111,145)</color>
-			<drawSize>1.2</drawSize>
+			<drawSize>1</drawSize>
 		</graphicData>
 		<statBases>
 			<Nutrition>0.6</Nutrition>

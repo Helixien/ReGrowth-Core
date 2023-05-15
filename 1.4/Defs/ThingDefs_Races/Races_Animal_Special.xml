@@ -126,17 +126,17 @@
 				<label>chick</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Moa/MoaB</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>1.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Moa/MoaB_dessicated</texPath>
-					<drawSize>1.4</drawSize>
+					<drawSize>1.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Moa/MoaM</texPath>
-					<drawSize>1.7</drawSize>
+					<drawSize>1.4</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -144,7 +144,7 @@
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/Moa/MoaF</texPath>
-					<drawSize>1.6</drawSize>
+					<drawSize>1.4</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -152,17 +152,17 @@
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Moa/MoaM_dessicated</texPath>
-					<drawSize>1.7</drawSize>
+					<drawSize>1.4</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Moa/MoaF_dessicated</texPath>
-					<drawSize>1.6</drawSize>
+					<drawSize>1.4</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Moa/MoaM</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -170,7 +170,7 @@
 				</bodyGraphicData>
 				<femaleGraphicData>
 					<texPath>Things/Pawn/Animal/Moa/MoaF</texPath>
-					<drawSize>1.85</drawSize>
+					<drawSize>1.6</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.4, 0.4)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -178,11 +178,11 @@
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Moa/MoaM_dessicated</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<femaleDessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Moa/MoaF_dessicated</texPath>
-					<drawSize>1.85</drawSize>
+					<drawSize>1.6</drawSize>
 				</femaleDessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!-- ================================ Core ====================== -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/FactionDef[defName="OutlanderCivil" or defName="OutlanderRough"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/FactionDef[defName="Pirate"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Royalty ====================== -->
+			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Royalty">
+				<xpath>Defs/FactionDef[defName="Empire"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Biotech ====================== -->
+			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
+				<xpath>Defs/FactionDef[defName="OutlanderRoughPig"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
+				<xpath>Defs/FactionDef[defName="TribeRoughNeanderthal"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>TropicalRainforest</li>
+							<li>TropicalSwamp</li>
+							<li>Desert</li>
+							<li>ExtremeDesert</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
+				<xpath>Defs/FactionDef[defName="TribeSavageImpid"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>BorealForest</li>
+							<li>Tundra</li>
+							<li>ColdBog</li>
+							<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenForest</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
+				<xpath>Defs/FactionDef[defName="PirateWaster"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>Desert</li>
+							<li>ExtremeDesert</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
+				<xpath>Defs/FactionDef[defName="PirateYttakin"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>Desert</li>
+							<li>AridShrubland</li>
+							<li>ExtremeDesert</li>
+							<li>TropicalRainforest</li>
+							<li>TropicalSwamp</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Ideology ====================== -->
+			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/FactionDef[defName="NudistTribe"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>BorealForest</li>
+							<li>Tundra</li>
+							<li>ColdBog</li>
+							<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenForest</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Ideology">
+				<xpath>Defs/FactionDef[defName="TribeCannibal"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

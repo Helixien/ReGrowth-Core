@@ -48,7 +48,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BiomeDef[defName="RG_TemperateGrassland"]/pollutionWildAnimals</xpath>
 					<value>
-						<VVAECaves_AncientGiantSpider>0.0025</VVAECaves_AncientGiantSpider>
+						<VAECaves_AncientGiantSpider>0.0025</VAECaves_AncientGiantSpider>
 						<VAECaves_BlindSalamander>0.025</VAECaves_BlindSalamander>
 						<VAECaves_CaveBear>0.02</VAECaves_CaveBear>
 						<VAECaves_CaveCrawler>0.02</VAECaves_CaveCrawler>

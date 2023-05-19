@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="BiomeWorkers\BiomePerlin.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_AnimaForest.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_BoilingForest.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_BlackSwamp.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_AspenForest.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_NeverSpawn.cs" />
@@ -73,7 +74,9 @@
     <Compile Include="HarmonyPatches\ReplaceConcreteWithAncientConcrete.cs" />
     <Compile Include="HediffCompPreventThought.cs" />
     <Compile Include="ModExtensions\BathingExtension.cs" />
+    <Compile Include="PatchOperationModOption.cs" />
     <Compile Include="ReGrowthSettings.cs" />
+    <Compile Include="Startup.cs" />
     <Compile Include="UI\Designator_ZoneAdd_Bathe.cs" />
     <Compile Include="Jobs\JobDriver_Bathe.cs" />
     <Compile Include="Jobs\JoyGiver_Bathe.cs" />
@@ -85,6 +88,7 @@
     <Compile Include="RGDefOf.cs" />
     <Compile Include="Things\DevilDust_Tornado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeatherDecider_CurrentWeatherCommonality_Patch.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">

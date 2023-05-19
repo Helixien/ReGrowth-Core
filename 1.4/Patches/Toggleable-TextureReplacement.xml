@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
-		<label>Enable new worldmap textures.</label>
+	<Operation Class="ReGrowthCore.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<modOptionLabel>Enable new worldmap textures.</modOptionLabel>
+		<id>RG_NewWorldmapTextures</id>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "Tundra"]/texture</xpath>

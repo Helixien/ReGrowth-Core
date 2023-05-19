@@ -338,12 +338,12 @@
 	<TerrainDef ParentName="NaturalTerrainBase">
 		<defName>RG_BoilingSoil</defName>
 		<label>soil</label>
-		<texturePath>Terrain/Surfaces/Soil</texturePath>
+		<texturePath>Terrain/Surfaces/BoilingSoil</texturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>340</renderPrecedence>
 		<pathCost>2</pathCost>
 		<statBases>
-			<Beauty>-3</Beauty>
+			<Beauty>-2</Beauty>
 			<BeautyOutdoors>0</BeautyOutdoors>
 			<Cleanliness>-1</Cleanliness>
 		</statBases>

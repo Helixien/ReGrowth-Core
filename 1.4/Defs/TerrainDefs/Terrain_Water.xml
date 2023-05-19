@@ -2,7 +2,7 @@
 <Defs>
 	<!-- ================ Hot Springs ================ -->
 	<VFECore.ActiveTerrainDef ParentName="WaterShallowBase">
-		<defName>RG_HotSpring</defName>
+		<defName>RG_HotSpringShallow</defName>
 		<label>hot spring</label>
 		<texturePath>Terrain/Surfaces/HotSpring</texturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>

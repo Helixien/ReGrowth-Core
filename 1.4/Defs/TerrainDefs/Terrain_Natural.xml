@@ -334,6 +334,44 @@
 			</li>
 		</tools>
 	</TerrainDef>
+	<!-- ================ Boiling Soil ================ -->
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>RG_BoilingSoil</defName>
+		<label>soil</label>
+		<texturePath>Terrain/Surfaces/Soil</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+			<li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>dirt</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>DirtInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+	</TerrainDef>
 	<!-- ================ Anima Terrain	================ -->
 	<!-- ================ Anima Soil ================ -->
 	<TerrainDef ParentName="NaturalTerrainBase">

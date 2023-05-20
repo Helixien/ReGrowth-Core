@@ -45,7 +45,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName="PlantHumpShroom"]/plant/visualSizeRange</xpath>
 					<value>
-						<visualSizeRange>0.5~0.8</visualSizeRange>
+						<visualSizeRange>0.4~0.7</visualSizeRange>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">

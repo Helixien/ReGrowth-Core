@@ -415,6 +415,9 @@
 							<li>IceSheet</li>
 							<li>SeaIce</li>
 							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
+							<li>TemperateSwamp</li>
 							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
 						</disallowedBiomes>
 					</li>
@@ -429,6 +432,104 @@
 							<li>IceSheet</li>
 							<li>SeaIce</li>
 							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
+							<li>TemperateSwamp</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Outer Rim - Galactic Republic ====================== -->
+			<li Class="PatchOperationAddModExtension" MayRequire="Neronix17.OuterRim.GalacticRepublic">
+				<xpath>Defs/FactionDef[defName="OuterRim_GalacticRepublic"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Outer Rim - Old Republic ====================== -->
+			<li Class="PatchOperationAddModExtension" MayRequire="Neronix17.OuterRim.OldRepublic">
+				<xpath>Defs/FactionDef[defName="OuterRim_OldRepublic" or defName="OuterRim_SithEmpire"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Outer Rim - Mandalore ====================== -->
+			<li Class="PatchOperationAddModExtension" MayRequire="Neronix17.OuterRim.Mandalore">
+				<xpath>Defs/FactionDef[defName="OuterRim_DeathWatch"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Outer Rim - Chiss Ascendancy ====================== -->
+			<li Class="PatchOperationAddModExtension" MayRequire="Neronix17.OuterRim.Csilla">
+				<xpath>Defs/FactionDef[defName="OuterRim_ChissAscendancy"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Outer Rim - Rebel Alliance ====================== -->
+			<li Class="PatchOperationAddModExtension" MayRequire="Neronix17.OuterRim.RebelAlliance">
+				<xpath>Defs/FactionDef[defName="OuterRim_RebelAlliance"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+						</disallowedBiomes>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Outer Rim - Galactic Empire ====================== -->
+			<li Class="PatchOperationAddModExtension" MayRequire="Neronix17.OuterRim.GalacticEmpire">
+				<xpath>Defs/FactionDef[defName="OuterRim_GalacticEmpire"]</xpath>
+				<value>
+					<li Class="VFECore.FactionDefExtension">
+						<disallowedBiomes>
+							<li>IceSheet</li>
+							<li>SeaIce</li>
+							<li>ExtremeDesert</li>
+							<li>ColdBog</li>
+							<li>TropicalSwamp</li>
 							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
 						</disallowedBiomes>
 					</li>

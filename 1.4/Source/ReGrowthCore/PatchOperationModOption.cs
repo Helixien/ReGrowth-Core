@@ -10,26 +10,42 @@ namespace ReGrowthCore
         public string modOptionLabel;
         public bool defaultValue;
         private List<PatchOperation> operations;
+        public List<string> mods;
         private PatchOperation lastFailedOperation;
         public override bool ApplyWorker(XmlDocument xml)
         {
-            if (!ReGrowthMod.settings.patchOperationStates.TryGetValue(id, out var enabled))
+            bool flag = mods is null;
+            if (!flag)
             {
-                ReGrowthMod.settings.patchOperationStates[id] = enabled = defaultValue;
-            }
-            if (enabled)
-            {
-                foreach (PatchOperation operation in operations)
+                for (int i = 0; i < mods.Count; i++)
                 {
-                    if (!operation.Apply(xml))
+                    if (ModLister.HasActiveModWithName(mods[i]))
                     {
-                        lastFailedOperation = operation;
-                        return false;
+                        flag = true;
+                        break;
                     }
                 }
-                return true;
             }
-            return false;
+            if (flag)
+            {
+                if (!ReGrowthMod.settings.patchOperationStates.TryGetValue(id, out var enabled))
+                {
+                    ReGrowthMod.settings.patchOperationStates[id] = enabled = defaultValue;
+                }
+                if (enabled)
+                {
+                    foreach (PatchOperation operation in operations)
+                    {
+                        if (!operation.Apply(xml))
+                        {
+                            lastFailedOperation = operation;
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+            }
+            return true;
         }
 
         public override void Complete(string modIdentifier)

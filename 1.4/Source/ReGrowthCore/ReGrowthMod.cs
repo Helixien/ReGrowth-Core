@@ -39,6 +39,10 @@ namespace ReGrowthCore
             list.Gap(5);
             foreach (var patch in Content.Patches.OfType<PatchOperationModOption>())
             {
+                if (patch.mods != null && patch.mods.Any(x => ModLister.HasActiveModWithName(x)) is false)
+                {
+                    continue;
+                }
                 if (!settings.patchOperationStates.TryGetValue(patch.id, out var state))
                 {
                     settings.patchOperationStates[patch.id] = state = patch.defaultValue;

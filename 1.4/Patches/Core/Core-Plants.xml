@@ -235,6 +235,9 @@
 		<defaultValue>True</defaultValue>
 		<modOptionLabel>Make anima tree replantable</modOptionLabel>
 		<id>RG_AnimaTreeReplant</id>
+		<mods>
+			<li>Royalty</li>
+		</mods>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/minifiedDef</xpath>
@@ -249,6 +252,9 @@
 		<defaultValue>True</defaultValue>
 		<modOptionLabel>Make gauranlen tree replantable</modOptionLabel>
 		<id>RG_GauranlenTreeReplant</id>
+		<mods>
+			<li>Ideology</li>
+		</mods>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/minifiedDef</xpath>
@@ -263,6 +269,9 @@
 		<defaultValue>True</defaultValue>
 		<modOptionLabel>Make polux tree replantable</modOptionLabel>
 		<id>RG_PoluxTreeReplant</id>
+		<mods>
+			<li>Biotech</li>
+		</mods>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_TreePolux"]/minifiedDef</xpath>

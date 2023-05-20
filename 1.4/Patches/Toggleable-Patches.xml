@@ -139,6 +139,13 @@
 					<plantDensity>1.8</plantDensity>
 				</value>
 			</li>
+			<!-- ================ Biome Boiling Forest ================ -->
+			<li Class="PatchOperationReplace" MayRequire="ReGrowth.BOTR.BoilingForest">
+				<xpath>/Defs/BiomeDef[defName = "RG_BoilingForest"]/plantDensity</xpath>
+				<value>
+					<plantDensity>0.9</plantDensity>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 	<!-- ================ Realistic Faction Placement ================ -->

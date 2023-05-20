@@ -20,6 +20,12 @@
 					<clipFolderPath>Weapon/RG_Revolver</clipFolderPath>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/SoundDef[defName="Shot_AssaultRifle"]/subSounds/li/grains/li[1]/clipFolderPath</xpath>
+				<value>
+					<clipFolderPath>Weapon/RG_AssaultRifle</clipFolderPath>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

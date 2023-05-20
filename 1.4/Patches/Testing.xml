@@ -26,6 +26,12 @@
 					<clipFolderPath>Weapon/RG_AssaultRifle</clipFolderPath>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace" MayRequire="sarg.alphabiomes">
+				<xpath>/Defs/BiomeDef[defName="AB_IdyllicMeadows"]/label</xpath>
+				<value>
+					<label>Idyllic Moadows</label>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

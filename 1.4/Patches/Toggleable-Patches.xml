@@ -15,12 +15,12 @@
 		</operations>
 	</Operation>
 	<!-- ================ Replantable Anima Tree ================ -->
-	<Operation Class="ReGrowthCore.PatchOperationModOption" MayRequire="Ludeon.RimWorld.Royalty">
-		<defaultValue>True</defaultValue>
+	<Operation Class="ReGrowthCore.PatchOperationModOption">
+		<defaultValue>False</defaultValue>
 		<label>Make anima tree replantable</label>
 		<id>RG_AnimaTreeReplant</id>
 		<operations>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Royalty">
 				<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/minifiedDef</xpath>
 				<value>
 					<minifiedDef>MinifiedTree</minifiedDef>
@@ -29,12 +29,12 @@
 		</operations>
 	</Operation>
 	<!-- ================ Replantable Gauranlen Tree ================ -->
-	<Operation Class="ReGrowthCore.PatchOperationModOption" MayRequire="Ludeon.RimWorld.Ideology">
-		<defaultValue>True</defaultValue>
+	<Operation Class="ReGrowthCore.PatchOperationModOption">
+		<defaultValue>False</defaultValue>
 		<label>Make gauranlen tree replantable</label>
 		<id>RG_GauranlenTreeReplant</id>
 		<operations>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
 				<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/minifiedDef</xpath>
 				<value>
 					<minifiedDef>MinifiedTree</minifiedDef>
@@ -43,12 +43,12 @@
 		</operations>
 	</Operation>
 	<!-- ================ Replantable Polux Tree ================ -->
-	<Operation Class="ReGrowthCore.PatchOperationModOption" MayRequire="Ludeon.RimWorld.Biotech">
-		<defaultValue>True</defaultValue>
+	<Operation Class="ReGrowthCore.PatchOperationModOption">
+		<defaultValue>False</defaultValue>
 		<label>Make polux tree replantable</label>
 		<id>RG_PoluxTreeReplant</id>
 		<operations>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Biotech">
 				<xpath>/Defs/ThingDef[defName="Plant_TreePolux"]/minifiedDef</xpath>
 				<value>
 					<minifiedDef>MinifiedTree</minifiedDef>

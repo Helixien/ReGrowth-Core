@@ -26,6 +26,12 @@
 					<clipFolderPath>Weapon/RG_AssaultRifle</clipFolderPath>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/SoundDef[defName="Shot_MachinePistol"]/subSounds/li/grains/li[1]/clipFolderPath</xpath>
+				<value>
+					<clipFolderPath>Weapon/RG_MachinePistol</clipFolderPath>
+				</value>
+			</li>
 			<li Class="PatchOperationReplace" MayRequire="sarg.alphabiomes">
 				<xpath>/Defs/BiomeDef[defName="AB_IdyllicMeadows"]/label</xpath>
 				<value>

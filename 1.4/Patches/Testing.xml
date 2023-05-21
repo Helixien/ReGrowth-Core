@@ -2,36 +2,6 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/SoundDef[defName="Shot_BoltActionRifle"]/subSounds/li/grains/li[1]/clipFolderPath</xpath>
-				<value>
-					<clipFolderPath>Weapon/RG_BoltActionRifle</clipFolderPath>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/SoundDef[defName="Shot_Autopistol"]/subSounds/li/grains/li[1]/clipFolderPath</xpath>
-				<value>
-					<clipFolderPath>Weapon/RG_AutoPistol</clipFolderPath>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/SoundDef[defName="Shot_Revolver"]/subSounds/li/grains/li[1]/clipFolderPath</xpath>
-				<value>
-					<clipFolderPath>Weapon/RG_Revolver</clipFolderPath>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/SoundDef[defName="Shot_AssaultRifle"]/subSounds/li/grains/li[1]/clipFolderPath</xpath>
-				<value>
-					<clipFolderPath>Weapon/RG_AssaultRifle</clipFolderPath>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/SoundDef[defName="Shot_MachinePistol"]/subSounds/li/grains/li[1]/clipFolderPath</xpath>
-				<value>
-					<clipFolderPath>Weapon/RG_MachinePistol</clipFolderPath>
-				</value>
-			</li>
 			<li Class="PatchOperationReplace" MayRequire="sarg.alphabiomes">
 				<xpath>/Defs/BiomeDef[defName="AB_IdyllicMeadows"]/label</xpath>
 				<value>

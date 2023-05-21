@@ -74,7 +74,11 @@
     <Compile Include="HarmonyPatches\ReplaceConcreteWithAncientConcrete.cs" />
     <Compile Include="HediffCompPreventThought.cs" />
     <Compile Include="ModExtensions\BathingExtension.cs" />
-    <Compile Include="PatchOperationModOption.cs" />
+    <Compile Include="PatchOperations\PatchOperationModOption.cs" />
+    <Compile Include="PatchOperations\PatchOperationModSettings.cs" />
+    <Compile Include="PatchOperations\PatchOperationSliderFloat.cs" />
+    <Compile Include="PatchOperations\PatchOperationSliderInt.cs" />
+    <Compile Include="WeatherOverlay_FogMotes.cs" />
     <Compile Include="ReGrowthSettings.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="UI\Designator_ZoneAdd_Bathe.cs" />
@@ -88,7 +92,7 @@
     <Compile Include="RGDefOf.cs" />
     <Compile Include="Things\DevilDust_Tornado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WeatherDecider_CurrentWeatherCommonality_Patch.cs" />
+    <Compile Include="HarmonyPatches\WeatherDecider_CurrentWeatherCommonality_Patch.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Publicizer">

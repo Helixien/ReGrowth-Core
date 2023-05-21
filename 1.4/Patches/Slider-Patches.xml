@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ Bathe joy activity chance ================ -->
+	<Operation Class="ReGrowthCore.PatchOperationSliderFloat">
+		<label>Base chance of bathing activity</label>
+		<tooltip>Adjust the base chance of having this activity for colonists</tooltip>
+		<id>RG_BaseChanceBathingActivity</id>
+		<xpath>Defs/JoyGiverDef[defName="RG_BatheJoyGiver"]/baseChance</xpath>
+		<range>0~3</range>
+		<defaultValue>1.2</defaultValue>
+	</Operation>
+	
+</Patch>

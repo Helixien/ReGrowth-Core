@@ -3,7 +3,7 @@
 	<!-- ================ Biome Worldmap Texture Replacer================ -->
 	<Operation Class="ReGrowthCore.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
-		<modOptionLabel>Enable new worldmap textures.</modOptionLabel>
+		<label>Enable new worldmap textures.</label>
 		<id>RG_NewWorldmapTextures</id>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -17,7 +17,7 @@
 	<!-- ================ Replantable Anima Tree ================ -->
 	<Operation Class="ReGrowthCore.PatchOperationModOption" MayRequire="Ludeon.RimWorld.Royalty">
 		<defaultValue>True</defaultValue>
-		<modOptionLabel>Make anima tree replantable</modOptionLabel>
+		<label>Make anima tree replantable</label>
 		<id>RG_AnimaTreeReplant</id>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -31,7 +31,7 @@
 	<!-- ================ Replantable Gauranlen Tree ================ -->
 	<Operation Class="ReGrowthCore.PatchOperationModOption" MayRequire="Ludeon.RimWorld.Ideology">
 		<defaultValue>True</defaultValue>
-		<modOptionLabel>Make gauranlen tree replantable</modOptionLabel>
+		<label>Make gauranlen tree replantable</label>
 		<id>RG_GauranlenTreeReplant</id>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -45,7 +45,7 @@
 	<!-- ================ Replantable Polux Tree ================ -->
 	<Operation Class="ReGrowthCore.PatchOperationModOption" MayRequire="Ludeon.RimWorld.Biotech">
 		<defaultValue>True</defaultValue>
-		<modOptionLabel>Make polux tree replantable</modOptionLabel>
+		<label>Make polux tree replantable</label>
 		<id>RG_PoluxTreeReplant</id>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -59,7 +59,7 @@
 	<!-- ================ Plant Density ================ -->
 	<Operation Class="ReGrowthCore.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
-		<modOptionLabel>Increase vanilla plant density</modOptionLabel>
+		<label>Increase vanilla plant density</label>
 		<id>RG_IncreaseVanillaPlantDensity</id>
 		<operations>
 			<!-- ================ Biome Boreal Forest ================ -->
@@ -151,7 +151,7 @@
 	<!-- ================ Realistic Faction Placement ================ -->
 	<Operation Class="ReGrowthCore.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
-		<modOptionLabel>Realistic faction placement</modOptionLabel>
+		<label>Realistic faction placement</label>
 		<id>RG_RealisticFactionPlacement</id>
 		<operations>
 			<li Class="PatchOperationAddModExtension">

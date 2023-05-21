@@ -4,35 +4,16 @@ using Verse;
 
 namespace ReGrowthCore
 {
-    public class PatchOperationModOption : PatchOperation
+    public class PatchOperationModOption : PatchOperationModSettings
     {
-        public string id;
-        public string modOptionLabel;
         public bool defaultValue;
         private List<PatchOperation> operations;
-        public List<string> mods;
         private PatchOperation lastFailedOperation;
         public override bool ApplyWorker(XmlDocument xml)
         {
-            bool flag = mods is null;
-            if (!flag)
+            if (CanRun())
             {
-                for (int i = 0; i < mods.Count; i++)
-                {
-                    if (ModLister.HasActiveModWithName(mods[i]))
-                    {
-                        flag = true;
-                        break;
-                    }
-                }
-            }
-            if (flag)
-            {
-                if (!ReGrowthMod.settings.patchOperationStates.TryGetValue(id, out var enabled))
-                {
-                    ReGrowthMod.settings.patchOperationStates[id] = enabled = defaultValue;
-                }
-                if (enabled)
+                if (ReGrowthMod.settings.PatchOperationEnabled(id, defaultValue))
                 {
                     foreach (PatchOperation operation in operations)
                     {

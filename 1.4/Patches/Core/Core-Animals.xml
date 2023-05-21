@@ -69,7 +69,7 @@
 				<xpath>/Defs/PawnKindDef[defName = "Boomalope"]/lifeStages/li[1]/dessicatedBodyGraphicData</xpath>
 				<value>
 					<dessicatedBodyGraphicData>
-						<texPath>Things/Pawn/Animal/Boomalope/CalfBoomalope_dessicated</texPath>
+						<texPath>Things/Pawn/Animal/Boomalope/Dessicated_CalfBoomalope</texPath>
 						<drawSize>1.2</drawSize>
 					</dessicatedBodyGraphicData>
 				</value>
@@ -78,7 +78,7 @@
 				<xpath>/Defs/PawnKindDef[defName = "Boomalope"]/lifeStages/li[1]/corpseGraphicData</xpath>
 				<value>
 					<corpseGraphicData>
-						<texPath>Things/Pawn/Animal/Boomalope/CalfBoomalope_corpse</texPath>
+						<texPath>Things/Pawn/Animal/Boomalope/Corpse_CalfBoomalope</texPath>
 						<drawSize>1.2</drawSize>
 					</corpseGraphicData>
 				</value>

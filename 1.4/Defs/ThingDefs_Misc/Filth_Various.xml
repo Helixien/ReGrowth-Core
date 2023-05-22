@@ -1,54 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="BaseFilth">
+	<!-- ================ Leaf Base ================ -->
+	<ThingDef Name="RG_BaseFilthLeaves" ParentName="BaseFilth" Abstract="True">
+		<hideAtSnowDepth>0.3</hideAtSnowDepth>
+		<filth>
+			<disappearsInDays>45~50</disappearsInDays>
+			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+			<rainWashes>false</rainWashes>
+		</filth>
+		<statBases>
+			<Beauty>-8</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+		</statBases>
+	</ThingDef>
+	<!-- ================ Leaf Filth ================ -->
+	<ThingDef ParentName="RG_BaseFilthLeaves">
 		<defName>RG_Filth_LeavesTreeOak</defName>
 		<label>leaves</label>
 		<graphicData>
 			<texPath>Things/Filth/LeafShapeOne</texPath>
 		</graphicData>
-		<hideAtSnowDepth>0.3</hideAtSnowDepth>
-		<filth>
-			<disappearsInDays>45~50</disappearsInDays>
-			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
-			<rainWashes>false</rainWashes>
-		</filth>
-		<statBases>
-			<Beauty>-8</Beauty>
-			<BeautyOutdoors>0</BeautyOutdoors>
-		</statBases>
 	</ThingDef>
-	<ThingDef ParentName="BaseFilth">
+	<ThingDef ParentName="RG_BaseFilthLeaves">
 		<defName>RG_Filth_LeavesTreePopolar</defName>
 		<label>leaves</label>
 		<graphicData>
 			<texPath>Things/Filth/LeafShapeTwo</texPath>
 		</graphicData>
-		<hideAtSnowDepth>0.3</hideAtSnowDepth>
-		<filth>
-			<disappearsInDays>45~50</disappearsInDays>
-			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
-			<rainWashes>false</rainWashes>
-		</filth>
-		<statBases>
-			<Beauty>-8</Beauty>
-			<BeautyOutdoors>0</BeautyOutdoors>
-		</statBases>
 	</ThingDef>
-	<ThingDef ParentName="BaseFilth">
+	<ThingDef ParentName="RG_BaseFilthLeaves">
 		<defName>RG_Filth_LeavesTreeBirch</defName>
 		<label>leaves</label>
 		<graphicData>
 			<texPath>Things/Filth/LeafShapeThree</texPath>
 		</graphicData>
-		<hideAtSnowDepth>0.3</hideAtSnowDepth>
-		<filth>
-			<disappearsInDays>45~50</disappearsInDays>
-			<cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
-			<rainWashes>false</rainWashes>
-		</filth>
-		<statBases>
-			<Beauty>-8</Beauty>
-			<BeautyOutdoors>0</BeautyOutdoors>
-		</statBases>
 	</ThingDef>
 </Defs>

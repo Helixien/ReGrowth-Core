@@ -88,7 +88,7 @@
 								<li><from>Marsh</from><to>RG_HotSpring</to></li>
 								<li><from>SoftSand</from><to>RG_HotSpringSand</to></li>
 								<li><from>RG_HotSpringSand</from><to>Gravel</to></li>
-								<li><from>RG_AspenSoil</from><to>SoftSand</to></li>
+								<li><from>RG_BoilingSoil</from><to>SoftSand</to></li>
 								<li><from>Gravel</from><to>MossyTerrain</to></li>
 								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
 								<li><from>MarshyTerrain</from><to>Marsh</to></li>

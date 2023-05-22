@@ -3,7 +3,8 @@
 	<!-- ================ Biome Worldmap Texture Replacer================ -->
 	<Operation Class="ReGrowthCore.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
-		<label>Enable new worldmap textures.</label>
+		<label>Enable new worldmap textures</label>
+		<tooltip>Switches some of the world map biome textures for better, more fitting ones.</tooltip>
 		<id>RG_NewWorldmapTextures</id>
 		<operations>
 			<li Class="PatchOperationReplace">
@@ -18,6 +19,7 @@
 	<Operation Class="ReGrowthCore.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Make anima tree replantable</label>
+		<tooltip>Allows for the anima tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_AnimaTreeReplant</id>
 		<mods>
 			<li>Royalty</li>
@@ -35,6 +37,7 @@
 	<Operation Class="ReGrowthCore.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Make gauranlen tree replantable</label>
+		<tooltip>Allows for the gauranlen tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_GauranlenTreeReplant</id>
 		<mods>
 			<li>Ideology</li>
@@ -52,6 +55,7 @@
 	<Operation Class="ReGrowthCore.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Make polux tree replantable</label>
+		<tooltip>Allows for the polux tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_PoluxTreeReplant</id>
 		<mods>
 			<li>Biotech</li>
@@ -69,6 +73,7 @@
 	<Operation Class="ReGrowthCore.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Increase vanilla plant density</label>
+		<tooltip>Makes all biomes more lush. Does only affect performance on low end machines. All ReGrowth mods are build around this setting enabled.</tooltip>
 		<id>RG_IncreaseVanillaPlantDensity</id>
 		<operations>
 			<!-- ================ Biome Boreal Forest ================ -->
@@ -168,6 +173,7 @@
 	<Operation Class="ReGrowthCore.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable realistic faction placement</label>
+		<tooltip>Prevent factions from spawning in extreme biomes like sea ice or extreme deserts unless it makes logical sense for them. Might lead to issues on tiny world maps.</tooltip>
 		<id>RG_RealisticFactionPlacement</id>
 		<operations>
 			<li Class="PatchOperationAddModExtension">

@@ -11,12 +11,84 @@
 					<xpath>/Defs/VFEMedieval.TerrainListDef[defName="VFEM_MoatableTerrain"]/terrainPairsByBiomes</xpath>
 					<value>
 						<li>
+							<biome>RG_TemperateGrassland</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_TemperateSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<li>
 							<biome>TemperateForest</biome>
 							<terrainPairs>
 								<li><from>Marsh</from><to>WaterShallow</to></li>
 								<li><from>SoftSand</from><to>Sand</to></li>
 								<li><from>Sand</from><to>Gravel</to></li>
 								<li><from>RG_TemperateSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<li>
+							<biome>BorealForest</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_BorealSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<li>
+							<biome>ColdBog</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_BorealSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<li>
+							<biome>Tundra</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_TundraSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<li MayRequire="ReGrowth.BOTR.AspenForest">
+							<biome>RG_AspenForest</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_AspenSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<li MayRequire="ReGrowth.BOTR.BoilingForest">
+							<biome>RG_BoilingForest</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>RG_HotSpring</to></li>
+								<li><from>SoftSand</from><to>RG_HotSpringSand</to></li>
+								<li><from>RG_HotSpringSand</from><to>Gravel</to></li>
+								<li><from>RG_AspenSoil</from><to>SoftSand</to></li>
 								<li><from>Gravel</from><to>MossyTerrain</to></li>
 								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
 								<li><from>MarshyTerrain</from><to>Marsh</to></li>

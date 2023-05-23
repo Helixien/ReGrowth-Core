@@ -153,67 +153,6 @@
 					<leaflessGraphicPath>Things/Plant/Leafless/TreeWillow_Leafless</leaflessGraphicPath>
 				</value>
 			</li>
-			<!-- ================================ Leaf Spawner for Autumn leafs	====================== -->
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]</xpath>
-				<value>
-					<comps>
-						<li Class="CompProperties_Spawner">
-							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
-							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
-							<spawnCount>1</spawnCount>
-							<spawnIntervalRange>3000~8000</spawnIntervalRange>
-							<spawnMaxAdjacent>3</spawnMaxAdjacent>
-							<saveKeysPrefix>leaves</saveKeysPrefix>
-						</li>
-					</comps>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]</xpath>
-				<value>
-					<comps>
-						<li Class="CompProperties_Spawner">
-							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
-							<thingToSpawn>RG_Filth_LeavesTreePopolar</thingToSpawn>
-							<spawnCount>1</spawnCount>
-							<spawnIntervalRange>3000~8000</spawnIntervalRange>
-							<spawnMaxAdjacent>3</spawnMaxAdjacent>
-							<saveKeysPrefix>leaves</saveKeysPrefix>
-						</li>
-					</comps>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]</xpath>
-				<value>
-					<comps>
-						<li Class="CompProperties_Spawner">
-							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
-							<thingToSpawn>RG_Filth_LeavesTreeBirch</thingToSpawn>
-							<spawnCount>1</spawnCount>
-							<spawnIntervalRange>3000~8000</spawnIntervalRange>
-							<spawnMaxAdjacent>3</spawnMaxAdjacent>
-							<saveKeysPrefix>leaves</saveKeysPrefix>
-						</li>
-					</comps>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]</xpath>
-				<value>
-					<comps>
-						<li Class="CompProperties_Spawner">
-							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
-							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
-							<spawnCount>1</spawnCount>
-							<spawnIntervalRange>3000~8000</spawnIntervalRange>
-							<spawnMaxAdjacent>3</spawnMaxAdjacent>
-							<saveKeysPrefix>leaves</saveKeysPrefix>
-						</li>
-					</comps>
-				</value>
-			</li>
 			<!-- ================================ HD vanilla berries ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="RawBerries"]/graphicData/texPath</xpath>

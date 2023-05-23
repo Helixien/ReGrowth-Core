@@ -6,7 +6,7 @@ namespace ReGrowthCore
     {
         public override bool ShouldSpawn()
         {
-            if (!parent.Spawned || !ReGrowthMod.settings.enableAutumnLeaveSpawners)
+            if (!parent.Spawned)
             {
                 return false;
             }

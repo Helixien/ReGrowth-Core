@@ -1,0 +1,115 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using Verse;
+
+namespace ModSettingsFramework
+{
+    public class ModSettingsContainer : IExposable
+    {
+        public string packageID;
+        public ModSettingsFrameworkMod modHandle;
+        public Dictionary<string, bool> patchOperationStates = new Dictionary<string, bool>();
+        public Dictionary<string, float> patchOperationValues = new Dictionary<string, float>();
+        public Dictionary<Type, PatchOperationWorker> patchWorkers = new Dictionary<Type, PatchOperationWorker>();
+        public bool PatchOperationEnabled(string id, bool defaultValue)
+        {
+            if (!patchOperationStates.TryGetValue(id, out var enabled))
+            {
+                patchOperationStates[id] = enabled = defaultValue;
+            }
+            return enabled;
+        }
+
+        public float PatchOperationValue(string id, float defaultValue)
+        {
+            if (!patchOperationValues.TryGetValue(id, out var value))
+            {
+                patchOperationValues[id] = value = defaultValue;
+            }
+            return value;
+        }
+
+        private Vector2 scrollPosition = Vector2.zero;
+        private float scrollHeight;
+
+        private List<PatchOperationModSettings> _patchOperationMods;
+        public List<PatchOperationModSettings> PatchOperationModSettings => _patchOperationMods 
+            ??= LoadedModManager.RunningMods.SelectMany(x => x.Patches.OfType<PatchOperationModSettings>())
+            .Where(x => x.SettingsContainer == this && x.CanRun()).ToList();
+        public void DoSettingsWindowContents(Rect inRect)
+        {
+            var listingStandard = new Listing_Standard();
+            Rect rect = new Rect(inRect.x, inRect.y, inRect.width, inRect.height);
+            Rect rect2 = new Rect(0f, 0f, inRect.width - 30f, scrollHeight);
+            Widgets.BeginScrollView(rect, ref scrollPosition, rect2, true);
+            scrollHeight = 0;
+            listingStandard.Begin(rect2);
+            Text.Font = GameFont.Small;
+            var curPatches = PatchOperationModSettings.ListFullCopy();
+            foreach (var category in DefDatabase<ModOptionCategoryDef>.AllDefs.OrderBy(x => x.order))
+            {
+                var patchesInCategory = curPatches.Where(x => x.category == category.defName).OrderBy(x => x.order).ToList();
+                if (patchesInCategory.Any())
+                {
+                    var height = patchesInCategory.Sum(x => x.SettingsHeight());
+                    var sectionSize = height + 24 + 8;
+                    scrollHeight += sectionSize + 12 + 6;
+                    var section = listingStandard.BeginSection(sectionSize);
+                    section.Label(category.label);
+                    section.GapLine(8);
+                    foreach (var patch in patchesInCategory)
+                    {
+                        patch.DoSettings(this, section);
+                    }
+                    listingStandard.EndSection(section);
+                    listingStandard.Gap();
+                    foreach (var patch in patchesInCategory)
+                    {
+                        curPatches.Remove(patch);
+                    }
+                }
+            }
+            foreach (var patch in curPatches)
+            {
+                patch.DoSettings(this, listingStandard);
+                scrollHeight += patch.SettingsHeight();
+            }
+
+            listingStandard.End();
+            Widgets.EndScrollView();
+        }
+
+        public void ExposeData()
+        {
+            Scribe_Values.Look(ref packageID, "packageID");
+            Scribe_Collections.Look(ref patchOperationStates, "patchOperationStates", LookMode.Value, LookMode.Value);
+            Scribe_Collections.Look(ref patchOperationValues, "patchOperationValues", LookMode.Value, LookMode.Value);
+            Scribe_Collections.Look(ref patchWorkers, "workers", LookMode.Value, LookMode.Deep);
+            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            {
+                patchOperationStates ??= new Dictionary<string, bool>();
+                patchOperationValues ??= new Dictionary<string, float>();
+                foreach (var mod in LoadedModManager.RunningMods)
+                {
+                    foreach (var worker in mod.Patches.OfType<PatchOperationWorker>())
+                    {
+                        if (worker.modPackageSettingsID != null && worker.modPackageSettingsID.ToLower() == packageID.ToLower()
+                            || mod.PackageIdPlayerFacing.ToLower() == packageID.ToLower())
+                        {
+                            if (patchWorkers.TryGetValue(worker.GetType(), out var matchingSavedWorker))
+                            {
+                                worker.CopyFrom(matchingSavedWorker);
+                            }
+                            else
+                            {
+                                patchWorkers[worker.GetType()] = worker;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

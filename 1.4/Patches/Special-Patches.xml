@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- ================ Toggle weathers ================ -->
+	<Operation Class="ReGrowthCore.ReGrowthCore_WeatherStates">
+		<id>RG_ReGrowthCore_WeatherStates</id>
+		<category>RG_WeatherToggles</category>
+	</Operation>
+</Patch>

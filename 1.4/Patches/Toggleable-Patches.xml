@@ -1,11 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+
+	<!-- ================================ Leaf Spawner for Autumn leafs	====================== -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable autumn leaves spawners</label>
+		<tooltip>Enables autumn leaves spawners on trees.</tooltip>
+		<id>RG_EnableAutumnLeavesSpawners</id>
+		<category>RG_Core</category>
+		<order>1</order>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreePopolar</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeBirch</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeMaple"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>3000~8000</spawnIntervalRange>
+							<spawnMaxAdjacent>3</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 	<!-- ================ Biome Worldmap Texture Replacer================ -->
-	<Operation Class="ReGrowthCore.PatchOperationModOption">
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable new worldmap textures</label>
 		<tooltip>Switches some of the world map biome textures for better, more fitting ones.</tooltip>
 		<id>RG_NewWorldmapTextures</id>
+		<category>RG_Core</category>
+		<order>3</order>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "Tundra"]/texture</xpath>
@@ -16,11 +90,13 @@
 		</operations>
 	</Operation>
 	<!-- ================ Replantable Anima Tree ================ -->
-	<Operation Class="ReGrowthCore.PatchOperationModOption">
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Make anima tree replantable</label>
 		<tooltip>Allows for the anima tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_AnimaTreeReplant</id>
+		<category>RG_Core</category>
+		<order>5</order>
 		<mods>
 			<li>Royalty</li>
 		</mods>
@@ -34,11 +110,13 @@
 		</operations>
 	</Operation>
 	<!-- ================ Replantable Gauranlen Tree ================ -->
-	<Operation Class="ReGrowthCore.PatchOperationModOption">
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Make gauranlen tree replantable</label>
 		<tooltip>Allows for the gauranlen tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_GauranlenTreeReplant</id>
+		<category>RG_Core</category>
+		<order>6</order>
 		<mods>
 			<li>Ideology</li>
 		</mods>
@@ -52,11 +130,13 @@
 		</operations>
 	</Operation>
 	<!-- ================ Replantable Polux Tree ================ -->
-	<Operation Class="ReGrowthCore.PatchOperationModOption">
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Make polux tree replantable</label>
 		<tooltip>Allows for the polux tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_PoluxTreeReplant</id>
+		<category>RG_Core</category>
+		<order>7</order>
 		<mods>
 			<li>Biotech</li>
 		</mods>
@@ -70,11 +150,13 @@
 		</operations>
 	</Operation>
 	<!-- ================ Plant Density ================ -->
-	<Operation Class="ReGrowthCore.PatchOperationModOption">
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Increase vanilla plant density</label>
 		<tooltip>Makes all biomes more lush. Does only affect performance on low end machines. All ReGrowth mods are build around this setting enabled.</tooltip>
 		<id>RG_IncreaseVanillaPlantDensity</id>
+		<category>RG_Core</category>
+		<order>0</order>
 		<operations>
 			<!-- ================ Biome Boreal Forest ================ -->
 			<li Class="PatchOperationReplace">
@@ -170,11 +252,13 @@
 		</operations>
 	</Operation>
 	<!-- ================ Realistic Faction Placement ================ -->
-	<Operation Class="ReGrowthCore.PatchOperationModOption">
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable realistic faction placement</label>
 		<tooltip>Prevent factions from spawning in extreme biomes like sea ice or extreme deserts unless it makes logical sense for them. Might lead to issues on tiny world maps.</tooltip>
 		<id>RG_RealisticFactionPlacement</id>
+		<category>RG_Core</category>
+		<order>4</order>
 		<operations>
 			<li Class="PatchOperationAddModExtension">
 				<xpath>Defs/FactionDef[defName="OutlanderCivil" or defName="OutlanderRough"]</xpath>

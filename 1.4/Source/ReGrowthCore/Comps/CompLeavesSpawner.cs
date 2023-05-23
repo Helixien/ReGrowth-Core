@@ -7,7 +7,7 @@ namespace ReGrowthCore
     {
         public override bool ShouldSpawn()
         {
-            if (!parent.Spawned || !ReGrowthMod.settings.enableLeaveSpawners)
+            if (!parent.Spawned)
             {
                 return false;
             }

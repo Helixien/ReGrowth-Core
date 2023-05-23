@@ -2,28 +2,45 @@
 using System.Xml;
 using Verse;
 
-namespace ReGrowthCore
+namespace ModSettingsFramework
 {
     public class PatchOperationModOption : PatchOperationModSettings
     {
         public bool defaultValue;
         private List<PatchOperation> operations;
         private PatchOperation lastFailedOperation;
+
+        public override void DoSettings(ModSettingsContainer container, Listing_Standard list)
+        {
+            var value = container.PatchOperationEnabled(id, defaultValue);
+            list.CheckboxLabeled(label, ref value, tooltip);
+            container.patchOperationStates[id] = value;
+            list.Gap(5);
+        }
+
+        public override int SettingsHeight()
+        {
+            return 29;
+        }
         public override bool ApplyWorker(XmlDocument xml)
         {
             if (CanRun())
             {
-                if (ReGrowthMod.settings.PatchOperationEnabled(id, defaultValue))
+                var container = SettingsContainer;
+                if (container != null)
                 {
-                    foreach (PatchOperation operation in operations)
+                    if (container.PatchOperationEnabled(id, defaultValue))
                     {
-                        if (!operation.Apply(xml))
+                        foreach (PatchOperation operation in operations)
                         {
-                            lastFailedOperation = operation;
-                            return false;
+                            if (!operation.Apply(xml))
+                            {
+                                lastFailedOperation = operation;
+                                return false;
+                            }
                         }
+                        return true;
                     }
-                    return true;
                 }
             }
             return true;

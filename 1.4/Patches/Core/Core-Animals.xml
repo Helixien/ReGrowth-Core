@@ -155,11 +155,23 @@
 					<packAnimal>true</packAnimal>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/PawnKindDef[defName = "Bear_Grizzly"]</xpath>
+				<value>
+					<alternateGraphicChance>0.66</alternateGraphicChance>
+					<alternateGraphics>
+						<li>
+							<color>(92,62,45)</color>
+						</li>
+					</alternateGraphics>
+				</value>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName = "Bear_Grizzly"]/lifeStages</xpath>
 				<value>
 					<lifeStages>
 						<li>
+							<label>grizzly cub</label>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Animal/RG_Grizzly/GrizzlyCub</texPath>
 								<drawSize>1.4</drawSize>

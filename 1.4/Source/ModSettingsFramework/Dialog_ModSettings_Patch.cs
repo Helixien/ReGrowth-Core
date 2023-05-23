@@ -3,6 +3,7 @@ using RimWorld;
 using System.Linq;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
 
 namespace ModSettingsFramework
 {
@@ -16,6 +17,7 @@ namespace ModSettingsFramework
                 Text.Font = GameFont.Small;
                 if (Widgets.ButtonText(new Rect(inRect.width - 180, 0f, 150f, 35), "Reset".Translate()))
                 {
+                    SoundDefOf.Tick_Tiny.PlayOneShotOnCamera();
                     var container = ModSettingsFrameworkSettings.modSettingsPerModId[modSettings.modPackOverride.PackageIdPlayerFacing.ToLower()];
                     container.patchOperationStates.Clear();
                     container.patchOperationValues.Clear();

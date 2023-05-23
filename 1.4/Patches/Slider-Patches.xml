@@ -20,7 +20,7 @@
 		<order>9</order>
 		<xpath>Defs/ThingDef[@Name="RG_BaseFilthLeaves"]/statBases/Beauty</xpath>
 		<range>-10~10</range>
-		<defaultValue>-8</defaultValue>
+		<defaultValue>-4</defaultValue>
 	</Operation>
 	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
 		<label>Tweak leaf filth outdoor beauty value</label>

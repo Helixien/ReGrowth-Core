@@ -174,7 +174,7 @@
 							<label>grizzly cub</label>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Animal/RG_Grizzly/GrizzlyCub</texPath>
-								<drawSize>1.4</drawSize>
+								<drawSize>1.2</drawSize>
 								<color>(112,82,65)</color>
 								<shadowData>
 									<volume>(0.4, 0.3, 0.3)</volume>
@@ -183,13 +183,13 @@
 							</bodyGraphicData>
 							<dessicatedBodyGraphicData>
 								<texPath>Things/Pawn/Animal/RG_Grizzly/GrizzlyCub_dessicated</texPath>
-								<drawSize>1.4</drawSize>
+								<drawSize>1.2</drawSize>
 							</dessicatedBodyGraphicData>
 						</li>
 						<li>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Animal/RG_Grizzly/GrizzlyBear</texPath>
-								<drawSize>2</drawSize>
+								<drawSize>1.8</drawSize>
 								<color>(112,82,65)</color>
 								<shadowData>
 									<volume>(0.6, 0.45, 0.45)</volume>
@@ -198,13 +198,13 @@
 							</bodyGraphicData>
 							<dessicatedBodyGraphicData>
 								<texPath>Things/Pawn/Animal/RG_Grizzly/GrizzlyBear_dessicated</texPath>
-								<drawSize>2</drawSize>
+								<drawSize>1.8</drawSize>
 							</dessicatedBodyGraphicData>
 						</li>
 						<li>
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Animal/RG_Grizzly/GrizzlyBear</texPath>
-								<drawSize>2.7</drawSize>
+								<drawSize>2.5</drawSize>
 								<color>(112,82,65)</color>
 								<shadowData>
 									<volume>(0.8, 0.6, 0.6)</volume>
@@ -213,7 +213,7 @@
 							</bodyGraphicData>
 							<dessicatedBodyGraphicData>
 								<texPath>Things/Pawn/Animal/RG_Grizzly/GrizzlyBear_dessicated</texPath>
-								<drawSize>2.7</drawSize>
+								<drawSize>2.5</drawSize>
 							</dessicatedBodyGraphicData>
 						</li>
 					</lifeStages>

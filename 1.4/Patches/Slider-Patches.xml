@@ -6,7 +6,7 @@
 		<tooltip>Adjust the base chance of colonists bathing as a recreational activity.</tooltip>
 		<id>RG_BaseChanceBathingActivity</id>
 		<category>RG_Core</category>
-		<order>8</order>
+		<order>9</order>
 		<xpath>Defs/JoyGiverDef[defName="RG_BatheJoyGiver"]/baseChance</xpath>
 		<range>0~3</range>
 		<defaultValue>1.5</defaultValue>
@@ -17,7 +17,7 @@
 		<tooltip>Adjust the base beauty value of fallen leaf filth.</tooltip>
 		<id>RG_FallenLeafBeauty</id>
 		<category>RG_Core</category>
-		<order>9</order>
+		<order>10</order>
 		<xpath>Defs/ThingDef[@Name="RG_BaseFilthLeaves"]/statBases/Beauty</xpath>
 		<range>-10~10</range>
 		<defaultValue>-4</defaultValue>
@@ -27,7 +27,7 @@
 		<tooltip>Adjust the base outdoor beauty value of fallen leaf filth.</tooltip>
 		<id>RG_FallenLeafBeautyOutdoor</id>
 		<category>RG_Core</category>
-		<order>10</order>
+		<order>11</order>
 		<xpath>Defs/ThingDef[@Name="RG_BaseFilthLeaves"]/statBases/BeautyOutdoors</xpath>
 		<range>-10~10</range>
 		<defaultValue>0</defaultValue>

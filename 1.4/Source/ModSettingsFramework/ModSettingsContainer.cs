@@ -71,7 +71,7 @@ namespace ModSettingsFramework
                     }
                 }
             }
-            foreach (var patch in curPatches)
+            foreach (var patch in curPatches.OrderBy(x => x.order))
             {
                 patch.DoSettings(this, listingStandard);
                 scrollHeight += patch.SettingsHeight();

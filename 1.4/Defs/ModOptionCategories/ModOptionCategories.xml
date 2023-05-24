@@ -2,10 +2,9 @@
 <Defs>
 	<ModSettingsFramework.ModOptionCategoryDef>
 		<defName>RG_Core</defName>
-		<label>Core</label>
+		<label>General</label>
 		<order>0</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
-	
 	<ModSettingsFramework.ModOptionCategoryDef>
 		<defName>RG_WeatherToggles</defName>
 		<label>Weather toggles</label>

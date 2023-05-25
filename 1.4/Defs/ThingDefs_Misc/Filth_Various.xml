@@ -35,4 +35,25 @@
 			<texPath>Things/Filth/LeafShapeThree</texPath>
 		</graphicData>
 	</ThingDef>
+	<!-- ================ Neutroamine Filth ================ -->
+	<ThingDef ParentName="BaseFilth">
+		<defName>RG_Filth_Neutroamine</defName>
+		<label>neutroamine</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>-10</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(94, 159, 166)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
 </Defs>

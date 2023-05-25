@@ -101,7 +101,7 @@
 								<drawSize>1.2</drawSize>
 							</dessicatedBodyGraphicData>
 							<corpseGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Boomalope/Corpse_CalfBoomalope_east</texPath>
+								<texPath>Things/Pawn/Animal/RG_Boomalope/Corpse_CalfBoomalope</texPath>
 								<drawSize>1.0</drawSize>
 							</corpseGraphicData>
 						</li>

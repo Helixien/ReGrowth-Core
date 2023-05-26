@@ -188,6 +188,12 @@
 					<texture>World/Biomes/Replace/Tundra</texture>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/texture</xpath>
+				<value>
+					<texture>World/Biomes/Replace/AridShrubland</texture>
+				</value> 
+			</li>
 		</operations>
 	</Operation>
 	<!-- ================================ Toggle Hotspring Motes ====================== -->

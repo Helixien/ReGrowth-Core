@@ -64,6 +64,7 @@
     <Compile Include="BiomeWorkers\BiomeWorker_NeverSpawn.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_TemperateGrasslands.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_VolcanicIceSheet.cs" />
+    <Compile Include="DeathActionWorker_Neutrolope.cs" />
     <Compile Include="HarmonyPatches\PawnRenderer_RenderPawnAt_Patch.cs" />
     <Compile Include="ModCompatibility.cs" />
     <Compile Include="Comps\CompAutumnLeavesSpawner.cs" />

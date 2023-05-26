@@ -36,9 +36,7 @@ namespace ReGrowthCore
 
 		public static TerrainDef Concrete;
 		public static TerrainDef RG_AncientConcrete;
-		public static JoyGiverDef RG_BatheJoyGiver;
-
-
+		public static ThingDef RG_Filth_Neutroamine;
     }
 }
 

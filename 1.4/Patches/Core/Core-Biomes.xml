@@ -192,7 +192,8 @@
 						<Plant_Agave>0.16</Plant_Agave>
 						<Plant_SaguaroCactus>0.26</Plant_SaguaroCactus>
 						<Plant_TreeDrago>0.20</Plant_TreeDrago>
-						<Plant_Berry>0.7</Plant_Berry>
+<!--						<Plant_Berry>0.2</Plant_Berry>-->
+						<RG_Plant_Raspberry>0.02</RG_Plant_Raspberry>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
 						<Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_PebbleCactus>
 					</wildPlants>
@@ -239,6 +240,12 @@
 				</value>
 			</li>
 			<!-- ================ Biome Extreme Desert ================ -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
+				<value>
+					<Plant_PincushionCactus>1.2</Plant_PincushionCactus>
+				</value>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/baseWeatherCommonalities</xpath>
 				<value>

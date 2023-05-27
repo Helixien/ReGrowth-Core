@@ -33,7 +33,7 @@
 				<ColdBog>0.01</ColdBog>
 				<RG_AspenForest MayRequire="ReGrowth.BOTR.AspenForest">0.05</RG_AspenForest>
 				<RG_BoilingForest MayRequire="ReGrowth.BOTR.BoilingForest">0.04</RG_BoilingForest>
-				<AB_IdyllicMeadows MayRequire="sarg.alphabiomes">0.9</AB_IdyllicMeadows>
+				<AB_IdyllicMeadows MayRequire="sarg.alphabiomes">5</AB_IdyllicMeadows>
 			</wildBiomes>
 			<lifeStageAges>
 				<li>

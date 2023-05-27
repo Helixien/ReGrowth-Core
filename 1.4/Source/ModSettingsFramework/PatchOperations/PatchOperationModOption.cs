@@ -27,20 +27,17 @@ namespace ModSettingsFramework
             if (CanRun())
             {
                 var container = SettingsContainer;
-                if (container != null)
+                if (container != null && container.PatchOperationEnabled(id, defaultValue))
                 {
-                    if (container.PatchOperationEnabled(id, defaultValue))
+                    foreach (PatchOperation operation in operations)
                     {
-                        foreach (PatchOperation operation in operations)
+                        if (!operation.Apply(xml))
                         {
-                            if (!operation.Apply(xml))
-                            {
-                                lastFailedOperation = operation;
-                                return false;
-                            }
+                            lastFailedOperation = operation;
+                            return false;
                         }
-                        return true;
                     }
+                    return true;
                 }
             }
             return true;
@@ -60,7 +57,7 @@ namespace ModSettingsFramework
             {
                 text = text + ", lastFailedOperation=" + lastFailedOperation;
             }
-            return text + ")";
+            return text + ")" + " - " + id;
         }
     }
 }

@@ -3,7 +3,7 @@
 	<!--=============== Animal Toggles for VES ==============-->
 	<AnimalBehaviours.GenericToggleableAnimalDef>
 		<defName>RG_ToggleableVanillaAnimals</defName>
-		<toggleablePawns>			
+		<toggleablePawns>
 			<li>Bear_Grizzly</li>
 			<li>Bear_Polar</li>
 			<li>Ostrich</li>
@@ -60,7 +60,10 @@
 			<li>Fox_Fennec</li>
 			<li>Fox_Red</li>
 			<li>Fox_Arctic</li>
+			<li>WasteRat</li>
+			<li>Toxalope</li>
 			<li>RG_Moa</li>
-		</toggleablePawns>							
+			<li>RG_Neutrolope</li>
+		</toggleablePawns>
 	</AnimalBehaviours.GenericToggleableAnimalDef>
 </Defs>

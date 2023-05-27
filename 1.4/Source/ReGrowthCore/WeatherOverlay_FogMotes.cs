@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
 using System.Linq;
 using Verse;
 
@@ -6,6 +7,7 @@ namespace ReGrowthCore
 {
     public class WeatherOverlay_FogMotes : SkyOverlay
     {
+        public static Dictionary<Map, CachedResult<List<IntVec3>>> unroofedCells = new ();
         public override void TickOverlay(Map map)
         {
             base.TickOverlay(map);
@@ -14,8 +16,18 @@ namespace ReGrowthCore
             {
                 if (Rand.Chance(extension.fogSpawnRate))
                 {
-                    var cell = map.AllCells.Where(x => x.Roofed(map) is false).RandomElement();
-                    FleckMaker.ThrowSmoke(cell.ToVector3Shifted(), map, extension.fogSize);
+                    if (!unroofedCells.TryGetValue(map, out var cache))
+                    {
+                        unroofedCells[map] = cache = new CachedResult<List<IntVec3>>(map.AllCells.Where(x => x.Roofed(map) is false).ToList(), 2500);
+                    }
+                    else if (cache.CacheExpired)
+                    {
+                        cache.Result = map.AllCells.Where(x => x.Roofed(map) is false).ToList();
+                    }
+                    if (cache.Result.TryRandomElement(out var cell))
+                    {
+                        FleckMaker.ThrowSmoke(cell.ToVector3Shifted(), map, extension.fogSize);
+                    }
                 }
             }
         }

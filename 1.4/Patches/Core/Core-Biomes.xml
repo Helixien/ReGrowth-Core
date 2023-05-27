@@ -192,7 +192,7 @@
 						<Plant_Agave>0.16</Plant_Agave>
 						<Plant_SaguaroCactus>0.26</Plant_SaguaroCactus>
 						<Plant_TreeDrago>0.2</Plant_TreeDrago>
-<!--						<Plant_Berry>0.2</Plant_Berry>-->
+						<!--						<Plant_Berry>0.2</Plant_Berry>-->
 						<RG_Plant_Raspberry>0.02</RG_Plant_Raspberry>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
 						<Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_PebbleCactus>
@@ -216,7 +216,8 @@
 				<xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants</xpath>
 				<value>
 					<wildPlants>
-						<Plant_Grass>16</Plant_Grass>
+						<Plant_Grass>12</Plant_Grass>
+						<Plant_Dandelion>0.2</Plant_Dandelion>
 						<Plant_PincushionCactus>1.5</Plant_PincushionCactus>
 						<Plant_SaguaroCactus>0.8</Plant_SaguaroCactus>
 						<Plant_TreeDrago>0.50</Plant_TreeDrago>
@@ -243,7 +244,8 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
 				<value>
-					<Plant_PincushionCactus>1.2</Plant_PincushionCactus>
+					<Plant_PincushionCactus>0.8</Plant_PincushionCactus>
+					<Plant_TreeDrago>0.025</Plant_TreeDrago>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">

@@ -70,6 +70,42 @@
 								<li><from>MarshyTerrain</from><to>Marsh</to></li>
 							</terrainPairs>
 						</li>
+						<li>
+							<biome>AridShrubland</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_AridSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<li>
+							<biome>Desert</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_AridSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<li>
+							<biome>ExtremeDesert</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_AridSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
 						<li MayRequire="ReGrowth.BOTR.AspenForest">
 							<biome>RG_AspenForest</biome>
 							<terrainPairs>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- ================ Generic weathers ================ -->
+	<!-- ================ Overcast ================ -->
 	<WeatherDef>
 		<defName>RG_Overcast</defName>
 		<label>overcast</label>
@@ -42,20 +42,22 @@
 			<li Class="VFECore.WeatherOverlayExtension">
 				<overlayPath>Weather/CloudyWorldOverlay</overlayPath>
 				<copyPropertiesFrom>Weather/FogOverlayWorld</copyPropertiesFrom>
-				<worldOverlayPanSpeed1>0.0005</worldOverlayPanSpeed1>
+				<worldOverlayPanSpeed1>0.0004</worldOverlayPanSpeed1>
 				<worldPanDir1>(1, 1)</worldPanDir1>
-				<worldOverlayPanSpeed2>0.0004</worldOverlayPanSpeed2>
+				<worldOverlayPanSpeed2>0.0003</worldOverlayPanSpeed2>
 				<worldPanDir2>(1, -1)</worldPanDir2>
 			</li>
 		</modExtensions>
 	</WeatherDef>
+	<!-- ================ Breezy (formerly Windy) ================ -->
 	<WeatherDef>
 		<defName>RG_Windy</defName>
-		<label>windy</label>
+		<label>Breezy </label>
 		<description>Consistent wind that reduces ranged weapon accuracy.</description>
 		<repeatable>true</repeatable>
 		<favorability>Neutral</favorability>
-		<windSpeedFactor>1.8</windSpeedFactor>
+		<windSpeedFactor>1.25</windSpeedFactor>
+		<windSpeedOffset>1</windSpeedOffset>
 		<accuracyMultiplier>0.9</accuracyMultiplier>
 		<ambientSounds>
 			<li>Ambient_Wind_Desolate</li>
@@ -85,11 +87,11 @@
 			<saturation>1.25</saturation>
 		</skyColorsNightMid>
 	</WeatherDef>
-	<!-- ================ New rain weathers ================ -->
+	<!-- ================ Drizzle ================ -->
 	<WeatherDef>
 		<defName>RG_Drizzle</defName>
 		<label>drizzle</label>
-		<description>Very fine but prominent rain which slightly reduces ranged weapon accuracy and movement speed.</description>
+		<description>Very light but prominent rain which slightly reduces ranged weapon accuracy and movement speed.</description>
 		<temperatureRange>0~100</temperatureRange>
 		<windSpeedFactor>1.0</windSpeedFactor>
 		<accuracyMultiplier>0.9</accuracyMultiplier>
@@ -146,15 +148,16 @@
 			</li>
 		</modExtensions>
 	</WeatherDef>
+	<!-- ================ Monsoon ================ -->
 	<WeatherDef>
 		<defName>RG_Monsoon</defName>
 		<label>monsoon</label>
-		<description>Extremely intense rainfall and strong winds, extinguishes fires and severely reduces ranged weapon accuracy and movement speed.</description>
+		<description>Intense rainfall and strong winds, extinguishes fires and severely reduces ranged weapon accuracy and movement speed.</description>
 		<temperatureRange>-1~999</temperatureRange>
 		<windSpeedFactor>1.5</windSpeedFactor>
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
-		<perceivePriority>2</perceivePriority>
+		<perceivePriority>3</perceivePriority>
 		<exposedThought>RG_ExtremelyWet</exposedThought>
 		<rainRate>3.0</rainRate>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
@@ -221,6 +224,7 @@
 			</li>
 		</modExtensions>
 	</WeatherDef>
+	<!-- ================ Hail ================ -->
 	<WeatherDef>
 		<defName>RG_Hail</defName>
 		<label>hail</label>
@@ -229,8 +233,8 @@
 		<windSpeedFactor>1.0</windSpeedFactor>
 		<accuracyMultiplier>0.6</accuracyMultiplier>
 		<favorability>Bad</favorability>
-		<perceivePriority>2</perceivePriority>
-		<rainRate>1.0</rainRate>
+		<perceivePriority>3</perceivePriority>
+		<rainRate>0.8</rainRate>
 		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>
@@ -295,7 +299,65 @@
 			</li>
 		</modExtensions>
 	</WeatherDef>
-	<!-- ================ New snow weathers ================ -->
+	<!-- ================ Fog Storm ================ -->
+	<WeatherDef>
+		<defName>RG_FogStorm</defName>
+		<label>fog storm</label>
+		<isBad>true</isBad>
+		<description>text.todo.</description>
+		<windSpeedFactor>1.0</windSpeedFactor>
+		<accuracyMultiplier>0.25</accuracyMultiplier>
+		<favorability>Bad</favorability>
+		<perceivePriority>2</perceivePriority>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Fog</li>
+			<li>VFECore.WeatherOverlay_Custom</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+			</points>
+		</commonalityRainfallFactor>
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+		<modExtensions>
+			<li Class="VFECore.WeatherOverlayExtension">
+				<overlayPath>Weather/Overlays/FogWorld</overlayPath>
+				<copyPropertiesFrom>Weather/FogOverlayWorld</copyPropertiesFrom>
+				<worldOverlayPanSpeed1>0.01</worldOverlayPanSpeed1>
+				<worldPanDir1>(0.25, 0)</worldPanDir1>
+				<worldOverlayPanSpeed2>0.018</worldOverlayPanSpeed2>
+				<worldPanDir2>(0.24, 0)</worldPanDir2>
+			</li>
+		</modExtensions>
+	</WeatherDef>
+	<!-- ================ Fogg Snow ================ -->
 	<WeatherDef>
 		<defName>RG_FoggySnow</defName>
 		<label>foggy snow</label>
@@ -349,6 +411,7 @@
 			<saturation>0.9</saturation>
 		</skyColorsNightMid>
 	</WeatherDef>
+	<!-- ================ Activision Blizzard King ================ -->
 	<WeatherDef>
 		<defName>RG_Blizzard</defName>
 		<label>blizzard</label>
@@ -414,7 +477,7 @@
 			</li>
 		</modExtensions>
 	</WeatherDef>
-	<!-- ================ New desert weathers ================ -->
+	<!-- ================ Foggy Sandstorm ================ -->
 	<WeatherDef>
 		<defName>RG_FoggySandstorm</defName>
 		<label>foggy sandstorm</label>
@@ -475,6 +538,7 @@
 			</li>
 		</modExtensions>
 	</WeatherDef>
+	<!-- ================ Sandstorm ================ -->
 	<WeatherDef>
 		<defName>RG_SandStorm</defName>
 		<label>sandstorm</label>
@@ -533,6 +597,7 @@
 			</li>
 		</modExtensions>
 	</WeatherDef>
+	<!-- ================ Hard Sandstorm ================ -->
 	<WeatherDef>
 		<defName>RG_SandStormHard</defName>
 		<label>hard sandstorm</label>

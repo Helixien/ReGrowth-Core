@@ -194,7 +194,7 @@
 		<defName>RG_Neutrolope</defName>
 		<label>neutrolope</label>
 		<devNote>cow-1</devNote>
-		<description>Engineered for neutroamine production, the boomalope grows a large sac of pure neutroamine on its back. Though it is weak and fragile for its size, other animals avoid it similarly to a boomalope, despite the fact it does not explode when it dies. It can be milked to produce neutrolope.</description>
+		<description>Engineered for neutroamine production, the neutrolope grows a large sac of pure neutroamine on its back. Though it is weak and fragile for its size, other animals avoid it similarly to a boomalope, despite the fact it does not explode when it dies. It can be milked to produce neutroamine.</description>
 		<statBases>
 			<MoveSpeed>3.4</MoveSpeed>
 			<MarketValue>480</MarketValue>

@@ -31,7 +31,8 @@
 					<RG_FoggySnow>2</RG_FoggySnow>
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
-					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_FogStorm>0.4</RG_FogStorm>
+					<RG_Blizzard>0.25</RG_Blizzard>
 				</value>
 			</li>
 			<!-- ================ Biome Boreal Tundra ================ -->
@@ -63,7 +64,8 @@
 					<RG_FoggySnow>2</RG_FoggySnow>
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
-					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_FogStorm>0.4</RG_FogStorm>
+					<RG_Blizzard>0.25</RG_Blizzard>
 				</value>
 			</li>
 			<!-- ================ Biome Cold Bog ================ -->
@@ -97,7 +99,8 @@
 					<RG_FoggySnow>2</RG_FoggySnow>
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
-					<RG_Blizzard>0.5</RG_Blizzard>
+					<RG_FogStorm>0.4</RG_FogStorm>
+					<RG_Blizzard>0.25</RG_Blizzard>
 				</value>
 			</li>
 			<!-- ================ Biome Temperate Forest ================ -->
@@ -133,8 +136,9 @@
 					<RG_FoggySnow>2</RG_FoggySnow>
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
-					<RG_Blizzard>0.5</RG_Blizzard>
-					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_FogStorm>0.4</RG_FogStorm>
+					<RG_Blizzard>0.25</RG_Blizzard>
+					<RG_Monsoon>0.35</RG_Monsoon>
 				</value>
 			</li>
 			<!-- ================ Biome Temperate Grassland ================ -->
@@ -145,8 +149,9 @@
 					<RG_FoggySnow>2</RG_FoggySnow>
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
-					<RG_Blizzard>0.5</RG_Blizzard>
-					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_FogStorm>0.4</RG_FogStorm>
+					<RG_Blizzard>0.25</RG_Blizzard>
+					<RG_Monsoon>0.35</RG_Monsoon>
 				</value>
 			</li>
 			<!-- ================ Biome Temperate Swamp ================ -->
@@ -176,8 +181,9 @@
 					<RG_FoggySnow>2</RG_FoggySnow>
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
-					<RG_Blizzard>0.5</RG_Blizzard>
-					<RG_Monsoon>0.5</RG_Monsoon>
+					<RG_FogStorm>0.4</RG_FogStorm>
+					<RG_Blizzard>0.25</RG_Blizzard>
+					<RG_Monsoon>0.25</RG_Monsoon>
 				</value>
 			</li>
 			<!-- ================ Biome Arid Shrubland ================ -->
@@ -192,7 +198,7 @@
 						<Plant_Agave>0.16</Plant_Agave>
 						<Plant_SaguaroCactus>0.26</Plant_SaguaroCactus>
 						<Plant_TreeDrago>0.2</Plant_TreeDrago>
-						<!--						<Plant_Berry>0.2</Plant_Berry>-->
+						<!--<Plant_Berry>0.2</Plant_Berry>-->
 						<RG_Plant_Raspberry>0.02</RG_Plant_Raspberry>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
 						<Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_PebbleCactus>
@@ -206,9 +212,10 @@
 					<RG_FoggySnow>2</RG_FoggySnow>
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
-					<RG_Monsoon>0.3</RG_Monsoon>
+					<RG_Monsoon>0.15</RG_Monsoon>
+					<RG_FogStorm>0.4</RG_FogStorm>
 					<RG_SandStorm>1</RG_SandStorm>
-					<RG_SandStormHard>0.5</RG_SandStormHard>
+					<RG_SandStormHard>0.15</RG_SandStormHard>
 				</value>
 			</li>
 			<!-- ================ Biome Desert ================ -->
@@ -235,7 +242,8 @@
 					<RG_FoggySnow>2</RG_FoggySnow>
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
-					<RG_Monsoon>0.3</RG_Monsoon>
+					<RG_FogStorm>0.4</RG_FogStorm>
+					<RG_Monsoon>0.2</RG_Monsoon>
 					<RG_SandStorm>1</RG_SandStorm>
 					<RG_SandStormHard>0.5</RG_SandStormHard>
 				</value>
@@ -256,6 +264,7 @@
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
 					<RG_Monsoon>0.3</RG_Monsoon>
+					<RG_FogStorm>0.4</RG_FogStorm>
 					<RG_SandStorm>1</RG_SandStorm>
 					<RG_SandStormHard>0.5</RG_SandStormHard>
 				</value>
@@ -289,6 +298,7 @@
 					<RG_Drizzle>2</RG_Drizzle>
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
+					<RG_FogStorm>0.5</RG_FogStorm>
 					<RG_Monsoon>0.5</RG_Monsoon>
 				</value>
 			</li>
@@ -324,6 +334,7 @@
 					<RG_Drizzle>2</RG_Drizzle>
 					<RG_Overcast>6</RG_Overcast>
 					<RG_Windy>8</RG_Windy>
+					<RG_FogStorm>0.4</RG_FogStorm>
 					<RG_Monsoon>0.5</RG_Monsoon>
 				</value>
 			</li>
@@ -334,6 +345,7 @@
 					<RG_FoggySnow>20</RG_FoggySnow>
 					<RG_Overcast>8</RG_Overcast>
 					<RG_Windy>6</RG_Windy>
+					<RG_FogStorm>0.4</RG_FogStorm>
 					<RG_Blizzard>0.5</RG_Blizzard>
 				</value>
 			</li>
@@ -344,6 +356,7 @@
 					<RG_FoggySnow>6</RG_FoggySnow>
 					<RG_Overcast>8</RG_Overcast>
 					<RG_Windy>6</RG_Windy>
+					<RG_FogStorm>0.4</RG_FogStorm>
 					<RG_Blizzard>0.5</RG_Blizzard>
 				</value>
 			</li>

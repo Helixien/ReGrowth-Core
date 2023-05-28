@@ -117,7 +117,7 @@
 			<Plant_TreeTeak>0.02</Plant_TreeTeak>
 			<Plant_TreePine>0.01</Plant_TreePine>
 			<Plant_Berry>0.3</Plant_Berry>
-			<RG_Plant_Raspberry>1</RG_Plant_Raspberry>
+			<RG_Plant_Raspberry>0.3</RG_Plant_Raspberry>
 			<Plant_HealrootWild>0.05</Plant_HealrootWild>
 			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">10</Plant_GrayGrass>
 			<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>

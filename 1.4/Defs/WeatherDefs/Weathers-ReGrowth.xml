@@ -304,11 +304,12 @@
 		<defName>RG_FogStorm</defName>
 		<label>fog storm</label>
 		<isBad>true</isBad>
-		<description>text.todo.</description>
+		<description>Rolling fog and heavy wind reduces the accuracy of ranged weapons.</description>
 		<windSpeedFactor>1.0</windSpeedFactor>
 		<accuracyMultiplier>0.25</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
+		<moveSpeedMultiplier>0.95</moveSpeedMultiplier>
 		<ambientSounds>
 			<li>Ambient_Wind_Storm</li>
 		</ambientSounds>
@@ -423,7 +424,7 @@
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
 		<rainRate>1.0</rainRate>
-		<moveSpeedMultiplier>0.65</moveSpeedMultiplier>
+		<moveSpeedMultiplier>0.75</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>
 				<li>(0, 0)</li>

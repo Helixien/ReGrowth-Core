@@ -109,7 +109,7 @@
 		<tooltip>Enables autumn leaves spawners on trees.</tooltip>
 		<id>RG_EnableAutumnLeavesSpawners</id>
 		<category>RG_Core</category>
-		<order>1</order>
+		<order>10</order>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName = "Plant_TreeOak"]</xpath>
@@ -180,7 +180,7 @@
 		<tooltip>Switches some of the world map biome textures for better, more fitting ones.</tooltip>
 		<id>RG_NewWorldmapTextures</id>
 		<category>RG_Core</category>
-		<order>2</order>
+		<order>20</order>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "Tundra"]/texture</xpath>
@@ -203,7 +203,7 @@
 		<tooltip>Disable the spawning of fog motes on hot springs.</tooltip>
 		<id>RG_DisableHotspringMotes</id>
 		<category>RG_Core</category>
-		<order>3</order>
+		<order>30</order>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/VFECore.ActiveTerrainDef[defName = "RG_HotSpring" or defName="RG_HotSpringDeep"]/terrainComps/li[@Class="VFECore.TerrainCompProperties_MoteSpawner"]</xpath>
@@ -217,7 +217,7 @@
 		<tooltip>Disable the glowing and the heat pushing of the lava terrain.</tooltip>
 		<id>RG_DisableLavaFeatures</id>
 		<category>RG_Core</category>
-		<order>4</order>
+		<order>40</order>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/VFECore.ActiveTerrainDef[defName = "RG_Lava"]/terrainComps/li[@Class="VFECore.TerrainCompProperties_HeatPush"]</xpath>
@@ -234,7 +234,7 @@
 		<tooltip>Prevent factions from spawning in extreme biomes like sea ice or extreme deserts unless it makes logical sense for them. Might lead to issues on tiny world maps.</tooltip>
 		<id>RG_RealisticFactionPlacement</id>
 		<category>RG_Core</category>
-		<order>5</order>
+		<order>50</order>
 		<operations>
 			<li Class="PatchOperationAddModExtension">
 				<xpath>Defs/FactionDef[defName="OutlanderCivil" or defName="OutlanderRough"]</xpath>
@@ -633,7 +633,7 @@
 		<tooltip>Allows for the anima tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_AnimaTreeReplant</id>
 		<category>RG_Core</category>
-		<order>6</order>
+		<order>60</order>
 		<mods>
 			<li>Royalty</li>
 		</mods>
@@ -653,7 +653,7 @@
 		<tooltip>Allows for the gauranlen tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_GauranlenTreeReplant</id>
 		<category>RG_Core</category>
-		<order>7</order>
+		<order>70</order>
 		<mods>
 			<li>Ideology</li>
 		</mods>
@@ -673,7 +673,7 @@
 		<tooltip>Allows for the polux tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_PoluxTreeReplant</id>
 		<category>RG_Core</category>
-		<order>8</order>
+		<order>80</order>
 		<mods>
 			<li>Biotech</li>
 		</mods>

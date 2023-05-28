@@ -4,5 +4,6 @@
 	<Operation Class="ReGrowthCore.ReGrowthCore_WeatherStates">
 		<id>RG_ReGrowthCore_WeatherStates</id>
 		<category>RG_WeatherToggles</category>
+		<order>0</order>
 	</Operation>
 </Patch>

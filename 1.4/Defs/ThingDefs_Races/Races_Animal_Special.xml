@@ -11,6 +11,7 @@
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>8</FilthRate>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.9</ToxicEnvironmentResistance>
 		</statBases>
 		<race>
 			<herdAnimal>true</herdAnimal>

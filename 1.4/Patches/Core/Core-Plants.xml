@@ -3,6 +3,25 @@
 	<Operation Class="PatchOperationSequence">
 		<!-- ================================ Plant Patches	====================== -->
 		<operations>
+			<!-- ================================ HD Alocasia ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Alocasia"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Alocasia</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Alocasia"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Alocasia_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Alocasia"]/plant</xpath>
+				<value>
+					<visualSizeRange>0.7~0.9</visualSizeRange>
+				</value>
+			</li>
 			<!-- ================================ HD Agarilux ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/cavePlantWeight</xpath>
@@ -15,6 +34,16 @@
 				<value>
 					<visualSizeRange>0.6~1.0</visualSizeRange>
 				</value>
+			</li>
+			<!-- ================================ HD Bamboo ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeBamboo"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_TreeBamboo</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/leaflessGraphicPath</xpath>
 			</li>
 			<!-- ================================ HD Healroot ====================== -->
 			<li Class="PatchOperationReplace">
@@ -243,6 +272,19 @@
 				<value>
 					<visualSizeRange>1.3~2.5</visualSizeRange>
 					<topWindExposure>0.1</topWindExposure>
+				</value>
+			</li>
+			<!-- ================================ HD Palm Tree ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreePalm"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_TreePalm</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>1.5~2.8</visualSizeRange>
 				</value>
 			</li>
 			<!-- ================================ HD vanilla berries ====================== -->

@@ -3,13 +3,13 @@
 	<!-- ================ Bathe joy activity chance ================ -->
 	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
 		<label>Tweak base chance of bathing</label>
-		<tooltip>Adjust the base chance of colonists bathing as a recreational activity. Default: 1.5</tooltip>
+		<tooltip>Adjust the base chance of colonists bathing as a recreational activity. Default: 2.5</tooltip>
 		<id>RG_BaseChanceBathingActivity</id>
 		<category>RG_Core</category>
 		<order>90</order>
 		<xpath>Defs/JoyGiverDef[defName="RG_BatheJoyGiver"]/baseChance</xpath>
-		<range>0~3</range>
-		<defaultValue>1.5</defaultValue>
+		<range>0~10</range>
+		<defaultValue>2.5</defaultValue>
 	</Operation>
 	<!-- ================ Leaf beauty ================ -->
 	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">

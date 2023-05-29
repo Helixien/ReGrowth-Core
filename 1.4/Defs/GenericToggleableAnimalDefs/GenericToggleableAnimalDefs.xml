@@ -64,6 +64,7 @@
 			<li>Toxalope</li>
 			<li>RG_Moa</li>
 			<li>RG_Neutrolope</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RG_Hemolope</li>
 		</toggleablePawns>
 	</AnimalBehaviours.GenericToggleableAnimalDef>
 </Defs>

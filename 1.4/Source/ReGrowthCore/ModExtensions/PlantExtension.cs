@@ -88,7 +88,6 @@ namespace ReGrowthCore
             {
                 var extension = Extension;
                 var value = Rand.RangeSeeded(extension.minLeaflessTemperature, extension.maxLeaflessTemperature, thingIDNumber ^ 838051265);
-                Log.Message(this + " - LeaflessTemperatureThresh: " + value);
                 return value;
             }
         }
@@ -159,8 +158,6 @@ namespace ReGrowthCore
         public static bool GrowthSeasonNow(PlantExtension extension, IntVec3 c, Map map, bool forSowing = false)
         {
             float temperature = c.GetTemperature(map);
-            Log.Message(c + " - temperature: " + temperature + " - extension.minGrowthTemperature: " + extension.minGrowthTemperature
-                + " - extension.maxGrowthTemperature: " + extension.maxGrowthTemperature);
             if (temperature > extension.minGrowthTemperature)
             {
                 return temperature < extension.maxGrowthTemperature;

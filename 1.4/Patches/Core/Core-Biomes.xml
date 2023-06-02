@@ -295,20 +295,19 @@
 				<value>
 					<wildPlants>
 						<Plant_Grass>6</Plant_Grass>
-						<Plant_TallGrass>1.5</Plant_TallGrass>
+						<Plant_TallGrass>2.5</Plant_TallGrass>
 						<Plant_ShrubLow>2</Plant_ShrubLow>
 						<Plant_Bush>0.45</Plant_Bush>
 						<Plant_TreeWillow>1.92</Plant_TreeWillow>
 						<Plant_TreeCypress>1.92</Plant_TreeCypress>
 						<Plant_Alocasia>0.9</Plant_Alocasia>
 						<Plant_TreeCecropia>1.0</Plant_TreeCecropia>
-						<Plant_Chokevine>1.5</Plant_Chokevine>
-						<Plant_TreePalm>0.3</Plant_TreePalm>
+						<Plant_TreePalm>0.5</Plant_TreePalm>
 						<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
 						<Plant_TreeTeak>0.2</Plant_TreeTeak>
 						<Plant_Clivia>0.14</Plant_Clivia>
 						<Plant_Berry>0.03</Plant_Berry>
-						<Plant_Rafflesia>0.010</Plant_Rafflesia>
+						<Plant_Rafflesia>0.015</Plant_Rafflesia>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">3</Plant_GrayGrass>
 						<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">1.5</Plant_RatPalm>
 					</wildPlants>

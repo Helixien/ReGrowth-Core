@@ -20,7 +20,7 @@
 						<Plant_HealrootWild>0.05</Plant_HealrootWild>
 						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">4</Plant_Ripthorn>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">10</Plant_GrayGrass>
-						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">4</Plant_TreeGrayPine>
+						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">6</Plant_TreeGrayPine>
 					</wildPlants>
 				</value>
 			</li>
@@ -131,19 +131,6 @@
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/baseWeatherCommonalities</xpath>
-				<value>
-					<RG_Drizzle>2</RG_Drizzle>
-					<RG_FoggySnow>2</RG_FoggySnow>
-					<RG_Overcast>6</RG_Overcast>
-					<RG_Windy>8</RG_Windy>
-					<RG_FogStorm>0.4</RG_FogStorm>
-					<RG_Blizzard>0.25</RG_Blizzard>
-					<RG_Monsoon>0.35</RG_Monsoon>
-				</value>
-			</li>
-			<!-- ================ Biome Temperate Grassland ================ -->
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName = "RG_TemperateGrassland"]/baseWeatherCommonalities</xpath>
 				<value>
 					<RG_Drizzle>2</RG_Drizzle>
 					<RG_FoggySnow>2</RG_FoggySnow>
@@ -273,19 +260,19 @@
 				<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
 				<value>
 					<wildPlants>
-						<Plant_Grass>8</Plant_Grass>
+						<Plant_Grass>10</Plant_Grass>
 						<Plant_TallGrass>6</Plant_TallGrass>
 						<Plant_ShrubLow>5</Plant_ShrubLow>
 						<Plant_Dandelion>0.2</Plant_Dandelion>
 						<Plant_Alocasia>0.8</Plant_Alocasia>
 						<Plant_TreeCecropia>0.3</Plant_TreeCecropia>
-						<Plant_TreePalm>1</Plant_TreePalm>
+						<Plant_TreePalm>1.5</Plant_TreePalm>
 						<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
 						<Plant_TreeTeak>0.5</Plant_TreeTeak>
 						<Plant_Bush>0.45</Plant_Bush>
 						<Plant_Clivia>0.07</Plant_Clivia>
 						<Plant_Berry>0.08</Plant_Berry>
-						<Plant_Rafflesia>0.0008</Plant_Rafflesia>
+						<Plant_Rafflesia>0.0016</Plant_Rafflesia>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">4</Plant_GrayGrass>
 						<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">0.3</Plant_RatPalm>
 					</wildPlants>

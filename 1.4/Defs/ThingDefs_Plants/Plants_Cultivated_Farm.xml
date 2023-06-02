@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef ParentName="PlantBase">
+	<!--  <ThingDef ParentName="PlantBase">
     <defName>RG_Plant_PotatoTEST</defName>
     <label>potato plant TEST</label>
     <description>A highly nutritious tuber. Potatoes grow well even in somewhat poor soil, and form a delicious crispy outer coating when fried in oil.</description>
@@ -43,12 +43,11 @@
 			<minOptimalGrowthTemperature>-273</minOptimalGrowthTemperature>
 			<maxOptimalGrowthTemperature>0</maxOptimalGrowthTemperature>
 			<maxGrowthTemperature>0</maxGrowthTemperature>
-			<!--<plantRestEnabled>False</plantRestEnabled>-->
+			<!{1}**<plantRestEnabled>False</plantRestEnabled>**{1}>
 			
 		</li>
 	</modExtensions>
-  </ThingDef>
-  
+  </ThingDef>-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_RaspberryCultivated</defName>
 		<label>raspberry bush</label>

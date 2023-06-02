@@ -3,6 +3,38 @@
 	<Operation Class="PatchOperationSequence">
 		<!-- ================================ Plant Patches	====================== -->
 		<operations>
+			<!-- ================================ HD Agarilux ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/cavePlantWeight</xpath>
+				<value>
+					<cavePlantWeight>0.12</cavePlantWeight>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.6~1.0</visualSizeRange>
+				</value>
+			</li>
+			<!-- ================================ HD Agave ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Agave</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Agave_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.6~1.0</visualSizeRange>
+				</value>
+			</li>
 			<!-- ================================ HD Alocasia ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_Alocasia"]/graphicData/texPath</xpath>
@@ -22,17 +54,11 @@
 					<visualSizeRange>0.7~0.9</visualSizeRange>
 				</value>
 			</li>
-			<!-- ================================ HD Agarilux ====================== -->
+			<!-- ================================ HD Astragalus ====================== -->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/cavePlantWeight</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_Astragalus"]/plant/maxMeshCount</xpath>
 				<value>
-					<cavePlantWeight>0.12</cavePlantWeight>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant/visualSizeRange</xpath>
-				<value>
-					<visualSizeRange>0.6~1.0</visualSizeRange>
+					<maxMeshCount>16</maxMeshCount>
 				</value>
 			</li>
 			<!-- ================================ HD Bamboo ====================== -->
@@ -42,8 +68,110 @@
 					<texPath>Things/Plant/RG_TreeBamboo</texPath>
 				</value>
 			</li>
-			<li Class="PatchOperationRemove">
+			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_TreeBamboo"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/RG_TreeBamboo_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ HD Berry ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/BerryPlant_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/immatureGraphicPath</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/Immature/BerryPlant_Immature</immatureGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.95~1.5</visualSizeRange>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RawBerries"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Item/Resource/PlantFoodRaw/VanillaBerries</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Brambles ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Brambles"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Brambles_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ HD Bush ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Bush_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant</xpath>
+				<value>
+					<visualSizeRange>0.4~0.8</visualSizeRange>
+				</value>
+			</li>
+			<!-- ================================ HD Tree Cecropia ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeCecropia"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_TreeCecropia</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeCecropia"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreeCecropia_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ HD Chokevine ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Chokevine"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/Chokevine_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Chokevine"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>0.35~0.6</visualSizeRange>
+				</value>
+			</li>
+			<!-- ================================ HD Clivia ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Clivia"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Clivia</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Tree Cypress ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeCypress"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/Leafless/TreeCypress_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ HD Drago Tree ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_TreeDrago</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/plant</xpath>
+				<value>
+					<visualSizeRange>1.3~2.5</visualSizeRange>
+					<topWindExposure>0.1</topWindExposure>
+				</value>
 			</li>
 			<!-- ================================ HD Healroot ====================== -->
 			<li Class="PatchOperationReplace">
@@ -71,13 +199,6 @@
 					<topWindExposure>0.02</topWindExposure>
 				</value>
 			</li>
-			<!-- ================================ HD Astragalus ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Astragalus"]/plant/maxMeshCount</xpath>
-				<value>
-					<maxMeshCount>16</maxMeshCount>
-				</value>
-			</li>
 			<!-- ================================ HD Saguaro Cactus ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_SaguaroCactus"]/graphicData/texPath</xpath>
@@ -103,82 +224,11 @@
 					<visualSizeRange>0.8~1.8</visualSizeRange>
 				</value>
 			</li>
-			<!-- ================================ HD Chokevine ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Chokevine"]/plant/leaflessGraphicPath</xpath>
-				<value>
-					<leaflessGraphicPath>Things/Plant/Leafless/Chokevine_Leafless</leaflessGraphicPath>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Chokevine"]/plant/visualSizeRange</xpath>
-				<value>
-					<visualSizeRange>0.35~0.6</visualSizeRange>
-				</value>
-			</li>
-			<!-- ================================ HD Agave ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Plant/RG_Agave</texPath>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant</xpath>
-				<value>
-					<leaflessGraphicPath>Things/Plant/Leafless/Agave_Leafless</leaflessGraphicPath>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Agave"]/plant/visualSizeRange</xpath>
-				<value>
-					<visualSizeRange>0.6~1.0</visualSizeRange>
-				</value>
-			</li>
-			<!-- ================================ HD Brambles ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Brambles"]/plant/leaflessGraphicPath</xpath>
-				<value>
-					<leaflessGraphicPath>Things/Plant/Leafless/Brambles_Leafless</leaflessGraphicPath>
-				</value>
-			</li>
-			<!-- ================================ HD Bush ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant/leaflessGraphicPath</xpath>
-				<value>
-					<leaflessGraphicPath>Things/Plant/Leafless/Bush_Leafless</leaflessGraphicPath>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="Plant_Bush"]/plant</xpath>
-				<value>
-					<visualSizeRange>0.4~0.8</visualSizeRange>
-				</value>
-			</li>
 			<!-- ================================ HD Moss ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_Moss"]/plant/leaflessGraphicPath</xpath>
 				<value>
 					<leaflessGraphicPath>Things/Plant/Leafless/Moss_Leafless</leaflessGraphicPath>
-				</value>
-			</li>
-			<!-- ================================ HD Berry ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/leaflessGraphicPath</xpath>
-				<value>
-					<leaflessGraphicPath>Things/Plant/Leafless/BerryPlant_Leafless</leaflessGraphicPath>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/immatureGraphicPath</xpath>
-				<value>
-					<immatureGraphicPath>Things/Plant/Immature/BerryPlant_Immature</immatureGraphicPath>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/plant/visualSizeRange</xpath>
-				<value>
-					<visualSizeRange>0.95~1.5</visualSizeRange>
 				</value>
 			</li>
 			<!-- ================================ HD Strawberry ====================== -->
@@ -240,13 +290,6 @@
 					<leaflessGraphicPath>Things/Plant/Leafless/TreeMaple_Leafless</leaflessGraphicPath>
 				</value>
 			</li>
-			<!-- ================================ HD Tree Cypress ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_TreeCypress"]/plant/leaflessGraphicPath</xpath>
-				<value>
-					<leaflessGraphicPath>Things/Plant/Leafless/TreeCypress_Leafless</leaflessGraphicPath>
-				</value>
-			</li>
 			<!-- ================================ HD Willow Tree ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_TreeWillow"]/graphicData/texPath</xpath>
@@ -260,20 +303,6 @@
 					<leaflessGraphicPath>Things/Plant/Leafless/RG_TreeWillow_Leafless</leaflessGraphicPath>
 				</value>
 			</li>
-			<!-- ================================ HD Drago Tree ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Plant/RG_TreeDrago</texPath>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/plant</xpath>
-				<value>
-					<visualSizeRange>1.3~2.5</visualSizeRange>
-					<topWindExposure>0.1</topWindExposure>
-				</value>
-			</li>
 			<!-- ================================ HD Palm Tree ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_TreePalm"]/graphicData/texPath</xpath>
@@ -285,21 +314,6 @@
 				<xpath>/Defs/ThingDef[defName="Plant_TreeDrago"]/plant/visualSizeRange</xpath>
 				<value>
 					<visualSizeRange>1.5~2.8</visualSizeRange>
-				</value>
-			</li>
-			<!-- ================================ HD vanilla berries ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="RawBerries"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Item/Resource/PlantFoodRaw/VanillaBerries</texPath>
-				</value>
-			</li>
-			<!-- ================================ Add Bathing Zone Desigantor ====================== -->
-			<li Class="PatchOperationInsert">
-				<xpath>/Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[text()="Designator_ZoneAdd_Growing"]</xpath>
-				<order>Append</order>
-				<value>
-					<li>ReGrowthCore.Designator_ZoneAdd_Bathe</li>
 				</value>
 			</li>
 		</operations>

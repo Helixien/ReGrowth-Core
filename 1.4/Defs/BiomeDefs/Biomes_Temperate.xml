@@ -103,6 +103,13 @@
 			<FoggyRain>1</FoggyRain>
 			<SnowGentle>4</SnowGentle>
 			<SnowHard>4</SnowHard>
+			<RG_Drizzle>2</RG_Drizzle>
+			<RG_FoggySnow>2</RG_FoggySnow>
+			<RG_Overcast>6</RG_Overcast>
+			<RG_Windy>8</RG_Windy>
+			<RG_FogStorm>0.4</RG_FogStorm>
+			<RG_Blizzard>0.25</RG_Blizzard>
+			<RG_Monsoon>0.35</RG_Monsoon>
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<Plant_Grass>20</Plant_Grass>

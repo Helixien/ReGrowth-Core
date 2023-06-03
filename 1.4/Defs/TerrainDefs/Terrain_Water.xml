@@ -67,16 +67,39 @@
 		<holdSnow>false</holdSnow>
 		<takeSplashes>true</takeSplashes>
 		<extinguishesFire>true</extinguishesFire>
-		<extraDeteriorationFactor>12</extraDeteriorationFactor>
+		<extraDeteriorationFactor>15</extraDeteriorationFactor>
 		<traversedThought>SoakingWet</traversedThought>
-		<extraNonDraftedPerceivedPathCost>50</extraNonDraftedPerceivedPathCost>
+		<extraNonDraftedPerceivedPathCost>500</extraNonDraftedPerceivedPathCost>
 		<extraDraftedPerceivedPathCost>50</extraDraftedPerceivedPathCost>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/MarshPollutionOverlay</pollutionOverlayTexturePath>
 		<filthAcceptanceMask>
 			<li>None</li>
 		</filthAcceptanceMask>
 		<tags>
 			<li>ToxixWaste</li>
 		</tags>
+		<tools>
+			<li>
+				<label>waste</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>WaterInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<terrainComps>
+			<li Class="VFECore.TerrainCompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(71,128,70,0)</glowColor>
+			</li>
+		</terrainComps>
+		<modExtensions>
+			<li Class="VFECore.DefExtension_ShaderSpeedMult">
+				<timeMult>0.75</timeMult>
+			</li>
+		</modExtensions>
 	</TerrainDef>
 	<TerrainDef Abstract="True" Name="RG_ToxicWasteShallowBase" ParentName="RG_ToxicWasteBase">
 		<texturePath>Terrain/Surfaces/ToxicWasteRamp</texturePath>

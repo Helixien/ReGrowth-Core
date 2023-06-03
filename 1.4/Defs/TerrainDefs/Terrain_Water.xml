@@ -89,12 +89,6 @@
 				<cooldownTime>1.5</cooldownTime>
 			</li>
 		</tools>
-		<terrainComps>
-			<li Class="VFECore.TerrainCompProperties_Glower">
-				<glowRadius>5</glowRadius>
-				<glowColor>(71,128,70,0)</glowColor>
-			</li>
-		</terrainComps>
 		<modExtensions>
 			<li Class="VFECore.DefExtension_ShaderSpeedMult">
 				<timeMult>0.75</timeMult>

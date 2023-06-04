@@ -124,6 +124,7 @@
 		<label>moa</label>
 		<labelPlural>moa</labelPlural>
 		<race>RG_Moa</race>
+		<wildGroupSize>3~5</wildGroupSize>
 		<lifeStages>
 			<li>
 				<label>chick</label>

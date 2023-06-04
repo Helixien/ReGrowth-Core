@@ -246,7 +246,9 @@
 							<li>ExtremeDesert</li>
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -259,7 +261,9 @@
 							<li>IceSheet</li>
 							<li>SeaIce</li>
 							<li>ExtremeDesert</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -272,7 +276,9 @@
 							<li>IceSheet</li>
 							<li>SeaIce</li>
 							<li>ExtremeDesert</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -288,7 +294,9 @@
 							<li>ExtremeDesert</li>
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -304,7 +312,9 @@
 							<li>ExtremeDesert</li>
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -320,7 +330,9 @@
 							<li>TropicalSwamp</li>
 							<li>Desert</li>
 							<li>ExtremeDesert</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -336,7 +348,9 @@
 							<li>Tundra</li>
 							<li>ColdBog</li>
 							<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenForest</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -344,13 +358,12 @@
 			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
 				<xpath>Defs/FactionDef[defName="PirateWaster"]</xpath>
 				<value>
-					<li Class="VFECore.FactionDefExtension">
-						<disallowedBiomes>
-							<li>IceSheet</li>
-							<li>SeaIce</li>
-							<li>Desert</li>
-							<li>ExtremeDesert</li>
-						</disallowedBiomes>
+					<li Class="VFECore.FactionDefExtension" MayRequire="ReGrowth.BOTR.Wastelands">
+						<allowedBiomes>
+							<li>RG_TemperateWasteland</li>
+							<li>RG_FrigidWasteland</li>
+							<li>RG_AridWasteland</li>
+						</allowedBiomes>
 					</li>
 				</value>
 			</li>
@@ -364,6 +377,9 @@
 							<li>ExtremeDesert</li>
 							<li>TropicalRainforest</li>
 							<li>TropicalSwamp</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -380,7 +396,9 @@
 							<li>Tundra</li>
 							<li>ColdBog</li>
 							<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenForest</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -393,7 +411,9 @@
 							<li>IceSheet</li>
 							<li>SeaIce</li>
 							<li>ExtremeDesert</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -410,7 +430,9 @@
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
 							<li>TemperateSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -436,7 +458,9 @@
 							<li>IceSheet</li>
 							<li>SeaIce</li>
 							<li>ExtremeDesert</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -461,7 +485,9 @@
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
 							<li>TemperateSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -490,7 +516,9 @@
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
 							<li>TemperateSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -507,7 +535,9 @@
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
 							<li>TemperateSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -524,7 +554,9 @@
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
 							<li>TemperateSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -540,7 +572,9 @@
 							<li>ExtremeDesert</li>
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -556,7 +590,9 @@
 							<li>ExtremeDesert</li>
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -572,7 +608,9 @@
 							<li>ExtremeDesert</li>
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -587,7 +625,9 @@
 							<li>ExtremeDesert</li>
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -603,7 +643,9 @@
 							<li>ExtremeDesert</li>
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>
@@ -619,7 +661,9 @@
 							<li>ExtremeDesert</li>
 							<li>ColdBog</li>
 							<li>TropicalSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_Wasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
+							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>

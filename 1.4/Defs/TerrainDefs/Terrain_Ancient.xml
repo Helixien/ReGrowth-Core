@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!--=============== Ancient Floors Base ==============-->
 	<TerrainDef Name="RG_AncientFloorBase" Abstract="True">
 		<layerable>true</layerable>
 		<affordances>
@@ -14,6 +15,7 @@
 		<constructEffect>ConstructDirt</constructEffect>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 	</TerrainDef>
+	<!--=============== Broken Concrete ==============-->
 	<TerrainDef ParentName="RG_AncientFloorBase">
 		<defName>RG_AncientConcrete</defName>
 		<label>broken concrete</label>

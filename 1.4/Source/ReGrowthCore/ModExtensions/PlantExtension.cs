@@ -27,6 +27,29 @@ namespace ReGrowthCore
     {
         private PlantExtension _extension;
         public PlantExtension Extension => _extension ??= this.def.GetModExtension<PlantExtension>();
+
+        public static Dictionary<Map, Dictionary<IntVec3, PlantExpandable>> allPlants = new();
+
+        public override void SpawnSetup(Map map, bool respawningAfterLoad)
+        {
+            base.SpawnSetup(map, respawningAfterLoad);
+            if (!allPlants.TryGetValue(map, out var dict))
+            {
+                allPlants[map] = dict = new Dictionary<IntVec3, PlantExpandable>();
+            }
+            dict[Position] = this;
+        }
+
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        {
+            var map = Map;
+            var pos = Position;
+            base.DeSpawn(mode);
+            if (allPlants.TryGetValue(map, out var dict))
+            {
+                dict.Remove(pos);
+            }
+        }
         public override bool Resting
         {
             get
@@ -144,11 +167,13 @@ namespace ReGrowthCore
                 }
                 else
                 {
-                    var plant = c.GetThingList(map).OfType<PlantExpandable>().FirstOrDefault();
-                    if (plant != null)
+                    if (PlantExpandable.allPlants.TryGetValue(map, out var dict))
                     {
-                        __result = PlantExpandable.GrowthSeasonNow(plant.Extension, c, map, forSowing);
-                        return false;
+                        if (dict.TryGetValue(c, out var plant))
+                        {
+                            __result = PlantExpandable.GrowthSeasonNow(plant.Extension, c, map, forSowing);
+                            return false;
+                        }
                     }
                 }
                 return true;

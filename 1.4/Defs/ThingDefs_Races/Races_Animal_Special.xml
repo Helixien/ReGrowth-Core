@@ -48,10 +48,18 @@
 				<li>
 					<def>AnimalJuvenile</def>
 					<minAge>0.1</minAge>
+					<soundWounded>RG_Pawn_Moa_Wounded</soundWounded>
+					<soundDeath>RG_Pawn_Moa_Death</soundDeath>
+					<soundCall>RG_Pawn_Moa_Call</soundCall>
+					<soundAngry>RG_Pawn_Moa_Angry</soundAngry>
 				</li>
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.2222</minAge>
+					<soundWounded>RG_Pawn_Moa_Wounded</soundWounded>
+					<soundDeath>RG_Pawn_Moa_Death</soundDeath>
+					<soundCall>RG_Pawn_Moa_Call</soundCall>
+					<soundAngry>RG_Pawn_Moa_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 		</race>

@@ -5,7 +5,7 @@
 		<defName>RG_Hemolope</defName>
 		<label>hemolope</label>
 		<devNote>cow-1</devNote>
-		<description>Engineered for hemogen production, the hemolope grows a large sac of pure hemogen on its back. Due to genetic instabilities, unlike a boomalope, it has a very short lifespan and is generally weaker. It has rarely been encountered in the wild, as it is only kept my more ethical sanguophages for corporations for hemogen production. It can be milked to produce hemogen.</description>
+		<description>Engineered for hemogen production, the hemolope grows a large sac of pure hemogen on its back. Due to genetic instabilities, unlike a boomalope, it has a very short lifespan and is generally weaker. It has rarely been encountered in the wild, as it is only kept by more ethical sanguophages for corporations for hemogen production. It can be milked to produce hemogen.</description>
 		<statBases>
 			<MoveSpeed>3.4</MoveSpeed>
 			<MarketValue>620</MarketValue>

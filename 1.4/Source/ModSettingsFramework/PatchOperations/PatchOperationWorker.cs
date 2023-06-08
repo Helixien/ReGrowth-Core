@@ -12,6 +12,7 @@ namespace ModSettingsFramework
         public abstract void Reset();
         public override bool ApplyWorker(XmlDocument xml)
         {
+            var container = SettingsContainer;
             return true;
         }
     }

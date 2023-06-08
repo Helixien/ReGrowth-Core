@@ -18,6 +18,18 @@
 					</value>
 				</nomatch>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="Marsh"]/pollutionShaderType</xpath>
+				<value>
+					<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainWaterPolluted</pollutionShaderType>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/TerrainDef[defName="Marsh"]/pollutionOverlayTexturePath</xpath>
+				<value>
+					<pollutionOverlayTexturePath>Terrain/Surfaces/MarshPollutionOverlay</pollutionOverlayTexturePath>
+				</value>
+			</li>
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/TerrainDef[defName="Marsh"]/takeSplashes</xpath>
 				<match Class="PatchOperationReplace">

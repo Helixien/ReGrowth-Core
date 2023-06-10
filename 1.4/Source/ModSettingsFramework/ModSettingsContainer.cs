@@ -12,7 +12,7 @@ namespace ModSettingsFramework
         public ModSettingsFrameworkMod modHandle;
         public Dictionary<string, bool> patchOperationStates = new Dictionary<string, bool>();
         public Dictionary<string, float> patchOperationValues = new Dictionary<string, float>();
-        public Dictionary<Type, PatchOperationWorker> patchWorkers = new Dictionary<Type, PatchOperationWorker>();
+        public Dictionary<string, PatchOperationWorker> patchWorkers = new Dictionary<string, PatchOperationWorker>();
         public bool PatchOperationEnabled(string id, bool defaultValue)
         {
             if (!patchOperationStates.TryGetValue(id, out var enabled))
@@ -98,13 +98,13 @@ namespace ModSettingsFramework
                         if (worker.modPackageSettingsID != null && worker.modPackageSettingsID.ToLower() == packageID.ToLower()
                             || mod.PackageIdPlayerFacing.ToLower() == packageID.ToLower())
                         {
-                            if (patchWorkers.TryGetValue(worker.GetType(), out var matchingSavedWorker))
+                            if (patchWorkers.TryGetValue(worker.GetType().FullName, out var matchingSavedWorker))
                             {
                                 worker.CopyFrom(matchingSavedWorker);
                             }
                             else
                             {
-                                patchWorkers[worker.GetType()] = worker;
+                                patchWorkers[worker.GetType().FullName] = worker;
                             }
                         }
                     }

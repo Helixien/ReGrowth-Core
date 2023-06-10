@@ -10,7 +10,9 @@ namespace ModSettingsFramework
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Collections.Look(ref modSettingsPerModId, "modSettingsPerModId", LookMode.Value, LookMode.Deep);
+            Log_Error_Patch.suppressErrorMessages = true;
+            Scribe_Collections.Look(ref modSettingsPerModId, "modSettingsPerModId", LookMode.Value, LookMode.Deep); 
+            Log_Error_Patch.suppressErrorMessages = false;
         }
         public static ModSettingsContainer GetModSettingsContainer(ModContentPack modHandle)
         {

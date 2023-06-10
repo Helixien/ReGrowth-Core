@@ -14,7 +14,7 @@ namespace ModSettingsFramework
                 {
                     foreach (var patch in mod.Patches.OfType<PatchOperationWorker>())
                     {
-                        if (modSettings.patchWorkers.TryGetValue(patch.GetType(), out var worker))
+                        if (modSettings.patchWorkers.TryGetValue(patch.GetType().FullName, out var worker))
                         {
                             patch.CopyFrom(worker);
                             patch.ApplySettings();

@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using System;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 using Verse;
 
@@ -35,7 +36,6 @@ namespace ModSettingsFramework
             modSettings.Mod = this;
             return modSettings as ModSettingsFrameworkSettings;
         }
-
         public static ModSettingsFrameworkSettings ReadModSettings()
         {
             string settingsFilename = GetSettingsFilename();
@@ -83,12 +83,18 @@ namespace ModSettingsFramework
             {
                 Scribe.saver.FinalizeSaving();
             }
+
+            foreach (var worker in LoadedModManager.RunningMods.SelectMany(x => x.Patches.OfType<PatchOperationWorker>())
+                        .Where(x => x.CanRun()).ToList())
+            {
+                worker.ApplySettings();
+            }
         }
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
             base.DoSettingsWindowContents(inRect);
-            ModSettingsFrameworkSettings.modSettingsPerModId[modPackOverride.PackageIdPlayerFacing.ToLower()].DoSettingsWindowContents(inRect);
+            ModSettingsFrameworkSettings.GetModSettingsContainer(modPackOverride.PackageIdPlayerFacing).DoSettingsWindowContents(inRect);
         }
         public override string SettingsCategory()
         {

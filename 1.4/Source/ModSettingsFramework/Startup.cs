@@ -21,6 +21,7 @@ namespace ModSettingsFramework
                         }
                         else
                         {
+                            patch.Init();
                             patch.ApplySettings();
                         }
                     }

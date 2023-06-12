@@ -24,6 +24,7 @@ namespace ReGrowthCore
         }
         public override void ApplySettings()
         {
+            base.ApplySettings();
             foreach (var weatherDef in DefDatabase<WeatherDef>.AllDefs.ToList())
             {
                 if (weatherDef.modContentPack == ReGrowthMod.modPack)

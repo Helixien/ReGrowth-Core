@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Verse;
 
@@ -14,6 +15,17 @@ namespace ModSettingsFramework
             Scribe_Collections.Look(ref modSettingsPerModId, "modSettingsPerModId", LookMode.Value, LookMode.Deep); 
             Log_Error_Patch.suppressErrorMessages = false;
         }
+
+        public static ModSettingsContainer GetModSettingsContainer(string packageID)
+        {
+            var mod = LoadedModManager.RunningMods.FirstOrDefault(x => x.PackageIdPlayerFacing.ToLower() == packageID.ToLower());
+            if (mod != null)
+            {
+                return GetModSettingsContainer(mod);
+            }
+            return null;
+        }
+
         public static ModSettingsContainer GetModSettingsContainer(ModContentPack modHandle)
         {
             if (!modSettingsPerModId.TryGetValue(modHandle.PackageIdPlayerFacing.ToLower(), out var container))

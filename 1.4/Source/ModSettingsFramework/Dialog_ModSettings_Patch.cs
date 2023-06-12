@@ -18,7 +18,7 @@ namespace ModSettingsFramework
                 if (Widgets.ButtonText(new Rect(inRect.width - 180, 0f, 150f, 35), "Reset".Translate()))
                 {
                     SoundDefOf.Tick_Tiny.PlayOneShotOnCamera();
-                    var container = ModSettingsFrameworkSettings.modSettingsPerModId[modSettings.modPackOverride.PackageIdPlayerFacing.ToLower()];
+                    var container = ModSettingsFrameworkSettings.GetModSettingsContainer(modSettings.modPackOverride.PackageIdPlayerFacing);
                     container.patchOperationStates.Clear();
                     container.patchOperationValues.Clear();
                     container.patchWorkers.Clear();

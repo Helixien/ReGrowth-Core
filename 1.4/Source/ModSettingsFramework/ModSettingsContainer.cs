@@ -31,13 +31,17 @@ namespace ModSettingsFramework
             return value;
         }
 
+        public T PatchWorker<T>() where T : PatchOperationWorker
+        {
+            return patchWorkers.Values.OfType<T>().FirstOrDefault();
+        }
+
         private Vector2 scrollPosition = Vector2.zero;
         private float scrollHeight;
 
         private List<PatchOperationModSettings> _patchOperationMods;
-        public List<PatchOperationModSettings> PatchOperationModSettings => _patchOperationMods 
-            ??= LoadedModManager.RunningMods.SelectMany(x => x.Patches.OfType<PatchOperationModSettings>())
-            .Where(x => x.SettingsContainer == this && x.CanRun()).ToList();
+        public List<PatchOperationModSettings> PatchOperationModSettings => _patchOperationMods ??= LoadedModManager.RunningMods.SelectMany(x => x.Patches.OfType<PatchOperationModSettings>())
+                        .Where(x => x.SettingsContainer == this && x.CanRun()).ToList();
         public void DoSettingsWindowContents(Rect inRect)
         {
             var listingStandard = new Listing_Standard();
@@ -62,6 +66,10 @@ namespace ModSettingsFramework
                     foreach (var patch in patchesInCategory)
                     {
                         patch.DoSettings(this, section);
+                        if (patch is PatchOperationWorker worker)
+                        {
+                            worker.CopyValues();
+                        }
                     }
                     listingStandard.EndSection(section);
                     listingStandard.Gap();

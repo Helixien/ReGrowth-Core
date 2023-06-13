@@ -10,20 +10,18 @@ namespace ModSettingsFramework
         {
             foreach (var mod in LoadedModManager.RunningMods)
             {
-                if (ModSettingsFrameworkSettings.modSettingsPerModId.TryGetValue(mod.PackageIdPlayerFacing.ToLower(), out var modSettings))
+                foreach (var patch in mod.Patches.OfType<PatchOperationWorker>())
                 {
-                    foreach (var patch in mod.Patches.OfType<PatchOperationWorker>())
+                    var modSettings = ModSettingsFrameworkSettings.GetModSettingsContainer(mod);
+                    if (modSettings.patchWorkers.TryGetValue(patch.GetType().FullName, out var worker))
                     {
-                        if (modSettings.patchWorkers.TryGetValue(patch.GetType().FullName, out var worker))
-                        {
-                            patch.CopyFrom(worker);
-                            patch.ApplySettings();
-                        }
-                        else
-                        {
-                            patch.Init();
-                            patch.ApplySettings();
-                        }
+                        patch.CopyFrom(worker);
+                        patch.ApplySettings();
+                    }
+                    else
+                    {
+                        patch.Init();
+                        patch.ApplySettings();
                     }
                 }
             }

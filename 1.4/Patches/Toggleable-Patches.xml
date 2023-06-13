@@ -355,7 +355,7 @@
 					</li>
 				</value>
 			</li>
-			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
+<!--			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
 				<xpath>Defs/FactionDef[defName="PirateWaster"]</xpath>
 				<value>
 					<li Class="VFECore.FactionDefExtension" MayRequire="ReGrowth.BOTR.Wastelands">
@@ -366,7 +366,7 @@
 						</allowedBiomes>
 					</li>
 				</value>
-			</li>
+			</li>-->
 			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
 				<xpath>Defs/FactionDef[defName="PirateYttakin"]</xpath>
 				<value>

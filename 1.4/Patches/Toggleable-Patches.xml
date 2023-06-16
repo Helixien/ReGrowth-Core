@@ -355,11 +355,7 @@
 					</li>
 				</value>
 			</li>
-			<li Class="PatchOperationAttributeAdd">
-				<xpath>Defs/FactionDef[defName="PirateWaster"]/modExtensions</xpath>
-				<attribute>Inherit</attribute>
-				<value>False</value>
-			</li>
+
 			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
 				<xpath>Defs/FactionDef[defName="PirateWaster"]</xpath>
 				<value>
@@ -371,6 +367,11 @@
 						</allowedBiomes>
 					</li>
 				</value>
+			</li>
+			<li Class="PatchOperationAttributeAdd" MayRequire="Ludeon.RimWorld.Biotech">
+				<xpath>Defs/FactionDef[defName="PirateWaster"]/modExtensions</xpath>
+				<attribute>Inherit</attribute>
+				<value>False</value>
 			</li>
 			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
 				<xpath>Defs/FactionDef[defName="PirateYttakin"]</xpath>

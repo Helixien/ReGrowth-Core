@@ -30,4 +30,30 @@
 			</operations>
 		</match>
 	</Operation>
+	<!--============================================== Vanilla Plants Expanded - Mushrooms ==============================================-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Plants Expanded - Mushrooms</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/VanillaPlantsExpandedMushrooms.MushroomGrowZoneTerrainsDef[defName="VPE_MushroomGrowZoneTerrains"]/allowedTerrains</xpath>
+					<value>
+						<li>RG_AridSoil</li>
+						<li>RG_TundraSoil</li>
+						<li>RG_BorealSoil</li>
+						<li>RG_TemperateSoil</li>
+						<li>RG_TropicalSoil</li>
+						<li>RG_DepletedSoil</li>
+						<li>RG_AspenSoil</li>
+						<li>RG_BoilingSoil</li>
+						<li>RG_AnimaSoil</li>
+						<li>RG_AnimaSoilEnchanted</li>
+						<li>RG_DepletedGravel</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 </Patch>

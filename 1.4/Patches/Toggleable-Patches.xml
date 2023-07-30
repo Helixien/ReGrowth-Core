@@ -196,6 +196,35 @@
 			</li>
 		</operations>
 	</Operation>
+	<!-- ================ New rock atlas texture ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable new rock texture</label>
+		<tooltip>Enable the new texture for rock atlas and rockflecked atlas.</tooltip>
+		<id>RG_NewRockAtlasTextures</id>
+		<category>RG_Core</category>
+		<order>21</order>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="RockBase"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Linked/RG_Rock_Atlas</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="MineableSteel" or defName="MineableSilver" or defName="MineableGold" or defName="MineableUranium" or defName="MineablePlasteel" or defName="MineableJade"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="neceros.coalexpanded">
+				<xpath>/Defs/ThingDef[defName="MineableCoal"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 	<!-- ================================ Toggle Hotspring Motes ====================== -->
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
@@ -355,7 +384,6 @@
 					</li>
 				</value>
 			</li>
-
 			<li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
 				<xpath>Defs/FactionDef[defName="PirateWaster"]</xpath>
 				<value>

@@ -217,10 +217,23 @@
 					<texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
 				</value>
 			</li>
-			<li Class="PatchOperationReplace" MayRequire="neceros.coalexpanded">
-				<xpath>/Defs/ThingDef[defName="MineableCoal"]/graphicData/texPath</xpath>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="MineableComponentsIndustrial"]/graphicData</xpath>
 				<value>
-					<texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
+					<graphicData>
+						<texPath>Things/Building/Linked/RG_CompactedMachinery_Atlas</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<shaderType>CutoutComplex</shaderType>
+						<color>(112,89,43)</color>
+						<colorTwo>(112,89,43)</colorTwo>
+						<!--<colorTwo>(46,36,17)</colorTwo>-->
+					</graphicData>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="CollapsedRocks"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Natural/RG_CollapsedRocks</texPath>
 				</value>
 			</li>
 		</operations>

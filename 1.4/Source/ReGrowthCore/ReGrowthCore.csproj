@@ -67,6 +67,7 @@
     <Compile Include="CachedResult.cs" />
     <Compile Include="DeathActionWorker_Hemolope.cs" />
     <Compile Include="DeathActionWorker_Neutrolope.cs" />
+    <Compile Include="HarmonyPatches\PawnRenderer_MatAt_Patch.cs" />
     <Compile Include="HarmonyPatches\PawnRenderer_RenderPawnAt_Patch.cs" />
     <Compile Include="ModCompatibility.cs" />
     <Compile Include="Comps\CompAutumnLeavesSpawner.cs" />

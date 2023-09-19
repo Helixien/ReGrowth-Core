@@ -265,6 +265,100 @@
 					</lifeStages>
 				</value>
 			</li>
+			<!-- ================================ Husky ====================== -->
+<!--			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName = "Husky"]/lifeStages</xpath>
+				<value>
+					<lifeStages>
+						<li>
+							<label>husky puppy</label>
+							<labelPlural>husky puppies</labelPlural>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Husky/HuskyPup</texPath>
+								<drawSize>1.0</drawSize>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Husky/Dessicated_HuskyPup_east</texPath>
+								<drawSize>1.0</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Husky/Husky</texPath>
+								<drawSize>1.5</drawSize>
+								<shadowData>
+									<volume>(0.25, 0.3, 0.25)</volume>
+									<offset>(0,0,-0.15)</offset>
+								</shadowData>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Husky/Dessicated_Husky</texPath>
+								<drawSize>1.5</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Husky/Husky</texPath>
+								<drawSize>1.75</drawSize>
+								<shadowData>
+									<volume>(0.3, 0.4, 0.3)</volume>
+									<offset>(0,0,-0.15)</offset>
+								</shadowData>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Husky/Dessicated_Husky</texPath>
+								<drawSize>1.75</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+					</lifeStages>
+				</value>
+			</li>-->
+			<!-- ================================ Cougar ====================== -->
+<!--			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName = "Cougar"]/lifeStages</xpath>
+				<value>
+					<lifeStages>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Cougar/CougarKitten</texPath>
+								<drawSize>1.1</drawSize>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Cougar/Dessicated_CougarKitten</texPath>
+								<drawSize>1.1</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Cougar/Cougar</texPath>
+								<drawSize>1.4</drawSize>
+								<shadowData>
+									<volume>(0.3, 0.3, 0.3)</volume>
+									<offset>(0,0,-0.3)</offset>
+								</shadowData>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Cougar/Dessicated_Cougar</texPath>
+								<drawSize>1.4</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Cougar/Cougar</texPath>
+								<drawSize>2.18</drawSize>
+								<shadowData>
+									<volume>(0.4, 0.4, 0.4)</volume>
+									<offset>(0,0,-0.1)</offset>
+								</shadowData>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Cougar/Dessicated_Cougar</texPath>
+								<drawSize>2.18</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+					</lifeStages>
+				</value>
+			</li>-->
 		</operations>
 	</Operation>
 </Patch>

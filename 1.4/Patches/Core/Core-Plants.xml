@@ -316,6 +316,13 @@
 					<visualSizeRange>1.5~2.8</visualSizeRange>
 				</value>
 			</li>
+			<!-- ================================ HD Pine Tree ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreePine"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_TreePine</texPath>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

@@ -323,6 +323,12 @@
 					<texPath>Things/Plant/RG_TreePine</texPath>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreePine"]/plant/visualSizeRange</xpath>
+				<value>
+					<visualSizeRange>1~2.5</visualSizeRange>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

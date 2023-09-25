@@ -217,6 +217,12 @@
 					<texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
 				</value>
 			</li>
+			<li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VPsycastsE">
+				<xpath>/Defs/ThingDef[defName="VPE_EltexOre"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
+				</value>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="MineableComponentsIndustrial"]/graphicData</xpath>
 				<value>

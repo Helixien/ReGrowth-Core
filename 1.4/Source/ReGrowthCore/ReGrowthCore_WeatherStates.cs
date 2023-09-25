@@ -22,6 +22,7 @@ namespace ReGrowthCore
             var copy = savedWorker as ReGrowthCore_WeatherStates;
             weatherDefStates = copy.weatherDefStates;
         }
+
         public override void ApplySettings()
         {
             base.ApplySettings();

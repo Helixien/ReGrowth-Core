@@ -106,7 +106,8 @@ namespace ModSettingsFramework
                         if (worker.modPackageSettingsID != null && worker.modPackageSettingsID.ToLower() == packageID.ToLower()
                             || mod.PackageIdPlayerFacing.ToLower() == packageID.ToLower())
                         {
-                            if (patchWorkers.TryGetValue(worker.GetType().FullName, out var matchingSavedWorker))
+                            var type = worker.GetType().FullName;
+                            if (patchWorkers.TryGetValue(type, out var matchingSavedWorker) && matchingSavedWorker != null)
                             {
                                 worker.CopyFrom(matchingSavedWorker);
                             }

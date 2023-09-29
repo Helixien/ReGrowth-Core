@@ -314,7 +314,7 @@
 				</value>
 			</li>-->
 			<!-- ================================ Cougar ====================== -->
-			<li Class="PatchOperationReplace">
+<!--			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName = "Cougar"]/lifeStages</xpath>
 				<value>
 					<lifeStages>
@@ -358,7 +358,7 @@
 						</li>
 					</lifeStages>
 				</value>
-			</li>
+			</li>-->
 		</operations>
 	</Operation>
 </Patch>

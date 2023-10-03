@@ -10,6 +10,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/VFEMedieval.TerrainListDef[defName="VFEM_MoatableTerrain"]/terrainPairsByBiomes</xpath>
 					<value>
+						<!--============================================== Temperate ==============================================-->
 						<li>
 							<biome>RG_TemperateGrassland</biome>
 							<terrainPairs>
@@ -34,6 +35,19 @@
 								<li><from>MarshyTerrain</from><to>Marsh</to></li>
 							</terrainPairs>
 						</li>
+						<li>
+							<biome>TemperateSwamp</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_TemperateSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<!--============================================== Cold ==============================================-->
 						<li>
 							<biome>BorealForest</biome>
 							<terrainPairs>
@@ -70,6 +84,7 @@
 								<li><from>MarshyTerrain</from><to>Marsh</to></li>
 							</terrainPairs>
 						</li>
+						<!--============================================== Arid ==============================================-->
 						<li>
 							<biome>AridShrubland</biome>
 							<terrainPairs>
@@ -106,6 +121,32 @@
 								<li><from>MarshyTerrain</from><to>Marsh</to></li>
 							</terrainPairs>
 						</li>
+						<!--============================================== Tropical ==============================================-->
+						<li>
+							<biome>TropicalRainforest</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_TropicalSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<li>
+							<biome>TropicalSwamp</biome>
+							<terrainPairs>
+								<li><from>Marsh</from><to>WaterShallow</to></li>
+								<li><from>SoftSand</from><to>Sand</to></li>
+								<li><from>Sand</from><to>Gravel</to></li>
+								<li><from>RG_TropicalSoil</from><to>SoftSand</to></li>
+								<li><from>Gravel</from><to>MossyTerrain</to></li>
+								<li><from>MossyTerrain</from><to>MarshyTerrain</to></li>
+								<li><from>MarshyTerrain</from><to>Marsh</to></li>
+							</terrainPairs>
+						</li>
+						<!--============================================== Modded ReGrowth ==============================================-->
 						<li MayRequire="ReGrowth.BOTR.AspenForest">
 							<biome>RG_AspenForest</biome>
 							<terrainPairs>
@@ -130,16 +171,6 @@
 								<li><from>MarshyTerrain</from><to>Marsh</to></li>
 							</terrainPairs>
 						</li>
-						<!--
-						<li>RG_HotSpringSand</li>
-						<li>RG_AnimaSpringSand</li>
-						<li>RG_AnimaSoil</li>
-						<li>RG_AnimaSoilEnchanted</li>
-						<li>RG_AnimaSoilCracked</li>
-						<li>RG_DepletedSoil</li>
-						<li>RG_RubbleSoil</li>
-						<li>RG_DepletedMossy</li>
-						<li>RG_DepletedGravel</li>-->
 					</value>
 				</li>
 			</operations>

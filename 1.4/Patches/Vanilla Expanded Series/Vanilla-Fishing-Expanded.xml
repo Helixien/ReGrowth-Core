@@ -8,65 +8,6 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs</xpath>
-					<value>
-						<ThingDef ParentName="VCEF_RawFishBase">
-							<defName>RG_RawDevilsHole</defName>
-							<label>devils hole pupfish</label>
-							<description>Raw devils hole pupfish. A small, purple fish beloning to the Cyprinodontidae family. It can only found in hot spring waters and is extremely rare.</description>
-							<graphicData>
-								<texPath>Things/Item/Resource/DevilsHole</texPath>
-								<graphicClass>Graphic_StackCount</graphicClass>
-							</graphicData>
-							<statBases>
-								<Mass>0.01</Mass>
-								<Nutrition>0.03</Nutrition>
-								<MarketValue>0.48</MarketValue>
-							</statBases>
-							<ingestible>
-								<specialThoughtDirect>AteRawFood</specialThoughtDirect>
-							</ingestible>
-							<tools>
-								<li>
-									<label>devils hole pupfish</label>
-									<capacities>
-										<li>Blunt</li>
-									</capacities>
-									<power>1</power>
-									<cooldownTime>2</cooldownTime>
-								</li>
-							</tools>
-							<equippedAngleOffset>-180</equippedAngleOffset>
-							<uiIconForStackCount>1</uiIconForStackCount>
-							<equipmentType>Primary</equipmentType>
-							<techLevel>Neolithic</techLevel>
-							<comps>
-								<li>
-									<compClass>CompEquippable</compClass>
-								</li>
-							</comps>
-						</ThingDef>
-						<VCE_Fishing.BiomeTempDef>
-							<defName>RG_BiomeHotSprings</defName>
-							<biomeTempLabel>HotSprings</biomeTempLabel>
-							<biomes>
-								<li>RG-VIS_VulcanicIceSheet</li>
-							</biomes>
-						</VCE_Fishing.BiomeTempDef>
-						<VCE_Fishing.FishDef>
-							<defName>RG_DevilsHole</defName>
-							<thingDef>RG_RawDevilsHole</thingDef>
-							<fishSizeCategory>Small</fishSizeCategory>
-							<canBeFreshwater>true</canBeFreshwater>
-							<canBeSaltwater>false</canBeSaltwater>
-							<allowedBiomes>
-								<li>HotSprings</li>
-							</allowedBiomes>
-							<baseFishingYield>35</baseFishingYield>
-						</VCE_Fishing.FishDef>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
 					<xpath>/Defs/VCE_Fishing.FishableTerrainDef[defName="VCEF_VanillaFishableTerrainsFresh"]/allowedTerrains</xpath>
 					<value>
 						<li>RG_HotSpring</li>

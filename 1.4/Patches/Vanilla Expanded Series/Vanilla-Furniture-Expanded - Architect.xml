@@ -8,13 +8,13 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/TerrainDef[defName = "RG_TundraSoil" or defName = "RG_BorealSoil" or defName="RG_TemperateSoil" or defName="RG_AncientConcrete" or defName="RG_LavaRock" or defName="RG_DepletedSoil" or defName="RG_DepletedMossy" or defName="RG_DepletedGravel" or defName="RG_AspenSoil" or defName="RG_BoilingSoil" or defName="RG_HotSpringSand"]/affordances</xpath>
+					<xpath>/Defs/TerrainDef[defName = "RG_TundraSoil" or defName = "RG_BorealSoil" or defName="RG_TemperateSoil" or defName="RG_AncientConcrete" or defName="RG_LavaRock" or defName="RG_DepletedSoil" or defName="RG_DepletedMossy" or defName="RG_DepletedGravel" or defName="RG_AspenSoil" or defName="RG_BoilingSoil" or defName="RG_HotSpringSand" or defName="RG_TropicalSoil"]/affordances</xpath>
 					<value>
 						<li>VFEArch_Foundation</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/TerrainDef[defName = "RG_TundraSoil" or defName = "RG_BorealSoil" or defName="RG_TemperateSoil" or defName="RG_DepletedSoil" or defName="RG_AspenSoil" or defName="RG_BoilingSoil"]/affordances</xpath>
+					<xpath>/Defs/TerrainDef[defName = "RG_TundraSoil" or defName = "RG_BorealSoil" or defName="RG_TemperateSoil" or defName="RG_DepletedSoil" or defName="RG_AspenSoil" or defName="RG_BoilingSoil" or defName="RG_TropicalSoil"]/affordances</xpath>
 					<value>
 						<li>VFEArch_Soil</li>
 					</value>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<VCE_Fishing.BiomeTempDef>
+		<defName>RG_BiomeHotSprings</defName>
+		<biomeTempLabel>Hot Springs</biomeTempLabel>
+		<biomes>
+			<li MayRequire="ReGrowth.BOTR.BoilingForest">RG_BoilingForest</li>
+		</biomes>
+	</VCE_Fishing.BiomeTempDef>
+</Defs>

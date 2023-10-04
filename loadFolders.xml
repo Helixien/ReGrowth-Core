@@ -5,5 +5,6 @@
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.4/LoadFolders/Ideology</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.4/LoadFolders/Biotech</li>
 		<li IfModActive="vanillaracesexpanded.android">1.4/LoadFolders/VanillaRacesExpanded-Android</li>
+		<li IfModActive="VanillaExpanded.VCEF">1.4/LoadFolders/VanillaFishingExpanded</li>
 	</v1.4>
 </loadFolders>

@@ -2,7 +2,7 @@
 <Defs>
 	<VCE_Fishing.BiomeTempDef>
 		<defName>RG_BiomeHotSprings</defName>
-		<biomeTempLabel>Hot Springs</biomeTempLabel>
+		<biomeTempLabel>Springs</biomeTempLabel>
 		<biomes>
 			<li MayRequire="ReGrowth.BOTR.BoilingForest">RG_BoilingForest</li>
 		</biomes>

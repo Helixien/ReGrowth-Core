@@ -8,7 +8,7 @@
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>false</canBeSaltwater>
 		<allowedBiomes>
-			<li>HotSprings</li>
+			<li>Springs</li>
 		</allowedBiomes>
 		<baseFishingYield>29</baseFishingYield>
 	</VCE_Fishing.FishDef>
@@ -20,12 +20,8 @@
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>BorealForest</li>
-			<li>Tundra</li>
-			<li>ColdBog</li>
-			<li>TemperateForest</li>
-			<li>TemperateSwamp</li>
-			<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenForest</li>
+			<li>Cold</li>
+			<li>Warm</li>
 		</allowedBiomes>
 		<baseFishingYield>8</baseFishingYield>
 	</VCE_Fishing.FishDef>
@@ -36,11 +32,8 @@
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>true</canBeSaltwater>
 		<allowedBiomes>
-			<li>TemperateForest</li>
-			<li>TemperateSwamp</li>
-			<li>TropicalRainforest</li>
-			<li>TropicalSwamp</li>
-			<li>AridShrubland</li>
+			<li>Hot</li>
+			<li>Warm</li>
 		</allowedBiomes>
 		<baseFishingYield>9</baseFishingYield>
 	</VCE_Fishing.FishDef>

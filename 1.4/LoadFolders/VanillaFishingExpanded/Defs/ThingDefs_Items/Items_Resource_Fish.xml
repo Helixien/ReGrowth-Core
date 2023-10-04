@@ -4,7 +4,7 @@
 	<ThingDef ParentName="VCEF_RawFishBase">
 		<defName>RG_RawDevilsHole</defName>
 		<label>devils hole pupfish</label>
-		<description>Raw devils hole pupfish. A small, purple fish beloning to the Cyprinodontidae family. It can only found in hot spring waters and is extremely rare.</description>
+		<description>Raw devils hole pupfish. A small, purple fish belonging to the Cyprinodontidae family. It can only found in hot spring waters and is extremely rare.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/DevilsHole</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -43,7 +43,7 @@
 		<label>slaughterfish</label>
 		<description>Raw slaughterfish. Slaughterfish are a diverse group of highly aggressive species of fish going after their prey with razor-sharp teeth. This particular species is often found in colder biomes.</description>
 		<graphicData>
-			<texPath>Things/Items/Resource/ColdSlaughterfish</texPath>
+			<texPath>Things/Item/Resource/ColdSlaughterfish</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
@@ -79,7 +79,7 @@
 		<label>slaughterfish</label>
 		<description>Raw slaughterfish. Slaughterfish are a diverse group of highly aggressive species of fish going after their prey with razor-sharp teeth. This particular species is often found in warmer biomes.</description>
 		<graphicData>
-			<texPath>Things/Items/Resource/WarmSlaughterfish</texPath>
+			<texPath>Things/Item/Resource/WarmSlaughterfish</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>

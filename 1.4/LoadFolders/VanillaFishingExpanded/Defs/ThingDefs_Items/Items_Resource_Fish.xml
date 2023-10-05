@@ -4,7 +4,7 @@
 	<ThingDef ParentName="VCEF_RawFishBase">
 		<defName>RG_RawDevilsHole</defName>
 		<label>devils hole pupfish</label>
-		<description>Raw devils hole pupfish. A small, purple fish belonging to the Cyprinodontidae family. It can only found in hot spring waters and is extremely rare.</description>
+		<description>Raw devils hole pupfish. A small, purple fish belonging to the Cyprinodontidae family. It can only be found in hot spring waters and is extremely rare.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/DevilsHole</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>

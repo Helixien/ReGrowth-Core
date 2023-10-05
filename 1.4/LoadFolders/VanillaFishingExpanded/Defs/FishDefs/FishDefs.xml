@@ -8,7 +8,7 @@
 		<canBeFreshwater>true</canBeFreshwater>
 		<canBeSaltwater>false</canBeSaltwater>
 		<allowedBiomes>
-			<li>Springs</li>
+			<li>Warm</li>
 		</allowedBiomes>
 		<baseFishingYield>29</baseFishingYield>
 	</VCE_Fishing.FishDef>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!--============================================== Vanilla Animals Expanded ==============================================-->
+	<!--============================================== Sam's fucking Polar Bear ==============================================-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>The Joris Experience</li>

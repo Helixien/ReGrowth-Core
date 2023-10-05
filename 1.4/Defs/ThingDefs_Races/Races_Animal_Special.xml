@@ -24,18 +24,6 @@
 			<meatLabel>moa meat</meatLabel>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.1</manhunterOnDamageChance>
-			<wildBiomes>
-				<TemperateForest>0.05</TemperateForest>
-				<RG_TemperateGrassland>0.15</RG_TemperateGrassland>
-				<TemperateSwamp>0.01</TemperateSwamp>
-				<AridShrubland>0.03</AridShrubland>
-				<BorealForest>0.05</BorealForest>
-				<Tundra>0.2</Tundra>
-				<ColdBog>0.01</ColdBog>
-				<RG_AspenForest MayRequire="ReGrowth.BOTR.AspenForest">0.05</RG_AspenForest>
-				<RG_BoilingForest MayRequire="ReGrowth.BOTR.BoilingForest">0.04</RG_BoilingForest>
-				<AB_IdyllicMeadows MayRequire="sarg.alphabiomes">0.02</AB_IdyllicMeadows>
-			</wildBiomes>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -231,15 +219,14 @@
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
 			<lifeExpectancy>15</lifeExpectancy>
 			<wildBiomes>
-				<TemperateForest>0.1</TemperateForest>
-				<RG_TemperateGrassland>0.1</RG_TemperateGrassland>
-				<TemperateSwamp>0.05</TemperateSwamp>
-				<TropicalRainforest>0.15</TropicalRainforest>
-				<TropicalSwamp>0.05</TropicalSwamp>
-				<AridShrubland>0.1</AridShrubland>
-				<Desert>0.1</Desert>
-				<RG_BoilingForest MayRequire="ReGrowth.BOTR.BoilingForest">0.05</RG_BoilingForest>
-				<AB_IdyllicMeadows MayRequire="sarg.alphabiomes">0.1</AB_IdyllicMeadows>
+				<TemperateForest>0.01</TemperateForest>
+				<RG_TemperateGrassland>0.01</RG_TemperateGrassland>
+				<TemperateSwamp>0.01</TemperateSwamp>
+				<TropicalRainforest>0.01</TropicalRainforest>
+				<TropicalSwamp>0.01</TropicalSwamp>
+				<AridShrubland>0.01</AridShrubland>
+				<Desert>0.01</Desert>
+				<RG_BoilingForest MayRequire="ReGrowth.BOTR.BoilingForest">0.01</RG_BoilingForest>
 			</wildBiomes>
 			<lifeStageAges>
 				<li>

@@ -1,53 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!--  <ThingDef ParentName="PlantBase">
-    <defName>RG_Plant_PotatoTEST</defName>
-    <label>potato plant TEST</label>
-    <description>A highly nutritious tuber. Potatoes grow well even in somewhat poor soil, and form a delicious crispy outer coating when fried in oil.</description>
-    <statBases>
-      <MaxHitPoints>85</MaxHitPoints>
-      <Nutrition>0.25</Nutrition>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Plant/PotatoPlant</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-    </graphicData>
-    <selectable>true</selectable>
-    <pathCost>14</pathCost>
-    <ingestible />
-    <plant>
-      <fertilitySensitivity>0.4</fertilitySensitivity>
-      <dieIfLeafless>true</dieIfLeafless>
-      <harvestTag>Standard</harvestTag>
-      <harvestedThingDef>RawPotatoes</harvestedThingDef>
-      <harvestYield>11</harvestYield>
-      <sowTags>
-        <li>Ground</li>
-        <li>Hydroponic</li>
-      </sowTags>
-      <topWindExposure>0.1</topWindExposure>
-      <growDays>5.8</growDays>
-      <visualSizeRange>0.3~1.05</visualSizeRange>
-      <wildOrder>2</wildOrder>
-      <purpose>Food</purpose>
-      <humanFoodPlant>true</humanFoodPlant>
-    </plant>
-	<thingClass>ReGrowthCore.PlantExpandable</thingClass>
-	<modExtensions>
-		<li Class="ReGrowthCore.PlantExtension">
-			<minLeaflessTemperature>10</minLeaflessTemperature>
-			<maxLeaflessTemperature>99999</maxLeaflessTemperature>
-			<diesFromColdTemperature>false</diesFromColdTemperature>
-			<diesFromHeatTemperature>true</diesFromHeatTemperature>
-			<minGrowthTemperature>-273</minGrowthTemperature>
-			<minOptimalGrowthTemperature>-273</minOptimalGrowthTemperature>
-			<maxOptimalGrowthTemperature>0</maxOptimalGrowthTemperature>
-			<maxGrowthTemperature>0</maxGrowthTemperature>
-			<!{1}**<plantRestEnabled>False</plantRestEnabled>**{1}>
-			
-		</li>
-	</modExtensions>
-  </ThingDef>-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_RaspberryCultivated</defName>
 		<label>raspberry bush</label>

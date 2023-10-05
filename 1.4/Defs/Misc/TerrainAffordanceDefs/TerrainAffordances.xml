@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!--=============== Lava ==============-->
 	<TerrainAffordanceDef>
 		<defName>RG_Lava</defName>
 		<label>lava</label>

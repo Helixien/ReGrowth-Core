@@ -305,7 +305,7 @@
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Neutroamine</milkDef>
-				<milkIntervalDays>5</milkIntervalDays>
+				<milkIntervalDays>6</milkIntervalDays>
 				<milkAmount>15</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>

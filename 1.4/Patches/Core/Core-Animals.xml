@@ -5,7 +5,7 @@
 			<!-- ================================ Animal Patches ====================== -->
 			<!-- ================================ Muffalo ====================== -->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/PawnKindDef[defName = "Muffalo"]/lifeStages</xpath>
+				<xpath>/Defs/PawnKindDef[defName="Muffalo"]/lifeStages</xpath>
 				<value>
 					<lifeStages>
 						<li>
@@ -14,6 +14,7 @@
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Animal/RG_Muffalo/CalfMufallo</texPath>
 								<drawSize>1.5</drawSize>
+								<color>(175,195,200)</color>
 								<shadowData>
 									<volume>(0.4, 0.3, 0.3)</volume>
 									<offset>(0,0,-0.2)</offset>
@@ -28,6 +29,7 @@
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Animal/RG_Muffalo/Muffalo</texPath>
 								<drawSize>2.25</drawSize>
+								<color>(175,195,200)</color>
 								<shadowData>
 									<volume>(0.6, 0.45, 0.45)</volume>
 									<offset>(0,0,-0.25)</offset>
@@ -42,6 +44,7 @@
 							<bodyGraphicData>
 								<texPath>Things/Pawn/Animal/RG_Muffalo/Muffalo</texPath>
 								<drawSize>3</drawSize>
+								<color>(175,195,200)</color>
 								<shadowData>
 									<volume>(0.8, 0.6, 0.6)</volume>
 									<offset>(0,0,-0.3)</offset>
@@ -55,6 +58,16 @@
 					</lifeStages>
 				</value>
 			</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Muffalo"]</xpath>
+					<value>
+						<alternateGraphicChance>0.66</alternateGraphicChance>
+						<alternateGraphics>
+							<li><color>(133,153,158)</color></li>
+							<li><color>(159,185,191)</color></li>
+						</alternateGraphics>
+					</value>
+				</li>
 			<!-- ================================ Thrumbo ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName = "Thrumbo"]/lifeStages/li[1]/bodyGraphicData</xpath>
@@ -221,7 +234,7 @@
 			</li>
 			<!-- ================================ Cat====================== -->
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/PawnKindDef[defName = "Cat"]/lifeStages</xpath>
+				<xpath>/Defs/PawnKindDef[defName="Cat"]/lifeStages</xpath>
 				<value>
 					<lifeStages>
 						<li>
@@ -265,6 +278,63 @@
 					</lifeStages>
 				</value>
 			</li>
+			<!-- ================================ Hare ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="Hare"]/lifeStages</xpath>
+				<value>
+					<lifeStages>
+						<li>
+							<label>leveret</label>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Hare/LeveretHare</texPath>
+								<drawSize>1</drawSize>
+								<color>(130,127,106)</color>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Hare/Dessicated_LeveretHare</texPath>
+								<drawSize>1</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Hare/Hare</texPath>
+								<drawSize>1.25</drawSize>
+								<color>(130,127,106)</color>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Hare/Dessicated_Hare</texPath>
+								<drawSize>1.25</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Hare/Hare</texPath>
+								<drawSize>1.5</drawSize>
+								<color>(130,127,106)</color>
+								<shadowData>
+									<volume>(0.25, 0.3, 0.25)</volume>
+									<offset>(0,0,-0.15)</offset>
+								</shadowData>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Hare/Dessicated_Hare</texPath>
+								<drawSize>1.5</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+					</lifeStages>
+				</value>
+			</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Hare"]</xpath>
+					<value>
+						<alternateGraphicChance>0.75</alternateGraphicChance>
+						<alternateGraphics>
+							<li><color>(107,107,107)</color></li>
+							<li><color>(160,130,122)</color></li>
+							<li><color>(153,112,104)</color></li>
+						</alternateGraphics>
+					</value>
+				</li>
 			<!-- ================================ Husky ====================== -->
 			<!--			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName = "Husky"]/lifeStages</xpath>
@@ -314,7 +384,7 @@
 				</value>
 			</li>-->
 			<!-- ================================ Cougar ====================== -->
-<!--			<li Class="PatchOperationReplace">
+			<!--			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName = "Cougar"]/lifeStages</xpath>
 				<value>
 					<lifeStages>

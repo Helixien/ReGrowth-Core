@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <!--======================= Rabbits ========================= -->
+
+  <ThingDef ParentName="BaseHare">
+    <defName>RG_Rabbit</defName>
+    <label>rabbit</label>
+    <description>This small and fluffy, solitary herbivore can swiftly hop away from danger.</description>
+    <uiIconScale>1.5</uiIconScale>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HareBase">
+    <defName>Hare</defName>
+    <label>hare</label>
+    <race>Hare</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Hare</texPath>
+          <drawSize>1</drawSize>
+          <color>(130,127,106)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Hare</texPath>
+          <drawSize>1.25</drawSize>
+          <color>(130,127,106)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Hare</texPath>
+          <drawSize>1.5</drawSize>
+          <color>(130,127,106)</color>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+  <!--================================================ -->
+
+  <ThingDef ParentName="BaseHare">
+    <defName>Snowhare</defName>
+    <label>snowhare</label>
+    <description>This hardy animal survives the brutal winters of its homelands by burrowing through snow to find edible plants.</description>
+    <statBases>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+    </statBases>
+    <race>
+      <useMeatFrom>Hare</useMeatFrom>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="HareBase">
+    <defName>Snowhare</defName>
+    <label>snowhare</label>
+    <race>Snowhare</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Hare</texPath>
+          <drawSize>1</drawSize>
+          <color>(180,180,180)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Hare</texPath>
+          <drawSize>1.25</drawSize>
+          <color>(180,180,180)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Hare</texPath>
+          <drawSize>1.5</drawSize>
+          <color>(180,180,180)</color>
+          <shadowData>
+            <volume>(0.32, 0.35, 0.32)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+</Defs>

@@ -1,8 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<Operation Class="PatchOperationSequence">
+	<!-- ================ Biome Worldmap Texture Replacer================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable new worldmap textures</label>
+		<tooltip>Enable new textures for world map biome tiles.</tooltip>
+		<id>RG_NewWorldmapTextures</id>
+		<category>RG_Retextures</category>
+		<order>110</order>
 		<operations>
-			<!-- ================================ Animal Patches ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "Tundra"]/texture</xpath>
+				<value>
+					<texture>World/Biomes/Replace/Tundra</texture>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/texture</xpath>
+				<value>
+					<texture>World/Biomes/Replace/AridShrubland</texture>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<!-- ================ New rock atlas texture ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable new rock texture</label>
+		<tooltip>Enable new textures for rock atlas and rockflecked atlas.</tooltip>
+		<id>RG_NewRockAtlasTextures</id>
+		<category>RG_Retextures</category>
+		<order>120</order>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name="RockBase"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Linked/RG_Rock_Atlas</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="MineableSteel" or defName="MineableSilver" or defName="MineableGold" or defName="MineableUranium" or defName="MineablePlasteel" or defName="MineableJade"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VPsycastsE">
+				<xpath>/Defs/ThingDef[defName="VPE_EltexOre"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="MineableComponentsIndustrial"]/graphicData</xpath>
+				<value>
+					<graphicData>
+						<texPath>Things/Building/Linked/RG_CompactedMachinery_Atlas</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+						<shaderType>CutoutComplex</shaderType>
+						<color>(112,89,43)</color>
+						<colorTwo>(112,89,43)</colorTwo>
+						<!--<colorTwo>(46,36,17)</colorTwo>-->
+					</graphicData>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="CollapsedRocks"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Natural/RG_CollapsedRocks</texPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<!-- ================ Animal Texture Replacer================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable new animal textures</label>
+		<tooltip>Enable new textures for animals, including colour variations.</tooltip>
+		<id>RG_NewAnimalTextures</id>
+		<category>RG_Retextures</category>
+		<order>130</order>
+		<operations>
 			<!-- ================================ Muffalo ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/PawnKindDef[defName="Muffalo"]/lifeStages</xpath>
@@ -391,100 +468,6 @@
 					</lifeStages>
 				</value>
 			</li>
-			<!-- ================================ Husky ====================== -->
-			<!--			<li Class="PatchOperationReplace">
-				<xpath>/Defs/PawnKindDef[defName = "Husky"]/lifeStages</xpath>
-				<value>
-					<lifeStages>
-						<li>
-							<label>husky puppy</label>
-							<labelPlural>husky puppies</labelPlural>
-							<bodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Husky/HuskyPup</texPath>
-								<drawSize>1.0</drawSize>
-							</bodyGraphicData>
-							<dessicatedBodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Husky/Dessicated_HuskyPup_east</texPath>
-								<drawSize>1.0</drawSize>
-							</dessicatedBodyGraphicData>
-						</li>
-						<li>
-							<bodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Husky/Husky</texPath>
-								<drawSize>1.5</drawSize>
-								<shadowData>
-									<volume>(0.25, 0.3, 0.25)</volume>
-									<offset>(0,0,-0.15)</offset>
-								</shadowData>
-							</bodyGraphicData>
-							<dessicatedBodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Husky/Dessicated_Husky</texPath>
-								<drawSize>1.5</drawSize>
-							</dessicatedBodyGraphicData>
-						</li>
-						<li>
-							<bodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Husky/Husky</texPath>
-								<drawSize>1.75</drawSize>
-								<shadowData>
-									<volume>(0.3, 0.4, 0.3)</volume>
-									<offset>(0,0,-0.15)</offset>
-								</shadowData>
-							</bodyGraphicData>
-							<dessicatedBodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Husky/Dessicated_Husky</texPath>
-								<drawSize>1.75</drawSize>
-							</dessicatedBodyGraphicData>
-						</li>
-					</lifeStages>
-				</value>
-			</li>-->
-			<!-- ================================ Cougar ====================== -->
-			<!--			<li Class="PatchOperationReplace">
-				<xpath>/Defs/PawnKindDef[defName = "Cougar"]/lifeStages</xpath>
-				<value>
-					<lifeStages>
-						<li>
-							<bodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Cougar/CougarKitten</texPath>
-								<drawSize>1.1</drawSize>
-							</bodyGraphicData>
-							<dessicatedBodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Cougar/Dessicated_CougarKitten</texPath>
-								<drawSize>1.1</drawSize>
-							</dessicatedBodyGraphicData>
-						</li>
-						<li>
-							<bodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Cougar/Cougar</texPath>
-								<drawSize>1.4</drawSize>
-								<shadowData>
-									<volume>(0.3, 0.3, 0.3)</volume>
-									<offset>(0,0,-0.3)</offset>
-								</shadowData>
-							</bodyGraphicData>
-							<dessicatedBodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Cougar/Dessicated_Cougar</texPath>
-								<drawSize>1.4</drawSize>
-							</dessicatedBodyGraphicData>
-						</li>
-						<li>
-							<bodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Cougar/Cougar</texPath>
-								<drawSize>2.18</drawSize>
-								<shadowData>
-									<volume>(0.4, 0.4, 0.4)</volume>
-									<offset>(0,0,-0.1)</offset>
-								</shadowData>
-							</bodyGraphicData>
-							<dessicatedBodyGraphicData>
-								<texPath>Things/Pawn/Animal/RG_Cougar/Dessicated_Cougar</texPath>
-								<drawSize>2.18</drawSize>
-							</dessicatedBodyGraphicData>
-						</li>
-					</lifeStages>
-				</value>
-			</li>-->
 		</operations>
 	</Operation>
 </Patch>

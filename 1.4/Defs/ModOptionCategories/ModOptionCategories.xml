@@ -6,8 +6,13 @@
 		<order>0</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
 	<ModSettingsFramework.ModOptionCategoryDef>
+		<defName>RG_Retextures</defName>
+		<label>Retextures</label>
+		<order>1</order>
+	</ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef>
 		<defName>RG_WeatherToggles</defName>
 		<label>Weather toggles</label>
-		<order>1</order>
+		<order>999</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
 </Defs>

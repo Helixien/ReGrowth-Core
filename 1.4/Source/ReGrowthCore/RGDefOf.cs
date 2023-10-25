@@ -32,8 +32,6 @@ namespace ReGrowthCore
 
 		public static GameConditionDef Aurora;
 
-		public static WeatherDef RG_Windy;
-
 		public static TerrainDef Concrete;
 		public static TerrainDef RG_AncientConcrete;
 		public static ThingDef RG_Filth_Neutroamine;

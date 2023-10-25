@@ -32,13 +32,13 @@ namespace ReGrowthCore
         public static void TryChangePowerOutput(CompPowerPlantWind comp, ref float num)
         {
             float prevValue = Mathf.Abs(comp.cachedPowerOutput) / Mathf.Abs(comp.Props.PowerConsumption);
-            if (comp.parent.Map.weatherManager.CurWeatherPerceived == RG_DefOf.RG_Windy)
+            if (comp.parent.Map.weatherManager.CurWeatherPerceived?.GetModExtension<WeatherExtension>()?.increasesWindTurbinesOutput ?? false)
             {
                 float targetValue = Mathf.Lerp(MinUsableWindIntensity, MaxUsableWindIntensity, num / MaxUsableWindIntensity);
                 float minValue = targetValue > prevValue ? Mathf.Min(targetValue, prevValue + WindChangeStep) : Mathf.Max(targetValue, prevValue - WindChangeStep);
                 num = Mathf.Min(minValue, targetValue);
             }
-            else if (comp.parent.Map.weatherManager.lastWeather == RG_DefOf.RG_Windy)
+            else if (comp.parent.Map.weatherManager.lastWeather?.GetModExtension<WeatherExtension>()?.increasesWindTurbinesOutput ?? false)
             {
                 float diff = Mathf.Abs(num - prevValue);
                 if (diff > WindChangeStep)

@@ -86,6 +86,11 @@
 			<overlay>(0.6,0.6,0.6)</overlay>
 			<saturation>1.25</saturation>
 		</skyColorsNightMid>
+		<modExtensions>
+			<li Class="ReGrowthCore.WeatherExtension">
+				<increasesWindTurbinesOutput>true</increasesWindTurbinesOutput>
+			</li>
+		</modExtensions>
 	</WeatherDef>
 	<!-- ================ Drizzle ================ -->
 	<WeatherDef>
@@ -355,6 +360,9 @@
 				<worldPanDir1>(0.25, 0)</worldPanDir1>
 				<worldOverlayPanSpeed2>0.018</worldOverlayPanSpeed2>
 				<worldPanDir2>(0.24, 0)</worldPanDir2>
+			</li>
+			<li Class="ReGrowthCore.WeatherExtension">
+				<increasesWindTurbinesOutput>true</increasesWindTurbinesOutput>
 			</li>
 		</modExtensions>
 	</WeatherDef>

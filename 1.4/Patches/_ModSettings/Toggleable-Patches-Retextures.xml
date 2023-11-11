@@ -408,16 +408,10 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/PawnKindDef[defName="Hare"]</xpath>
 				<value>
-					<alternateGraphicChance>0.75</alternateGraphicChance>
+					<alternateGraphicChance>0.5</alternateGraphicChance>
 					<alternateGraphics>
 						<li>
-							<color>(107,107,107)</color>
-						</li>
-						<li>
-							<color>(160,130,122)</color>
-						</li>
-						<li>
-							<color>(153,112,104)</color>
+							<color>(70,76,81)</color>
 						</li>
 					</alternateGraphics>
 				</value>
@@ -466,6 +460,62 @@
 							</dessicatedBodyGraphicData>
 						</li>
 					</lifeStages>
+				</value>
+			</li>
+			<!-- ================================ Squirrel ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="Squirrel"]/lifeStages</xpath>
+				<value>
+					<lifeStages>
+						<li>
+							<label>kit</label>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Squirrel/Squirrel</texPath>
+								<drawSize>1</drawSize>
+								<color>(161,95,38)</color>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Squirrel/Dessicated_Squirrel</texPath>
+								<drawSize>1</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Squirrel/Squirrel</texPath>
+								<drawSize>1.25</drawSize>
+								<color>(161,95,38)</color>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Squirrel/Dessicated_Squirrel</texPath>
+								<drawSize>1.25</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Squirrel/Squirrel</texPath>
+								<drawSize>1.5</drawSize>
+								<color>(161,95,38)</color>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/RG_Squirrel/Dessicated_Squirrel</texPath>
+								<drawSize>1.5</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+					</lifeStages>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/PawnKindDef[defName="Squirrel"]</xpath>
+				<value>
+					<alternateGraphicChance>0.66</alternateGraphicChance>
+					<alternateGraphics>
+						<li>
+							<color>(70,76,81)</color>
+						</li>
+						<li>
+							<color>(104,98,89)</color>
+						</li>
+					</alternateGraphics>
 				</value>
 			</li>
 		</operations>

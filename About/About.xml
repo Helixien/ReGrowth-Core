@@ -35,6 +35,7 @@ This mod is as lightweight as possible, adding the minimum of code required and 
 		<li>VanillaExpanded.VCEF</li>
 		<li>DakkPasserida.GauranlenReplant</li>
 		<li>vanillaracesexpanded.android</li>
+		<li>OskarPotocki.VFE.Tribals</li>
 	</loadAfter>
 	<loadBefore>
 		<li>Balthoraz.RimUniverse.BiomesModule</li>

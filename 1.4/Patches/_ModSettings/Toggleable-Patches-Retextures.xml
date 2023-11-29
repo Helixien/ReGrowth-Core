@@ -44,6 +44,13 @@
 					<texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
 				</value>
 			</li>
+			<!-- Expanded Materials ores -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="EM_MineableCoal" or defName="EM_MineableIron" or defName="EM_MineableLead" or defName="EM_MineableTin" or defName="EM_MineableCopper" or defName="EM_MineableTitanium"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Building/Linked/RG_RockFlecked_Atlas</texPath>
+				</value>
+			</li>
 			<li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VPsycastsE">
 				<xpath>/Defs/ThingDef[defName="VPE_EltexOre"]/graphicData/texPath</xpath>
 				<value>

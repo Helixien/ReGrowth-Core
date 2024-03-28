@@ -654,24 +654,4 @@
 			</li>
 		</operations>
 	</Operation>
-	<!-- ================ Replantable Harbinger Tree ================ -->
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>False</defaultValue>
-		<label>Make harbinger  tree replantable</label>
-		<tooltip>Allows for the harbinger  tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
-		<id>RG_HarbingerTreeReplant</id>
-		<category>RG_Core</category>
-		<order>80</order>
-		<mods>
-			<li>Anomaly</li>
-		</mods>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_TreeHarbinger"]/minifiedDef</xpath>
-				<value>
-					<minifiedDef>MinifiedTree</minifiedDef>
-				</value>
-			</li>
-		</operations>
-	</Operation>
 </Patch>

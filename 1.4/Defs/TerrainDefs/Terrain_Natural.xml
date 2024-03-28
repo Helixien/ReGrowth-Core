@@ -226,4 +226,36 @@
 			</li>
 		</tools>
 	</TerrainDef>
+	<!-- ================ Hot Spring Sand ================ -->
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>RG_HotSpringSand</defName>
+		<label>sand</label>
+		<texturePath>Terrain/Surfaces/HotSpringSand</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>SoftDry</scatterType>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>Diggable</li>
+		</affordances>
+		<fertility>0.005</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+			<li>
+				<label>sand</label>
+				<capacities>
+					<li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>SandInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</TerrainDef>
 </Defs>

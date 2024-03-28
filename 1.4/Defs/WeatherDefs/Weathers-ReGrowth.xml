@@ -102,7 +102,7 @@
 		<accuracyMultiplier>0.9</accuracyMultiplier>
 		<favorability>Neutral</favorability>
 		<perceivePriority>1</perceivePriority>
-		<exposedThought>RG_Wet</exposedThought>
+		<weatherThought>RG_Wet</weatherThought>
 		<rainRate>0.5</rainRate>
 		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
 		<ambientSounds>
@@ -163,7 +163,7 @@
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>3</perceivePriority>
-		<exposedThought>RG_ExtremelyWet</exposedThought>
+		<weatherThought>RG_ExtremelyWet</weatherThought>
 		<rainRate>3.0</rainRate>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
@@ -226,81 +226,6 @@
 				<worldPanDir1>(-0.25, -1)</worldPanDir1>
 				<worldOverlayPanSpeed2>0.022</worldOverlayPanSpeed2>
 				<worldPanDir2>(-0.24, -1)</worldPanDir2>
-			</li>
-		</modExtensions>
-	</WeatherDef>
-	<!-- ================ Hail ================ -->
-	<WeatherDef>
-		<defName>RG_Hail</defName>
-		<label>hail</label>
-		<description>Hard, frozen rain that can injure exposed pawns.</description>
-		<temperatureRange>-999~1.5</temperatureRange>
-		<windSpeedFactor>1.0</windSpeedFactor>
-		<accuracyMultiplier>0.6</accuracyMultiplier>
-		<favorability>Bad</favorability>
-		<perceivePriority>3</perceivePriority>
-		<rainRate>0.8</rainRate>
-		<moveSpeedMultiplier>0.6</moveSpeedMultiplier>
-		<commonalityRainfallFactor>
-			<points>
-				<li>(0, 0)</li>
-				<li>(1300, 1)</li>
-				<li>(4000, 2.0)</li>
-			</points>
-		</commonalityRainfallFactor>
-		<ambientSounds>
-			<li>RG_Ambient_Hail</li>
-		</ambientSounds>
-		<overlayClasses>
-			<li>VFECore.WeatherOverlay_Custom</li>
-			<li>VFECore.WeatherOverlay_Effects</li>
-		</overlayClasses>
-		<skyColorsDay>
-			<sky>(0.8,0.8,0.8)</sky>
-			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.7,0.7,0.7)</overlay>
-			<saturation>0.9</saturation>
-		</skyColorsDay>
-		<skyColorsDusk>
-			<sky>(1,1,1)</sky>
-			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.6,0.6,0.6)</overlay>
-			<saturation>0.9</saturation>
-		</skyColorsDusk>
-		<skyColorsNightEdge>
-			<sky>(0.35,0.40,0.45)</sky>
-			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.5,0.5,0.5)</overlay>
-			<saturation>0.9</saturation>
-		</skyColorsNightEdge>
-		<skyColorsNightMid>
-			<sky>(0.35,0.40,0.45)</sky>
-			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(0.5,0.5,0.5)</overlay>
-			<saturation>0.9</saturation>
-		</skyColorsNightMid>
-		<modExtensions>
-			<li Class="VFECore.WeatherLetterExtensions">
-				<letterDef>NeutralEvent</letterDef>
-				<letterTitle>Hail</letterTitle>
-				<letterText>Numerous pellets of ice fall from cumulonimbus clouds, the randomness of their sizes can cause injuries to those not under a roof.</letterText>
-			</li>
-			<li Class="VFECore.WeatherOverlayExtension">
-				<overlayPath>Weather/HailWorldOverlay</overlayPath>
-				<copyPropertiesFrom>Weather/SnowOverlayWorld</copyPropertiesFrom>
-				<worldOverlayPanSpeed1>0.008</worldOverlayPanSpeed1>
-				<worldPanDir1>(-0.5, -1)</worldPanDir1>
-				<worldOverlayPanSpeed2>0.009</worldOverlayPanSpeed2>
-				<worldPanDir2>(-0.48, -1)</worldPanDir2>
-			</li>
-			<li Class="VFECore.WeatherEffectsExtension">
-				<ticksInterval>300~600</ticksInterval>
-				<killsPlants>false</killsPlants>
-				<damageToApply>Blunt</damageToApply>
-				<damageRange>0.1~0.5</damageRange>
-				<percentOfPawnsToDealDamage>0.1</percentOfPawnsToDealDamage>
-				<activeOnWeatherPerceived>RG_Hail</activeOnWeatherPerceived>
-				<worksOnNonFleshPawns>false</worksOnNonFleshPawns>
 			</li>
 		</modExtensions>
 	</WeatherDef>
@@ -496,7 +421,7 @@
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>1</perceivePriority>
-		<exposedThought>RG_Sandy</exposedThought>
+		<weatherThought>RG_Sandy</weatherThought>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<ambientSounds>
 			<li>Ambient_Wind_Fog</li>
@@ -556,7 +481,7 @@
 		<accuracyMultiplier>0.8</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
-		<exposedThought>RG_Sandy</exposedThought>
+		<weatherThought>RG_Sandy</weatherThought>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>
@@ -615,7 +540,7 @@
 		<accuracyMultiplier>0.6</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
-		<exposedThought>RG_Sandy</exposedThought>
+		<weatherThought>RG_Sandy</weatherThought>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>

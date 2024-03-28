@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!--=============== Grassland Biome (Temperate Tundra so to speak) ==============-->
 	<BiomeDef>
 		<defName>RG_TemperateGrassland</defName>
 		<label>grassland</label>

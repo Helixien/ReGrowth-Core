@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<!-- ================================ Animated Marsh ====================== -->
+			<!-- ================================ Animated Marsh and Polluted Marsh ====================== -->
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/TerrainDef[defName="Marsh"]/waterDepthShader</xpath>
 				<match Class="PatchOperationReplace">
@@ -59,6 +59,14 @@
 						<edgeType>Water</edgeType>
 					</value>
 				</nomatch>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/TerrainDef[defName = "Marsh"]</xpath>
+				<value>
+					<li Class="VFECore.DefExtension_ShaderSpeedMult">
+						<timeMult>0.5</timeMult>
+					</li>
+				</value>
 			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/TerrainDef[defName = "Sand"]/fertility</xpath>

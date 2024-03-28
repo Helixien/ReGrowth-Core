@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ComplexRoomDef[defName="AncientMechGestatorRoom" or defName="AncientMechGeneratorRoom"]/floorTypes/li[text()="Concrete"]</xpath>
+				<xpath>/Defs/LayoutRoomDef[defName="AncientMechGestatorRoom" or defName="AncientMechGeneratorRoom"]/floorTypes/li[text()="Concrete"]</xpath>
 				<value>
 					<li>RG_AncientConcrete</li>
 				</value>

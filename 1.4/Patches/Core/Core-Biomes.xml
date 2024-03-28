@@ -2,7 +2,6 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<!-- ================================ Biome changes for plants ====================== -->
 			<!-- ================ Biome Boreal Forest ================ -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants</xpath>

@@ -7,6 +7,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
+				<!--============================================== I hate you Sarg ==============================================-->
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BiomeDef[defName="RG_TemperateGrassland"]/wildAnimals</xpath>
 					<value>

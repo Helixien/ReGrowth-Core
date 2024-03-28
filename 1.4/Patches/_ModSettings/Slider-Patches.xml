@@ -2,7 +2,7 @@
 <Patch>
 	<!-- ================ Bathe joy activity chance ================ -->
 	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
-		<label>Tweak base chance of bathing</label>
+		<label>Base chance of bathing</label>
 		<tooltip>Adjust the base chance of colonists bathing as a recreational activity. Default: 2.5</tooltip>
 		<id>RG_BaseChanceBathingActivity</id>
 		<category>RG_Core</category>
@@ -13,7 +13,7 @@
 	</Operation>
 	<!-- ================ Leaf beauty ================ -->
 	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
-		<label>Tweak leaf filth beauty value</label>
+		<label>Leaf filth beauty value</label>
 		<tooltip>Adjust the base beauty value of fallen leaf filth. Default: -4</tooltip>
 		<id>RG_FallenLeafBeauty</id>
 		<category>RG_Core</category>
@@ -23,7 +23,7 @@
 		<defaultValue>-4</defaultValue>
 	</Operation>
 	<Operation Class="ModSettingsFramework.PatchOperationSliderFloat">
-		<label>Tweak leaf filth outdoor beauty value</label>
+		<label>Leaf filth outdoor beauty value</label>
 		<tooltip>Adjust the base outdoor beauty value of fallen leaf filth. Default: 0</tooltip>
 		<id>RG_FallenLeafBeautyOutdoor</id>
 		<category>RG_Core</category>

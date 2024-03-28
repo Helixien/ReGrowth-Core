@@ -8,6 +8,7 @@
 		<li IfModActive="VanillaExpanded.VCEF">1.4/LoadFolders/VanillaFishingExpanded</li>
 		<li IfModActive="ReGrowth.BOTR.AspenForest">1.4/LoadFolders/ReGrowth-Aspen</li>
 		<li IfModActive="ReGrowth.BOTR.BoilingForest">1.4/LoadFolders/ReGrowth-Boiling</li>
+		<li IfModActive="ReGrowth.BOTR.Wastelands">1.4/LoadFolders/ReGrowth-Wastelands</li>
 	</v1.4>
 	<v1.5>
 		<li>/</li>
@@ -18,5 +19,6 @@
 		<li IfModActive="VanillaExpanded.VCEF">1.5/LoadFolders/VanillaFishingExpanded</li>
 		<li IfModActive="ReGrowth.BOTR.AspenForest">1.5/LoadFolders/ReGrowth-Aspen</li>
 		<li IfModActive="ReGrowth.BOTR.BoilingForest">1.5/LoadFolders/ReGrowth-Boiling</li>
+		<li IfModActive="ReGrowth.BOTR.Wastelands">1.5/LoadFolders/ReGrowth-Wastelands</li>
 	</v1.5>
 </loadFolders>

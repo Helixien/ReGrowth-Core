@@ -22,8 +22,6 @@ namespace ReGrowthCore
 
 		public static SoundDef RG_Ambient_DustDevil;
 
-		public static WeatherDef RG_Hail;
-
 		public static TerrainDef RG_HotSpringDeep;
 
 		public static TerrainDef RG_HotSpring;

@@ -674,21 +674,4 @@
 			</li>
 		</operations>
 	</Operation>
-	<!-- ================ Remove Immature Tree Textures ================ -->
-<!--	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>False</defaultValue>
-		<label>Remove immature tree textures</label>
-		<tooltip>Makes it so trees do not use immature tree textures, like before in Rimworld 1.4 and earlier.</tooltip>
-		<id>RG_ImmatureTreeTextures</id>
-		<category>RG_Core</category>
-		<order>90</order>
-		<operations>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_TreeHarbinger"]/minifiedDef</xpath>
-				<value>
-					<minifiedDef>MinifiedTree</minifiedDef>
-				</value>
-			</li>
-		</operations>
-	</Operation>-->
 </Patch>

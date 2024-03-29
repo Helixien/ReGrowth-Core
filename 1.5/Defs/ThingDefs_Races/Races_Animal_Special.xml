@@ -138,7 +138,7 @@
 				<label>neutrolope calf</label>
 				<labelPlural>neutrolope calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Neutrolope/CalfNeutrolope</texPath>
+					<texPath>Things/Pawn/Animal/Neutrolope/CalfNeutrolope</texPath>
 					<color>(204,167,113)</color>
 					<drawSize>1.2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -148,17 +148,17 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Neutrolope/Dessicated_CalfNeutrolope</texPath>
+					<texPath>Things/Pawn/Animal/Neutrolope/Dessicated_CalfNeutrolope</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Neutrolope/Corpse_CalfNeutrolope</texPath>
+					<texPath>Things/Pawn/Animal/Neutrolope/Corpse_CalfNeutrolope</texPath>
 					<drawSize>1.0</drawSize>
 				</corpseGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Neutrolope/Neutrolope</texPath>
+					<texPath>Things/Pawn/Animal/Neutrolope/Neutrolope</texPath>
 					<color>(204,167,113)</color>
 					<drawSize>1.6</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -168,17 +168,17 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Neutrolope/Dessicated_Neutrolope</texPath>
+					<texPath>Things/Pawn/Animal/Neutrolope/Dessicated_Neutrolope</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Neutrolope/Corpse_Neutrolope</texPath>
+					<texPath>Things/Pawn/Animal/Neutrolope/Corpse_Neutrolope</texPath>
 					<drawSize>1.5</drawSize>
 				</corpseGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Neutrolope/Neutrolope</texPath>
+					<texPath>Things/Pawn/Animal/Neutrolope/Neutrolope</texPath>
 					<color>(204,167,113)</color>
 					<drawSize>2.2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -188,11 +188,11 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Neutrolope/Dessicated_Neutrolope</texPath>
+					<texPath>Things/Pawn/Animal/Neutrolope/Dessicated_Neutrolope</texPath>
 					<drawSize>2.0</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Neutrolope/Corpse_Neutrolope</texPath>
+					<texPath>Things/Pawn/Animal/Neutrolope/Corpse_Neutrolope</texPath>
 					<drawSize>2.0</drawSize>
 				</corpseGraphicData>
 			</li>

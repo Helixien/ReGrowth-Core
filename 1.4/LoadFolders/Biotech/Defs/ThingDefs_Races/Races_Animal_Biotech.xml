@@ -128,7 +128,7 @@
 				<label>hemolope calf</label>
 				<labelPlural>hemolope calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Hemolope/CalfHemolope</texPath>
+					<texPath>Things/Pawn/Animal/Hemolope/CalfHemolope</texPath>
 					<color>(191,148,152)</color>
 					<drawSize>1.1</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -138,17 +138,17 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Hemolope/Dessicated_CalfHemolope</texPath>
+					<texPath>Things/Pawn/Animal/Hemolope/Dessicated_CalfHemolope</texPath>
 					<drawSize>1.1</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Hemolope/Corpse_CalfHemolope</texPath>
+					<texPath>Things/Pawn/Animal/Hemolope/Corpse_CalfHemolope</texPath>
 					<drawSize>1.0</drawSize>
 				</corpseGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Hemolope/Hemolope</texPath>
+					<texPath>Things/Pawn/Animal/Hemolope/Hemolope</texPath>
 					<color>(191,148,152)</color>
 					<drawSize>1.5</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -158,17 +158,17 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Hemolope/Dessicated_Hemolope</texPath>
+					<texPath>Things/Pawn/Animal/Hemolope/Dessicated_Hemolope</texPath>
 					<drawSize>1.4</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Hemolope/Corpse_Hemolope</texPath>
+					<texPath>Things/Pawn/Animal/Hemolope/Corpse_Hemolope</texPath>
 					<drawSize>1.4</drawSize>
 				</corpseGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Hemolope/Hemolope</texPath>
+					<texPath>Things/Pawn/Animal/Hemolope/Hemolope</texPath>
 					<color>(191,148,152)</color>
 					<drawSize>2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
@@ -178,11 +178,11 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Hemolope/Dessicated_Hemolope</texPath>
+					<texPath>Things/Pawn/Animal/Hemolope/Dessicated_Hemolope</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<corpseGraphicData>
-					<texPath>Things/Pawn/Animal/RG_Hemolope/Corpse_Hemolope</texPath>
+					<texPath>Things/Pawn/Animal/Hemolope/Corpse_Hemolope</texPath>
 					<drawSize>1.8</drawSize>
 				</corpseGraphicData>
 			</li>

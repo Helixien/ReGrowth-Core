@@ -400,37 +400,6 @@
 					</li>
 				</value>
 			</li>
-			<!-- ================================ Vanilla Factions Expanded - Medieval ====================== -->
-			<li Class="PatchOperationAddModExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">
-				<xpath>Defs/FactionDef[@Name="VFEM_MedievalFactionBase"]</xpath>
-				<value>
-					<li Class="VFECore.FactionDefExtension">
-						<disallowedBiomes>
-							<li>IceSheet</li>
-							<li>SeaIce</li>
-							<li>ExtremeDesert</li>
-							<li>ColdBog</li>
-							<li>TropicalSwamp</li>
-							<li>TemperateSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
-						</disallowedBiomes>
-					</li>
-				</value>
-			</li>
-			<!-- ================================ Vanilla Factions Expanded - Insectoids ====================== -->
-			<li Class="PatchOperationAddModExtension" MayRequire="OskarPotocki.VFE.Insectoid">
-				<xpath>Defs/FactionDef[defName="VFEI_Insect"]</xpath>
-				<value>
-					<li Class="VFECore.FactionDefExtension">
-						<disallowedBiomes>
-							<li>IceSheet</li>
-							<li>SeaIce</li>
-						</disallowedBiomes>
-					</li>
-				</value>
-			</li>
 			<!-- ================================ Vanilla Factions Expanded - Settlers ====================== -->
 			<li Class="PatchOperationAddModExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.SettlersModule">
 				<xpath>Defs/FactionDef[@Name="SettlerFactionBase"]</xpath>
@@ -445,14 +414,6 @@
 							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
-				</value>
-			</li>
-			<!-- ================================ Vanilla Factions Expanded - Vikings ====================== -->
-			<li Class="PatchOperationAdd" MayRequire="OskarPotocki.VFE.Vikings">
-				<xpath>Defs/FactionDef[@Name="VFEV_VikingBase"]/modExtensions/li[@Class="VFECore.FactionDefExtension"]/allowedBiomes</xpath>
-				<value>
-					<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenForest</li>
-					<li MayRequire="ReGrowth.BOTR.BoilingForest">RG_BoilingForest</li>
 				</value>
 			</li>
 			<!-- ================================ Vanilla Factions Expanded - Pirates ====================== -->
@@ -482,25 +443,6 @@
 							<li>IceSheet</li>
 							<li>SeaIce</li>
 							<li>ExtremeDesert</li>
-						</disallowedBiomes>
-					</li>
-				</value>
-			</li>
-			<!-- ================================ Vanilla Factions Expanded - Ultratech ====================== -->
-			<li Class="PatchOperationAddModExtension" MayRequire="OskarPotocki.VFE.Ultratech">
-				<xpath>Defs/FactionDef[defName="VFEU_Huntercorp"]</xpath>
-				<value>
-					<li Class="VFECore.FactionDefExtension">
-						<disallowedBiomes>
-							<li>IceSheet</li>
-							<li>SeaIce</li>
-							<li>ExtremeDesert</li>
-							<li>ColdBog</li>
-							<li>TropicalSwamp</li>
-							<li>TemperateSwamp</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TemperateWasteland</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_FrigidWasteland</li>
-							<li MayRequire="ReGrowth.BOTR.Wastelands">RG_AridWasteland</li>
 						</disallowedBiomes>
 					</li>
 				</value>

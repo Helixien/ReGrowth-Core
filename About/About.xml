@@ -3,13 +3,13 @@
 	<name>ReGrowth: Core</name>
 	<author>Helixien</author>
 	<supportedVersions>
-		<li>1.2</li>
-		<li>1.3</li>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
-	<modVersion>3.4.9-Artemis-rev3</modVersion>
-	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</url>
 	<packageId>ReGrowth.BOTR.Core</packageId>
+	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</url>
+	<modVersion IgnoreIfNoMatchingField="True">3.5-Artemis-rev1</modVersion>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/RG_ModIcon</modIconPath>
 	<description>ReGrowth: Core is both a content mod and a small framework, aiming to overhaul and improve on Rimworlds vanilla biomes, add new and unique features and biomes, replace many of the vanilla plant textures with HD ones and, in combination with its companion mods, add new plants that fit perfectly into the vanilla artstyle. On top of that, it adds a lot of new weather types, many with custom visual effects to spice up your game.
 
 ReGrowth is, at its core, a mod deeply influenced by the philosophy of the Vanilla Expanded Series. Everything it adds fits into Vanilla Rimworld. Every system (like for example new terrain) is designed to mimic how similar vanilla systems work while also being as friendly to your games performance as possible. NOTHING in this mod will absolutely tank your FPS and the few features that do cost some performance are optional.
@@ -25,12 +25,14 @@ This mod is as lightweight as possible, adding the minimum of code required and 
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
 	</modDependencies>
-	<loadAfter>
+	<forceLoadAfter>
 		<li>brrainz.harmony</li>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	</forceLoadAfter>
+	<loadAfter>
 		<li>DakkPasserida.AnimaReplant</li>
 		<li>VanillaExpanded.VCEF</li>
 		<li>DakkPasserida.GauranlenReplant</li>
@@ -43,14 +45,6 @@ This mod is as lightweight as possible, adding the minimum of code required and 
 		<li>sarg.rimbees</li>
 		<li>Argon.TribalMedicineRemake</li>
 	</loadBefore>
-	<forceLoadBefore>
-		<li>ReGrowth.BOTR.AspenForest</li>
-		<li>ReGrowth.BOTR.BorealForestExpansion</li>
-		<li>ReGrowth.BOTR.ExtinctAnimalsPack</li>
-		<li>ReGrowth.BOTR.SwampExpansion</li>
-		<li>ReGrowth.BOTR.TemperateForestExpansion</li>
-		<li>ReGrowth.BOTR.TundraExpansion</li>
-	</forceLoadBefore>
 	<incompatibleWith>
 		<li>HerdMigration.velcroboy333</li>
 		<li>ONegative.AnimatedMarshes</li>

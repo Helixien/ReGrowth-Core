@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef Name="RG_ModOptionsBase" Abstract="True">
+		<modSettingsName>ReGrowth</modSettingsName>
+	</ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">
 		<defName>RG_Core</defName>
 		<label>General</label>
 		<order>0</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
-	<ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">
 		<defName>RG_WeatherToggles</defName>
 		<label>Weather toggles</label>
 		<order>999</order>

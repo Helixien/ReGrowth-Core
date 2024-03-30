@@ -641,7 +641,7 @@
 		<tooltip>Allows for the polux tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_PoluxTreeReplant</id>
 		<category>RG_Core</category>
-		<order>70</order>
+		<order>61</order>
 		<mods>
 			<li>Biotech</li>
 		</mods>
@@ -661,7 +661,7 @@
 		<tooltip>Allows for the harbinger  tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
 		<id>RG_HarbingerTreeReplant</id>
 		<category>RG_Core</category>
-		<order>80</order>
+		<order>62</order>
 		<mods>
 			<li>Anomaly</li>
 		</mods>

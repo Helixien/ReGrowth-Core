@@ -2,6 +2,7 @@
 <Defs>
 	<ModSettingsFramework.ModOptionCategoryDef Name="RG_ModOptionsBase" Abstract="True">
 		<modSettingsName>ReGrowth</modSettingsName>
+		<modPackageSettingsID>ReGrowth.BOTR.Core</modPackageSettingsID>
 	</ModSettingsFramework.ModOptionCategoryDef>
 	<ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">
 		<defName>RG_Core</defName>

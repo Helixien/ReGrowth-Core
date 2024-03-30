@@ -171,6 +171,21 @@
 					</comps>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty,ReGrowth.BOTR.ReTextures">
+				<xpath>/Defs/ThingDef[defName = "Plant_TreeAnima"]</xpath>
+				<value>
+					<comps>
+						<li Class="CompProperties_Spawner">
+							<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
+							<thingToSpawn>RG_Filth_LeavesTreeAnima</thingToSpawn>
+							<spawnCount>1</spawnCount>
+							<spawnIntervalRange>2200~7200</spawnIntervalRange>
+							<spawnMaxAdjacent>4</spawnMaxAdjacent>
+							<saveKeysPrefix>leaves</saveKeysPrefix>
+						</li>
+					</comps>
+				</value>
+			</li>
 		</operations>
 	</Operation>
 	<!-- ================================ Toggle Hotspring Motes ====================== -->

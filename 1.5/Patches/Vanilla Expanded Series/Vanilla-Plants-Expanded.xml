@@ -21,11 +21,10 @@
 						<li>RG_TundraSoil</li>
 						<li>RG_BorealSoil</li>
 						<li>RG_TemperateSoil</li>
-						<li>RG_DepletedSoil</li>
-						<li>RG_AspenSoil</li>
-						<li>RG_BoilingSoil</li>
-						<li>RG_AnimaSoil</li>
-						<li>RG_TropicalSoil</li>
+						<li MayRequire="ReGrowth.BOTR.Wastelands">RG_TropicalSoil</li>
+						<li MayRequire="ReGrowth.BOTR.Wastelands">RG_DepletedSoil</li>
+						<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenSoil</li>
+						<li MayRequire="ReGrowth.BOTR.BoilingForest">RG_BoilingSoil</li>
 					</value>
 				</li>
 			</operations>
@@ -46,12 +45,10 @@
 						<li>RG_BorealSoil</li>
 						<li>RG_TemperateSoil</li>
 						<li>RG_TropicalSoil</li>
-						<li>RG_DepletedSoil</li>
-						<li>RG_AspenSoil</li>
-						<li>RG_BoilingSoil</li>
-						<li>RG_AnimaSoil</li>
-						<li>RG_AnimaSoilEnchanted</li>
-						<li>RG_DepletedGravel</li>
+						<li MayRequire="ReGrowth.BOTR.Wastelands">RG_DepletedGravel</li>
+						<li MayRequire="ReGrowth.BOTR.Wastelands">RG_DepletedSoil</li>
+						<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenSoil</li>
+						<li MayRequire="ReGrowth.BOTR.BoilingForest">RG_BoilingSoil</li>
 					</value>
 				</li>
 				<li Class="PatchOperationConditional">

@@ -52,7 +52,7 @@
 	<!-- ================ Breezy (formerly Windy) ================ -->
 	<WeatherDef>
 		<defName>RG_Windy</defName>
-		<label>Breezy </label>
+		<label>breezy </label>
 		<description>Consistent wind that reduces ranged weapon accuracy.</description>
 		<repeatable>true</repeatable>
 		<favorability>Neutral</favorability>
@@ -102,7 +102,7 @@
 		<accuracyMultiplier>0.9</accuracyMultiplier>
 		<favorability>Neutral</favorability>
 		<perceivePriority>1</perceivePriority>
-		<weatherThought>RG_Wet</weatherThought>
+		<exposedThought>RG_Wet</exposedThought>
 		<rainRate>0.5</rainRate>
 		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
 		<ambientSounds>
@@ -163,7 +163,7 @@
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>3</perceivePriority>
-		<weatherThought>RG_ExtremelyWet</weatherThought>
+		<exposedThought>RG_ExtremelyWet</exposedThought>
 		<rainRate>3.0</rainRate>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
@@ -421,7 +421,7 @@
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>1</perceivePriority>
-		<weatherThought>RG_Sandy</weatherThought>
+		<exposedThought>RG_Sandy</exposedThought>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<ambientSounds>
 			<li>Ambient_Wind_Fog</li>
@@ -481,7 +481,7 @@
 		<accuracyMultiplier>0.8</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
-		<weatherThought>RG_Sandy</weatherThought>
+		<exposedThought>RG_Sandy</exposedThought>
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>
@@ -540,7 +540,7 @@
 		<accuracyMultiplier>0.6</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<perceivePriority>2</perceivePriority>
-		<weatherThought>RG_Sandy</weatherThought>
+		<exposedThought>RG_Sandy</exposedThought>
 		<moveSpeedMultiplier>0.7</moveSpeedMultiplier>
 		<commonalityRainfallFactor>
 			<points>

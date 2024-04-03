@@ -15,9 +15,7 @@
 		</statBases>
 		<race>
 			<body>QuadrupedAnimalWithHoovesAndHump</body>
-			<deathAction>
-				<workerClass>ReGrowthCore.DeathActionWorker_Neutrolope</workerClass>
-			</deathAction>
+			<deathActionWorkerClass>ReGrowthCore.DeathActionWorker_Neutrolope</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
 			<baseBodySize>2.0</baseBodySize>

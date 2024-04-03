@@ -35,6 +35,13 @@
 			<texPath>Things/Filth/LeafShapeThree</texPath>
 		</graphicData>
 	</ThingDef>
+	<ThingDef ParentName="RG_BaseFilthLeaves">
+		<defName>RG_Filth_LeavesTreeAnima</defName>
+		<label>anima leaves</label>
+		<graphicData>
+			<texPath>Things/Filth/LeafShapeAnima</texPath>
+		</graphicData>
+	</ThingDef>
 	<!-- ================ Neutroamine Filth ================ -->
 	<ThingDef ParentName="BaseFilth">
 		<defName>RG_Filth_Neutroamine</defName>

@@ -23,5 +23,5 @@
 	<RG.BathingZoneRemoved>Bathing zone is removed.</RG.BathingZoneRemoved>
 	<RG.BathingPeriod>Bathing period: {0}/{1} days ({2} - {3})</RG.BathingPeriod>
 	<RG.MessagePlantDiedOfHeat>{0} has died because of heat.</RG.MessagePlantDiedOfHeat>
-
+	<PerspectiveOres.Settings.Header>Blacklist: Any items checked here will not be altered.</PerspectiveOres.Settings.Header>
 </LanguageData>

@@ -10,8 +10,13 @@
 		<order>0</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
 	<ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">
+		<defName>RG_PerspectiveOres</defName>
+		<label>Perspective ores toggles</label>
+		<order>998</order>
+	</ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">
 		<defName>RG_WeatherToggles</defName>
-		<label>Weather toggles</label>
+		<label>New Weather toggles</label>
 		<order>999</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
 </Defs>

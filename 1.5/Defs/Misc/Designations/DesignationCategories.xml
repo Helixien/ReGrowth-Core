@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--	<DesignationCategoryDef>
+		<defName>RG_Husbandry</defName>
+		<label>husbandry</label>
+		<order>275</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_Deconstruct</li>
+			<li>Designator_ZoneAdd_Growing</li>
+			<!{1}**<li>Tame</li>
+			<li>ReleaseAnimalToWild</li>**{1}>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>-->
+</Defs>

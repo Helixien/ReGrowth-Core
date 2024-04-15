@@ -58,7 +58,7 @@
 		</diseases>
 		<terrainsByFertility>
 			<li>
-				<terrain>RG_TemperateSoil</terrain>
+				<terrain>Soil</terrain>
 				<min>-999</min>
 				<max>0.87</max>
 			</li>

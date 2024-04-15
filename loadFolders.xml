@@ -13,12 +13,13 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.5/LoadFolders/Royalty</li>
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.5/LoadFolders/Ideology</li>
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/LoadFolders/Biotech</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/LoadFolders/Anomaly</li>
 		<li IfModActive="vanillaracesexpanded.android">1.5/LoadFolders/VanillaRacesExpanded-Android</li>
 		<li IfModActive="VanillaExpanded.VCEF">1.5/LoadFolders/VanillaFishingExpanded</li>
-		<li IfModActive="ReGrowth.BOTR.AspenForest">1.5/LoadFolders/ReGrowth-Aspen</li>
-		<li IfModActive="ReGrowth.BOTR.BoilingForest">1.5/LoadFolders/ReGrowth-Boiling</li>
 		<li IfModActive="ReGrowth.BOTR.Wastelands">1.5/LoadFolders/ReGrowth-Wastelands</li>
+		<li IfModActive="ReGrowth.BOTR.Harbinger">1.5/LoadFolders/ReGrowth-Harbingers</li>
 	</v1.5>
 </loadFolders>

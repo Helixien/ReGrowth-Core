@@ -13,7 +13,14 @@ namespace ReGrowthCore
             {
                 if (parms.Portrait is false && parms.pawn.IsBathingNow())
                 {
-                    __result = ReGrowthUtils.GetBatheMat(__result);
+                    var transparency = 0.5f;
+                    if (__instance is PawnRenderNodeWorker_Body 
+                        && __instance is not PawnRenderNodeWorker_AttachmentBody 
+                        || node is PawnRenderNode_Body)
+                    {
+                        transparency = 0.1f;
+                    }
+                    __result = ReGrowthUtils.GetBatheMat(__result, transparency);
                 }
             }
         }

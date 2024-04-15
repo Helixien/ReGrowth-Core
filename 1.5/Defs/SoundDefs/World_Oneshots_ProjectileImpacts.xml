@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>RG_BulletImpact_Hedge</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>Interact/Work/Grow</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>6.956522~22.17392</volumeRange>
+				<pitchRange>0.936413~1.423913</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

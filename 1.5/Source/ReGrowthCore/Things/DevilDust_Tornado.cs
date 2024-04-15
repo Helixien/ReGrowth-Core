@@ -10,7 +10,7 @@ using Verse.Sound;
 
 namespace ReGrowthCore
 {
-	[StaticConstructorOnStartup]
+    [StaticConstructorOnStartup]
 	public class DevilDust_Tornado : ThingWithComps
 	{
 		private Vector2 realPosition;

@@ -12,7 +12,7 @@ namespace ReGrowthCore
         {
             if (flags.FlagSet(PawnRenderFlags.Portrait) is false && __instance.pawn.IsBathingNow())
             {
-                __result = ReGrowthUtils.GetBatheMat(original);
+                __result = ReGrowthUtils.GetBatheMat(original, 0.5f);
             }
         }
     }

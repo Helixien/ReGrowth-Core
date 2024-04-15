@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+<!--			<li Class="PatchOperationRemove">
+				<xpath>Defs/EntityCodexEntryDef[defName="HarbingerTree"]/useDescriptionFrom</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/EntityCodexEntryDef[defName="HarbingerTree"]</xpath>
+				<value>
+					<description>A twisted ecosystem where flora grows flesh like coverings and tentacle-like appendages in place of roots. Harbingers are capable of feeding on corpses and raw meat, and will consume those if placed nearby. If well fed, they will continue to grow and spread, displacing most other flora in their path. Unlike any other known plants, harbingers do not only spread by seed, but also seem to possess a fungi-like root network, allowing them to grow seemingly out of nowhere.\n\nHarbingers are unnaturally durable, being able to survive even in complete darkness. They show no effect when exposed to toxic materials or pollution and are non-flammable, despite their flesh-like coverings.\n\nIn a tribal myth, harbingers are the emissaries of a mad, shapeless god who rules an endless black ocean. The myth ends after the shapeless god reaches up from the water and tears down the sky.</description>
+					<allowDiscoveryWhileMapGenerating>true</allowDiscoveryWhileMapGenerating>
+				</value>
+			</li>-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/EntityCodexEntryDef[defName="HarbingerTree"]/label</xpath>
+				<value>
+					<label>harbingers</label>
+				</value>
+			</li>
+<!--			<li Class="PatchOperationAdd">
+				<xpath>Defs/EntityCodexEntryDef[defName="HarbingerTree"]/linkedThings</xpath>
+				<value>
+					<li>RG_Plant_Entwis</li>
+					<li>RG_Plant_GripWeed</li>
+					<li>RG_Plant_ManglerVine</li>
+					<li>RG_Plant_OvertakenTree</li>
+				</value>
+			</li>-->
+		</operations>
+	</Operation>
+</Patch>

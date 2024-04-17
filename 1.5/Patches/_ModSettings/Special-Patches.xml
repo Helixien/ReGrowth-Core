@@ -15,7 +15,7 @@
 	
 	<Operation Class="ReGrowthCore.ReGrowthCore_SetUpCamp">
 		<id>RG_ReGrowthCore_SetUpCamp</id>
-		<category>RG_SetUpCamp</category>
+		<category>RG_MakeCamp</category>
 		<order>1001</order>
 	</Operation>
 </Patch>

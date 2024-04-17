@@ -10,8 +10,8 @@
 		<order>0</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
 	<ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">
-		<defName>RG_SetUpCamp</defName>
-		<label>Set Up Camp</label>
+		<defName>RG_MakeCamp</defName>
+		<label>Make camp options</label>
 		<order>997</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
 	<ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">

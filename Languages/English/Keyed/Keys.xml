@@ -24,8 +24,8 @@
 	<RG.BathingPeriod>Bathing period: {0}/{1} days ({2} - {3})</RG.BathingPeriod>
 	<RG.MessagePlantDiedOfHeat>{0} has died because of heat.</RG.MessagePlantDiedOfHeat>
 	<PerspectiveOres.Settings.Header>Any items checked here will be altered.</PerspectiveOres.Settings.Header>
-	<RG.EnableSetUpCamp>Enable "Set Up Camp" feature</RG.EnableSetUpCamp>
+	<RG.EnableSetUpCamp>Enable the "Make Camp" feature</RG.EnableSetUpCamp>
 	<RG.EnableSetUpCampDesc>Toggle it to allow player caravans to set up temporary camps on the world map.</RG.EnableSetUpCampDesc>
-	<RG.SetUpCamp>Set up camp</RG.SetUpCamp>
-	<RG.SetUpCampDesc>Click to set up a camp in the current tile.</RG.SetUpCampDesc>
+	<RG.SetUpCamp>Make camp</RG.SetUpCamp>
+	<RG.SetUpCampDesc>Make a temporary camp in this area. Your colonists will enter this area and you can forage, build simple structures, stage an attack or plan your next move.</RG.SetUpCampDesc>
 </LanguageData>

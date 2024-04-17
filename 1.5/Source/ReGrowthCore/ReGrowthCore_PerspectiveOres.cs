@@ -66,7 +66,7 @@ namespace ReGrowthCore
         void DrawListItem(Listing_Standard options, ThingDef def)
         {
             //Determine checkbox status...
-            bool checkOn = skippedMineableDefs.Contains(def.defName);
+            bool checkOn = skippedMineableDefs.Contains(def.defName) is false;
             var iconRect = new Rect(options.curX, options.curY, 24, 24);
             Widgets.ThingIcon(iconRect, def);
             options.curX += 24;
@@ -75,9 +75,9 @@ namespace ReGrowthCore
             options.curX -= 24;
             options.columnWidthInt += 24;
             //Add to working list if missing
-            if (checkOn && !skippedMineableDefs.Contains(def.defName)) skippedMineableDefs.Add(def.defName);
+            if (checkOn is false && !skippedMineableDefs.Contains(def.defName)) skippedMineableDefs.Add(def.defName);
             //Remove from working list
-            else if (!checkOn && skippedMineableDefs.Contains(def.defName)) skippedMineableDefs.Remove(def.defName);
+            else if (checkOn && skippedMineableDefs.Contains(def.defName)) skippedMineableDefs.Remove(def.defName);
         }
     }
 }

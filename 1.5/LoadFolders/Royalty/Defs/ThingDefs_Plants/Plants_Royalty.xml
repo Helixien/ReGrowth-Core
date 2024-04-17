@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--============================ Anima Bell =============================-->
-<!--	<ThingDef ParentName="PlantBase">
+	<!--	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_AnimaBell</defName>
 		<label>anima bell</label>
 		<description>A type of incredibly aggressive flowering vine that grows in areas of high Psychic energy concentrations. Because they absorb nutrients so greedily, many other flowers are unable to grow in the same region. Their striking visual qualities are a defense mechanism to prevent humans from wanting to remove them.</description>
@@ -29,4 +29,32 @@
 			<purpose>Beauty</purpose>
 		</plant>
 	</ThingDef>-->
+	<ThingDef ParentName="ResourceBase">
+		<defName>RG_AnimaSeed</defName>
+		<label>anima seed</label>
+		<description>The seed of an anima tree. It can be planted to create a new anima tree which can be used for a psychic linking ritual.</description>
+		<descriptionHyperlinks>
+			<ThingDef>Plant_TreeAnima</ThingDef>
+		</descriptionHyperlinks>
+		<stackLimit>5</stackLimit>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<Beauty>0</Beauty>
+			<MarketValue>1800</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/AnimaSeed</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(0.6, 0.6)</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Plantable">
+				<plantDefToSpawn>Plant_TreeAnima</plantDefToSpawn>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

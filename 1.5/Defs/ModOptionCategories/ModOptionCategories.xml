@@ -10,6 +10,11 @@
 		<order>0</order>
 	</ModSettingsFramework.ModOptionCategoryDef>
 	<ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">
+		<defName>RG_SetUpCamp</defName>
+		<label>Set Up Camp</label>
+		<order>997</order>
+	</ModSettingsFramework.ModOptionCategoryDef>
+	<ModSettingsFramework.ModOptionCategoryDef ParentName="RG_ModOptionsBase">
 		<defName>RG_PerspectiveOres</defName>
 		<label>Perspective ores toggles</label>
 		<order>998</order>

@@ -24,4 +24,8 @@
 	<RG.BathingPeriod>Bathing period: {0}/{1} days ({2} - {3})</RG.BathingPeriod>
 	<RG.MessagePlantDiedOfHeat>{0} has died because of heat.</RG.MessagePlantDiedOfHeat>
 	<PerspectiveOres.Settings.Header>Any items checked here will be altered.</PerspectiveOres.Settings.Header>
+	<RG.EnableSetUpCamp>Enable "Set Up Camp" feature</RG.EnableSetUpCamp>
+	<RG.EnableSetUpCampDesc>Toggle it to allow player caravans to set up temporary camps on the world map.</RG.EnableSetUpCampDesc>
+	<RG.SetUpCamp>Set up camp</RG.SetUpCamp>
+	<RG.SetUpCampDesc>Click to set up a camp in the current tile.</RG.SetUpCampDesc>
 </LanguageData>

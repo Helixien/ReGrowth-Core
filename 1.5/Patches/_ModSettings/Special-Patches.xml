@@ -7,9 +7,15 @@
 		<order>999</order>
 	</Operation>
 	
-		<Operation Class="ReGrowthCore.ReGrowthCore_PerspectiveOres">
+	<Operation Class="ReGrowthCore.ReGrowthCore_PerspectiveOres">
 		<id>RG_ReGrowthCore_PerspectiveOres</id>
 		<category>RG_PerspectiveOres</category>
 		<order>1000</order>
+	</Operation>
+	
+	<Operation Class="ReGrowthCore.ReGrowthCore_SetUpCamp">
+		<id>RG_ReGrowthCore_SetUpCamp</id>
+		<category>RG_SetUpCamp</category>
+		<order>1001</order>
 	</Operation>
 </Patch>

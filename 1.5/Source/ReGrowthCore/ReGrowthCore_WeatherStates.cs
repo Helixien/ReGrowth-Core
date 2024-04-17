@@ -5,6 +5,7 @@ using Verse;
 
 namespace ReGrowthCore
 {
+
     public class ReGrowthCore_WeatherStates : PatchOperationWorker
     {
         public Dictionary<string, bool> weatherDefStates = new Dictionary<string, bool>();

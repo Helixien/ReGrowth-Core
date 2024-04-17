@@ -313,6 +313,8 @@
     <Compile Include="BiomeWorkers\BiomeWorker_Test.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_VolcanicIceSheet.cs" />
     <Compile Include="CachedResult.cs" />
+    <Compile Include="CaravanCamp.cs" />
+    <Compile Include="HarmonyPatches\Caravan_GetGizmos_Patch.cs" />
     <Compile Include="DeathActionWorker_Hemolope.cs" />
     <Compile Include="DeathActionWorker_Neutrolope.cs" />
     <Compile Include="HarmonyPatches\JobDriver_Deconstruct_WorkEffecter_Patch.cs" />
@@ -348,6 +350,7 @@
     <Compile Include="PerspectiveOres\PerspectiveOresUtility.cs" />
     <Compile Include="PerspectiveOres\Patch.cs" />
     <Compile Include="ReGrowthCore_PerspectiveOres.cs" />
+    <Compile Include="ReGrowthCore_SetUpCamp.cs" />
     <Compile Include="Things\BuildingWithRandomGraphic.cs" />
     <Compile Include="HarmonyPatches\PollutionGrid_SetPolluted_Patch.cs" />
     <Compile Include="WeatherOverlay_FogMotes.cs" />

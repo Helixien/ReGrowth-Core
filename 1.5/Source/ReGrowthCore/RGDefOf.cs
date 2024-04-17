@@ -3,7 +3,8 @@ using Verse;
 
 namespace ReGrowthCore
 {
-	[DefOf]
+
+    [DefOf]
 	public static class RG_DefOf
 	{
 		//public static ThingDef RG_Filth_Water;
@@ -33,6 +34,8 @@ namespace ReGrowthCore
 		public static TerrainDef Concrete;
 		public static TerrainDef RG_AncientConcrete;
 		public static ThingDef RG_Filth_Neutroamine;
+
+		public static WorldObjectDef RG_CaravanCamp;
     }
 }
 

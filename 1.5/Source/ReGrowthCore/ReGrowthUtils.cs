@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Verse;
 
@@ -13,6 +14,10 @@ namespace ReGrowthCore
     [StaticConstructorOnStartup]
     public static class ReGrowthUtils
     {
+        private static ReGrowthCore_SetUpCamp _setUpCampPatchWorker;
+        public static ReGrowthCore_SetUpCamp SetUpCampPatchWorker => _setUpCampPatchWorker ??= LoadedModManager.GetMod<ReGrowthMod>().Content
+            .Patches.OfType<ReGrowthCore_SetUpCamp>().FirstOrDefault();
+
         static ReGrowthUtils()
         {
             foreach (var def in DefDatabase<TerrainDef>.AllDefs)

@@ -13,8 +13,8 @@
 		<order>1000</order>
 	</Operation>
 	
-	<Operation Class="ReGrowthCore.ReGrowthCore_SetUpCamp">
-		<id>RG_ReGrowthCore_SetUpCamp</id>
+	<Operation Class="ReGrowthCore.ReGrowthCore_MakeCamp">
+		<id>RG_ReGrowthCore_MakeCamp</id>
 		<category>RG_MakeCamp</category>
 		<order>1001</order>
 	</Operation>

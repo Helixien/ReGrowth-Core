@@ -31,7 +31,7 @@ namespace ReGrowthCore
         {
             base.ApplySettings();
             if (Current.ProgramState == ProgramState.Playing && Find.CurrentMap != null)
-                PerspectiveOresSetup.ProcessMap(Find.CurrentMap, true);
+                Map_FinalizeInit_Patch.ProcessMap(Find.CurrentMap, true);
         }
 
         public override void DoSettings(ModSettingsContainer container, Listing_Standard list)

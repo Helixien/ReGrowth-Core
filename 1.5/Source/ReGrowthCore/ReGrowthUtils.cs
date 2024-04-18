@@ -14,9 +14,9 @@ namespace ReGrowthCore
     [StaticConstructorOnStartup]
     public static class ReGrowthUtils
     {
-        private static ReGrowthCore_SetUpCamp _setUpCampPatchWorker;
-        public static ReGrowthCore_SetUpCamp SetUpCampPatchWorker => _setUpCampPatchWorker ??= LoadedModManager.GetMod<ReGrowthMod>().Content
-            .Patches.OfType<ReGrowthCore_SetUpCamp>().FirstOrDefault();
+        private static ReGrowthCore_MakeCamp _setUpCampPatchWorker;
+        public static ReGrowthCore_MakeCamp MakeCampPatchWorker => _setUpCampPatchWorker ??= LoadedModManager.GetMod<ReGrowthMod>().Content
+            .Patches.OfType<ReGrowthCore_MakeCamp>().FirstOrDefault();
 
         static ReGrowthUtils()
         {

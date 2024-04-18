@@ -7,9 +7,9 @@ using static ReGrowthCore.PerspectiveOresUtility;
 namespace ReGrowthCore
 {   
     [HarmonyPatch(typeof(Map), nameof(Map.FinalizeInit))]
-	public class PerspectiveOresSetup
+	public static class Map_FinalizeInit_Patch
     {
-        static void Postfix(Map __instance)
+        public static void Postfix(Map __instance)
         {
             ProcessMap(__instance);
         }

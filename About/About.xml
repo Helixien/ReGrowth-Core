@@ -40,6 +40,7 @@ This mod is as lightweight as possible, adding the minimum of code required and 
 	<loadBefore>
 		<li>Balthoraz.RimUniverse.BiomesModule</li>
 		<li>VanillaExpanded.VPlantsE</li>
+		<li>VanillaExpanded.VPlantsEMushrooms</li>
 		<li>sarg.rimbees</li>
 		<li>Argon.TribalMedicineRemake</li>
 	</loadBefore>
@@ -50,7 +51,11 @@ This mod is as lightweight as possible, adding the minimum of code required and 
 		<li>dninemfive.moa</li>
 		<li>hlx.dontsettlethere</li>
 		<li>project.neutrolope.dslexodus</li>
-		<li>Owlchemist.PerspectiveOres</li>
 		<li>Archangel.ReplantSpTrees</li>
 	</incompatibleWith>
+	<incompatibleWithByVersion>
+		<v1.5>
+			<li>Owlchemist.PerspectiveOres</li>
+		</v1.5>
+	</incompatibleWithByVersion>
 </ModMetaData>

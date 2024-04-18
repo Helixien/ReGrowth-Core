@@ -28,6 +28,6 @@
 	<RG.EnableMakeCampDesc>Toggle it to allow player caravans to set up temporary camps on the world map.</RG.EnableMakeCampDesc>
 	<RG.MakeCamp>Make camp</RG.MakeCamp>
 	<RG.MakeCampDesc>Make a temporary camp in this area. Your colonists will enter this area and you can forage, build simple structures, stage an attack or plan your next move.</RG.MakeCampDesc>
-	<RG.PreserveSavedCamps>Period of preserving camp maps after exiting them</RG.PreserveSavedCamps>
-	<RG.PreserveSavedCampsDesc>To avoid cheating, camp maps are saved after exiting and regenerated after visiting them. Adjust the preserve period after which the saved maps should be reset.</RG.PreserveSavedCampsDesc>
+	<RG.PreserveSavedCamps>Camp map preservation period</RG.PreserveSavedCamps>
+	<RG.PreserveSavedCampsDesc>After leaving your camp, the local map is saved for some time. This allows you to return if you forgot something, as well as prevents cheating. Adjust the preserve period after which the saved maps should be generated anew.</RG.PreserveSavedCampsDesc>
 </LanguageData>

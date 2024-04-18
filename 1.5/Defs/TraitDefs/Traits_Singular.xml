@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TraitDef>
+		<defName>RG_GreenThumb </defName>
+		<commonality>0.8</commonality>
+		<degreeDatas>
+			<li>
+				<label>green thumb</label>
+				<description>{PAWN_nameDef} has a passion for gardening. They get a mood bonus for every plant they sow.</description>
+			</li>
+		</degreeDatas>
+	</TraitDef>
+</Defs>

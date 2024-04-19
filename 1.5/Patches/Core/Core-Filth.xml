@@ -57,8 +57,23 @@
 					<rainWashes>false</rainWashes>
 				</value>
 			</li>
-			<li Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Ideology">
-				<xpath>/Defs/ThingDef[defName = "Filth_OilSmear"]/filth/disappearsInDays</xpath>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>/Defs/ThingDef[defName = "Filth_RevenantBloodPool"]/filth/rainWashes</xpath>
+				<value>
+					<rainWashes>true</rainWashes>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>/Defs/ThingDef[defName = "Filth_LooseGround"]/filth/rainWashes</xpath>
+				<value>
+					<rainWashes>true</rainWashes>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Anomaly">
+				<xpath>/Defs/ThingDef[defName = "Filth_GrayFlesh"]/filth/rainWashes</xpath>
+				<value>
+					<rainWashes>true</rainWashes>
+				</value>
 			</li>
 		</operations>
 	</Operation>

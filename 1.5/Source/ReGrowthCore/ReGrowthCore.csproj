@@ -310,10 +310,16 @@
     <Compile Include="BiomeWorkers\BiomeWorker_AspenForest.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_NeverSpawn.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_TemperateGrasslands.cs" />
+    <Compile Include="BiomeWorkers\BiomeWorker_Test.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_VolcanicIceSheet.cs" />
     <Compile Include="CachedResult.cs" />
+    <Compile Include="CaravanCamp\CaravanCamp.cs" />
+    <Compile Include="CaravanCamp\Caravan_GetGizmos_Patch.cs" />
+    <Compile Include="CaravanCamp\SavedCamp.cs" />
+    <Compile Include="CaravanCamp\WorldComponent_Camps.cs" />
     <Compile Include="DeathActionWorker_Hemolope.cs" />
     <Compile Include="DeathActionWorker_Neutrolope.cs" />
+    <Compile Include="HarmonyPatches\JobDriver_Deconstruct_WorkEffecter_Patch.cs" />
     <Compile Include="HarmonyPatches\PawnRenderNodeWorker_Apparel_Head_HeadgearVisible_Patch.cs" />
     <Compile Include="HarmonyPatches\PawnRenderNodeWorker_Apparel_Body_CanDrawNow_Patch.cs" />
     <Compile Include="HarmonyPatches\PawnRenderNodeWorker_GetMaterial_Patch.cs" />
@@ -333,7 +339,22 @@
     <Compile Include="HediffCompPreventThought.cs" />
     <Compile Include="ModExtensions\BathingExtension.cs" />
     <Compile Include="ModExtensions\BiomeExtension.cs" />
+    <Compile Include="HarmonyPatches\CellInspectorDrawer_DrawMapInspector_Patch.cs" />
+    <Compile Include="HarmonyPatches\FertilityGrid_CalculateFertilityAt_Patch.cs" />
+    <Compile Include="HarmonyPatches\MouseoverReadout_MouseoverReadoutOnGUI_Patch.cs" />
+    <Compile Include="HarmonyPatches\Pawn_FilthTracker_TryPickupFilth_Patch.cs" />
+    <Compile Include="ModExtensions\TerrainByBiome.cs" />
+    <Compile Include="ModExtensions\TerrainExtension.cs" />
+    <Compile Include="HarmonyPatches\TerrainGrid_GetMaterial_Patch.cs" />
+    <Compile Include="ModExtensions\ThingExtension.cs" />
     <Compile Include="ModExtensions\WeatherExtension.cs" />
+    <Compile Include="HarmonyPatches\WorldGenStep_Pollution_GenerateFresh_Patch.cs" />
+    <Compile Include="PerspectiveOres\PerspectiveOresUtility.cs" />
+    <Compile Include="PerspectiveOres\Map_FinalizeInit_Patch.cs" />
+    <Compile Include="PerspectiveOres\ReGrowthCore_PerspectiveOres.cs" />
+    <Compile Include="CaravanCamp\ReGrowthCore_MakeCamp.cs" />
+    <Compile Include="Things\BuildingWithRandomGraphic.cs" />
+    <Compile Include="HarmonyPatches\PollutionGrid_SetPolluted_Patch.cs" />
     <Compile Include="WeatherOverlay_FogMotes.cs" />
     <Compile Include="ReGrowthCore_WeatherStates.cs" />
     <Compile Include="UI\Designator_ZoneAdd_Bathe.cs" />
@@ -356,7 +377,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Lib.Harmony">
-      <Version>2.3.2</Version>
+      <Version>2.3.3</Version>
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

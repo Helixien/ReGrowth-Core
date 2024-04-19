@@ -23,5 +23,11 @@
 	<RG.BathingZoneRemoved>Bathing zone is removed.</RG.BathingZoneRemoved>
 	<RG.BathingPeriod>Bathing period: {0}/{1} days ({2} - {3})</RG.BathingPeriod>
 	<RG.MessagePlantDiedOfHeat>{0} has died because of heat.</RG.MessagePlantDiedOfHeat>
-
+	<PerspectiveOres.Settings.Header>Any items checked here will be altered.</PerspectiveOres.Settings.Header>
+	<RG.EnableMakeCamp>Enable the "Make Camp" feature</RG.EnableMakeCamp>
+	<RG.EnableMakeCampDesc>Toggle it to allow player caravans to set up temporary camps on the world map.</RG.EnableMakeCampDesc>
+	<RG.MakeCamp>Make camp</RG.MakeCamp>
+	<RG.MakeCampDesc>Make a temporary camp in this area. Your colonists will enter this area and you can forage, build simple structures, stage an attack or plan your next move.</RG.MakeCampDesc>
+	<RG.PreserveSavedCamps>Camp map preservation period</RG.PreserveSavedCamps>
+	<RG.PreserveSavedCampsDesc>After leaving your camp, the local map is saved for some time. This allows you to return if you forgot something, as well as prevents cheating. Adjust the preserve period after which the saved maps should be generated anew.</RG.PreserveSavedCampsDesc>
 </LanguageData>

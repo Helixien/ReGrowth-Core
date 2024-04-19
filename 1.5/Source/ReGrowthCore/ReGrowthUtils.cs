@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Verse;
 
@@ -13,6 +14,28 @@ namespace ReGrowthCore
     [StaticConstructorOnStartup]
     public static class ReGrowthUtils
     {
+        private static ReGrowthCore_MakeCamp _setUpCampPatchWorker;
+        public static ReGrowthCore_MakeCamp MakeCampPatchWorker => _setUpCampPatchWorker ??= LoadedModManager.GetMod<ReGrowthMod>().Content
+            .Patches.OfType<ReGrowthCore_MakeCamp>().FirstOrDefault();
+
+        static ReGrowthUtils()
+        {
+            foreach (var def in DefDatabase<TerrainDef>.AllDefs)
+            {
+                var extension = def.GetModExtension<TerrainExtension>();
+                if (extension != null)
+                {
+                    if (extension.biomeSpecificTerrains != null)
+                    {
+                        foreach (var biomeTerrain in extension.biomeSpecificTerrains)
+                        {
+                            biomeTerrain.ResolveData(def);
+                        }
+                    }
+                }
+            }
+        }
+
         public static bool IsHotSpring(this TerrainDef terrainDef)
         {
             return terrainDef == RG_DefOf.RG_HotSpring || terrainDef == RG_DefOf.RG_HotSpringDeep;
@@ -23,16 +46,34 @@ namespace ReGrowthCore
             return pawn?.jobs?.curDriver is JobDriver_Bathe driver_Bathe && driver_Bathe.IsBathingNow();
         }
         private static Dictionary<Material, Material> materials = new();
-        public static Material GetBatheMat(Material baseMat)
+        public static Material GetBatheMat(Material baseMat, float transparency)
         {
             if (baseMat is null) return baseMat;
             if (!materials.TryGetValue(baseMat, out var value))
             {
                 materials[baseMat] = value = new Material(baseMat);
-                value.color = new Color(value.color.r, value.color.g, value.color.b, 0.5f);
             }
-
+            value.color = new Color(value.color.r, value.color.g, value.color.b, transparency);
             return value;
+        }
+
+        public static bool TryGetBiomeSpecificTerrain(this TerrainDef def, Map map, out TerrainByBiome terrain)
+        {
+            terrain = null;
+            var extension = def.GetModExtension<TerrainExtension>();
+            if (extension?.biomeSpecificTerrains != null)
+            {
+                var biome = map.Biome;
+                foreach (var biomeTerrain in extension.biomeSpecificTerrains)
+                {
+                    if (biomeTerrain.biomes.Contains(biome))
+                    {
+                        terrain = biomeTerrain;
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
     }
 }

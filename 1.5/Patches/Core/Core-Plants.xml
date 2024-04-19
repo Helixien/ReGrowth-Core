@@ -51,6 +51,12 @@
 					<visualSizeRange>0.4~0.8</visualSizeRange>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Bush"]</xpath>
+				<value>
+					<selectable>false</selectable>
+				</value>
+			</li>
 			<!-- ================================ Chokevine ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_Chokevine"]/plant/visualSizeRange</xpath>

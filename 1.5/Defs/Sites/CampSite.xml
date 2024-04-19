@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <WorldObjectDef>
+    <defName>RG_CaravanCamp</defName>
+    <label>caravan camp</label>
+    <description>A caravan in camp.</description>
+    <worldObjectClass>ReGrowthCore.CaravanCamp</worldObjectClass>
+    <texture>World/WorldObjects/PlayerCampClose</texture>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconTexture>World/WorldObjects/Expanding/PlayerCamp</expandingIconTexture>
+    <expandingIconPriority>80</expandingIconPriority>
+    <expandMore>true</expandMore>
+    <isTempIncidentMapOwner>true</isTempIncidentMapOwner>
+	<mapGenerator>RG_CaravanCamp</mapGenerator>
+    <IncidentTargetTags>
+      <li>Map_TempIncident</li>
+    </IncidentTargetTags>
+    <comps>
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+      <li Class="WorldObjectCompProperties_TimedDetectionRaids" />
+    </comps>
+  </WorldObjectDef>
+  
+  <MapGeneratorDef ParentName="MapCommonBase">
+    <defName>RG_CaravanCamp</defName>
+    <genSteps>
+      <li>RocksFromGrid</li>
+      <li>RG_ScatterShrines</li>
+      <li>CaveHives</li>
+    </genSteps>
+  </MapGeneratorDef>
+  
+  <GenStepDef>
+    <defName>RG_ScatterShrines</defName>
+    <order>400</order>
+    <genStep Class="GenStep_ScatterShrines">
+      <allowInWaterBiome>false</allowInWaterBiome>
+      <countPer10kCellsRange><min>0.02</min><max>0.15</max></countPer10kCellsRange>
+    </genStep>
+  </GenStepDef>
+  
+</Defs>

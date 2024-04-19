@@ -8,7 +8,7 @@
 	</supportedVersions>
 	<packageId>ReGrowth.BOTR.Core</packageId>
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</url>
-	<modVersion IgnoreIfNoMatchingField="True">3.5-Artemis-rev5</modVersion>
+	<modVersion IgnoreIfNoMatchingField="True">3.5.3-Artemis-rev1</modVersion>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/RG_ModIcon</modIconPath>
 	<description>ReGrowth: Core is both a content mod and a small framework, aiming to overhaul and improve on Rimworlds vanilla biomes, add new and unique features and biomes, replace many of the vanilla plant textures with HD ones and, in combination with its companion mods, add new plants that fit perfectly into the vanilla artstyle. On top of that, it adds a lot of new weather types, many with custom visual effects to spice up your game.
 
@@ -40,6 +40,7 @@ This mod is as lightweight as possible, adding the minimum of code required and 
 	<loadBefore>
 		<li>Balthoraz.RimUniverse.BiomesModule</li>
 		<li>VanillaExpanded.VPlantsE</li>
+		<li>VanillaExpanded.VPlantsEMushrooms</li>
 		<li>sarg.rimbees</li>
 		<li>Argon.TribalMedicineRemake</li>
 	</loadBefore>
@@ -50,5 +51,11 @@ This mod is as lightweight as possible, adding the minimum of code required and 
 		<li>dninemfive.moa</li>
 		<li>hlx.dontsettlethere</li>
 		<li>project.neutrolope.dslexodus</li>
+		<li>Archangel.ReplantSpTrees</li>
 	</incompatibleWith>
+	<incompatibleWithByVersion>
+		<v1.5>
+			<li>Owlchemist.PerspectiveOres</li>
+		</v1.5>
+	</incompatibleWithByVersion>
 </ModMetaData>

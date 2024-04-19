@@ -18,14 +18,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/VanillaPlantsExpanded.TillableTerrainDef[defName="VCE_AcceptedTillableTerrains"]/terrains</xpath>
 					<value>
-						<li>RG_AridSoil</li>
-						<li>RG_TundraSoil</li>
-						<li>RG_BorealSoil</li>
-						<li>RG_TemperateSoil</li>
-						<li>RG_TropicalSoil</li>
 						<li MayRequire="ReGrowth.BOTR.Wastelands">RG_DepletedSoil</li>
-						<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenSoil</li>
-						<li MayRequire="ReGrowth.BOTR.BoilingForest">RG_BoilingSoil</li>
 					</value>
 				</li>
 			</operations>
@@ -41,15 +34,8 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/VanillaPlantsExpandedMushrooms.MushroomGrowZoneTerrainsDef[defName="VPE_MushroomGrowZoneTerrains"]/allowedTerrains</xpath>
 					<value>
-						<li>RG_AridSoil</li>
-						<li>RG_TundraSoil</li>
-						<li>RG_BorealSoil</li>
-						<li>RG_TemperateSoil</li>
-						<li>RG_TropicalSoil</li>
 						<li MayRequire="ReGrowth.BOTR.Wastelands">RG_DepletedGravel</li>
 						<li MayRequire="ReGrowth.BOTR.Wastelands">RG_DepletedSoil</li>
-						<li MayRequire="ReGrowth.BOTR.AspenForest">RG_AspenSoil</li>
-						<li MayRequire="ReGrowth.BOTR.BoilingForest">RG_BoilingSoil</li>
 					</value>
 				</li>
 				<li Class="PatchOperationConditional">

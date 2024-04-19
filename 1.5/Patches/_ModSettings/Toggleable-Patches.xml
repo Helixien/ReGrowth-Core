@@ -171,17 +171,28 @@
 					</comps>
 				</value>
 			</li>
-			<li Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty,ReGrowth.BOTR.ReTextures">
-				<xpath>/Defs/ThingDef[defName = "Plant_TreeAnima"]/comps</xpath>
+		</operations>
+	</Operation>
+	<!-- ================================ Toggle Perspective Trees ====================== -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>True</defaultValue>
+		<label>Enable perspective trees</label>
+		<tooltip>Enable the alterations to the tree draw layer so items/chunks/pawns are not drawn in front of it. It should work with most tree-adding mods. This does the same as the mod "Perspective: Trees" from Owlchemist.</tooltip>
+		<id>RG_DisablePerspectiveTrees</id>
+		<category>RG_Core</category>
+		<order>15</order>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name="TreeBase"]/altitudeLayer</xpath>
 				<value>
-					<li Class="CompProperties_Spawner">
-						<compClass>ReGrowthCore.CompAutumnLeavesSpawner</compClass>
-						<thingToSpawn>RG_Filth_LeavesTreeAnima</thingToSpawn>
-						<spawnCount>1</spawnCount>
-						<spawnIntervalRange>2200~7200</spawnIntervalRange>
-						<spawnMaxAdjacent>4</spawnMaxAdjacent>
-						<saveKeysPrefix>leaves</saveKeysPrefix>
-					</li>
+					<altitudeLayer>Pawn</altitudeLayer>
+				</value>
+			</li>
+			<li MayRequire="ludeon.rimworld.ideology" Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Plant_TreeGauranlen"]/comps/li[@Class="CompProperties_TreeConnection"]/spawningPodOffset</xpath>
+				<value>
+					<!-- 0.4 * number of layers -->
+					<spawningPodOffset>(-0.15, 3.2, -0.55)</spawningPodOffset>
 				</value>
 			</li>
 		</operations>

@@ -5,6 +5,7 @@ using Verse;
 
 namespace ReGrowthCore
 {
+
     public class ReGrowthCore_WeatherStates : PatchOperationWorker
     {
         public Dictionary<string, bool> weatherDefStates = new Dictionary<string, bool>();
@@ -46,7 +47,7 @@ namespace ReGrowthCore
                 if (weatherDef != null)
                 {
                     var value = weatherState.Value;
-                    list.CheckboxLabeled("Enable " + weatherDef.label, ref value);
+                    CheckboxLabeled(list, "Enable " + weatherDef.label, ref value);
                     weatherDefStates[weatherState.Key] = value;
                     list.Gap(5);
                 }

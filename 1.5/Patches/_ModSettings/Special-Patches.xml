@@ -6,4 +6,16 @@
 		<category>RG_WeatherToggles</category>
 		<order>999</order>
 	</Operation>
+	
+	<Operation Class="ReGrowthCore.ReGrowthCore_PerspectiveOres">
+		<id>RG_ReGrowthCore_PerspectiveOres</id>
+		<category>RG_PerspectiveOres</category>
+		<order>1000</order>
+	</Operation>
+	
+	<Operation Class="ReGrowthCore.ReGrowthCore_MakeCamp">
+		<id>RG_ReGrowthCore_MakeCamp</id>
+		<category>RG_MakeCamp</category>
+		<order>1001</order>
+	</Operation>
 </Patch>

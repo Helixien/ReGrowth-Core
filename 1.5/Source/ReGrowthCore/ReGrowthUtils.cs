@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -32,6 +33,14 @@ namespace ReGrowthCore
                             biomeTerrain.ResolveData(def);
                         }
                     }
+                }
+            }
+
+            foreach (var plant in DefDatabase<ThingDef>.AllDefs.Where(x => x.plant != null))
+            {
+                if (plant.plant.pollutedGraphicPath.NullOrEmpty() is false && plant.plant.pollution == Pollution.CleanOnly)
+                {
+                    plant.plant.pollution = Pollution.Any;
                 }
             }
         }

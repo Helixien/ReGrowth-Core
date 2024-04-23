@@ -115,7 +115,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="TemperateForest"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
 						<uniqueHills>true</uniqueHills>
 						<forestSparseBelow>1100</forestSparseBelow>
@@ -136,7 +136,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="RG_TemperateGrassland"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
 						<uniqueHills>true</uniqueHills>
 						<forestSparseBelow>1100</forestSparseBelow>
@@ -157,7 +157,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="TemperateSwamp"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
 						<uniqueHills>true</uniqueHills>
 						<mountainsSemiSnowyBelow>10</mountainsSemiSnowyBelow>
@@ -177,7 +177,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="BorealForest"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
 						<uniqueHills>true</uniqueHills>
 						<forestSnowyBelow>0</forestSnowyBelow>
@@ -203,7 +203,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="Tundra"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
 						<uniqueHills>true</uniqueHills>
 						<forestSnowyBelow>0</forestSnowyBelow>
@@ -229,7 +229,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="ColdBog"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
 						<uniqueHills>true</uniqueHills>
 						<snowpilesBelow>-15</snowpilesBelow>
@@ -252,7 +252,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="IceSheet"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<uniqueHills>true</uniqueHills>
 						<snowpilesBelow>-15</snowpilesBelow>
 						<mountainsSnowyBelow>-5</mountainsSnowyBelow>
@@ -273,7 +273,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="AridShrubland"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
 						<uniqueHills>true</uniqueHills>
 						<forestDenseAbove>1800</forestDenseAbove>
@@ -291,7 +291,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="Desert"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
 						<uniqueHills>true</uniqueHills>
 						<forestDenseAbove>500</forestDenseAbove>
@@ -315,7 +315,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="ExtremeDesert"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<uniqueHills>true</uniqueHills>
 						<mountainsSemiSnowyBelow>10</mountainsSemiSnowyBelow>
 						<impassableSemiSnowyBelow>25</impassableSemiSnowyBelow>
@@ -337,7 +337,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="TropicalRainforest"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
 						<uniqueHills>true</uniqueHills>
 						<forestDenseAbove>3500</forestDenseAbove>
@@ -354,7 +354,7 @@
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="TropicalSwamp"]</xpath>
 				<value>
-					<li Class="BiomesKit.BiomesKitControls">
+					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
 						<uniqueHills>true</uniqueHills>
 						<mountainsSemiSnowyBelow>10</mountainsSemiSnowyBelow>

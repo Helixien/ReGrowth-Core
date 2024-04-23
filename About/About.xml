@@ -56,6 +56,7 @@ This mod is as lightweight as possible, adding the minimum of code required and 
 	<incompatibleWithByVersion>
 		<v1.5>
 			<li>Owlchemist.PerspectiveOres</li>
+			<li>Odeum.WMBP</li>
 		</v1.5>
 	</incompatibleWithByVersion>
 </ModMetaData>

@@ -31,7 +31,7 @@
 			</damageData>
 		</graphicData>
 		<statBases>
-			<MaxHitPoints>120</MaxHitPoints>
+			<MaxHitPoints>80</MaxHitPoints>
 			<WorkToBuild>850</WorkToBuild>
 			<Flammability>1</Flammability>
 			<Beauty>4</Beauty>

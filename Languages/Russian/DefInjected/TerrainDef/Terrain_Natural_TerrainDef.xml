@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--               vulcanic rock -->
+  <RG_LavaRock.label>вулканическая порода</RG_LavaRock.label>
+  <!--                       lava rock -->
+  <RG_LavaRock.tools.0.label>лавовая порода</RG_LavaRock.tools.0.label>
+  
+  <!--                    sand -->
+  <RG_HotSpringSand.label>песок</RG_HotSpringSand.label>
+  <!--                            sand -->
+  <RG_HotSpringSand.tools.0.label>песок</RG_HotSpringSand.tools.0.label>
+</LanguageData>

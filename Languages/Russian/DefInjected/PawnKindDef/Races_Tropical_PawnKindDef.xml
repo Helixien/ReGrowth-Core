@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--               kiwi -->
+  <RG_KiwiBird.label>kiwi</RG_KiwiBird.label>
+  <!--                            chick -->
+  <RG_KiwiBird.lifeStages.0.label>chick</RG_KiwiBird.lifeStages.0.label>
+  <!--                                  Plural kiwi -->
+  <RG_KiwiBird.lifeStages.0.labelPlural>Plural kiwi</RG_KiwiBird.lifeStages.0.labelPlural>
+  <!--                                Male kiwi -->
+  <RG_KiwiBird.lifeStages.0.labelMale>Male kiwi</RG_KiwiBird.lifeStages.0.labelMale>
+  <!--                                  Female kiwi -->
+  <RG_KiwiBird.lifeStages.0.labelFemale>Female kiwi</RG_KiwiBird.lifeStages.0.labelFemale>
+  <!--                                      Male Plural kiwi -->
+  <RG_KiwiBird.lifeStages.0.labelMalePlural>Male Plural kiwi</RG_KiwiBird.lifeStages.0.labelMalePlural>
+  <!--                                        Female Plural kiwi -->
+  <RG_KiwiBird.lifeStages.0.labelFemalePlural>Female Plural kiwi</RG_KiwiBird.lifeStages.0.labelFemalePlural>
+  <!--                                  Plural kiwi -->
+  <RG_KiwiBird.lifeStages.1.labelPlural>Plural kiwi</RG_KiwiBird.lifeStages.1.labelPlural>
+  <!--                                Male kiwi -->
+  <RG_KiwiBird.lifeStages.1.labelMale>Male kiwi</RG_KiwiBird.lifeStages.1.labelMale>
+  <!--                                  Female kiwi -->
+  <RG_KiwiBird.lifeStages.1.labelFemale>Female kiwi</RG_KiwiBird.lifeStages.1.labelFemale>
+  <!--                                      Male Plural kiwi -->
+  <RG_KiwiBird.lifeStages.1.labelMalePlural>Male Plural kiwi</RG_KiwiBird.lifeStages.1.labelMalePlural>
+  <!--                                        Female Plural kiwi -->
+  <RG_KiwiBird.lifeStages.1.labelFemalePlural>Female Plural kiwi</RG_KiwiBird.lifeStages.1.labelFemalePlural>
+  <!--                                  Plural kiwi -->
+  <RG_KiwiBird.lifeStages.2.labelPlural>Plural kiwi</RG_KiwiBird.lifeStages.2.labelPlural>
+  <!--                                Male kiwi -->
+  <RG_KiwiBird.lifeStages.2.labelMale>Male kiwi</RG_KiwiBird.lifeStages.2.labelMale>
+  <!--                                  Female kiwi -->
+  <RG_KiwiBird.lifeStages.2.labelFemale>Female kiwi</RG_KiwiBird.lifeStages.2.labelFemale>
+  <!--                                      Male Plural kiwi -->
+  <RG_KiwiBird.lifeStages.2.labelMalePlural>Male Plural kiwi</RG_KiwiBird.lifeStages.2.labelMalePlural>
+  <!--                                        Female Plural kiwi -->
+  <RG_KiwiBird.lifeStages.2.labelFemalePlural>Female Plural kiwi</RG_KiwiBird.lifeStages.2.labelFemalePlural>
+  <!--                     Plural kiwi -->
+  <RG_KiwiBird.labelPlural>Plural kiwi</RG_KiwiBird.labelPlural>
+  <!--                   Male kiwi -->
+  <RG_KiwiBird.labelMale>Male kiwi</RG_KiwiBird.labelMale>
+  <!--                     Female kiwi -->
+  <RG_KiwiBird.labelFemale>Female kiwi</RG_KiwiBird.labelFemale>
+  <!--                         Male Plural kiwi -->
+  <RG_KiwiBird.labelMalePlural>Male Plural kiwi</RG_KiwiBird.labelMalePlural>
+  <!--                           Female Plural kiwi -->
+  <RG_KiwiBird.labelFemalePlural>Female Plural kiwi</RG_KiwiBird.labelFemalePlural>
+</LanguageData>

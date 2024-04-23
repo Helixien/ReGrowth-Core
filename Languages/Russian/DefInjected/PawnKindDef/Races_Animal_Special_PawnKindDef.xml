@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--                 neutrolope -->
+  <RG_Neutrolope.label>neutrolope</RG_Neutrolope.label>
+  <!--                              neutrolope calf -->
+  <RG_Neutrolope.lifeStages.0.label>neutrolope calf</RG_Neutrolope.lifeStages.0.label>
+  <!--                                    neutrolope calves -->
+  <RG_Neutrolope.lifeStages.0.labelPlural>neutrolope calves</RG_Neutrolope.lifeStages.0.labelPlural>
+  <!--                                  Male neutrolope -->
+  <RG_Neutrolope.lifeStages.0.labelMale>Male neutrolope</RG_Neutrolope.lifeStages.0.labelMale>
+  <!--                                    Female neutrolope -->
+  <RG_Neutrolope.lifeStages.0.labelFemale>Female neutrolope</RG_Neutrolope.lifeStages.0.labelFemale>
+  <!--                                        Male Plural neutrolope -->
+  <RG_Neutrolope.lifeStages.0.labelMalePlural>Male Plural neutrolope</RG_Neutrolope.lifeStages.0.labelMalePlural>
+  <!--                                          Female Plural neutrolope -->
+  <RG_Neutrolope.lifeStages.0.labelFemalePlural>Female Plural neutrolope</RG_Neutrolope.lifeStages.0.labelFemalePlural>
+  <!--                                    Plural neutrolope -->
+  <RG_Neutrolope.lifeStages.1.labelPlural>Plural neutrolope</RG_Neutrolope.lifeStages.1.labelPlural>
+  <!--                                  Male neutrolope -->
+  <RG_Neutrolope.lifeStages.1.labelMale>Male neutrolope</RG_Neutrolope.lifeStages.1.labelMale>
+  <!--                                    Female neutrolope -->
+  <RG_Neutrolope.lifeStages.1.labelFemale>Female neutrolope</RG_Neutrolope.lifeStages.1.labelFemale>
+  <!--                                        Male Plural neutrolope -->
+  <RG_Neutrolope.lifeStages.1.labelMalePlural>Male Plural neutrolope</RG_Neutrolope.lifeStages.1.labelMalePlural>
+  <!--                                          Female Plural neutrolope -->
+  <RG_Neutrolope.lifeStages.1.labelFemalePlural>Female Plural neutrolope</RG_Neutrolope.lifeStages.1.labelFemalePlural>
+  <!--                                    Plural neutrolope -->
+  <RG_Neutrolope.lifeStages.2.labelPlural>Plural neutrolope</RG_Neutrolope.lifeStages.2.labelPlural>
+  <!--                                  Male neutrolope -->
+  <RG_Neutrolope.lifeStages.2.labelMale>Male neutrolope</RG_Neutrolope.lifeStages.2.labelMale>
+  <!--                                    Female neutrolope -->
+  <RG_Neutrolope.lifeStages.2.labelFemale>Female neutrolope</RG_Neutrolope.lifeStages.2.labelFemale>
+  <!--                                        Male Plural neutrolope -->
+  <RG_Neutrolope.lifeStages.2.labelMalePlural>Male Plural neutrolope</RG_Neutrolope.lifeStages.2.labelMalePlural>
+  <!--                                          Female Plural neutrolope -->
+  <RG_Neutrolope.lifeStages.2.labelFemalePlural>Female Plural neutrolope</RG_Neutrolope.lifeStages.2.labelFemalePlural>
+  <!--                       Plural neutrolope -->
+  <RG_Neutrolope.labelPlural>Plural neutrolope</RG_Neutrolope.labelPlural>
+  <!--                     Male neutrolope -->
+  <RG_Neutrolope.labelMale>Male neutrolope</RG_Neutrolope.labelMale>
+  <!--                       Female neutrolope -->
+  <RG_Neutrolope.labelFemale>Female neutrolope</RG_Neutrolope.labelFemale>
+  <!--                           Male Plural neutrolope -->
+  <RG_Neutrolope.labelMalePlural>Male Plural neutrolope</RG_Neutrolope.labelMalePlural>
+  <!--                             Female Plural neutrolope -->
+  <RG_Neutrolope.labelFemalePlural>Female Plural neutrolope</RG_Neutrolope.labelFemalePlural>
+</LanguageData>

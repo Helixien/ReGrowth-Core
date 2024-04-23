@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--                   wet -->
+  <RG_Wet.stages.0.label>{PAWN_gender ? влажный : влажная}</RG_Wet.stages.0.label>
+  <!--                         I'm wet. -->
+  <RG_Wet.stages.0.description>С меня капает вода.</RG_Wet.stages.0.description>
+  
+  <!--                            extremely wet -->
+  <RG_ExtremelyWet.stages.0.label>{PAWN_gender ? мокрый : мокрая}</RG_ExtremelyWet.stages.0.label>
+  <!--                                  I'm extremely wet. -->
+  <RG_ExtremelyWet.stages.0.description>С меня стекает вода.</RG_ExtremelyWet.stages.0.description>
+  
+  <!--                     sandy -->
+  <RG_Sandy.stages.0.label>{PAWN_gender ? весь : вся} в песке</RG_Sandy.stages.0.label>
+  <!--                           There is sand like..... everywhere! Even in my eyes! -->
+  <RG_Sandy.stages.0.description>Я чувствую песок повсюду! Даже в глазах!</RG_Sandy.stages.0.description>
+  
+  <!--                            warm water -->
+  <RG_HotSpringWet.stages.0.label>тёплая вода</RG_HotSpringWet.stages.0.label>
+  <!--                                  The hot water from the hot spring felt amazing! -->
+  <RG_HotSpringWet.stages.0.description>Горячая вода из горячего источника была потрясающей!</RG_HotSpringWet.stages.0.description>
+</LanguageData>

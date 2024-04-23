@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--                         grassland -->
+  <RG_TemperateGrassland.label>Луг</RG_TemperateGrassland.label>
+  <!--                               Vast swathes of open plains filled with grasses, bushes and shrubbery. Very few, if any, trees grow here and plenty of herbivores graze the lands, with carnivores waiting in ambush. -->
+  <RG_TemperateGrassland.description>Огромные пространства открытых равнин, покрытых травами, кустарниками и кустарниковыми зарослями. Здесь растет очень мало деревьев, и на этих землях пасется множество травоядных животных, пока хищники подстерегают их в засаде.</RG_TemperateGrassland.description>
+</LanguageData>

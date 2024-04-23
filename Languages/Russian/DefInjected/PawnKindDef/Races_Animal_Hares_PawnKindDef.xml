@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--             rabbit -->
+  <RG_Rabbit.label>rabbit</RG_Rabbit.label>
+  <!--                          kit -->
+  <RG_Rabbit.lifeStages.0.label>kit</RG_Rabbit.lifeStages.0.label>
+  <!--                                Plural rabbit -->
+  <RG_Rabbit.lifeStages.0.labelPlural>Plural rabbit</RG_Rabbit.lifeStages.0.labelPlural>
+  <!--                              Male rabbit -->
+  <RG_Rabbit.lifeStages.0.labelMale>Male rabbit</RG_Rabbit.lifeStages.0.labelMale>
+  <!--                                Female rabbit -->
+  <RG_Rabbit.lifeStages.0.labelFemale>Female rabbit</RG_Rabbit.lifeStages.0.labelFemale>
+  <!--                                    Male Plural rabbit -->
+  <RG_Rabbit.lifeStages.0.labelMalePlural>Male Plural rabbit</RG_Rabbit.lifeStages.0.labelMalePlural>
+  <!--                                      Female Plural rabbit -->
+  <RG_Rabbit.lifeStages.0.labelFemalePlural>Female Plural rabbit</RG_Rabbit.lifeStages.0.labelFemalePlural>
+  <!--                                Plural rabbit -->
+  <RG_Rabbit.lifeStages.1.labelPlural>Plural rabbit</RG_Rabbit.lifeStages.1.labelPlural>
+  <!--                              Male rabbit -->
+  <RG_Rabbit.lifeStages.1.labelMale>Male rabbit</RG_Rabbit.lifeStages.1.labelMale>
+  <!--                                Female rabbit -->
+  <RG_Rabbit.lifeStages.1.labelFemale>Female rabbit</RG_Rabbit.lifeStages.1.labelFemale>
+  <!--                                    Male Plural rabbit -->
+  <RG_Rabbit.lifeStages.1.labelMalePlural>Male Plural rabbit</RG_Rabbit.lifeStages.1.labelMalePlural>
+  <!--                                      Female Plural rabbit -->
+  <RG_Rabbit.lifeStages.1.labelFemalePlural>Female Plural rabbit</RG_Rabbit.lifeStages.1.labelFemalePlural>
+  <!--                                Plural rabbit -->
+  <RG_Rabbit.lifeStages.2.labelPlural>Plural rabbit</RG_Rabbit.lifeStages.2.labelPlural>
+  <!--                              Male rabbit -->
+  <RG_Rabbit.lifeStages.2.labelMale>Male rabbit</RG_Rabbit.lifeStages.2.labelMale>
+  <!--                                Female rabbit -->
+  <RG_Rabbit.lifeStages.2.labelFemale>Female rabbit</RG_Rabbit.lifeStages.2.labelFemale>
+  <!--                                    Male Plural rabbit -->
+  <RG_Rabbit.lifeStages.2.labelMalePlural>Male Plural rabbit</RG_Rabbit.lifeStages.2.labelMalePlural>
+  <!--                                      Female Plural rabbit -->
+  <RG_Rabbit.lifeStages.2.labelFemalePlural>Female Plural rabbit</RG_Rabbit.lifeStages.2.labelFemalePlural>
+  <!--                   Plural rabbit -->
+  <RG_Rabbit.labelPlural>Plural rabbit</RG_Rabbit.labelPlural>
+  <!--                 Male rabbit -->
+  <RG_Rabbit.labelMale>Male rabbit</RG_Rabbit.labelMale>
+  <!--                   Female rabbit -->
+  <RG_Rabbit.labelFemale>Female rabbit</RG_Rabbit.labelFemale>
+  <!--                       Male Plural rabbit -->
+  <RG_Rabbit.labelMalePlural>Male Plural rabbit</RG_Rabbit.labelMalePlural>
+  <!--                         Female Plural rabbit -->
+  <RG_Rabbit.labelFemalePlural>Female Plural rabbit</RG_Rabbit.labelFemalePlural>
+</LanguageData>

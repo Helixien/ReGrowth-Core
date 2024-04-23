@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--           General -->
+  <RG_Core.label>Основные</RG_Core.label>
+  <!--               Make camp options -->
+  <RG_MakeCamp.label>Опция «Разбить лагерь»</RG_MakeCamp.label>
+  <!--                      Perspective ores toggles -->
+  <RG_PerspectiveOres.label>Отключение изменения перспективы руд</RG_PerspectiveOres.label>
+  <!--                     New Weather toggles -->
+  <RG_WeatherToggles.label>Отключение иновых погодных эффектов</RG_WeatherToggles.label>
+</LanguageData>

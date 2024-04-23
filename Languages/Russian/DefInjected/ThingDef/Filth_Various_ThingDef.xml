@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--                          leaves -->
+  <RG_Filth_LeavesTreeOak.label>листва</RG_Filth_LeavesTreeOak.label>
+  <!--                              leaves -->
+  <RG_Filth_LeavesTreePopolar.label>листва</RG_Filth_LeavesTreePopolar.label>
+  <!--                            leaves -->
+  <RG_Filth_LeavesTreeBirch.label>листва</RG_Filth_LeavesTreeBirch.label>
+  <!--                            anima leaves -->
+  <RG_Filth_LeavesTreeAnima.label>листва древа души</RG_Filth_LeavesTreeAnima.label>
+  <!--                        neutroamine -->
+  <RG_Filth_Neutroamine.label>нейтроaмин</RG_Filth_Neutroamine.label>
+</LanguageData>

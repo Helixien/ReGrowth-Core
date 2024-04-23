@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--                            bathed in marsh -->
+  <RG_BathingMarsh.stages.0.label>{PAWN_gender ? искупался : искупалась} в болоте</RG_BathingMarsh.stages.0.label>
+  <!--                                  I took a relaxing bath in a marsh. -->
+  <RG_BathingMarsh.stages.0.description>Я {PAWN_gender ? поплавал : поплавала} в болоте.</RG_BathingMarsh.stages.0.description>
+  
+  <!--                            bathed in water -->
+  <RG_BathingWater.stages.0.label>{PAWN_gender ? искупался : искупалась} в воде</RG_BathingWater.stages.0.label>
+  <!--                                  I took a relaxing bath, that always lifts the spirits. -->
+  <RG_BathingWater.stages.0.description>Я {PAWN_gender ? поплавал : поплавала} - это всегда поднимает настроение.</RG_BathingWater.stages.0.description>
+  
+  <!--                            bathed in ocean -->
+  <RG_BathingOcean.stages.0.label>{PAWN_gender ? искупался : искупалась} в океане</RG_BathingOcean.stages.0.label>
+  <!--                                  I took a relaxing bath in the ocean. Really helps to forget all the troubles of the day for a bit. -->
+  <RG_BathingOcean.stages.0.description>Я {PAWN_gender ? поплавал : поплавала} в океане. Это действительно помогает на время забыть обо всех проблемах дня.</RG_BathingOcean.stages.0.description>
+  
+  <!--                                bathed in hot spring -->
+  <RG_HotSpringBathing.stages.0.label>{PAWN_gender ? искупался : искупалась} в горячем источнике</RG_HotSpringBathing.stages.0.label>
+  <!--                                      I took a relaxing bath in a warm hot spring. There is nothing quite like it. -->
+  <RG_HotSpringBathing.stages.0.description>Я {PAWN_gender ? поплавал : поплавала} в горячем источнике. Ничто не может сравниться с этим.</RG_HotSpringBathing.stages.0.description>
+  
+  <!--                            bathed in toxic waste -->
+  <RG_WasteBathing.stages.0.label>{PAWN_gender ? искупался : искупалась} в токсичных отходах</RG_WasteBathing.stages.0.label>
+  <!--                                  I took a bath in toxic waste. Absolutely disgusting, I feel dirty. -->
+  <RG_WasteBathing.stages.0.description>Я {PAWN_gender ? поплавал : поплавала} в токсичных отходах. Это было совершенно отвратительно, я чувствую себя {PAWN_gender ? грязным : грязной}.</RG_WasteBathing.stages.0.description>
+</LanguageData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--                                raspberry bush -->
+  <RG_Plant_RaspberryCultivated.label>малиновый куст</RG_Plant_RaspberryCultivated.label>
+  <!--                                      A bushy wild plant which yields delicious red berries. Berries can be cooked, but they're also good to eat even when raw. -->
+  <RG_Plant_RaspberryCultivated.description>Кустарниковое дикорастущее растение, производящее вкусные красные ягоды. Ягоды можно приготовить, но они хороши и в сыром виде..</RG_Plant_RaspberryCultivated.description>
+  
+  <!--                            berry bush -->
+  <RG_Plant_BerryCultivated.label>ягодный кустарник</RG_Plant_BerryCultivated.label>
+  <!--                                  A bushy wild plant which yields delicious berries. Berries can be cooked, but they're also good to eat even when raw. -->
+  <RG_Plant_BerryCultivated.description>Кустарниковое дикорастущее растение, производящее вкусные ягоды. Ягоды можно приготовить, но их полезно есть и в сыром виде..</RG_Plant_BerryCultivated.description>
+</LanguageData>

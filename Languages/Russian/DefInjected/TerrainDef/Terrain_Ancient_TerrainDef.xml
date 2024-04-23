@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--                      broken concrete -->
+  <RG_AncientConcrete.label>разбитый бетон</RG_AncientConcrete.label>
+  <!--                            Rough concrete. Broken due to lack of maintenance. -->
+  <RG_AncientConcrete.description>Неухоженный бетон. Разбит из-за отсутствия надлежащего обслуживания.</RG_AncientConcrete.description>
+</LanguageData>

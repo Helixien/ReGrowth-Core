@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--                 neutrolope -->
+  <RG_Neutrolope.label>нейтралопа</RG_Neutrolope.label>
+  <!--                       Engineered for neutroamine production, the neutrolope grows a large sac of pure neutroamine on its back. Though it is weak and fragile for its size, other animals avoid it similarly to a boomalope, despite the fact it does not explode when it dies. It can be milked to produce neutroamine. -->
+  <RG_Neutrolope.description>Engineered for neutroamine production, the neutrolope grows a large sac of pure neutroamine on its back. Though it is weak and fragile for its size, other animals avoid it similarly to a boomalope, despite the fact it does not explode when it dies. It can be milked to produce neutroamine.</RG_Neutrolope.description>
+  <!--                         head -->
+  <RG_Neutrolope.tools.0.label>голова</RG_Neutrolope.tools.0.label>
+  <!--                         left hoof -->
+  <RG_Neutrolope.tools.1.label>левое копыто</RG_Neutrolope.tools.1.label>
+  <!--                         right hoof -->
+  <RG_Neutrolope.tools.2.label>правое копыто</RG_Neutrolope.tools.2.label>
+</LanguageData>

@@ -38,6 +38,9 @@
 			<BeautyOutdoors>6</BeautyOutdoors>
 			<SellPriceFactor>0</SellPriceFactor>
 		</statBases>
+		<researchPrerequisites>
+			<li MayRequire="OskarPotocki.VFE.Tribals">VFET_Agriculture</li>
+		</researchPrerequisites>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<blockWind>true</blockWind>

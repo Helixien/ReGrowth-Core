@@ -303,6 +303,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BiomesKit\BiomesKit.cs" />
+    <Compile Include="BiomesKit\Extensions.cs" />
+    <Compile Include="BiomesKit\Patches.cs" />
+    <Compile Include="BiomesKit\BiomesKitControl.cs" />
+    <Compile Include="BiomesKit\WorldGenDefGenerator.cs" />
+    <Compile Include="BiomesKit\WorldLayer.cs" />
     <Compile Include="BiomeWorkers\BiomePerlin.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_AnimaForest.cs" />
     <Compile Include="BiomeWorkers\BiomeWorker_BoilingForest.cs" />

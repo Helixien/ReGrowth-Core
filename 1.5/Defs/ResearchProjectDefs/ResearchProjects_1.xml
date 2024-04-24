@@ -8,6 +8,9 @@
 		<baseCost>500</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<tab>RG_ReGrowth</tab>
+		<prerequisites>
+			<li MayRequire="OskarPotocki.VFE.Tribals">VFET_Cultivation</li>
+		</prerequisites>
 		<tags>
 			<li>TribalStart</li>
 			<li>ClassicStart</li>
@@ -33,6 +36,9 @@
 		<baseCost>600</baseCost>
 		<techLevel>Neolithic</techLevel>
 		<tab>RG_ReGrowth</tab>
+		<prerequisites>
+			<li MayRequire="OskarPotocki.VFE.Tribals">VFET_Cultivation</li>
+		</prerequisites>
 		<tags>
 			<li>TribalStart</li>
 		</tags>

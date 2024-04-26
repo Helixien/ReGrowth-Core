@@ -111,7 +111,7 @@
 		<category>RG_Core</category>
 		<order>5</order>
 		<operations>
-		<!-- ================ Temperate Biomes ================ -->
+			<!-- ================ Temperate Biomes ================ -->
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="TemperateForest"]</xpath>
 				<value>
@@ -173,7 +173,7 @@
 					</li>
 				</value>
 			</li>
-					<!-- ================ Cold Biomes ================ -->
+			<!-- ================ Cold Biomes ================ -->
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="BorealForest"]</xpath>
 				<value>
@@ -269,7 +269,7 @@
 					</li>
 				</value>
 			</li>
-					<!-- ================ Arid Biomes ================ -->
+			<!-- ================ Arid Biomes ================ -->
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="AridShrubland"]</xpath>
 				<value>
@@ -333,7 +333,7 @@
 					</li>
 				</value>
 			</li>
-					<!-- ================ Tropical Biomes ================ -->
+			<!-- ================ Tropical Biomes ================ -->
 			<li Class="PatchOperationAddModExtension">
 				<xpath>/Defs/BiomeDef[defName="TropicalRainforest"]</xpath>
 				<value>
@@ -361,6 +361,23 @@
 						<impassableSemiSnowyBelow>25</impassableSemiSnowyBelow>
 						<materialRandomRotation>false</materialRandomRotation>
 						<forestDenseAbove>2500</forestDenseAbove>
+						<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
+						<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
+						<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
+						<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
+					</li>
+				</value>
+			</li>
+			<!-- ================ ReGrowth: AspenForest ================ -->
+			<li Class="PatchOperationAddModExtension" MayRequire="ReGrowth.BOTR.AspenForest">
+				<xpath>/Defs/BiomeDef[defName="RG_AspenForest"]</xpath>
+				<value>
+					<li Class="RegrowthCore.BiomesKitControl">
+						<forested>true</forested>
+						<uniqueHills>true</uniqueHills>
+						<forestSparseBelow>1100</forestSparseBelow>
+						<forestDenseAbove>1500</forestDenseAbove>
+						<materialRandomRotation>false</materialRandomRotation>
 						<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
 						<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
 						<mountainSizeMultiplier>1.4</mountainSizeMultiplier>

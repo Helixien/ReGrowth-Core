@@ -55,17 +55,56 @@
 					</operations>
 				</nomatch>
 			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant/mustBeWildToSow</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant/mustBeWildToSow</xpath>
+							<value>
+								<mustBeWildToSow>false</mustBeWildToSow>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
+							<value>
+								<mustBeWildToSow>false</mustBeWildToSow>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant/interferesWithRoof</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant/interferesWithRoof</xpath>
+							<value>
+								<interferesWithRoof>false</interferesWithRoof>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
+							<value>
+								<interferesWithRoof>false</interferesWithRoof>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant/topWindExposure</xpath>
 				<value>
 					<topWindExposure>0.1</topWindExposure>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
-				<value>
-					<mustBeWildToSow>false</mustBeWildToSow>
-					<interferesWithRoof>false</interferesWithRoof>
 				</value>
 			</li>
 		</operations>

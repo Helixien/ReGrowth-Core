@@ -49,6 +49,31 @@
 				</nomatch>
 			</li>
 			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Glowstool"]/plant/sowResearchPrerequisites</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Glowstool"]/plant/sowResearchPrerequisites</xpath>
+							<value>
+								<li>RG_MushroomCultivation</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Glowstool"]/plant</xpath>
+							<value>
+								<sowResearchPrerequisites>
+									<li>RG_MushroomCultivation</li>
+								</sowResearchPrerequisites>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
 				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath>
 				<match Class="PatchOperationSequence">
 					<operations>

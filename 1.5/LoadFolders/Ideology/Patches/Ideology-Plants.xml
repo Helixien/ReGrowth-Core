@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationSequence">
 		<!-- ================================ Plant Patches	====================== -->
 		<operations>
-			<!-- ================================ Timbershroom ====================== -->
+			<!-- ================================ Nutrifungus ====================== -->
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/ThingDef[defName="Plant_Nutrifungus"]/plant/sowResearchPrerequisites</xpath>
 				<match Class="PatchOperationSequence">
@@ -29,10 +29,42 @@
 					</operations>
 				</nomatch>
 			</li>
+			<!-- ================================ Timbershroom ====================== -->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant/sowResearchPrerequisites</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant/sowResearchPrerequisites</xpath>
+							<value>
+								<li>RG_MushroomCultivation</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
+							<value>
+								<sowResearchPrerequisites>
+									<li>RG_MushroomCultivation</li>
+								</sowResearchPrerequisites>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Timbershroom" or defName="RG_Timbershroom"]/plant/topWindExposure</xpath>
+				<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant/topWindExposure</xpath>
 				<value>
 					<topWindExposure>0.1</topWindExposure>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
 				</value>
 			</li>
 		</operations>

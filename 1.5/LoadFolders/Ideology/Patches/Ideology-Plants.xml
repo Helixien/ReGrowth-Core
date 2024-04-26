@@ -65,6 +65,7 @@
 				<xpath>/Defs/ThingDef[defName="Plant_Timbershroom"]/plant</xpath>
 				<value>
 					<mustBeWildToSow>false</mustBeWildToSow>
+					<interferesWithRoof>false</interferesWithRoof>
 				</value>
 			</li>
 		</operations>

@@ -268,7 +268,7 @@
 			</li>
 			<!-- ================ ReGrowth: Aspen Forest ================ -->
 			<li Class="PatchOperationAddModExtension" MayRequire="ReGrowth.BOTR.AspenForest">
-				<xpath>/Defs/BiomeDef[defName="RG_BoilingForest"]</xpath>
+				<xpath>/Defs/BiomeDef[defName="RG_AspenForest"]</xpath>
 				<value>
 					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>
@@ -285,7 +285,7 @@
 			</li>
 			<!-- ================ ReGrowth: Boiling Forest ================ -->
 			<li Class="PatchOperationAddModExtension" MayRequire="ReGrowth.BOTR.BoilingForest">
-				<xpath>/Defs/BiomeDef[defName="RG_AspenForest"]</xpath>
+				<xpath>/Defs/BiomeDef[defName="RG_BoilingForest"]</xpath>
 				<value>
 					<li Class="RegrowthCore.BiomesKitControl">
 						<forested>true</forested>

@@ -268,6 +268,23 @@
 			</li>
 			<!-- ================ ReGrowth: Aspen Forest ================ -->
 			<li Class="PatchOperationAddModExtension" MayRequire="ReGrowth.BOTR.AspenForest">
+				<xpath>/Defs/BiomeDef[defName="RG_BoilingForest"]</xpath>
+				<value>
+					<li Class="RegrowthCore.BiomesKitControl">
+					<forested>true</forested>
+					<uniqueHills>true</uniqueHills>
+					<forestSparseBelow>1100</forestSparseBelow>
+					<forestDenseAbove>1500</forestDenseAbove>
+					<materialRandomRotation>false</materialRandomRotation>
+					<smallHillSizeMultiplier>1.5</smallHillSizeMultiplier>
+					<largeHillSizeMultiplier>2</largeHillSizeMultiplier>
+					<mountainSizeMultiplier>1.4</mountainSizeMultiplier>
+					<impassableSizeMultiplier>1.3</impassableSizeMultiplier>
+					</li>
+				</value>
+			</li>
+			<!-- ================ ReGrowth: Boiling Forest ================ -->
+			<li Class="PatchOperationAddModExtension" MayRequire="ReGrowth.BOTR.BoilingForest">
 				<xpath>/Defs/BiomeDef[defName="RG_AspenForest"]</xpath>
 				<value>
 					<li Class="RegrowthCore.BiomesKitControl">

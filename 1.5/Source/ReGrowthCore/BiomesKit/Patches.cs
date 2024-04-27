@@ -46,8 +46,7 @@ namespace ReGrowthCore
     {
         internal static void Prefix()
         {
-            var container = ModSettingsFrameworkSettings.GetModSettingsContainer(ReGrowthMod.modPack.PackageIdPlayerFacing);
-            if (container.patchOperationStates.TryGetValue("RG_WorldMapBeautificationProject", out var state) && state)
+            if (ReGrowthUtils.WorldBeautificationIsActive)
             {
                 Material noMaterial = MaterialPool.MatFrom("Transparent", ShaderDatabase.WorldOverlayTransparentLit, 3510);
                 AccessTools.Field(typeof(WorldMaterials), nameof(WorldMaterials.SmallHills)).SetValue(null, noMaterial);

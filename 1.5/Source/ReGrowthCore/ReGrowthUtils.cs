@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using ModSettingsFramework;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,8 +17,21 @@ namespace ReGrowthCore
     public static class ReGrowthUtils
     {
         private static ReGrowthCore_MakeCamp _setUpCampPatchWorker;
-        public static ReGrowthCore_MakeCamp MakeCampPatchWorker => _setUpCampPatchWorker ??= LoadedModManager.GetMod<ReGrowthMod>().Content
+        public static ReGrowthCore_MakeCamp MakeCampPatchWorker => _setUpCampPatchWorker ??= ReGrowthMod.modPack
             .Patches.OfType<ReGrowthCore_MakeCamp>().FirstOrDefault();
+
+        public static bool WorldBeautificationIsActive
+        {
+            get
+            {
+                var container = ModSettingsFrameworkSettings.GetModSettingsContainer(ReGrowthMod.modPack.PackageIdPlayerFacing);
+                if (container.patchOperationStates.TryGetValue("RG_WorldMapBeautificationProject", out var state) && state)
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
 
         static ReGrowthUtils()
         {

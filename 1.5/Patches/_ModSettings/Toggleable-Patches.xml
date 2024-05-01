@@ -4,7 +4,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Increase vanilla plant density</label>
-		<tooltip>Makes all biomes more lush. Does only affect performance on low end machines. All ReGrowth mods are build around this setting enabled.</tooltip>
+		<tooltip>Makes all biomes more lush. Does only affect performance on low end machines. All ReGrowth mods are build around this setting enabled. (Default: True)</tooltip>
 		<id>RG_IncreaseVanillaPlantDensity</id>
 		<category>RG_Core</category>
 		<order>0</order>
@@ -106,7 +106,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable autumn leaves spawners</label>
-		<tooltip>Enables autumn leaves spawners on trees.</tooltip>
+		<tooltip>Enables autumn leaves spawners on trees. (Default: True)</tooltip>
 		<id>RG_EnableAutumnLeavesSpawners</id>
 		<category>RG_Core</category>
 		<order>10</order>
@@ -177,7 +177,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable perspective trees</label>
-		<tooltip>Enable the alterations to the tree draw layer so items/chunks/pawns are not drawn in front of it. It should work with most tree-adding mods. This does the same as the mod "Perspective: Trees" from Owlchemist.</tooltip>
+		<tooltip>Enable the alterations to the tree draw layer so items/chunks/pawns are not drawn in front of it. It should work with most tree-adding mods. This does the same as the mod "Perspective: Trees" from Owlchemist. (Default: True)</tooltip>
 		<id>RG_DisablePerspectiveTrees</id>
 		<category>RG_Core</category>
 		<order>15</order>
@@ -201,7 +201,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Disable hot spring fog</label>
-		<tooltip>Disable the spawning of fog motes on hot springs.</tooltip>
+		<tooltip>Disable the spawning of fog motes on hot springs. (Default: False)</tooltip>
 		<id>RG_DisableHotspringMotes</id>
 		<category>RG_Core</category>
 		<order>20</order>
@@ -215,7 +215,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Disable lava glow and heat</label>
-		<tooltip>Disable the glowing and the heat pushing of the lava terrain.</tooltip>
+		<tooltip>Disable the glowing and the heat pushing of the lava terrain. (Default: False)</tooltip>
 		<id>RG_DisableLavaFeatures</id>
 		<category>RG_Core</category>
 		<order>30</order>
@@ -232,7 +232,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable realistic faction placement</label>
-		<tooltip>Prevent factions from spawning in extreme biomes like sea ice or extreme deserts unless it makes logical sense for them. Might lead to issues on tiny world maps.</tooltip>
+		<tooltip>Prevent factions from spawning in extreme biomes like sea ice or extreme deserts unless it makes logical sense for them. Might lead to issues on tiny world maps. (Default: True)</tooltip>
 		<id>RG_RealisticFactionPlacement</id>
 		<category>RG_Core</category>
 		<order>40</order>
@@ -622,7 +622,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Make anima tree replantable</label>
-		<tooltip>Allows for the anima tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
+		<tooltip>Allows for the anima tree to be replanted. Might lead to errors if used with another mod that does the same thing. (Default: False)</tooltip>
 		<id>RG_AnimaTreeReplant</id>
 		<category>RG_Core</category>
 		<order>50</order>
@@ -642,7 +642,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Make gauranlen tree replantable</label>
-		<tooltip>Allows for the gauranlen tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
+		<tooltip>Allows for the gauranlen tree to be replanted. Might lead to errors if used with another mod that does the same thing. (Default: False)</tooltip>
 		<id>RG_GauranlenTreeReplant</id>
 		<category>RG_Core</category>
 		<order>60</order>
@@ -662,7 +662,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Make polux tree replantable</label>
-		<tooltip>Allows for the polux tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
+		<tooltip>Allows for the polux tree to be replanted. Might lead to errors if used with another mod that does the same thing. (Default: False)</tooltip>
 		<id>RG_PoluxTreeReplant</id>
 		<category>RG_Core</category>
 		<order>61</order>
@@ -682,7 +682,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>False</defaultValue>
 		<label>Make harbinger tree replantable</label>
-		<tooltip>Allows for the harbinger  tree to be replanted. Might lead to errors if used with another mod that does the same thing.</tooltip>
+		<tooltip>Allows for the harbinger  tree to be replanted. Might lead to errors if used with another mod that does the same thing. (Default: False)</tooltip>
 		<id>RG_HarbingerTreeReplant</id>
 		<category>RG_Core</category>
 		<order>62</order>

@@ -4,7 +4,7 @@
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>
 		<label>Enable world map beautification</label>
-		<tooltip>Enable additional visual elements and better textures for the world map, making it look nicer and more detailed. Has no noticeable impact on performance and does not change game balancing.</tooltip>
+		<tooltip>Enable additional visual elements and better textures for the world map, making it look nicer and more detailed. Has no noticeable impact on performance and does not change game balancing. (Default: True)</tooltip>
 		<id>RG_WorldMapBeautificationProject</id>
 		<category>RG_Core</category>
 		<order>5</order>

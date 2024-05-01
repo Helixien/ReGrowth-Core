@@ -2,11 +2,18 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
-			<li Class="PatchOperationReplace">
+			<li Class="PatchOperationConditional">
 				<xpath>/Defs/LayoutRoomDef[@Name="UtilityRoom"]/floorTypes/li[text()="Concrete"]</xpath>
-				<value>
-					<li>RG_AncientConcrete</li>
-				</value>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/LayoutRoomDef[@Name="UtilityRoom"]/floorTypes/li[text()="Concrete"]</xpath>
+							<value>
+								<li>RG_AncientConcrete</li>
+							</value>
+						</li>
+					</operations>
+				</match>
 			</li>
 		</operations>
 	</Operation>

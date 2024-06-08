@@ -79,12 +79,19 @@ namespace ReGrowthCore
                     //Look around this mineral and try to find a stone
                     foreach (var pos in GenAdjFast.AdjacentCells8Way(mineable.Position))
                     {
-                        var edifice = pos.GetEdifice(map);
-                        if (edifice == null || edifice.def == mineable.def || edifice is not Mineable mineableEdifice) continue;
-                        if (mineableEdifice.def.building.isResourceRock || !mineableEdifice.def.building.isNaturalRock) continue;
+                        try
+                        {
+                            if (pos.InBounds(map))
+                            {
+                                var edifice = pos.GetEdifice(map);
+                                if (edifice == null || edifice.def == mineable.def || edifice is not Mineable mineableEdifice) continue;
+                                if (mineableEdifice.def.building.isResourceRock || !mineableEdifice.def.building.isNaturalRock) continue;
 
-                        lumpColors.Add(lumpID, edifice.DrawColor);
-                        break;
+                                lumpColors.Add(lumpID, edifice.DrawColor);
+                                break;
+                            }
+                        }
+                        catch { }
                     }
                 }
             }

@@ -53,12 +53,21 @@ namespace ReGrowthCore
             {
                 foreach (IntVec3 item in GenAdjFast.AdjacentCells8Way(pos).ToArray())
                 {
-                    var edifice = item.GetEdifice(map);
-                    if (edifice == null || edifice.def != def || lumps.ContainsKey(edifice) || edifice is not Mineable mineableEdifice) continue;
-                    if (!mineableEdifice.def.building.isResourceRock) continue;
+                    try
+                    {
+                        if (item.InBounds(map))
+                        {
+                            var edifice = item.GetEdifice(map);
+                            if (edifice == null || edifice.def != def || lumps.ContainsKey(edifice) || edifice is not Mineable mineableEdifice) continue;
+                            if (!mineableEdifice.def.building.isResourceRock) continue;
+                            lumps.Add(edifice, lumpID);
+                            DetermineLump(def, lumpID, item);
+                        }
+                    }
+                    catch
+                    {
 
-                    lumps.Add(edifice, lumpID);
-                    DetermineLump(def, lumpID, item);
+                    }
                 }
             }
             void AssociateLumps()

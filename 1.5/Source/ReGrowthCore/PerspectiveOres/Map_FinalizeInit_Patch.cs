@@ -58,7 +58,9 @@ namespace ReGrowthCore
                         if (item.InBounds(map))
                         {
                             var edifice = item.GetEdifice(map);
-                            if (edifice == null || edifice.def != def || lumps.ContainsKey(edifice) || edifice is not Mineable mineableEdifice) continue;
+                            if (edifice == null || edifice.def != def || lumps.ContainsKey(edifice) 
+                                || edifice is not Mineable mineableEdifice 
+                                || ModSettings_PerspectiveOres.skippedMineableDefs.Contains(mineableEdifice.def.defName)) continue;
                             if (!mineableEdifice.def.building.isResourceRock) continue;
                             lumps.Add(edifice, lumpID);
                             DetermineLump(def, lumpID, item);

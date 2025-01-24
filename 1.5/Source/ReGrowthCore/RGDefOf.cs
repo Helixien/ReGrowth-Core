@@ -36,6 +36,11 @@ namespace ReGrowthCore
 		public static ThingDef RG_Filth_Neutroamine;
 
 		public static WorldObjectDef RG_CaravanCamp;
+
+        public static WeatherDef RG_SandStorm, RG_SandStormHard, RG_FoggySandstorm;
+
+		public static SitePartDef RG_CaravanCampPart;
+
     }
 }
 

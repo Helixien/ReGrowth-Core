@@ -3,20 +3,71 @@ using RimWorld.Planet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using UnityEngine;
 using Verse;
 
 namespace ReGrowthCore
 {
-    public class CaravanCamp : MapParent
+    public class CaravanCamp : Site
     {
         public static readonly IntVec3 MapSize = new IntVec3(120, 1, 120);
+
+        public override string Label
+        {
+            get
+            {
+                if (parts.NullOrEmpty())
+                {
+                    AddSitePart();
+                }
+                return IsEmpty ? "RG.EmptyCamp".Translate() : base.Label;
+            }
+        }
+
+        [Unsaved(false)]
+        private Material emptyMaterial;
+
+        [Unsaved(false)]
+        private Texture2D emptyExpandingIconTextureInt;
+
+        public override Material Material => IsEmpty ? EmtpyMaterial : base.Material;
+
+        public override Texture2D ExpandingIcon => IsEmpty ? EmtpyExpandingIconTexture : base.ExpandingIcon;
+
+        public SavedCamp savedCamp;
+
+        public Material EmtpyMaterial
+        {
+            get
+            {
+                if (emptyMaterial == null)
+                {
+                    emptyMaterial = MaterialPool.MatFrom(def.texture.Replace("Player", "Empty"), ShaderDatabase.WorldOverlayTransparentLit, WorldMaterials.WorldObjectRenderQueue);
+                }
+                return emptyMaterial;
+            }
+        }
+
+        public Texture2D EmtpyExpandingIconTexture
+        {
+            get
+            {
+                if (emptyExpandingIconTextureInt == null)
+                {
+                    emptyExpandingIconTextureInt = ContentFinder<Texture2D>.Get(def.expandingIconTexture.Replace("Player", "EmptyPlayer"));
+                }
+                return emptyExpandingIconTextureInt;
+            }
+        }
+
+        public bool IsEmpty => HasMap is false;
 
         public override bool ShouldRemoveMapNow(out bool alsoRemoveWorldObject)
         {
             if (!base.Map.mapPawns.AnyPawnBlockingMapRemoval)
             {
-                alsoRemoveWorldObject = true;
+                alsoRemoveWorldObject = false;
                 return true;
             }
             alsoRemoveWorldObject = false;
@@ -26,14 +77,34 @@ namespace ReGrowthCore
         public override void PostMapGenerate()
         {
             base.PostMapGenerate();
-            WorldComponent_Camps.Instance.TryResetCamps();
-            if (WorldComponent_Camps.Instance.savedCamps.TryGetValue(Tile, out var savedCamp))
+            if (savedCamp != null)
             {
-                RestoreCampMap(savedCamp);
+                RestoreCampMap();
             }
         }
 
-        private void RestoreCampMap(SavedCamp savedCamp)
+        public override void Tick()
+        {
+            base.Tick();
+            if (IsEmpty && (savedCamp is null || Find.TickManager.TicksGame - savedCamp.ticksSaved
+                >= ReGrowthUtils.MakeCampPatchWorker.preserveSavedCampsForDays * GenDate.TicksPerDay))
+            {
+                Find.WorldObjects.Remove(this);
+            }
+        }
+
+        public override string GetInspectString()
+        {
+            if (IsEmpty && savedCamp != null)
+            {
+                var ticksPassed = Find.TickManager.TicksGame - savedCamp.ticksSaved;
+                var ticksTotal = ReGrowthUtils.MakeCampPatchWorker.preserveSavedCampsForDays * GenDate.TicksPerDay;
+                return "RG.TimeRemaining".Translate((ticksTotal - ticksPassed).ToStringTicksToPeriod(allowSeconds: false));
+            }
+            return base.GetInspectString().TrimEndNewlines();
+        }
+
+        private void RestoreCampMap()
         {
             SyncGrids(Map.terrainGrid.underGrid, savedCamp.terrainGrid.underGrid, delegate (int i, TerrainDef def)
             {
@@ -151,7 +222,7 @@ namespace ReGrowthCore
         {
             base.Notify_MyMapAboutToBeRemoved();
             var map = Map;
-            WorldComponent_Camps.Instance.savedCamps[this.Tile] = new SavedCamp
+            savedCamp = new SavedCamp
             {
                 buildings = map.listerThings.AllThings.OfType<Building>().ToList(),
                 plants = map.listerThings.AllThings.OfType<Plant>().ToList(),
@@ -160,6 +231,25 @@ namespace ReGrowthCore
                 roofGrid = map.roofGrid,
                 ticksSaved = Find.TickManager.TicksGame
             };
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Deep.Look(ref savedCamp, "savedCamp");
+            if (Scribe.mode == LoadSaveMode.PostLoadInit && parts.NullOrEmpty())
+            {
+                AddSitePart();
+            }
+        }
+
+        public void AddSitePart()
+        {
+            parts ??= new List<SitePart>();
+            parts.Add(new SitePart(this, RG_DefOf.RG_CaravanCampPart, new SitePartParams
+            {
+
+            }));
         }
     }
 }

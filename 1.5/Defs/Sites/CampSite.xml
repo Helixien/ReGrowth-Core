@@ -4,7 +4,7 @@
   <WorldObjectDef>
     <defName>RG_CaravanCamp</defName>
     <label>caravan camp</label>
-    <description>A caravan in camp.</description>
+    <description>A camp.</description>
     <worldObjectClass>ReGrowthCore.CaravanCamp</worldObjectClass>
     <texture>World/WorldObjects/PlayerCampClose</texture>
     <expandingIcon>true</expandingIcon>
@@ -39,5 +39,14 @@
       <countPer10kCellsRange><min>0.02</min><max>0.15</max></countPer10kCellsRange>
     </genStep>
   </GenStepDef>
+  
+  <SitePartDef>
+    <defName>RG_CaravanCampPart</defName>
+    <label>caravan camp</label>
+    <description>A camp.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/PlayerCampClose</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/PlayerCamp</expandingIconTexture>
+  </SitePartDef>
   
 </Defs>

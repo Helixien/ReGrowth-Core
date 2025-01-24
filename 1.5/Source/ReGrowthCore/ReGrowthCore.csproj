@@ -301,8 +301,13 @@
       <HintPath>..\..\..\..\VanillaExpandedFramework\1.5\Assemblies\VFECore.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="VREAndroids">
+      <HintPath>..\..\..\..\VanillaRacesExpanded-Android\1.5\Assemblies\VREAndroids.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Androids\Gene_SandstormVulnerability.cs" />
     <Compile Include="BiomesKit\BiomesKit.cs" />
     <Compile Include="BiomesKit\Extensions.cs" />
     <Compile Include="BiomesKit\Patches.cs" />
@@ -322,7 +327,6 @@
     <Compile Include="CaravanCamp\CaravanCamp.cs" />
     <Compile Include="CaravanCamp\Caravan_GetGizmos_Patch.cs" />
     <Compile Include="CaravanCamp\SavedCamp.cs" />
-    <Compile Include="CaravanCamp\WorldComponent_Camps.cs" />
     <Compile Include="DeathActionWorker_Hemolope.cs" />
     <Compile Include="DeathActionWorker_Neutrolope.cs" />
     <Compile Include="HarmonyPatches\JobDriver_Deconstruct_WorkEffecter_Patch.cs" />

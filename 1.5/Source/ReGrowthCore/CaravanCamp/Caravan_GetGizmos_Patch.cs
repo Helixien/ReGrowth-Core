@@ -53,6 +53,7 @@ namespace ReGrowthCore
                 CaravanCamp caravanCamp = (CaravanCamp)WorldObjectMaker.MakeWorldObject(RG_DefOf.RG_CaravanCamp);
                 caravanCamp.Tile = caravan.Tile;
                 caravanCamp.SetFaction(caravan.Faction);
+                caravanCamp.AddSitePart();
                 Find.WorldObjects.Add(caravanCamp);
                 var map = MapGenerator.GenerateMap(CaravanCamp.MapSize, caravanCamp, caravanCamp.MapGeneratorDef, caravanCamp.ExtraGenStepDefs);
                 CaravanEnterMapUtility.Enter(caravan, map, CaravanEnterMode.Edge);

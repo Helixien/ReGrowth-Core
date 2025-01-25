@@ -2,6 +2,7 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
+    <exclude>1.4\LoadFolders\VanillaRacesExpanded-Android\Source</exclude>
     <exclude>1.4\Source</exclude>
     <exclude>1.5\Source</exclude>
   </Excluded>

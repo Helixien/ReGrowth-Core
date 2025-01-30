@@ -59,6 +59,22 @@
 					</li>
 				</value>
 			</li>
+			<!-- ================================ Terrain - Sand Mod Extension ====================== -->
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/TerrainDef[defName="Sand"]</xpath>
+				<value>
+					<li Class="ReGrowthCore.TerrainExtension">
+						<biomeSpecificTerrains>
+							<li>
+								<biomes>
+									<li>RG_CoralDesert</li>
+								</biomes>
+								<texturePath>Terrain/Surfaces/CoralDesertSand</texturePath>
+							</li>
+						</biomeSpecificTerrains>
+					</li>
+				</value>
+			</li>
 			<!-- ================================ Animated Marsh and Polluted Marsh ====================== -->
 			<li Class="PatchOperationConditional">
 				<xpath>/Defs/TerrainDef[defName="Marsh"]/waterDepthShader</xpath>

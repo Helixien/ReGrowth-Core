@@ -254,6 +254,19 @@
 					<RG_SandStormHard>0.5</RG_SandStormHard>
 				</value>
 			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]</xpath>
+				<value>
+					<li Class="VFECore.BiomeExtension">
+						<terrainsToSwap>
+							<li>
+								<from>Gravel</from>
+								<to>Sand</to>
+							</li>
+						</terrainsToSwap>
+					</li>
+				</value>
+			</li>
 			<!-- ================ Biome Tropical Rainforest ================ -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>

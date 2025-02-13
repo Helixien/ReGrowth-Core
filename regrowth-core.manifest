@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.37f1
+CRC: 1188878239
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 97032573daa099193dcd5af23c2976cb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b3bbbdd6a280dfe53b1dffa6c44402f0
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 122f948fbcc800260f21f86e08b505c1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: ec8da9418a6bf493e93ef4c7b7575847, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/data/ReGrowth-Core/textures/Things/Plant/AspenGrass/AspenGrassA.psd
+- Assets/data/ReGrowth-Core/textures/Things/Plant/CrimsonGrass/CrimsonGrassA.psd
+- Assets/data/ReGrowth-Core/textures/Things/Plant/RimReed/RimReedB.psd
+- Assets/data/ReGrowth-Core/textures/Things/Plant/AspenGrass/AspenGrassB.psd
+- Assets/data/ReGrowth-Core/textures/Things/Plant/RimReed/RimReedA.psd
+- Assets/data/ReGrowth-Core/textures/Things/Plant/CrimsonGrass/CrimsonGrassB.psd
+Dependencies: []

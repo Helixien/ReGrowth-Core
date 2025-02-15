@@ -43,7 +43,7 @@
 								</biomes>
 								<texturePath>Terrain/Surfaces/TropicalSoil</texturePath>
 							</li>
-							<li MayRequire="ReGrowth.BOTR.ReGrowth.BOTR.CrimsonPlains">
+							<li MayRequire="ReGrowth.BOTR.CrimsonPlains">
 								<biomes>
 									<li>RG_CrimsonPlains</li>
 								</biomes>

@@ -32,4 +32,6 @@
 	<RG.PreserveSavedCampsDesc>After leaving your camp, the local map is saved for some time. This allows you to return if you forgot something, as well as prevents cheating. Adjust the preserve period after which the saved maps should be generated anew.</RG.PreserveSavedCampsDesc>
 	<RG.EmptyCamp>empty camp</RG.EmptyCamp>
 	<RG.TimeRemaining>Time remaining: {0}</RG.TimeRemaining>
+	<RG.PlantPollutionNoDeath>Plants no longer die from pollution</RG.PlantPollutionNoDeath>
+    <RG.PlantPollutionNoDeathDesc>When enabled, plants will no longer die as a result of pollution. They will still be polluted, but will not die.</RG.PlantPollutionNoDeathDesc>
 </LanguageData>

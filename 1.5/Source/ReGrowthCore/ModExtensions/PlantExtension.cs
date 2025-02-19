@@ -12,6 +12,8 @@ namespace ReGrowthCore
         public List<TerrainDef> terrainListToGrowOnly;
         public float minLeaflessTemperature = -18f;
         public float maxLeaflessTemperature = -10f;
+        public float minDieOfHeatTemperature = 45f;
+        public float maxDieOfHeatTemperature = 50f;
         public float minGrowthTemperature = 0f;
         public float minOptimalGrowthTemperature = 6f;
         public float maxOptimalGrowthTemperature = 42f;
@@ -77,7 +79,7 @@ namespace ReGrowthCore
             {
                 MakeLeafless(LeaflessCause.Cold);
             }
-            else if (Extension.diesFromHeatTemperature && base.AmbientTemperature > LeaflessTemperatureThresh)
+            else if (Extension.diesFromHeatTemperature && base.AmbientTemperature > this.LeaflessHeatTemperatureThresh)
             {
                 MakeLeaflessOfHeat();
             }
@@ -110,8 +112,17 @@ namespace ReGrowthCore
             get
             {
                 var extension = Extension;
-                var value = Rand.RangeSeeded(extension.minLeaflessTemperature, extension.maxLeaflessTemperature, thingIDNumber ^ 838051265);
-                return value;
+
+                return Rand.RangeSeeded(extension.minLeaflessTemperature, extension.maxLeaflessTemperature, thingIDNumber ^ 838051265);
+            }
+        }
+
+        public float LeaflessHeatTemperatureThresh
+        {
+            get
+            {
+                var extension = Extension;
+                return Rand.RangeSeeded(extension.minDieOfHeatTemperature, extension.maxDieOfHeatTemperature, thingIDNumber ^ 838051265);
             }
         }
 

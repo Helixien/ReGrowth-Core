@@ -23,6 +23,7 @@ namespace ReGrowthCore
         public float restEndsInDayPct = 0.25f;
         public bool diesFromColdTemperature = true;
         public bool diesFromHeatTemperature = false;
+        public bool ignoresLightForGrow = false;
     }
 
     public class PlantExpandable : Plant

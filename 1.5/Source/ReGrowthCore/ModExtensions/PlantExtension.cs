@@ -91,7 +91,7 @@ namespace ReGrowthCore
             Map map = base.Map;
             if (def.plant.dieIfLeafless)
             {
-                if (IsCrop)
+                if (IsCrop && MessagesRepeatAvoider.MessageShowAllowed("RG.MessagePlantDiedOfHeat-" + def.defName, 240f))
                 {
                     Messages.Message("RG.MessagePlantDiedOfHeat".Translate(GetCustomLabelNoCount(includeHp: false)), new TargetInfo(base.Position, map), MessageTypeDefOf.NegativeEvent);
                 }

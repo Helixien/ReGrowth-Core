@@ -18,21 +18,7 @@ namespace ReGrowthCore
     public static class ReGrowthUtils
     {
         private static ReGrowthCore_MakeCamp _setUpCampPatchWorker;
-        public static ReGrowthCore_MakeCamp MakeCampPatchWorker => _setUpCampPatchWorker ??= ReGrowthMod.modPack
-            .Patches.OfType<ReGrowthCore_MakeCamp>().FirstOrDefault();
-
-        public static bool WorldBeautificationIsActive
-        {
-            get
-            {
-                var container = ModSettingsFrameworkSettings.GetModSettingsContainer(ReGrowthMod.modPack.PackageIdPlayerFacing);
-                if (container.patchOperationStates.TryGetValue("RG_WorldMapBeautificationProject", out var state) && state)
-                {
-                    return true;
-                }
-                return false;
-            }
-        }
+        public static ReGrowthCore_MakeCamp MakeCampPatchWorker => _setUpCampPatchWorker ??= ReGrowthMod.modPack.Patches.OfType<ReGrowthCore_MakeCamp>().FirstOrDefault();
 
         static ReGrowthUtils()
         {

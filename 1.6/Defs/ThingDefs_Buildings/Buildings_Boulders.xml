@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- =========== Bases =========== -->
+	<ThingDef Name="RG_BoulderBase" Abstract="True">
+		<category>Building</category>
+		<thingClass>Mineable</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<pathCost>84</pathCost>
+		<drawerType>MapMeshOnly</drawerType>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<saveCompressible>true</saveCompressible>
+		<coversFloor>false</coversFloor>
+		<castEdgeShadows>true</castEdgeShadows>
+		<blockWind>true</blockWind>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		<fillPercent>0.6</fillPercent>
+		<blockLight>true</blockLight>
+		<mineable>true</mineable>
+		<surfaceType>None</surfaceType>
+		<building>
+			<isEdifice>true</isEdifice>
+			<isInert>true</isInert>
+			<isNaturalRock>true</isNaturalRock>
+			<isAirtight>false</isAirtight>
+			<claimable>false</claimable>
+			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+			<deconstructible>false</deconstructible>
+			<destroyShakeAmount>0</destroyShakeAmount>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<mineablePreventMeteorite>true</mineablePreventMeteorite>
+			<canLandGravshipOn>true</canLandGravshipOn>
+		</building>
+		<damageMultipliers>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>4</multiplier>
+			</li>
+		</damageMultipliers>
+		<saveCompressible>false</saveCompressible>
+	</ThingDef>
+	<ThingDef ParentName="RG_BoulderBase" Name="RG_BoulderRockMediumBase" Abstract="True">
+		<description>A medium sized chunk of rock. Can be mined into smaller chunks with a chance of ocassional ores.</description>
+		<graphicData>
+			<texPath>Things/Building/Natural/BoulderMid</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<!--			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>-->
+			<damageData>
+				<rect>(0,0.0,2,2)</rect>
+			</damageData>
+		</graphicData>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>40</Mass>
+			<BeautyOutdoors>1</BeautyOutdoors>
+		</statBases>
+		<building>
+			<isResourceRock>false</isResourceRock>
+			<isNaturalRock>false</isNaturalRock>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
+		</building>
+		<comps>
+			<li Class="ReGrowthCore.CompProperties_ContainsOre">
+				<amount>5~10</amount>
+				<chanceToContainOre>0.5</chanceToContainOre>
+				<blacklistOres>
+					<li MayRequire="VanillaExpanded.VChemfuelE">VCHE_Deepchem</li>
+					<li MayRequire="VanillaExpanded.HelixienGas">VHGE_Helixien</li>
+				</blacklistOres>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="RG_BoulderBase" Name="RG_BoulderRockLargeBase" Abstract="True">
+		<description>A largely sized chunk of rock. Can be mined into smaller chunks with a chance of ocassional ores.</description>
+		<graphicData>
+			<texPath>Things/Building/Natural/BoulderHigh</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<!--			<shadowData>
+				<volume>(0.8, 1, 0.8)</volume>
+				<offset>(0, 0, 0)</offset>
+			</shadowData>-->
+			<damageData>
+				<rect>(0,0.0,3,3)</rect>
+			</damageData>
+		</graphicData>
+		<size>(3,3)</size>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Mass>100</Mass>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<building>
+			<isResourceRock>false</isResourceRock>
+			<isNaturalRock>false</isNaturalRock>
+			<mineableScatterCommonality>0</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>2~4</mineableScatterLumpSizeRange>
+		</building>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<comps>
+			<li Class="ReGrowthCore.CompProperties_ContainsOre">
+				<amount>10~30</amount>
+				<chanceToContainOre>0.5</chanceToContainOre>
+				<blacklistOres>
+					<li MayRequire="VanillaExpanded.VChemfuelE">VCHE_Deepchem</li>
+					<li MayRequire="VanillaExpanded.HelixienGas">VHGE_Helixien</li>
+				</blacklistOres>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- ================ Sandstone ================ -->
+	<ThingDef ParentName="RG_BoulderRockMediumBase">
+		<defName>RG_BoulderRockMediumSandstone</defName>
+		<label>sandstone boulder</label>
+		<graphicData>
+			<color>(126,104,94)</color>
+		</graphicData>
+		<modExtensions>
+			<li Class="ReGrowthCore.BoulderProperties">
+				<chunkDefToSpawn>ChunkSandstone</chunkDefToSpawn>
+				<chunksToSpawn>4~6</chunksToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="RG_BoulderRockLargeBase">
+		<defName>RG_BoulderRockLargeSandstone</defName>
+		<label>sandstone boulder</label>
+		<graphicData>
+			<color>(126,104,94)</color>
+		</graphicData>
+		<modExtensions>
+			<li Class="ReGrowthCore.BoulderProperties">
+				<chunkDefToSpawn>ChunkSandstone</chunkDefToSpawn>
+				<chunksToSpawn>2~3</chunksToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ================ Granite ================ -->
+	<ThingDef ParentName="RG_BoulderRockMediumBase">
+		<defName>RG_BoulderRockMediumGranite</defName>
+		<label>granite boulder</label>
+		<graphicData>
+			<color>(105,95,97)</color>
+		</graphicData>
+		<modExtensions>
+			<li Class="ReGrowthCore.BoulderProperties">
+				<chunkDefToSpawn>ChunkGranite</chunkDefToSpawn>
+				<chunksToSpawn>4~6</chunksToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="RG_BoulderRockLargeBase">
+		<defName>RG_BoulderRockLargeGranite</defName>
+		<label>granite boulder</label>
+		<graphicData>
+			<color>(105,95,97)</color>
+		</graphicData>
+		<modExtensions>
+			<li Class="ReGrowthCore.BoulderProperties">
+				<chunkDefToSpawn>ChunkGranite</chunkDefToSpawn>
+				<chunksToSpawn>2~3</chunksToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ================ Limestone ================ -->
+	<ThingDef ParentName="RG_BoulderRockMediumBase">
+		<defName>RG_BoulderRockMediumLimestone</defName>
+		<label>limestone boulder</label>
+		<graphicData>
+			<color>(158,153,135)</color>
+		</graphicData>
+		<modExtensions>
+			<li Class="ReGrowthCore.BoulderProperties">
+				<chunkDefToSpawn>ChunkLimestone</chunkDefToSpawn>
+				<chunksToSpawn>4~6</chunksToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="RG_BoulderRockLargeBase">
+		<defName>RG_BoulderRockLargeLimestone</defName>
+		<label>limestone boulder</label>
+		<graphicData>
+			<color>(158,153,135)</color>
+		</graphicData>
+		<modExtensions>
+			<li Class="ReGrowthCore.BoulderProperties">
+				<chunkDefToSpawn>ChunkLimestone</chunkDefToSpawn>
+				<chunksToSpawn>2~3</chunksToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ================ Slate ================ -->
+	<ThingDef ParentName="RG_BoulderRockMediumBase">
+		<defName>RG_BoulderRockMediumSlate</defName>
+		<label>slate boulder</label>
+		<graphicData>
+			<color>(90,90,90)</color>
+		</graphicData>
+		<modExtensions>
+			<li Class="ReGrowthCore.BoulderProperties">
+				<chunkDefToSpawn>ChunkSlate</chunkDefToSpawn>
+				<chunksToSpawn>2~3</chunksToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="RG_BoulderRockLargeBase">
+		<defName>RG_BoulderRockLargeSlate</defName>
+		<label>slate boulder</label>
+		<graphicData>
+			<color>(90,90,90)</color>
+		</graphicData>
+		<modExtensions>
+			<li Class="ReGrowthCore.BoulderProperties">
+				<chunkDefToSpawn>ChunkSlate</chunkDefToSpawn>
+				<chunksToSpawn>4~6</chunksToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<!-- ================ Marble ================ -->
+	<ThingDef ParentName="RG_BoulderRockMediumBase">
+		<defName>RG_BoulderRockMediumMarble</defName>
+		<label>marble boulder</label>
+		<graphicData>
+			<color>(132,135,132)</color>
+		</graphicData>
+		<modExtensions>
+			<li Class="ReGrowthCore.BoulderProperties">
+				<chunkDefToSpawn>ChunkMarble</chunkDefToSpawn>
+				<chunksToSpawn>2~3</chunksToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="RG_BoulderRockLargeBase">
+		<defName>RG_BoulderRockLargeMarble</defName>
+		<label>marble boulder</label>
+		<graphicData>
+			<color>(132,135,132)</color>
+		</graphicData>
+		<modExtensions>
+			<li Class="ReGrowthCore.BoulderProperties">
+				<chunkDefToSpawn>ChunkMarble</chunkDefToSpawn>
+				<chunksToSpawn>4~6</chunksToSpawn>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

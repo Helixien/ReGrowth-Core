@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>RG_Ambient_DustDevil</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>5</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Ambience/Amb_DustDevil_Loop</clipPath>
+					</li>
+				</grains>
+				<volumeRange>60~60</volumeRange>
+				<sustainAttack>2.5</sustainAttack>
+				<sustainRelease>2.5</sustainRelease>
+				<distRange>0~20</distRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>

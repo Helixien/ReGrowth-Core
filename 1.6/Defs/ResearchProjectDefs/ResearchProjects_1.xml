@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--=============== Mushroom Cultivation ==============-->
+	<ResearchProjectDef>
+		<defName>RG_MushroomCultivation</defName>
+		<label>mushroom cultivation</label>
+		<description>Cultivate and grow mushrooms.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>RG_ReGrowth</tab>
+		<prerequisites>
+			<li MayRequire="OskarPotocki.VFE.Tribals">VFET_Cultivation</li>
+		</prerequisites>
+		<tags>
+			<li>TribalStart</li>
+			<li>ClassicStart</li>
+		</tags>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.1</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->mushroom cultivation</li>
+				<li>subject_story->harnessed the forest's hidden bounty, elevating their tribe's nutrition and medicine</li>
+				<li>subject_story->mastered the art of the spore, leading to a revolution in sustainable food sources</li>
+				<li>subject_story->explored the mystical properties of fungi, intertwining their culture with the sacred mycelium</li>
+				<li>subject_gerund->cultivating mushrooms</li>
+				<li>subject_gerund->growing your mushroom</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+	<!--=============== Berry Cultivation ==============-->
+	<ResearchProjectDef>
+		<defName>RG_BerryCultivation</defName>
+		<label>berry cultivation</label>
+		<description>Cultivate and grow berry bushes.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tab>RG_ReGrowth</tab>
+		<prerequisites>
+			<li MayRequire="OskarPotocki.VFE.Tribals">VFET_Cultivation</li>
+		</prerequisites>
+		<tags>
+			<li>TribalStart</li>
+		</tags>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.65</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->agriculture</li>
+				<li>subject_story->uncovered the secrets of wild berry bushes, fostering the community's first steps towards agriculture</li>
+				<li>subject_story->led the tribe from nomadic wanderers to settled cultivators, revered for their lush berry groves</li>
+				<li>subject_story->brokered peace through the shared cultivation and exchange of berries, uniting neighboring tribes</li>
+				<li>subject_gerund->growing berries</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+</Defs>

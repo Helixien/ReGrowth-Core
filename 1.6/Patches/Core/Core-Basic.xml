@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- ================================ Herd Migration ====================== -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/IncidentDef[defName="HerdMigration"]/allowedBiomes</xpath>
+				<value>
+					<li>BorealForest</li>
+					<li>AridShrubland</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">GlacialPlain</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Glowforest</li>
+				</value>
+			</li>
+			<!-- ================================ Thought expansion for rain ====================== -->
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThoughtDef[defName="SoakingWet"]</xpath>
+				<value>
+					<li Class="ReGrowthCore.ThoughtExtensions">
+						<removeThoughtsWhenAdded>
+							<li>RG_Wet</li>
+							<li>RG_ExtremelyWet</li>
+						</removeThoughtsWhenAdded>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Integrate research ====================== -->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]/prerequisites</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]/prerequisites</xpath>
+							<value>
+								<li>RG_MushroomCultivation</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ResearchProjectDef[defName="Devilstrand"]</xpath>
+							<value>
+								<prerequisites>
+									<li>RG_MushroomCultivation</li>
+								</prerequisites>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Glowstool"]/plant/sowResearchPrerequisites</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Glowstool"]/plant/sowResearchPrerequisites</xpath>
+							<value>
+								<li>RG_MushroomCultivation</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Glowstool"]/plant</xpath>
+							<value>
+								<sowResearchPrerequisites>
+									<li>RG_MushroomCultivation</li>
+								</sowResearchPrerequisites>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant/sowResearchPrerequisites</xpath>
+							<value>
+								<li>RG_BerryCultivation</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_Strawberry"]/plant</xpath>
+							<value>
+								<sowResearchPrerequisites>
+									<li>RG_BerryCultivation</li>
+								</sowResearchPrerequisites>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
+			<!-- ================================ Bathing thoughts ====================== -->
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/TerrainDef[defName="WaterMovingChestDeep" or defName="WaterShallow" or defName="WaterMovingShallow"]</xpath>
+				<value>
+					<li Class="ReGrowthCore.BatheExtension">
+						<thoughtAfterBathing>RG_BathingWater</thoughtAfterBathing>
+						<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/TerrainDef[defName="WaterOceanShallow"]</xpath>
+				<value>
+					<li Class="ReGrowthCore.BatheExtension">
+						<thoughtAfterBathing>RG_BathingOcean</thoughtAfterBathing>
+						<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/TerrainDef[defName="Marsh"]</xpath>
+				<value>
+					<li Class="ReGrowthCore.BatheExtension">
+						<thoughtAfterBathing>RG_BathingMarsh</thoughtAfterBathing>
+						<hediffAfterBathing>RG_PreventSoakingWetThought</hediffAfterBathing>
+					</li>
+				</value>
+			</li>
+			<!-- ================================ Add Bathing Zone Desigantor ====================== -->
+			<li Class="PatchOperationInsert">
+				<xpath>/Defs/DesignationCategoryDef[defName="Zone"]/specialDesignatorClasses/li[text()="Designator_ZoneAdd_Growing"]</xpath>
+				<order>Append</order>
+				<value>
+					<li>ReGrowthCore.Designator_ZoneAdd_Bathe</li>
+				</value>
+			</li>
+			<!-- =============================== Add Camp features ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorldObjectDef[defName="Camp"]/worldObjectClass</xpath>
+				<value>
+					<worldObjectClass>ReGrowthCore.CaravanCamp</worldObjectClass>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="Camp"]</xpath>
+				<value>
+					<mapGenerator>RG_CaravanCamp</mapGenerator>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/WorldObjectDef[defName="Camp"]/expandingIconTexture</xpath>
+				<value>
+					<expandingIconTexture>World/WorldObjects/Expanding/PlayerCamp</expandingIconTexture>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/WorldObjectDef[defName="AbandonedLandmark" or defName="AbandonedCamp"]/canHaveMap</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/WorldObjectDef[defName="AbandonedLandmark" or defName="AbandonedCamp"]</xpath>
+				<value>
+					<worldObjectClass>ReGrowthCore.AbandonedCamp</worldObjectClass>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

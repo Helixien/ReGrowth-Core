@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SimpleFxSplashes.Settings.OptimizeOverlay>Оптимизация наложения погоды</SimpleFxSplashes.Settings.OptimizeOverlay>
+  <SimpleFxSplashes.Settings.OptimizeOverlay.Desc>Включите оптимизированную отрисовку наложения погоды. Вы можете отключить это, если столкнетесь с конфликтом модов. Изменение этого параметра требует перезапуска игры.</SimpleFxSplashes.Settings.OptimizeOverlay.Desc>
+
+  <SimpleFxSplashes.Settings.SizeMultiplier>Размер всплеска (По умолчанию: {0}, Мин: {1}, Макс: {2}): </SimpleFxSplashes.Settings.SizeMultiplier>
+  <SimpleFxSplashes.Settings.SizeMultiplier.Desc>Настройте размер частиц брызг.</SimpleFxSplashes.Settings.SizeMultiplier.Desc>
+
+  <SimpleFxSplashes.Settings.SplashRarity>Редкость всплеска (По умолчанию: {0}, Мин: {1}, Макс: {2}): </SimpleFxSplashes.Settings.SplashRarity>
+  <SimpleFxSplashes.Settings.SplashRarity.Desc>Уменьшение этого параметра приведет к появлению большего количества частиц брызг, а увеличение - к их уменьшению. Это влияет на производительность.</SimpleFxSplashes.Settings.SplashRarity.Desc>
+
+  <SimpleFxSplashes.Settings.FilterNature>Фильтр натуральных клеток (По умолчанию: {0}, Мин: {1}, Макс: {2}): </SimpleFxSplashes.Settings.FilterNature>
+  <SimpleFxSplashes.Settings.FilterNature.Desc>Уменьшение количества натуральных клеток (таких как грубый камень), которым разрешено разбрызгивать дождь. Позволяет только {0}% природных плиток разбрызгивать дождь. Увеличение этого параметра влияет на производительность.</SimpleFxSplashes.Settings.FilterNature.Desc>
+
+</LanguageData>

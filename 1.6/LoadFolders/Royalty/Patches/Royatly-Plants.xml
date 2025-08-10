@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!-- ================================ Plant Patches	====================== -->
+		<operations>
+			<!-- ================================ Anima Tree ====================== -->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/descriptionHyperlinks</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/descriptionHyperlinks</xpath>
+							<value>
+								<ThingDef>RG_AnimaSeed</ThingDef>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]</xpath>
+							<value>
+								<descriptionHyperlinks>
+									<ThingDef>RG_AnimaSeed</ThingDef>
+								</descriptionHyperlinks>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

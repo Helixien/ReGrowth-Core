@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=============== Cold Glow ==============-->
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>RG_ColdGlow</defName>
+		<graphicData>
+			<texPath>Things/Mote/ColdVapor</texPath>
+			<shaderType>Mote</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>1.9</fadeInTime>
+		<solidTime>0.5</solidTime>
+		<fadeOutTime>2.2</fadeOutTime>
+	</FleckDef>
+	<!--=============== Very Cold Glow ==============-->
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>RG_VeryColdGlow</defName>
+		<graphicData>
+			<texPath>Things/Mote/VeryColdVapor</texPath>
+			<shaderType>Mote</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>2.6</fadeInTime>
+		<solidTime>1.5</solidTime>
+		<fadeOutTime>3.3</fadeOutTime>
+	</FleckDef>
+	<!--=============== Splash ==============-->
+	<FleckDef ParentName="FleckBase_Thrown">
+		<defName>RG_Splash</defName>
+		<graphicData>
+			<texPath>Things/Mote/splash</texPath>
+			<renderInstanced>true</renderInstanced>
+			<drawSize>(0.1, 0.1)</drawSize>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<solidTime>0.4</solidTime>
+		<fadeOutTime>0.175</fadeOutTime>
+		<growthRate>12</growthRate>
+	</FleckDef>
+</Defs>

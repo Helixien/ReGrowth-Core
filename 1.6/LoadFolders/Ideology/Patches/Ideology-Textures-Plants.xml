@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!-- ================================ Plant Patches	====================== -->
+		<operations>
+			<!-- ================================ HD Nutrifungus ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Nutrifungus"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Nutrifungus</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Bonsai ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeBonsai"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_BonsaiTree</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Fibercorn ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Fibercorn"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Fibercorn</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Moss Gauranlen ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_MossGauranlen"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_GauranlenMoss</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Gauranlen Tree ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_GauranlenTree</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/plant/immatureGraphicPath</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/_Immature/RG_GauranlenTree_Immature</immatureGraphicPath>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>

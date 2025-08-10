@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "Vacstone"]</xpath>
+				<value>
+					<li Class="ReGrowthCore.StoneExtension">
+						<roughTexturePath>Terrain/Surfaces/RoughAsteroid</roughTexturePath>
+						<hewnTexturePath>Terrain/Surfaces/RoughHewnAsteroid</hewnTexturePath>
+						<smoothTexturePath>Terrain/Surfaces/SmoothAsteroids</smoothTexturePath>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

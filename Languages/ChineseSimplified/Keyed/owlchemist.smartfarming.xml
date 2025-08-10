@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<SmartFarming.Icon.On>允许种植</SmartFarming.Icon.On>
+	<SmartFarming.Icon.On.Desc>选择的植物只在其生长季节内种植。</SmartFarming.Icon.On.Desc>
+	<SmartFarming.Icon.Off>禁止种植</SmartFarming.Icon.Off>
+	<SmartFarming.Icon.Off.Desc>不种植任何植物。</SmartFarming.Icon.Off.Desc>
+	<SmartFarming.Icon.Smart>智能种植</SmartFarming.Icon.Smart>
+	<SmartFarming.Icon.Smart.Desc>只有当植物的预计生长速度达到最低收获阈值，而且不会因寒冷或毒素死亡时才种植植物。</SmartFarming.Icon.Smart.Desc>
+	<SmartFarming.Icon.Force>强制种植</SmartFarming.Icon.Force>
+	<SmartFarming.Icon.Force.Desc>无论生长季节状态如何，都要种植植物。</SmartFarming.Icon.Force.Desc>
+	<SmartFarming.Icon.HarvestNow>立即收获</SmartFarming.Icon.HarvestNow>
+	<SmartFarming.Icon.HarvestNow.Desc>指定此区域内的所有植物进行收获，即使它们还没有完全成长。</SmartFarming.Icon.HarvestNow.Desc>
+	<SmartFarming.Icon.AllowHarvest>允许收获</SmartFarming.Icon.AllowHarvest>
+	<SmartFarming.Icon.AllowHarvest.Desc>关闭此选项，禁止殖民者收获该区域的植物。</SmartFarming.Icon.AllowHarvest.Desc>
+	<SmartFarming.Icon.OrchardAlignment>对齐植物</SmartFarming.Icon.OrchardAlignment>
+	<SmartFarming.Icon.OrchardAlignment.Desc>对于需要保持一定间隔的植物，例如树木，殖民者将尝试将它们排成行。对于形状不规则的区域，可能效果不佳。</SmartFarming.Icon.OrchardAlignment.Desc>
+	<SmartFarming.Icon.MergeZones>合并区域</SmartFarming.Icon.MergeZones>
+	<SmartFarming.Icon.MergeZones.Desc>将所选区域合并成一个区域，使用第一个选定的区域作为参考。</SmartFarming.Icon.MergeZones.Desc>
+
+	<SmartFarming.Icon.Low>低优先级</SmartFarming.Icon.Low>
+	<SmartFarming.Icon.Normal>普通优先级</SmartFarming.Icon.Normal>
+	<SmartFarming.Icon.Preferred>优先优先级</SmartFarming.Icon.Preferred>
+	<SmartFarming.Icon.Important>重要优先级</SmartFarming.Icon.Important>
+	<SmartFarming.Icon.Critical>紧急优先级</SmartFarming.Icon.Critical>
+	<SmartFarming.Icon.Priority.Desc>鼓励殖民者按照优先级顺序种植和收获植物。</SmartFarming.Icon.Priority.Desc>
+
+	<SmartFarming.Icon.NoPettyJobs>不执行琐事</SmartFarming.Icon.NoPettyJobs>
+	<SmartFarming.Icon.NoPettyJobs.Desc>除非在Mod设置中有足够的工作量，否则殖民者不会在该区域种植新的植物。</SmartFarming.Icon.NoPettyJobs.Desc>
+	
+	<SmartFarming.Settings.ColdSowing>允许在寒冷环境下种植</SmartFarming.Settings.ColdSowing>
+	<SmartFarming.Settings.ColdSowing.Desc>通常情况下，即使被种植的植物种类能够耐受低温，游戏也不允许在土地结冰时进行种植。禁用此功能以保持原始规则。</SmartFarming.Settings.ColdSowing.Desc>
+	
+	<SmartFarming.Settings.AllowHarvest>允许收获工具</SmartFarming.Settings.AllowHarvest>
+	<SmartFarming.Settings.AllowHarvest.Desc>显示“允许收获”工具。启用此选项可能会对拥有许多农业工人的高人口殖民地产生一定的性能影响。更改此选项需要重新启动游戏。</SmartFarming.Settings.AllowHarvest.Desc>
+	
+	<SmartFarming.Settings.SmartSowLabel>智能种植：</SmartFarming.Settings.SmartSowLabel>
+	
+	<SmartFarming.Settings.OrchardAlignment>植物对齐工具</SmartFarming.Settings.OrchardAlignment>
+	<SmartFarming.Settings.OrchardAlignment.Desc>启用此工具可提示殖民者将树木排列成整齐的行。</SmartFarming.Settings.OrchardAlignment.Desc>
+
+	<SmartFarming.Settings.UseAverageTemperature>使用平均温度预测代替低温</SmartFarming.Settings.UseAverageTemperature>
+	<SmartFarming.Settings.UseAverageTemperature.Desc>在智能种植功能中预测天气时，使用当天的平均温度而不是低温。使用平均值将延长生长季节，但可能会失去一些作物。</SmartFarming.Settings.UseAverageTemperature.Desc>
+
+	<SmartFarming.Settings.UseAverageFertility>使用区域平均肥力代替最弱肥力</SmartFarming.Settings.UseAverageFertility>
+	<SmartFarming.Settings.UseAverageFertility.Desc>预测植物生长时，使用区域平均肥力而不是区域最弱的肥力。</SmartFarming.Settings.UseAverageFertility.Desc>
+	
+	<SmartFarming.Settings.AutoCutBlighted>自动指定受病毒影响的作物进行处理</SmartFarming.Settings.AutoCutBlighted>
+	<SmartFarming.Settings.AutoCutBlighted.Desc>如果作物受到病毒影响，将自动指定其进行处理。</SmartFarming.Settings.AutoCutBlighted.Desc>
+	
+	<SmartFarming.Settings.AutoHarvestNow>气候威胁时提前收获</SmartFarming.Settings.AutoHarvestNow>
+	<SmartFarming.Settings.AutoHarvestNow.Desc>如果今晚的天气将非常寒冷，立即收获指定的所有植物。</SmartFarming.Settings.AutoHarvestNow.Desc>
+	<SmartFarming.Message.AutoHarvestNow>由于预测到天气即将变化，提前收获植物。</SmartFarming.Message.AutoHarvestNow>
+
+	<SmartFarming.Settings.AutoCutDying>尝试收获即将死亡的作物</SmartFarming.Settings.AutoCutDying>
+	<SmartFarming.Settings.AutoCutDying.Desc>如果作物因寒冷而死亡，自动尝试收获幸存的作物。更改此选项需要重新启动游戏。</SmartFarming.Settings.AutoCutDying.Desc>
+	
+	<SmartFarming.Settings.MinTempSlider>最低温度（默认值：{0}，最小值：{1}，最大值：{2}）：</SmartFarming.Settings.MinTempSlider>
+	<SmartFarming.Settings.MinTemp>预测最早收获日的天气时，认为低于此温度的任何天气都是不可接受的。植物在0℃下可能会死亡，但如果只有少量冰冻几个小时，通常可以存活。但是，随机的日常温度偏差可能会降低准确性。</SmartFarming.Settings.MinTemp>
+	
+	<SmartFarming.Settings.PettyJobsSlider>琐碎工作余量（默认值：{0}，最小值：{1}，最大值：{2}）：</SmartFarming.Settings.PettyJobsSlider>
+	<SmartFarming.Settings.PettyJobs>如果在种植区域启用“不执行琐事”，殖民者只有在至少有此百分比的空闲格子可供种植时才会在该区域上种植。这对于动物放牧区域可能很有用。</SmartFarming.Settings.PettyJobs>
+	
+	<SmartFarming.Settings.ProcessedFoodLabel>加工食品系数：</SmartFarming.Settings.ProcessedFoodLabel>
+	<SmartFarming.Settings.ProcessedFood.Desc>当种植区域给出潜在营养产量的估计值时，它将原始食品的营养值乘以此值。仅供参考：简单餐增加1.8倍，美味餐增加1.2倍，奢侈餐增加1.0倍。</SmartFarming.Settings.ProcessedFood.Desc>
+
+	<SmartFarming.Inspector.MinHarvestDay>\n最早收获日：</SmartFarming.Inspector.MinHarvestDay>
+	<SmartFarming.Inspector.MinHarvestDayFail>\n植物在收获前可能会死亡</SmartFarming.Inspector.MinHarvestDayFail>
+	<SmartFarming.Inspector.Fertility>\n肥力：{0} 平均值 / {1} 最低值</SmartFarming.Inspector.Fertility>
+	<SmartFarming.Inspector.AverageGrowth>\n平均生长：</SmartFarming.Inspector.AverageGrowth>
+	<SmartFarming.Inspector.Yield>\n潜在营养价值：</SmartFarming.Inspector.Yield>
+	<SmartFarming.Inspector.DaysWorth>（{0} 天价值）</SmartFarming.Inspector.DaysWorth>
+	
+	<SmartFarming.Icon.SetAll>将区域设置为 </SmartFarming.Icon.SetAll>
+
+	<SmartFarming.Settings.EnableLogging>开发者: 启用调试日志</SmartFarming.Settings.EnableLogging>
+</LanguageData>

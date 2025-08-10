@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!-- ================================ Plant Patches	====================== -->
+		<operations>
+			<!-- ================================ HD Ripthorn ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Ripthorn"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Ripthorn</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Ripthorn"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/_Leafless/RG_Ripthorn_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Ripthorn"]/plant</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/_Immature/RG_Ripthorn_Immature</immatureGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ HD Toxipotato ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Toxipotato"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Toxipotato</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Toxipotato"]/plant/immatureGraphicPath</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/_Immature/RG_Toxipotato_Immature</immatureGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ HD Gauranlen Tree ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreePolux"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_PoluxTree</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Gray Pine Tree ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeGrayPine"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_TreeGrayPine</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Witchwood Tree ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Witchwood"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Witchwood</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Rat Palm Tree ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_RatPalm"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_RatPalm</texPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

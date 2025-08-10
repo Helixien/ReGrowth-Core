@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <SmartFarming.Icon.On>Разрешить\nпосадку</SmartFarming.Icon.On>
+  <SmartFarming.Icon.On.Desc>Засеивать выбранное растение, пока идет сезон роста.</SmartFarming.Icon.On.Desc>
+  <SmartFarming.Icon.Off>Запретить\nпосадку</SmartFarming.Icon.Off>
+  <SmartFarming.Icon.Off.Desc>Не засеивать растения.</SmartFarming.Icon.Off.Desc>
+  <SmartFarming.Icon.Smart>Умная\nпосадка</SmartFarming.Icon.Smart>
+  <SmartFarming.Icon.Smart.Desc>Засеивать зону, если растение достигнет минимального порога урожая, прежде чем умрет от холода или токсинов.</SmartFarming.Icon.Smart.Desc>
+  <SmartFarming.Icon.Force>Принудительно\nпосадить</SmartFarming.Icon.Force>
+  <SmartFarming.Icon.Force.Desc>Засеивать зону независимо от сезона роста.</SmartFarming.Icon.Force.Desc>
+  <SmartFarming.Icon.HarvestNow>Собрать урожай\nсейчас</SmartFarming.Icon.HarvestNow>
+  <SmartFarming.Icon.HarvestNow.Desc>Назначить все растения в этой зоне на сбор урожая, даже если они еще не полностью выросли.</SmartFarming.Icon.HarvestNow.Desc>
+  <SmartFarming.Icon.AllowHarvest>Разрешить сбор\nурожая</SmartFarming.Icon.AllowHarvest>
+  <SmartFarming.Icon.AllowHarvest.Desc>Выключите этот параметр, чтобы запретить пешкам собирать урожай в этой зоне.</SmartFarming.Icon.AllowHarvest.Desc>
+  <SmartFarming.Icon.OrchardAlignment>Выровнять растения</SmartFarming.Icon.OrchardAlignment>
+  <SmartFarming.Icon.OrchardAlignment.Desc>Для растений, которым требуется свободная зона, например, деревьев, пешки будут стараться выстраивать их в ряд. Это может не сработать для зон странной формы.</SmartFarming.Icon.OrchardAlignment.Desc>
+  <SmartFarming.Icon.MergeZones>Объединить зоны</SmartFarming.Icon.MergeZones>
+  <SmartFarming.Icon.MergeZones.Desc>Объедините выбранные зоны в одну зону, используя первую выбранную зону в качестве опорной.</SmartFarming.Icon.MergeZones.Desc>
+
+  <SmartFarming.Icon.Low>Приоритет\nНизкий</SmartFarming.Icon.Low>
+  <SmartFarming.Icon.Normal>Приоритет\nНормальный</SmartFarming.Icon.Normal>
+  <SmartFarming.Icon.Preferred>Приоритет\nПовышенный</SmartFarming.Icon.Preferred>
+  <SmartFarming.Icon.Important>Приоритет\nВысокий</SmartFarming.Icon.Important>
+  <SmartFarming.Icon.Critical>Приоритет\nМаксимальный</SmartFarming.Icon.Critical>
+  <SmartFarming.Icon.Priority.Desc>Пешкам предлагается сеять и собирать растения в порядке приоритетов.</SmartFarming.Icon.Priority.Desc>
+
+  <SmartFarming.Icon.NoPettyJobs>Никакой мелкой работы</SmartFarming.Icon.NoPettyJobs>
+  <SmartFarming.Icon.NoPettyJobs.Desc>Пешки не будут сеять новые растения в эту зону, если нет достаточного количества работы, настроенной в настройках.</SmartFarming.Icon.NoPettyJobs.Desc>
+
+  <SmartFarming.Settings.ColdSowing>Разрешить холодный посев</SmartFarming.Settings.ColdSowing>
+  <SmartFarming.Settings.ColdSowing.Desc>Обычно игра не разрешает сеять, когда земля замерзла, даже если вид засеиваемого растения переносит низкие температуры. Отключите этот параметр, чтобы сохранить ванильные правила.</SmartFarming.Settings.ColdSowing.Desc>
+
+  <SmartFarming.Settings.AllowHarvest>Показывать кнопку "Разрешить сбор урожая"</SmartFarming.Settings.AllowHarvest>
+  <SmartFarming.Settings.AllowHarvest.Desc>Показать кнопку "разрешить сбор урожая". Включение этого параметра может иметь некоторое влияние на производительность для колоний с высокой численностью населения и большим количеством работников по сбору урожая. Изменение этого параметра требует перезапуска игры.</SmartFarming.Settings.AllowHarvest.Desc>
+
+  <SmartFarming.Settings.SmartSowLabel>Умный посев:</SmartFarming.Settings.SmartSowLabel>
+  <SmartFarming.Settings.ProcessedFoodLabel>Множитель оценки питательности:</SmartFarming.Settings.ProcessedFoodLabel>
+  <SmartFarming.Settings.ProcessedFood.Desc>Когда зоны выращивания указывают примерный потенциальный выход питательных веществ, они умножают питательность сырого продукта на это значение. Для справки, простая еда умножает значение на 1,8, изысканная еда - на 1,2, а роскошная еда - на 1,0.</SmartFarming.Settings.ProcessedFood.Desc>
+
+  <SmartFarming.Settings.UseAverageTemperature>Используйте прогноз средней температуры вместо низкой</SmartFarming.Settings.UseAverageTemperature>
+  <SmartFarming.Settings.UseAverageTemperature.Desc>При прогнозировании погоды для функции "Умные посадки" используйте среднюю температуру за день, а не низкую. Использование среднего значения позволит продлить сезон выращивания с риском потери некоторых культур.</SmartFarming.Settings.UseAverageTemperature.Desc>
+
+  <SmartFarming.Settings.UseAverageFertility>Используйте среднюю плодородность зоны вместо слабой</SmartFarming.Settings.UseAverageFertility>
+  <SmartFarming.Settings.UseAverageFertility.Desc>При прогнозировании роста растений используйте средние плодородные зоны, а не самые слабые плодородные зоны.</SmartFarming.Settings.UseAverageFertility.Desc>
+
+  <SmartFarming.Settings.AutoCutBlighted>Автоматическое определение зараженные культур для утилизации</SmartFarming.Settings.AutoCutBlighted>
+  <SmartFarming.Settings.AutoCutBlighted.Desc>Если растения заражаются болезнью, автоматически отмечать их для срезания.</SmartFarming.Settings.AutoCutBlighted.Desc>
+
+  <SmartFarming.Settings.AutoHarvestNow>Собирать урожай раньше, если есть угроза</SmartFarming.Settings.AutoHarvestNow>
+  <SmartFarming.Settings.AutoHarvestNow.Desc>Если сегодняшняя погода будет смертельно холодной, определить все растения для немедленного сбора урожая.</SmartFarming.Settings.AutoHarvestNow.Desc>
+  <SmartFarming.Message.AutoHarvestNow>Растения, предназначенные для раннего сбора урожая в связи с прогнозируемой сегодня погодой.</SmartFarming.Message.AutoHarvestNow>
+
+  <SmartFarming.Settings.OrchardAlignment>Показывать кнопку выравнивания</SmartFarming.Settings.OrchardAlignment>
+  <SmartFarming.Settings.OrchardAlignment.Desc>Включает механизм, который побуждает пешки сажать деревья аккуратными рядами.</SmartFarming.Settings.OrchardAlignment.Desc>
+
+  <SmartFarming.Settings.AutoCutDying>Автоматически пытаться собрать умирающие культуры</SmartFarming.Settings.AutoCutDying>
+  <SmartFarming.Settings.AutoCutDying.Desc>Если урожай погибает от холода, стараться автоматически собрать все уцелевшие культуры, пока не стало слишком поздно. Для изменения этого условия требуется перезапуск игры.</SmartFarming.Settings.AutoCutDying.Desc>
+
+  <SmartFarming.Settings.MinTempSlider>Минимальная допустимая температура (По умолчанию: {0}, Мин: {1}, Макс: {2}): </SmartFarming.Settings.MinTempSlider>
+  <SmartFarming.Settings.MinTemp>Прогнозируя погоду на первый день сбора урожая, считать, что все, что ниже этой температуры, неприемлемо. Растения потенциально могут погибнуть при 0°C, но обычно могут выжить, если в течение нескольких часов будет едва морозно. Однако случайное суточное отклонение температуры может снизить точность.</SmartFarming.Settings.MinTemp>
+
+  <SmartFarming.Settings.PettyJobsSlider>Условия на мелкие работы (По умолчанию: {0}, Мин: {1}, Макс: {2}): </SmartFarming.Settings.PettyJobsSlider>
+  <SmartFarming.Settings.PettyJobs>Если в зоне включена функция "Никакой мелкой работы", пешки не будут засевать поле, пока не будет хотя бы этого процента пустых тайлов для засева. Это может быть полезно для зон выпаса животных.</SmartFarming.Settings.PettyJobs>
+
+  <SmartFarming.Inspector.MinHarvestDay>\nПервый день сбора урожая: </SmartFarming.Inspector.MinHarvestDay>
+  <SmartFarming.Inspector.MinHarvestDayFail>\nРастения, скорее всего, погибнут до сбора урожая</SmartFarming.Inspector.MinHarvestDayFail>
+  <SmartFarming.Inspector.Fertility>\nПлодородность: {0} средняя / {1} самая слабая</SmartFarming.Inspector.Fertility>
+  <SmartFarming.Inspector.AverageGrowth>\nСредний рост: </SmartFarming.Inspector.AverageGrowth>
+  <SmartFarming.Inspector.Yield>\nПримерная питательность: </SmartFarming.Inspector.Yield>
+  <SmartFarming.Inspector.DaysWorth> (за {0} дней)</SmartFarming.Inspector.DaysWorth>
+
+  <SmartFarming.Icon.SetAll>Установить зоны на </SmartFarming.Icon.SetAll>
+
+</LanguageData>

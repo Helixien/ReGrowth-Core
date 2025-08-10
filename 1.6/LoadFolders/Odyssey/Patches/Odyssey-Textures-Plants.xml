@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!-- ================================ Plant Texture Patches - Trees	====================== -->
+		<operations>
+			<!-- ================================ HD Willowgill ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Willowgill"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Willowgill</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Boomshroom ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Boomshroom"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Boomshroom</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Boomshroom"]/plant</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/_Immature/RG_Boomshroom_Immature</immatureGraphicPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<!-- ================================ Plant Texture Patches - Plants ====================== -->
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!--  ================================ HD Psilocap ======================  -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Psilocap"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Psilocap</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_Psilocap"]/plant</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/_Immature/RG_Psilocap_Immature</immatureGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ HD Night Rafflesia ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_NightRafflesia"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_NightRafflesia</texPath>
+				</value>
+			</li>
+			<!-- ================================ HD Devilstrand ====================== -->
+						<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Devilstrand"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Devilstrand</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Devilstrand"]/plant/immatureGraphicPath</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/_Immature/RG_Devilstrand_Immature</immatureGraphicPath>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

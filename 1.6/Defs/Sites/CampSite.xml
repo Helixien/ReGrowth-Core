@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <MapGeneratorDef ParentName="MapCommonBase">
+    <defName>RG_CaravanCamp</defName>
+    <genSteps>
+      <li>RocksFromGrid</li>
+      <li>RG_ScatterShrines</li>
+      <li>CaveHives</li>
+    </genSteps>
+  </MapGeneratorDef>
+
+  <GenStepDef>
+    <defName>RG_ScatterShrines</defName>
+    <order>400</order>
+    <genStep Class="GenStep_ScatterShrines">
+      <allowInWaterBiome>false</allowInWaterBiome>
+      <countPer10kCellsRange>
+        <min>0.02</min>
+        <max>0.15</max>
+      </countPer10kCellsRange>
+    </genStep>
+  </GenStepDef>
+
+</Defs>

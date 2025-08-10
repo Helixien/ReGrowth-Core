@@ -1,4 +1,4 @@
-Important!
+Important for pre-1.6 users!
 
 If you have RimWorld from another platform (GOG, DRM-Free over the Website, EPIC) and need to download mods from other sources, or you made a RimPy local copy, make sure the folder name of this mod is exactly "ReGrowth-Core" or "ReGrowth2-Core", depending on the version you use. 
 

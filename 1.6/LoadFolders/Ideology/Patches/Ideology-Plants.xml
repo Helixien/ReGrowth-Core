@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!-- ================================ Plant Patches	====================== -->
+		<operations>
+			<!-- ================================ Nutrifungus ====================== -->
+			<li Class="PatchOperationConditional">
+				<xpath>/Defs/ThingDef[defName="Plant_Nutrifungus"]/plant/sowResearchPrerequisites</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_Nutrifungus"]/plant/sowResearchPrerequisites</xpath>
+							<value>
+								<li>RG_MushroomCultivation</li>
+							</value>
+						</li>
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName="Plant_Nutrifungus"]/plant</xpath>
+							<value>
+								<sowResearchPrerequisites>
+									<li>RG_MushroomCultivation</li>
+								</sowResearchPrerequisites>
+							</value>
+						</li>
+					</operations>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

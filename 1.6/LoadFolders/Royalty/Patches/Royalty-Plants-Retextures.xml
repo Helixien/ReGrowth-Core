@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<!-- ================================ Plant Patches	====================== -->
+		<operations>
+			<!-- ================================ HD Grass ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Grass" or defName="Plant_TallGrass"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Grass</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Grass"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/_Leafless/RG_Grass_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Plant_TallGrass"]/plant</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/_Leafless/RG_Grass_Leafless</leaflessGraphicPath>
+				</value>
+			</li>
+
+			<!-- ================================ HD Anima Tree ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_TreeAnima</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeAnima"]/plant/immatureGraphicPath</xpath>
+				<value>
+					<immatureGraphicPath>Things/Plant/_Immature/RG_TreeAnima_Immature</immatureGraphicPath>
+				</value>
+			</li>
+
+		</operations>
+	</Operation>
+</Patch>

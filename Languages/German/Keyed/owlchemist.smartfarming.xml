@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<SmartFarming.Icon.On>An</SmartFarming.Icon.On>
+	<SmartFarming.Icon.On.Desc>Säe die ausgewählte Pflanze aus, solange es noch Wachstumszeit ist.</SmartFarming.Icon.On.Desc>
+	<SmartFarming.Icon.Off>Aus</SmartFarming.Icon.Off>
+	<SmartFarming.Icon.Off.Desc>Keine Pflanzen aussäen.</SmartFarming.Icon.Off.Desc>
+	<SmartFarming.Icon.Smart>Smart</SmartFarming.Icon.Smart>
+	<SmartFarming.Icon.Smart.Desc>Säe die Pflanzen so lange aus, bis ihr voraussichtliches Wachstum die Mindestertragsschwelle erreicht hat, bevor sie voraussichtlich an Kälte oder Toxinen sterben.</SmartFarming.Icon.Smart.Desc>
+	<SmartFarming.Icon.Force>Kraft</SmartFarming.Icon.Force>
+	<SmartFarming.Icon.Force.Desc>Aussaat von Pflanzen unabhängig vom Status der Saison..</SmartFarming.Icon.Force.Desc>
+	<SmartFarming.Icon.HarvestNow>Jetzt ernten</SmartFarming.Icon.HarvestNow>
+	<SmartFarming.Icon.HarvestNow.Desc>Markiere alle Pflanzen in dieser Zone für die Ernte, auch wenn sie noch nicht ausgewachsen sind..</SmartFarming.Icon.HarvestNow.Desc>
+	
+	<SmartFarming.Icon.Low>Niedrig</SmartFarming.Icon.Low>
+	<SmartFarming.Icon.Normal>Normal</SmartFarming.Icon.Normal>
+	<SmartFarming.Icon.Preferred>Bevorzugt</SmartFarming.Icon.Preferred>
+	<SmartFarming.Icon.Important>Wichtig</SmartFarming.Icon.Important>
+	<SmartFarming.Icon.Critical>Kritisch</SmartFarming.Icon.Critical>
+	<SmartFarming.Icon.Priority.Desc>Die Bauern werden aufgefordert, Pflanzen in der Reihenfolge ihrer Priorität zu säen und zu ernten.</SmartFarming.Icon.Priority.Desc>
+	
+	<SmartFarming.Icon.NoPettyJobs>Keine Kleinarbeit</SmartFarming.Icon.NoPettyJobs>
+	<SmartFarming.Icon.NoPettyJobs.Desc>Die Bauern säen keine neuen Pflanzen in diese Zone, wenn nicht genügend Arbeit vorhanden ist, konfiguriert in den Einstellungen.</SmartFarming.Icon.NoPettyJobs.Desc>
+	
+	<SmartFarming.Settings.ColdSowing>Kaltaussaat zulassen</SmartFarming.Settings.ColdSowing>
+	<SmartFarming.Settings.ColdSowing.Desc>Normalerweise erlaubt das Spiel keine Aussaat, wenn der Boden gefroren ist, auch wenn die zu säende Pflanzenart Frosttemperaturen verträgt. Deaktivieren Sie dies, um die Vanilla-Regeln beizubehalten.</SmartFarming.Settings.ColdSowing.Desc>
+	
+	<SmartFarming.Settings.SmartSowLabel>Smart säen:</SmartFarming.Settings.SmartSowLabel>
+	<SmartFarming.Settings.ProcessedFoodLabel>Faktor erwartete Nahrung:</SmartFarming.Settings.ProcessedFoodLabel>
+	
+	<SmartFarming.Settings.UseAverageTemperature>Verwenden Sie die Vorhersage der Durchschnittstemperatur anstelle der niedrigen</SmartFarming.Settings.UseAverageTemperature>
+	<SmartFarming.Settings.UseAverageTemperature.Desc>Verwende bei der Wettervorhersage für die Smart-Sat-Funktion die Durchschnittstemperatur für den Tag anstelle des Tiefstwertes. Die Verwendung der Durchschnittstemperatur verlängert die Wachstumsperiode und birgt das Risiko, dass einige Pflanzen verloren gehen..</SmartFarming.Settings.UseAverageTemperature.Desc>
+	
+	<SmartFarming.Settings.UseAverageFertility>Verwendung der durchschnittlichen Fruchtbarkeit in der Zone anstelle der schwächsten</SmartFarming.Settings.UseAverageFertility>
+	<SmartFarming.Settings.UseAverageFertility.Desc>Verwende bei der Vorhersage des Pflanzenwachstums die durchschnittliche Fruchtbarkeit der Zone anstelle der schwächsten Fruchtbarkeit der Zone.</SmartFarming.Settings.UseAverageFertility.Desc>
+	
+	<SmartFarming.Settings.AutoCutBlighted>Automatische Kennzeichnung verdorbener Pflanzen für die Entsorgung</SmartFarming.Settings.AutoCutBlighted>
+	<SmartFarming.Settings.AutoCutBlighted.Desc>Wenn eine Kultur verdorrt ist, wird automatisch ein Arbeitsauftrag zum Entfernen der Ernte erteilt</SmartFarming.Settings.AutoCutBlighted.Desc>
+	
+	<SmartFarming.Settings.AutoHarvestNow>Frühzeitige Ernte bei Gefährdung.</SmartFarming.Settings.AutoHarvestNow>
+	<SmartFarming.Settings.AutoHarvestNow.Desc>Wenn das Wetter heute Nacht tödlich kalt sein wird, sollten alle Pflanzen für eine sofortige Ernte markiert werden.</SmartFarming.Settings.AutoHarvestNow.Desc>
+	<SmartFarming.Message.AutoHarvestNow>Pflanzen, die aufgrund des für heute Abend vorhergesagten Wetters für eine frühe Ernte bestimmt sind..</SmartFarming.Message.AutoHarvestNow>
+	
+	<SmartFarming.Settings.AutoCutDying>Automatisch versuchen, absterbende Pflanzen zu ernten</SmartFarming.Settings.AutoCutDying>
+	<SmartFarming.Settings.AutoCutDying.Desc>Wenn eine Pflanze durch die Kälte abstirbt, versuchen Sie, die überlebenden Pflanzen automatisch zu ernten, bevor es zu spät ist.</SmartFarming.Settings.AutoCutDying.Desc>
+	
+	<SmartFarming.Settings.ProcessedFood.Desc>Wenn die Anbauzonen einen geschätzten potenziellen Nährstoffertrag angeben, wird der Nährstoffgehalt der Rohkost mit diesem Wert multipliziert. Zum Beispiel multipliziert eine Einfache Mahlzeit den Wert mit dem 1,8-fachen.</SmartFarming.Settings.ProcessedFood.Desc>
+	
+	<SmartFarming.Settings.MinTempSlider>Minimaler Toleranzwert der Temperatur. (Mod default: {0}, Min: {1}, Max: {2}): </SmartFarming.Settings.MinTempSlider>
+	<SmartFarming.Settings.MinTemp>Wenn Sie das Wetter für den frühesten Erntetag vorhersagen, sollten Sie alles unter dieser Temperatur als inakzeptabel betrachten. Pflanzen können bei 0 °C absterben, überleben aber in der Regel, wenn es nur ein paar Stunden lang knapp unter dem Gefrierpunkt liegt. Zufällige tägliche Temperaturabweichungen können jedoch die Genauigkeit verringern.</SmartFarming.Settings.MinTemp>
+	
+	<SmartFarming.Settings.PettyJobsSlider>Kleinarbeit Grenzwert (Mod default: {0}, Min: {1}, Max: {2}): </SmartFarming.Settings.PettyJobsSlider>
+	<SmartFarming.Settings.PettyJobs>Wenn in einem Gebiet "keine Kleinarbeit" aktiviert ist, säen die Bauern nur dann ein Feld aus, wenn es mindestens diesen Prozentsatz an leeren Feldern gibt. Dies kann für Tierweidezonen nützlich sein.</SmartFarming.Settings.PettyJobs>
+	
+	<SmartFarming.Inspector.MinHarvestDay>\nFrühester Erntetag: </SmartFarming.Inspector.MinHarvestDay>
+	<SmartFarming.Inspector.MinHarvestDayFail>\nDie Pflanzen werden wahrscheinlich vor der Ernte absterben</SmartFarming.Inspector.MinHarvestDayFail>
+	<SmartFarming.Inspector.Fertility>\nDurchschnittliche Fruchtbarkeit: {0} / {1}</SmartFarming.Inspector.Fertility>
+	<SmartFarming.Inspector.AverageGrowth>\nDurchschnittliches Wachstum: </SmartFarming.Inspector.AverageGrowth>
+	<SmartFarming.Inspector.Yield>\nPotenzielle Nahrung: </SmartFarming.Inspector.Yield>
+	<SmartFarming.Inspector.DaysWorth> ({0} Tageswert)</SmartFarming.Inspector.DaysWorth>
+	
+	<SmartFarming.Icon.SetAll>Zonen festlegen auf </SmartFarming.Icon.SetAll>
+</LanguageData>

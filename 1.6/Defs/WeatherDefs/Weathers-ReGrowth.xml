@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ================ Breezy (formerly Windy) ================ -->
+	<WeatherDef>
+		<defName>RG_Windy</defName>
+		<label>Breezy </label>
+		<description>Consistent wind that reduces ranged weapon accuracy.</description>
+		<repeatable>true</repeatable>
+		<favorability>Neutral</favorability>
+		<windSpeedFactor>1.25</windSpeedFactor>
+		<windSpeedOffset>1</windSpeedOffset>
+		<accuracyMultiplier>0.9</accuracyMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Desolate</li>
+		</ambientSounds>
+		<skyColorsDay>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.718,0.745,0.757)</shadow>
+			<overlay>(1,1,1)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(0.858,0.650,0.423)</sky>
+			<shadow>(0.955,0.886,0.914)</shadow>
+			<overlay>(0.8,0.8,0.8)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.482,0.603,0.682)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.482,0.603,0.682)</sky>
+			<shadow>(0.85, 0.85, 0.85)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>1.25</saturation>
+		</skyColorsNightMid>
+		<modExtensions>
+			<li Class="ReGrowthCore.WeatherExtension">
+				<increasesWindTurbinesOutput>true</increasesWindTurbinesOutput>
+			</li>
+		</modExtensions>
+	</WeatherDef>
+	<!-- ================ Drizzle ================ -->
+	<WeatherDef>
+		<defName>RG_Drizzle</defName>
+		<label>drizzle</label>
+		<description>Very light but prominent rain which slightly reduces ranged weapon accuracy and movement speed.</description>
+		<temperatureRange>0~100</temperatureRange>
+		<windSpeedFactor>1.0</windSpeedFactor>
+		<accuracyMultiplier>0.9</accuracyMultiplier>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<weatherThought>RG_Wet</weatherThought>
+		<rainRate>0.5</rainRate>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>RG_Ambient_Drizzle</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>ReGrowthCore.WeatherOverlay_Custom</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+				<li>(4000, 3.0)</li>
+			</points>
+		</commonalityRainfallFactor>
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+		<modExtensions>
+			<li Class="ReGrowthCore.WeatherOverlayExtension">
+				<overlayPath>Weather/DrizzleRainWorldOverlay</overlayPath>
+				<copyPropertiesFrom>Weather/RainOverlayWorld</copyPropertiesFrom>
+				<worldOverlayPanSpeed1>0.015</worldOverlayPanSpeed1>
+				<worldPanDir1>(-0.25, -1)</worldPanDir1>
+				<worldOverlayPanSpeed2>0.022</worldOverlayPanSpeed2>
+				<worldPanDir2>(-0.24, -1)</worldPanDir2>
+			</li>
+		</modExtensions>
+	</WeatherDef>
+	<!-- ================ Fog Storm ================ -->
+	<WeatherDef>
+		<defName>RG_FogStorm</defName>
+		<label>fog storm</label>
+		<isBad>true</isBad>
+		<description>Rolling fog and heavy wind reduces the accuracy of ranged weapons.</description>
+		<windSpeedFactor>1.0</windSpeedFactor>
+		<accuracyMultiplier>0.25</accuracyMultiplier>
+		<favorability>Bad</favorability>
+		<perceivePriority>2</perceivePriority>
+		<moveSpeedMultiplier>0.95</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Fog</li>
+			<li>ReGrowthCore.WeatherOverlay_Custom</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+			</points>
+		</commonalityRainfallFactor>
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+		<modExtensions>
+			<li Class="ReGrowthCore.WeatherOverlayExtension">
+				<overlayPath>Weather/Overlays/FogWorld</overlayPath>
+				<copyPropertiesFrom>Weather/FogOverlayWorld</copyPropertiesFrom>
+				<worldOverlayPanSpeed1>0.01</worldOverlayPanSpeed1>
+				<worldPanDir1>(0.25, 0)</worldPanDir1>
+				<worldOverlayPanSpeed2>0.018</worldOverlayPanSpeed2>
+				<worldPanDir2>(0.24, 0)</worldPanDir2>
+			</li>
+			<li Class="ReGrowthCore.WeatherExtension">
+				<increasesWindTurbinesOutput>true</increasesWindTurbinesOutput>
+			</li>
+		</modExtensions>
+	</WeatherDef>
+	<!-- ================ Fogg Snow ================ -->
+	<WeatherDef>
+		<defName>RG_FoggySnow</defName>
+		<label>foggy snow</label>
+		<isBad>true</isBad>
+		<description>Heavy snow with fog that reduces ranged weapon accuracy, extinguishes fires and reduces movement speed.</description>
+		<temperatureRange>-999~-0.5</temperatureRange>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<accuracyMultiplier>0.5</accuracyMultiplier>
+		<snowRate>1.2</snowRate>
+		<rainRate>1</rainRate>
+		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+		<ambientSounds>
+			<li>Ambient_Wind_Fog</li>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Fog</li>
+			<li>WeatherOverlay_SnowGentle</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(300,0.5)</li>
+				<li>(1300, 1)</li>
+			</points>
+		</commonalityRainfallFactor>
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+</Defs>

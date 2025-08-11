@@ -13,6 +13,7 @@
 					<value>
 						<RG_Plant_Raspberry>0.03</RG_Plant_Raspberry>
 						<RG_Plant_BorealFern>0.2</RG_Plant_BorealFern>
+						<RG_Tree_TundraTreePine>0.25</RG_Tree_TundraTreePine>
 					</value>
 				</li>
 			</operations>

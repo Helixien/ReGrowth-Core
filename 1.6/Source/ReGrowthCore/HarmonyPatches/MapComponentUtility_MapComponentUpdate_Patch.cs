@@ -10,20 +10,9 @@ namespace ReGrowthCore
     {
         public static void Postfix(Map map)
         {
-            HashSet<TerrainDef> checkedTerrains = new HashSet<TerrainDef>();
-            var allTerrains = map.terrainGrid.waterCells.Select(x => map.terrainGrid.TopTerrainAt(x));
-            foreach (var terrain in allTerrains)
+            foreach (var terrain in ReGrowthUtils.terrrainWithdefExtensions)
             {
-                if (checkedTerrains.Contains(terrain))
-                {
-                    continue;
-                }
-                checkedTerrains.Add(terrain);
-                var extension = terrain.GetModExtension<DefExtension_ShaderSpeedMult>();
-                if (extension != null)
-                {
-                    extension.DoWork(terrain);
-                }
+                terrain.Item2.DoWork(terrain.Item1);
             }
         }
     }

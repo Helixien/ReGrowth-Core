@@ -19,7 +19,7 @@ namespace ReGrowthCore
     {
         private static ReGrowthCore_MakeCamp _setUpCampPatchWorker;
         public static ReGrowthCore_MakeCamp MakeCampPatchWorker => _setUpCampPatchWorker ??= ReGrowthMod.modPack.Patches.OfType<ReGrowthCore_MakeCamp>().FirstOrDefault();
-
+        public static List<(TerrainDef, DefExtension_ShaderSpeedMult)> terrrainWithdefExtensions = new List<(TerrainDef, DefExtension_ShaderSpeedMult)>();
         static ReGrowthUtils()
         {
             foreach (var def in DefDatabase<TerrainDef>.AllDefs)
@@ -34,6 +34,11 @@ namespace ReGrowthCore
                             biomeTerrain.ResolveData(def);
                         }
                     }
+                }
+                var shaderSpeedExtension = def.GetModExtension<DefExtension_ShaderSpeedMult>();
+                if (shaderSpeedExtension != null)
+                {
+                    terrrainWithdefExtensions.Add((def, shaderSpeedExtension));
                 }
             }
         }

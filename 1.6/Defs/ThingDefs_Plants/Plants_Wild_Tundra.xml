@@ -19,7 +19,7 @@
 			<fertilityMin>0.05</fertilityMin>
 			<fertilitySensitivity>0.3</fertilitySensitivity>
 			<growDays>2.5</growDays>
-			<leaflessGraphicPath>Things/Plant/_Leafless/RG_Grass_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
 			<harvestWork>40</harvestWork>
 			<maxMeshCount>9</maxMeshCount>
 			<visualSizeRange>0.4~0.6</visualSizeRange>
@@ -54,7 +54,7 @@
 			<wildClusterWeight>10</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<leaflessGraphicPath>Things/Plant/_Leafless/RG_Grass_Leafless</leaflessGraphicPath>
-			<pollutedGraphicPath>Things/Plant/_Polluted/RG_Grass_Polluted</pollutedGraphicPath>
+			<pollutedGraphicPath>Things/Plant/Grass_Polluted</pollutedGraphicPath>
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="PlantBase">

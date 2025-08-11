@@ -13,7 +13,7 @@
 			<texPath>Things/Plant/RG_CreepStern</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<ingestible/>
 		<plant>
 			<fertilityMin>0.05</fertilityMin>
@@ -148,6 +148,7 @@
 		<plant>
 			<growDays>13</growDays>
 			<leaflessGraphicPath>Things/Plant/_Leafless/RG_TreeWillow_Leafless</leaflessGraphicPath>
+			<pollutedGraphicPath>Things/Plant/_Polluted/RG_TreeWillow_Polluted</pollutedGraphicPath>
 			<harvestWork>800</harvestWork>
 			<harvestYield>27</harvestYield>
 			<wildClusterRadius>17</wildClusterRadius>

@@ -43,7 +43,7 @@
 		<saveCompressible>false</saveCompressible>
 	</ThingDef>
 	<ThingDef ParentName="RG_BoulderBase" Name="RG_BoulderRockMediumBase" Abstract="True">
-		<description>A medium sized chunk of rock. Can be mined into smaller chunks with a chance of ocassional ores.</description>
+		<description>A medium sized chunk of rock. Can be mined into smaller chunks with a chance of occasional ores.</description>
 		<graphicData>
 			<texPath>Things/Building/Natural/BoulderMid</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -80,7 +80,7 @@
 		</comps>
 	</ThingDef>
 	<ThingDef ParentName="RG_BoulderBase" Name="RG_BoulderRockLargeBase" Abstract="True">
-		<description>A largely sized chunk of rock. Can be mined into smaller chunks with a chance of ocassional ores.</description>
+		<description>A largely sized chunk of rock. Can be mined into smaller chunks with a chance of occasional ores.</description>
 		<graphicData>
 			<texPath>Things/Building/Natural/BoulderHigh</texPath>
 			<graphicClass>Graphic_Random</graphicClass>

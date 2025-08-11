@@ -20,7 +20,7 @@
 			<baseHungerRate>0.4</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<trainability>None</trainability>
-			<lifeExpectancy>12</lifeExpectancy>
+			<lifeExpectancy>40</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>

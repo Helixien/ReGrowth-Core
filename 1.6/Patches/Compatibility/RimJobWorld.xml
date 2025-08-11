@@ -6,7 +6,7 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<!--============================================== Changes to make the HumpShroom look less shit, yet fitting to what it is. ==============================================-->
+				<!--============================================== Changes to make the HumpShroom look less shit, yet fitting to what it is. Yes, the old one was shit! ==============================================-->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName="HumpShroom"]/label</xpath>
 					<value>

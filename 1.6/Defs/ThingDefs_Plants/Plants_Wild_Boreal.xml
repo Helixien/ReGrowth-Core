@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<!--    <ThingDef ParentName="PlantBase">
+        <defName>RG_Plant_RimReed</defName>
+        <label>reed</label>
+        <description>A genetically modified version of the common reed. Slows down anyone moving through it, while looking beautiful in the wind.</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.7</Flammability>
+            <Beauty>4</Beauty>
+            <Nutrition>0.10</Nutrition>
+        </statBases>
+        <pathCost>20</pathCost>
+        <graphicData>
+            <texPath>Things/Plant/RimReed</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <hideAtSnowOrSandDepth>0.6</hideAtSnowOrSandDepth>
+        <ingestible />
+        <plant>
+            <fertilitySensitivity>0.7</fertilitySensitivity>
+            <growDays>5</growDays>
+            <harvestWork>70</harvestWork>
+            <maxMeshCount>9</maxMeshCount>
+            <visualSizeRange>0.7~0.90</visualSizeRange>
+            <topWindExposure>0.4</topWindExposure>
+            <wildClusterRadius>6</wildClusterRadius>
+            <wildClusterWeight>1.5</wildClusterWeight>
+            <wildOrder>1</wildOrder>
+            <purpose>Beauty</purpose>
+        </plant>
+    </ThingDef>-->
+	<ThingDef ParentName="BushBase">
+		<defName>RG_Plant_BorealFern</defName>
+		<label>fern</label>
+		<description>A short shrub with long, fine leaves. Grows in cold forests areas.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_BorealFern</texPath>
+			<drawSize>1.15</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<selectable>false</selectable>
+		<plant>
+			<growDays>3</growDays>
+			<leaflessGraphicPath>Things/Plant/_Leafless/RG_Fern_Leafless</leaflessGraphicPath>
+			<pollutedGraphicPath>Things/Plant/_Polluted/RG_Fern_Polluted</pollutedGraphicPath>
+			<harvestWork>60</harvestWork>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<pollution>Any</pollution>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_Coldheart</defName>
+		<label>coldheart</label>
+		<description>A genetically altered version of common ivy adapted to thrive in areas of cold temperatures.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_Coldheart</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>0.6</Flammability>
+			<Nutrition>0.15</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.2</fertilitySensitivity>
+			<leaflessGraphicPath>Things/Plant/_Leafless/RG_CarpetPlant_Leafless</leaflessGraphicPath>
+			<pollutedGraphicPath>Things/Plant/_Polluted/RG_CarpetPlant_Polluted</pollutedGraphicPath>
+			<growDays>15</growDays>
+			<harvestWork>75</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>4</wildClusterWeight>
+			<visualSizeRange>0.35~0.85</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<pollution>Any</pollution>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_TigerLily</defName>
+		<label>tiger lily</label>
+		<description>A tiny orange flower which grows in large clusters. Though it is often considered a weed, tiger lilys in bloom are quite beautiful.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.18</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RG_TigerLily</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.6</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<sowResearchPrerequisites/>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.3~0.4</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Potokus</defName>
+		<label>potokus</label>
+		<description>A small brown and delicious mushroom growing in clusters. It grows exclusively in boreal forests.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_Potokus</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>15</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.04</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>14</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>22</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<purpose>Food</purpose>
+			<immatureGraphicPath>Things/Plant/_Immature/RG_Potokus_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>RG_Plant_OrangeTreePine</defName>
+		<label>pine tree</label>
+		<description>A large orange conifer covered with prickly pine cones. It grows in a distinctive conical shape.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_OrangeTreePine</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.15, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<growDays>25</growDays>
+			<visualSizeRange>1~2.5</visualSizeRange>
+			<harvestWork>750</harvestWork>
+			<harvestYield>21</harvestYield>
+			<pollutedGraphicPath>Things/Plant/_Polluted/RG_TreePine_Polluted</pollutedGraphicPath>
+			<immatureGraphicPath>Things/Plant/_Immature/RG_OrangeTreePine_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>RG_Plant_BlueTreePine</defName>
+		<label>pine tree</label>
+		<description>A smaller blueish conifer covered with small pine cones. It grows only in colder regions or higher altitude.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_BlueTreePine</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.1, 0.3, 0.1)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<growDays>40</growDays>
+			<visualSizeRange>1.3~2.5</visualSizeRange>
+			<harvestWork>900</harvestWork>
+			<harvestYield>16</harvestYield>
+			<pollutedGraphicPath>Things/Plant/_Polluted/RG_BlueTreePine_Polluted</pollutedGraphicPath>
+			<immatureGraphicPath>Things/Plant/_Immature/RG_BlueTreePine_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="TreeBase">
+		<defName>RG_Plant_LargeTreePine</defName>
+		<label>pine tree</label>
+		<description>A tall bright green conifer with a thin bark. It grows taller than other pines.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_LargeTreePine</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.05, 0.6, 0.15)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+		</statBases>
+		<ingestible/>
+		<plant>
+			<growDays>56</growDays>
+			<visualSizeRange>1.5~3.0</visualSizeRange>
+			<harvestWork>1150</harvestWork>
+			<harvestYield>33</harvestYield>
+			<pollutedGraphicPath>Things/Plant/_Polluted/RG_LargeTreePine_Polluted</pollutedGraphicPath>
+			<immatureGraphicPath>Things/Plant/_Immature/RG_LargeTreePine_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+</Defs>

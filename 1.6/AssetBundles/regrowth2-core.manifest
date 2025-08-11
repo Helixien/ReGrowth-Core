@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3179957244
+CRC: 3679056808
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9847d7e920468ccfd0014e9cd64f2f63
+    Hash: 9da055cfd05c5706774f273cc235311d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 7859cd501ea75098bcf7e53f1b477c26
@@ -20,6 +20,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Grizzly/GrizzlyBear_dessicated.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Boomalope/Corpse_Boomalope_northm.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_PoluxTree/PoluxTreeB.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Nightguide/NightguideB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Willowgill/WillowgillA_m.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Linked/RockSmooth_Atlas.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Brambles/BramblesA.psd
@@ -44,6 +45,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Leafless/RG_Chokevine_Leafless/Chokevine_LeaflessA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Hare/Hare_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/CalfHemolope_eastm.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_NightLily/NightLilyA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_RicePlant/RicePlantA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Natural/BoulderHigh/BoulderHighC.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Neutrolope/CalfNeutrolope_south.png
@@ -57,6 +59,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Thrumbo/CalfThrumboPack_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Grizzly/GrizzlyCubPack_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Rabbit/Rabbit_north.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_BlueTreePine/BlueTreePineC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_RatPalm/RatPalmA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Boomalope/Dessicated_Boomalope_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Boomalope/Corpse_Boomalope_southm.png
@@ -77,11 +80,14 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Neutrolope/Dessicated_Neutrolope_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Natural/CocoonMegaspider/CocoonMegaspiderB.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Husky/HuskyPup_north.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TigerLily/TigerLilyB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Linked/RG_CompactedMachinery_Atlas_m.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Boomalope/CalfBoomalope_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Grizzly/GrizzlyBearPack_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Devilstrand/DevilstrandB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Cat/Cat_north.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_NightLily/NightLilyC.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Polluted/RG_BlueTreePine_Polluted/BlueTreePine_Polluted.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Thrumbo/CalfThrumboPack_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/Corpse_Hemolope_northm.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Boomalope/Dessicated_CalfBoomalope_east.png
@@ -118,6 +124,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Megasloth/Megasloth_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Moss/MossA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreeGrayPine/TreeGrayPineB.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_Potokus_Immature/Potokus_Immature.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/Dessicated_CalfHemolope_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Toxalope/Corpse_Toxalope_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_TreeMaple_Immature/TreeMaple_Immature.psd
@@ -126,6 +133,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/Hemolope_northm.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Toxalope/CalfToxalope_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_BonsaiTree/BonsaiTreeB.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_NightLily/NightLilyB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Grizzly/GrizzlyBear_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Rabbit/Dessicated_Rabbit.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreeBirch/TreeBirchA.psd
@@ -133,6 +141,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Rabbit/KitRabbit_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_PotatoPlant_Immature/PotatoPlant_Immature.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Husky/HuskyPup_south.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_BlueTreePine/BlueTreePineB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Ripthorn/RipthornB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Cat/Kitten_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Alocasia/AlocasiaA.psd
@@ -144,6 +153,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/Dessicated_CalfHemolope_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Natural/BoulderMid/BoulderMidD.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Toxalope/Corpse_Toxalope_south.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_OrangeTreePine/OrangeTreePineC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Rabbit/KitRabbit_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Astragalus/AstragalusC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Linked/RG_CrystalRockFleck_Atlas.png
@@ -166,6 +176,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Grizzly/GrizzlyCub_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Astragalus/AstragalusE.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Natural/CocoonMegaspider/CocoonMegaspiderC.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_BorealFern/BorealFernB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_TreeAnima_Immature/TreeAnima_Immature.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Leafless/RG_TreeTeak_Leafless/TreeTeak_LeaflessA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/Corpse_CalfHemolope_east.png
@@ -188,6 +199,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_BonsaiTree/BonsaiTreeA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_RicePlant/RicePlantB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreeBirch/TreeBirchB.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_OrangeTreePine/OrangeTreePineA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Neutrolope/Corpse_Neutrolope_eastm.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Toxalope/CalfToxalope_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Willowgill/WillowgillC.psd
@@ -207,6 +219,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Boomshroom/BoomshroomC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Toxipotato/ToxipotatoA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Rabbit/KitRabbit_north.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_LargeTreePine/LargeTreePineB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_Agarilux_Immature/Agarilux_Immature.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/CalfHemolope_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Linked/RG_RockFlecked_Atlas_m.png
@@ -218,12 +231,14 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Leafless/RG_TreeBirch_Leafless/TreeBirch_LeaflessC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_TreeBirch_Immature/TreeBirch_Immature.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Husky/Husky_east.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Coldheart/ColdheartA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Toxalope/Corpse_CalfToxalope_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Neutrolope/Neutrolope_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Grizzly/GrizzlyCub_dessicated.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Husky/Husky_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Polluted/RG_Bush_Polluted/Bush_PollutedA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Thrumbo/CalfThrumbo_dessicated_south.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Leafless/RG_Fern_Leafless/Fern_LeaflessB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/Corpse_CalfHemolope_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Boomalope/Dessicated_CalfBoomalope_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Item/Drug/RG_HumpshroomCollected/HumpshroomCollectedB.psd
@@ -247,6 +262,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Chokevine/ChokevineA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_RicePlant_Immature/RicePlant_Immature.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Grizzly/GrizzlyBear_east.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Leafless/RG_CarpetPlant_Leafless/CarpetPlant_Leafless.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Cougar/Dessicated_CougarKitten_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Witchwood/WitchwoodA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Item/Drug/RG_HumpshroomCollected/HumpshroomCollectedC.psd
@@ -258,6 +274,8 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Willowgill/WillowgillC_m.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_GauranlenTree/GauranlenTreeA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Megasloth/Megasloth_east.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_OrangeTreePine_Immature/OrangeTreePine_Immature.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_BlueTreePine_Immature/BlueTreePine_Immature.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Natural/BoulderMid/BoulderMidB.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Polluted/RG_TreeCecropia_Polluted/TreeCecropia_Polluted.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_Boomshroom_Immature/Boomshroom_Immature.psd
@@ -282,6 +300,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Hare/Dessicated_LeveretHare.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Bush/BushB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreeBirch/TreeBirchC.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Coldheart/ColdheartB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Neutrolope/Dessicated_CalfNeutrolope_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Megasloth/PupMegasloth_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_TreeTeak_Immature/TreeTeak_Immature.psd
@@ -321,6 +340,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Linked/RG_CompactedMachinery_Atlas.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Husky/Husky_eastm.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Hare/Hare_north.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Nightguide/NightguideA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Grass/GrassC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/Dessicated_Hemolope_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Husky/Dessicated_Husky_east.png
@@ -336,6 +356,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Toxalope/Toxalope_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/Corpse_Hemolope_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Willowgill/WillowgillB.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_OrangeTreePine/OrangeTreePineB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreeAnima/TreeAnimaB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Neutrolope/Dessicated_Neutrolope_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Fibercorn/FibercornA.psd
@@ -361,10 +382,12 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/Corpse_CalfHemolope_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_PotatoPlant/PotatoPlantA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreeCecropia/TreeCecropiaB.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_LargeTreePine/LargeTreePineA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_BerryPlant_Immature/BerryBush_ImmatureA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Kiwi/Kiwi_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreeAnima/TreeAnimaA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreePalm/TreePalmC.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Potokus/PotokusC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreePine/TreePineA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Boomalope/Corpse_CalfBoomalope_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Nutrifungus/NutrifungusB.psd
@@ -387,6 +410,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Neutrolope/Neutrolope_southm.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Hemolope/CalfHemolope_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Muffalo/CalfMufalloPack_east.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TigerLily/TigerLilyA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Neutrolope/Neutrolope_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Boomshroom/BoomshroomB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_TreeDrago_Immature/TreeDrago_Immature.psd
@@ -411,6 +435,8 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Boomalope/CalfBoomalope_eastm.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Leafless/RG_Grass_Leafless/Grass_LeaflessB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Cougar/Cougar_east.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Immature/RG_LargeTreePine_Immature/LargeTreePine_Immature.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TigerLily/TigerLilyC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Glowstool/GlowstoolA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Leafless/RG_TreePoplar_Leafless/TreePoplar_LeaflessB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Natural/BoulderHigh/BoulderHighB.png
@@ -443,23 +469,31 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Nutrifungus/NutrifungusA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Leafless/RG_Bush_Leafless/Bush_LeaflessB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreeOak/TreeOakB.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Polluted/RG_Fern_Polluted/Fern_Polluted.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Husky/Husky_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Boomalope/Corpse_Boomalope_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Polluted/RG_Brambles_Polluted/Brambles_PollutedB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Megasloth/Dessicated_Megasloth_east.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Polluted/RG_LargeTreePine_Polluted/LargeTreePine_Polluted.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Husky/HuskyPup_northm.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Husky/Husky_southm.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Willowgill/WillowgillB_m.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_BlueTreePine/BlueTreePineA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Building/Linked/RG_AsteroidWallFlecked_Atlas_m.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Potokus/PotokusA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Astragalus/AstragalusB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Muffalo/CalfMufallo_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Cougar/CougarKitten_north.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Leafless/RG_Chokevine_Leafless/Chokevine_LeaflessB.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_BorealFern/BorealFernA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Muffalo/MuffaloPack_south.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Boomalope/Boomalope_eastm.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Rafflesia/RafflesiaA.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreeGrayPine/TreeGrayPineA.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Polluted/RG_CarpetPlant_Polluted/CarpetPlant_Polluted.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Toxalope/Toxalope_east.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/_Leafless/RG_Fern_Leafless/Fern_LeaflessA.psd
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Potokus/PotokusB.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Cat/Dessicated_Kitten_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Megasloth/MegaslothPack_east.png
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/RG_Hare/LeveretHare_south.png
@@ -471,6 +505,7 @@ Assets:
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_TreeAnima/TreeAnimaC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Timbershroom/TimbershroomC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Pawn/Animal/Neutrolope/Neutrolope_northm.png
+- Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_LargeTreePine/LargeTreePineC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Ripthorn/RipthornC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Glowstool/GlowstoolC.psd
 - Assets/Data/ReGrowth.BOTR.Core/Textures/Things/Plant/RG_Moss/MossC.psd

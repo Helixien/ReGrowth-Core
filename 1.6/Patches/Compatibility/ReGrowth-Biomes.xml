@@ -12,6 +12,7 @@
 					<xpath>/Defs/BiomeDef[defName = "RG_AspenForest"]/wildPlants</xpath>
 					<value>
 						<RG_Plant_Raspberry>0.03</RG_Plant_Raspberry>
+						<RG_Plant_BorealFern>0.2</RG_Plant_BorealFern>
 					</value>
 				</li>
 			</operations>

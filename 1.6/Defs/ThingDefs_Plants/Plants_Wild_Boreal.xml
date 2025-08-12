@@ -49,7 +49,6 @@
 			<pollutedGraphicPath>Things/Plant/_Polluted/RG_Fern_Polluted</pollutedGraphicPath>
 			<harvestWork>60</harvestWork>
 			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
-			<pollution>Any</pollution>
 		</plant>
 	</ThingDef>
 	<ThingDef ParentName="PlantBase">

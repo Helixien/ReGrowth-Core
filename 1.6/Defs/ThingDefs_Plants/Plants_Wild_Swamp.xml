@@ -81,6 +81,7 @@
 		<selectable>false</selectable>
 		<neverMultiSelect>false</neverMultiSelect>
 		<pathCost>5</pathCost>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
 		<ingestible>
 			<preferability>NeverForNutrition</preferability>
 		</ingestible>

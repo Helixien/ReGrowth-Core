@@ -127,6 +127,13 @@
 						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
 						<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Witchwood>
 						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_TreeGrayPine>
+						<!-- ================ New plants ================ -->
+						<RG_Plant_TemperateIvy>3</RG_Plant_TemperateIvy>
+						<RG_Plant_TemperateFern>0.6</RG_Plant_TemperateFern>
+						<RG_Plant_BlueDandelion>0.5</RG_Plant_BlueDandelion>
+						<RG_Plant_RedDandelion>0.5</RG_Plant_RedDandelion>
+						<RG_Plant_TreeCornish>0.6</RG_Plant_TreeCornish>
+						<RG_Cibarius>0.05</RG_Cibarius>
 					</wildPlants>
 				</value>
 			</li>
@@ -149,6 +156,10 @@
 						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_TreeGrayPine>
 						<!-- ================ New plants ================ -->
 						<RG_Plant_SwampPod>0.05</RG_Plant_SwampPod>
+						<RG_Plant_TemperateIvy>5</RG_Plant_TemperateIvy>
+						<RG_Plant_TemperateFern>0.4</RG_Plant_TemperateFern>
+						<RG_Plant_TreeCornish>0.2</RG_Plant_TreeCornish>
+						<RG_Cibarius>0.035</RG_Cibarius>
 					</wildPlants>
 				</value>
 			</li>

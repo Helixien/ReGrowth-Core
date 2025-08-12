@@ -8,6 +8,7 @@ using System.Collections.Generic;
 
 namespace ReGrowthCore
 {
+	[HotSwappable]
 	public class ReGrowthCore_SmartFarming : PatchOperationWorker
 	{
 		private static ReGrowthCore_SmartFarming _handle;

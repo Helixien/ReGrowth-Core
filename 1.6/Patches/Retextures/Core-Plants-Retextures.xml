@@ -3,25 +3,6 @@
 	<Operation Class="PatchOperationSequence">
 		<!-- ================================ Plant Patches	====================== -->
 		<operations>
-			<!-- ================================ HD Grass ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Grass" or defName="Plant_TallGrass"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Plant/RG_Grass</texPath>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_Grass"]/plant/leaflessGraphicPath</xpath>
-				<value>
-					<leaflessGraphicPath>Things/Plant/_Leafless/RG_Grass_Leafless</leaflessGraphicPath>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName="Plant_TallGrass"]/plant</xpath>
-				<value>
-					<leaflessGraphicPath>Things/Plant/_Leafless/RG_Grass_Leafless</leaflessGraphicPath>
-				</value>
-			</li>
 			<!-- ================================ HD Brambles ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_Brambles"]/graphicData/texPath</xpath>
@@ -165,7 +146,7 @@
 					<pollutedGraphicPath>Things/Plant/_Polluted/RG_Bush_Polluted</pollutedGraphicPath>
 				</value>
 			</li>
-			<!-- ================================ HD Berry & Berries ====================== -->
+			<!-- ================================ HD Berry Bush ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_Berry"]/graphicData/texPath</xpath>
 				<value>
@@ -208,6 +189,13 @@
 				<xpath>/Defs/ThingDef[defName="Agarilux"]/plant</xpath>
 				<value>
 					<immatureGraphicPath>Things/Plant/_Immature/RG_Agarilux_Immature</immatureGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ HD Pincushion Cactu ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_PincushionCactus"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_PincushionCactus</texPath>
 				</value>
 			</li>
 			<!-- ================================ HD Timbershroom ====================== -->
@@ -462,6 +450,19 @@
 				<xpath>/Defs/ThingDef[defName="Plant_TreePalm"]/plant/immatureGraphicPath</xpath>
 				<value>
 					<immatureGraphicPath>Things/Plant/_Immature/RG_TreePalm_Immature</immatureGraphicPath>
+				</value>
+			</li>
+			<!-- ================================ HD Saguaro Cactus ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_SaguaroCactus"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_SaguaroCactus</texPath>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_SaguaroCactus"]/plant/leaflessGraphicPath</xpath>
+				<value>
+					<leaflessGraphicPath>Things/Plant/_Leafless/RG_SaguaroCactus_Leafless</leaflessGraphicPath>
 				</value>
 			</li>
 		</operations>

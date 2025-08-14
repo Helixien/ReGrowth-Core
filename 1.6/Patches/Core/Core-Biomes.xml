@@ -20,6 +20,8 @@
 						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">4</Plant_Ripthorn>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">10</Plant_GrayGrass>
 						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">6</Plant_TreeGrayPine>
+						<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+						<Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
 						<!-- ================ New plants ================ -->
 						<RG_Plant_TigerLily>0.4</RG_Plant_TigerLily>
 						<RG_Plant_BorealFern>2.0</RG_Plant_BorealFern>
@@ -50,6 +52,8 @@
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">10</Plant_GrayGrass>
 						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">4</Plant_Ripthorn>
 						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.16</Plant_TreeGrayPine>
+						<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+						<Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
 						<!-- ================ New plants ================ -->
 						<RG_Plant_TundraGrass>20</RG_Plant_TundraGrass>
 						<RG_Plant_TundraTallGrass>5</RG_Plant_TundraTallGrass>
@@ -91,6 +95,9 @@
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">7</Plant_GrayGrass>
 						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">5</Plant_Ripthorn>
 						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.2</Plant_TreeGrayPine>
+						<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+						<Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_LilyPad>
+						<Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
 						<!-- ================ New plants ================ -->
 						<RG_Plant_BorealFern>1.0</RG_Plant_BorealFern>
 						<RG_Plant_Coldheart>0.05</RG_Plant_Coldheart>
@@ -127,6 +134,9 @@
 						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
 						<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Witchwood>
 						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_TreeGrayPine>
+						<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+						<Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_LilyPad>
+						<Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
 						<!-- ================ New plants ================ -->
 						<RG_Plant_TemperateIvy>3</RG_Plant_TemperateIvy>
 						<RG_Plant_TemperateFern>0.6</RG_Plant_TemperateFern>
@@ -154,6 +164,9 @@
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
 						<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
 						<Plant_TreeGrayPine MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_TreeGrayPine>
+						<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+						<Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_LilyPad>
+						<Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
 						<!-- ================ New plants ================ -->
 						<RG_Plant_SwampPod>0.05</RG_Plant_SwampPod>
 						<RG_Plant_TemperateIvy>5</RG_Plant_TemperateIvy>
@@ -168,7 +181,6 @@
 				<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants</xpath>
 				<value>
 					<wildPlants>
-						<Plant_Grass>10</Plant_Grass>
 						<Plant_Dandelion>0.8</Plant_Dandelion>
 						<Plant_Bush>0.7</Plant_Bush>
 						<Plant_PincushionCactus>0.6</Plant_PincushionCactus>
@@ -178,6 +190,11 @@
 						<RG_Plant_Raspberry>0.02</RG_Plant_Raspberry>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
 						<Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_PebbleCactus>
+						<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+						<!-- ================ New plants ================ -->
+						<RG_Plant_AridGrass>12.0</RG_Plant_AridGrass>
+						<Plant_DesertDandelion>0.8</Plant_DesertDandelion>
+						<RG_FlowerCactus>0.2</RG_FlowerCactus>
 					</wildPlants>
 				</value>
 			</li>
@@ -186,7 +203,6 @@
 				<xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants</xpath>
 				<value>
 					<wildPlants>
-						<Plant_Grass>12</Plant_Grass>
 						<Plant_Dandelion>0.2</Plant_Dandelion>
 						<Plant_PincushionCactus>1.5</Plant_PincushionCactus>
 						<Plant_SaguaroCactus>0.8</Plant_SaguaroCactus>
@@ -195,6 +211,11 @@
 						<Plant_Bush>0.50</Plant_Bush>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">8</Plant_GrayGrass>
 						<Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">1</Plant_PebbleCactus>
+						<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+						<!-- ================ New plants ================ -->
+						<RG_Plant_AridGrass>12.0</RG_Plant_AridGrass>
+						<Plant_DesertDandelion>0.2</Plant_DesertDandelion>
+						<RG_FlowerCactus>0.2</RG_FlowerCactus>
 					</wildPlants>
 				</value>
 			</li>
@@ -204,6 +225,9 @@
 				<value>
 					<Plant_PincushionCactus>0.8</Plant_PincushionCactus>
 					<Plant_TreeDrago>0.025</Plant_TreeDrago>
+					<!-- ================ New plants ================ -->
+					<RG_Plant_AridGrass>4.0</RG_Plant_AridGrass>
+					<RG_FlowerCactus>0.1</RG_FlowerCactus>
 				</value>
 			</li>
 			<!-- ================ Biome Tropical Rainforest ================ -->
@@ -226,6 +250,9 @@
 						<Plant_Rafflesia>0.0016</Plant_Rafflesia>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">4</Plant_GrayGrass>
 						<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">0.3</Plant_RatPalm>
+						<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1.2</Plant_Reeds>
+						<Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_LilyPad>
+						<Plant_Lotus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_Lotus>
 					</wildPlants>
 				</value>
 			</li>
@@ -250,6 +277,9 @@
 						<Plant_Rafflesia>0.015</Plant_Rafflesia>
 						<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">3</Plant_GrayGrass>
 						<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">1.5</Plant_RatPalm>
+						<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1.2</Plant_Reeds>
+						<Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_LilyPad>
+						<Plant_Lotus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_Lotus>
 						<!-- ================ New plants ================ -->
 						<RG_Plant_SwampPod>0.05</RG_Plant_SwampPod>
 					</wildPlants>

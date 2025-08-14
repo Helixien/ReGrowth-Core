@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--====================================== Grass ======================================== -->
+	<ThingDef ParentName="RG_GrassBase">
+		<defName>Plant_Grass</defName>
+		<description>Wild grass. Grows anywhere there is a little light and minimally fertile ground.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_Grass</texPath>
+		</graphicData>
+	</ThingDef>
+	<ThingDef ParentName="RG_TallGrassBase">
+		<defName>Plant_TallGrass</defName>
+		<description>Wild tall grass. Slows down anyone moving over it.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_Grass</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>

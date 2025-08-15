@@ -16,6 +16,7 @@ namespace ReGrowthCore
 			.Patches.OfType<ReGrowthCore_SmartFarming>().FirstOrDefault();
 		public static HashSet<ushort> agriWorkTypes = new HashSet<ushort>();
 		public static Dictionary<int, MapComponent_SmartFarming> compCache = new Dictionary<int, MapComponent_SmartFarming>();
+		public bool enabled = true;
 		public bool useAverageFertility;
 		public bool autoCutBlighted = true;
 		public bool autoCutDying = true;
@@ -39,6 +40,7 @@ namespace ReGrowthCore
 
 		public override void ExposeData()
 		{
+			Scribe_Values.Look(ref enabled, "enabled", true);
 			Scribe_Values.Look(ref useAverageFertility, "useAverageFertility");
 			Scribe_Values.Look(ref autoCutBlighted, "autoCutBlighted", true);
 			Scribe_Values.Look(ref autoCutDying, "autoCutDying", true);
@@ -55,6 +57,7 @@ namespace ReGrowthCore
 		{
 			if (other is ReGrowthCore_SmartFarming o)
 			{
+				enabled = o.enabled;
 				useAverageFertility = o.useAverageFertility;
 				autoCutBlighted = o.autoCutBlighted;
 				autoCutDying = o.autoCutDying;
@@ -73,29 +76,35 @@ namespace ReGrowthCore
 		{
 			string buffer = processedFoodFactor.ToString();
 
-			DoCheckbox(options, "SmartFarming.Settings.AutoHarvestNow".Translate(), ref autoHarvestNow, "SmartFarming.Settings.AutoHarvestNow.Desc".Translate());
-			DoCheckbox(options, "SmartFarming.Settings.AutoCutBlighted".Translate(), ref autoCutBlighted, "SmartFarming.Settings.AutoCutBlighted.Desc".Translate());
-			DoCheckbox(options, "SmartFarming.Settings.AutoCutDying".Translate(), ref autoCutDying, "SmartFarming.Settings.AutoCutDying.Desc".Translate());
-			DoCheckbox(options, "SmartFarming.Settings.ColdSowing".Translate(), ref coldSowing, "SmartFarming.Settings.ColdSowing.Desc".Translate());
-			DoCheckbox(options, "SmartFarming.Settings.AllowHarvest".Translate(), ref allowHarvestOption, "SmartFarming.Settings.AllowHarvest.Desc".Translate());
-			DoCheckbox(options, "SmartFarming.Settings.OrchardAlignment".Translate(), ref orchardAlignment, "SmartFarming.Settings.OrchardAlignment.Desc".Translate());
-			DoSlider(options, "SmartFarming.Settings.PettyJobsSlider".Translate("20%", "1%", "100%", pettyJobs.ToStringPercent()), ref pettyJobs, pettyJobs.ToStringPercent(), 0.01f, 1f, "SmartFarming.Settings.PettyJobs".Translate(), 10f);
-			DoLabel(options, "SmartFarming.Settings.SmartSowLabel".Translate(), null);
-			DoCheckbox(options, "SmartFarming.Settings.UseAverageFertility".Translate(), ref useAverageFertility, "SmartFarming.Settings.UseAverageFertility.Desc".Translate());
-			DoSlider(options, "SmartFarming.Settings.MinTempSlider".Translate("-3C", "-10C", "5C", Math.Round(minTempAllowed, 1)), ref minTempAllowed, minTempAllowed.ToString(), -10f, 5f, "SmartFarming.Settings.MinTemp".Translate(), 10f);
-			DoLabel(options, "SmartFarming.Settings.ProcessedFoodLabel".Translate(), null);
-			
-			options.TextFieldNumeric(ref processedFoodFactor, ref buffer, 0f, 99f);
-			scrollHeight += 24;
+			DoCheckbox(options, "SmartFarming.Settings.Enabled".Translate(), ref enabled, "SmartFarming.Settings.Enabled.Desc".Translate());
+			if (enabled)
+			{
+				options.GapLine();
+				DoCheckbox(options, "SmartFarming.Settings.AutoHarvestNow".Translate(), ref autoHarvestNow, "SmartFarming.Settings.AutoHarvestNow.Desc".Translate());
+				DoCheckbox(options, "SmartFarming.Settings.AutoCutBlighted".Translate(), ref autoCutBlighted, "SmartFarming.Settings.AutoCutBlighted.Desc".Translate());
+				DoCheckbox(options, "SmartFarming.Settings.AutoCutDying".Translate(), ref autoCutDying, "SmartFarming.Settings.AutoCutDying.Desc".Translate());
+				DoCheckbox(options, "SmartFarming.Settings.ColdSowing".Translate(), ref coldSowing, "SmartFarming.Settings.ColdSowing.Desc".Translate());
+				DoCheckbox(options, "SmartFarming.Settings.AllowHarvest".Translate(), ref allowHarvestOption, "SmartFarming.Settings.AllowHarvest.Desc".Translate());
+				DoCheckbox(options, "SmartFarming.Settings.OrchardAlignment".Translate(), ref orchardAlignment, "SmartFarming.Settings.OrchardAlignment.Desc".Translate());
+				DoSlider(options, "SmartFarming.Settings.PettyJobsSlider".Translate("20%", "1%", "100%", pettyJobs.ToStringPercent()), ref pettyJobs, pettyJobs.ToStringPercent(), 0.01f, 1f, "SmartFarming.Settings.PettyJobs".Translate(), 10f);
+				DoLabel(options, "SmartFarming.Settings.SmartSowLabel".Translate(), null);
+				DoCheckbox(options, "SmartFarming.Settings.UseAverageFertility".Translate(), ref useAverageFertility, "SmartFarming.Settings.UseAverageFertility.Desc".Translate());
+				DoSlider(options, "SmartFarming.Settings.MinTempSlider".Translate("-3C", "-10C", "5C", Math.Round(minTempAllowed, 1)), ref minTempAllowed, minTempAllowed.ToString(), -10f, 5f, "SmartFarming.Settings.MinTemp".Translate(), 10f);
+				DoLabel(options, "SmartFarming.Settings.ProcessedFoodLabel".Translate(), null);
 
-			DoLabel(options, "SmartFarming.Settings.ProcessedFood.Desc".Translate(), null);
+				options.TextFieldNumeric(ref processedFoodFactor, ref buffer, 0f, 99f);
+				scrollHeight += 24;
 
-			if (Prefs.DevMode)
-				DoCheckbox(options, "DevMode: Enable logging", ref logging, null);
+				DoLabel(options, "SmartFarming.Settings.ProcessedFood.Desc".Translate(), null);
+
+				if (Prefs.DevMode)
+					DoCheckbox(options, "DevMode: Enable logging", ref logging, null);
+			}
 		}
 
 		public override void Reset()
 		{
+			enabled = true;
 			useAverageFertility = false;
 			autoCutBlighted = true;
 			autoCutDying = true;

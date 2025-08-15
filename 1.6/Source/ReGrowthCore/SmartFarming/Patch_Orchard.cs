@@ -11,7 +11,7 @@ namespace ReGrowthCore
 	{
 		static bool Prepare()
 		{
-			return ReGrowthCore_SmartFarming.ModSettings.orchardAlignment;
+			return ReGrowthCore_SmartFarming.ModSettings.enabled && ReGrowthCore_SmartFarming.ModSettings.orchardAlignment;
 		}
 
 		static Job Postfix(Job __result, IntVec3 c, Pawn pawn)

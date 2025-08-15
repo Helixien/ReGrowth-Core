@@ -16,6 +16,14 @@ namespace ReGrowthCore
 	{
 		static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> values, Zone_Growing __instance)
 		{
+			if (!ReGrowthCore_SmartFarming.ModSettings.enabled)
+			{
+				foreach (var value in values)
+				{
+					yield return value;
+				}
+				yield break;
+			}
 			//Pass along all other gizmos except vanilla sow, which we only identify via its hotkey...
 			foreach (var value in values)
 			{

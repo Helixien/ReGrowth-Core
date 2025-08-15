@@ -22,6 +22,7 @@
 	<RG.BathingSeasonIsHere>Bathing season is here!</RG.BathingSeasonIsHere>
 	<RG.BathingZoneRemoved>Bathing zone is removed.</RG.BathingZoneRemoved>
 	<RG.BathingPeriod>Bathing period: {0}/{1} days ({2} - {3})</RG.BathingPeriod>
+	<RG.BathingGroup>bathing</RG.BathingGroup>
 	<RG.MessagePlantDiedOfHeat>{0} has died because of heat.</RG.MessagePlantDiedOfHeat>
 	<PerspectiveOres.Settings.Header>Any items checked here will be altered.</PerspectiveOres.Settings.Header>
 	<RG.EnableMakeCamp>Enable the "Make Camp" feature</RG.EnableMakeCamp>
@@ -75,6 +76,8 @@
 	
 	<SmartFarming.Icon.NoPettyJobs>No petty jobs</SmartFarming.Icon.NoPettyJobs>
 	<SmartFarming.Icon.NoPettyJobs.Desc>Pawns will not sow new plants to this zone unless there is enough work to do, configured in the settings.</SmartFarming.Icon.NoPettyJobs.Desc>
+	<SmartFarming.Settings.Enabled>Enable</SmartFarming.Settings.Enabled>
+	<SmartFarming.Settings.Enabled.Desc>Enable or disable smart farming.</SmartFarming.Settings.Enabled.Desc>
 	
 	<SmartFarming.Settings.ColdSowing>Allow cold sowing</SmartFarming.Settings.ColdSowing>
 	<SmartFarming.Settings.ColdSowing.Desc>Normally, the game does not allow sowing when the ground is frozen, even if the type of plant being sown tolerates freezing temperatures. Disable this to maintain vanilla rules.</SmartFarming.Settings.ColdSowing.Desc>

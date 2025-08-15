@@ -1,4 +1,4 @@
-﻿using RimWorld;
+using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +7,6 @@ using Verse;
 
 namespace ReGrowthCore
 {
-
     public class Zone_Bathe : Zone
     {
         public override bool IsMultiselectable => false;
@@ -20,6 +19,15 @@ namespace ReGrowthCore
         public Zone_Bathe(ZoneManager zoneManager)
             : base("RG.BatheZone".Translate(), zoneManager)
         {
+        }
+
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+            yield return new Command_Hide_ZoneBathing(this);
+            foreach (Gizmo gizmo in base.GetGizmos())
+            {
+                yield return gizmo;
+            }
         }
 
         public override string GetInspectString()

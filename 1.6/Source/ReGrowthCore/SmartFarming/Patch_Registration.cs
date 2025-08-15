@@ -11,6 +11,10 @@ namespace ReGrowthCore
     {
         static void Postfix(Zone __instance)
         {
+            if (!ReGrowthCore_SmartFarming.ModSettings.enabled)
+            {
+                return;
+            }
             try
             {
                 Zone_Growing growZone = __instance as Zone_Growing;

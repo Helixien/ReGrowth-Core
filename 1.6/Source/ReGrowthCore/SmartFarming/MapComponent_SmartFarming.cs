@@ -24,6 +24,10 @@ namespace ReGrowthCore
 		}
 		public override void FinalizeInit()
 		{
+			if (!ReGrowthCore_SmartFarming.ModSettings.enabled)
+			{
+				return;
+			}
 			//Quick cache
 			try
 			{
@@ -256,6 +260,10 @@ namespace ReGrowthCore
 
 		public override void MapComponentTick()
 		{
+			if (!ReGrowthCore_SmartFarming.ModSettings.enabled)
+			{
+				return;
+			}
 			if (++ticks == 2500) //Hourly
 			{
 				ticks = 0;

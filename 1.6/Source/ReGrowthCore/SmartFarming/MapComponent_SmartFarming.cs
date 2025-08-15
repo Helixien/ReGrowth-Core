@@ -24,10 +24,6 @@ namespace ReGrowthCore
 		}
 		public override void FinalizeInit()
 		{
-			if (!ReGrowthCore_SmartFarming.ModSettings.enabled)
-			{
-				return;
-			}
 			//Quick cache
 			try
 			{
@@ -58,17 +54,16 @@ namespace ReGrowthCore
 			//Find any missing zones (for when the mod is installed for an existing save)
 			foreach (Zone zone in map.zoneManager.AllZones)
 			{
-				Zone_Growing growZone = zone as Zone_Growing;
-				if (growZone != null && !growZoneRegistry.ContainsKey(growZone.ID))
+				if (zone is IPlantToGrowSettable && !growZoneRegistry.ContainsKey(zone.ID))
 				{
-					growZoneRegistry.Add(growZone.ID, new ZoneData());
-					growZoneRegistry[growZone.ID].Init(this, growZone);
-					CalculateAll(growZone);
+					growZoneRegistry.Add(zone.ID, new ZoneData());
+					growZoneRegistry[zone.ID].Init(this, zone);
+					CalculateAll(zone);
 				}
 			}
 
 			//Sanity check
-			var allValidZones = map.zoneManager.AllZones.Where(x => x is Zone_Growing).Select(y => y.ID);
+			var allValidZones = map.zoneManager.AllZones.Where(x => x is IPlantToGrowSettable).Select(y => y.ID);
 			foreach (var zoneData in growZoneRegistry.ToList())
 			{
 				int zoneID = zoneData.Key;
@@ -79,7 +74,7 @@ namespace ReGrowthCore
 				}
 				else
 				{
-					zoneData.Value.Init(this, map.zoneManager.AllZones.FirstOrDefault(x => x.ID == zoneID) as Zone_Growing);
+					zoneData.Value.Init(this, map.zoneManager.AllZones.FirstOrDefault(x => x.ID == zoneID));
 				}
 			}
 
@@ -87,7 +82,7 @@ namespace ReGrowthCore
 			var tmp2 = this.map.mapPawns.FreeColonistsAndPrisoners;
 		}
 
-		private void CalculateAverages(Zone_Growing zone, ZoneData zoneData)
+		private void CalculateAverages(Zone zone, ZoneData zoneData)
 		{
 			int numOfCells = zone.cells.Count, numOfPlants = 0, newPlants = 0;
 			float fertility = 0f, lowestFertility = 99f, growth = 0f;
@@ -102,7 +97,7 @@ namespace ReGrowthCore
 
 				//Plant tally
 				Plant plant = map.thingGrid.ThingAt(index, ThingCategory.Plant) as Plant;
-				if (plant != null && plant.def.index == zone.plantDefToGrow?.index)
+				if (plant != null && plant.def.index == (zone as IPlantToGrowSettable).GetPlantDefToGrow()?.index)
 				{
 					growth += plant.growthInt;
 					++numOfPlants;
@@ -121,13 +116,24 @@ namespace ReGrowthCore
 			if (zoneData.noPettyJobs && zoneData.sowMode != SowMode.Off)
 			{
 				float validPlants = numOfPlants - newPlants;
-				zone.allowSow = !(validPlants > 0 && 1 - (validPlants / (float)numOfCells) < ReGrowthCore_SmartFarming.ModSettings.pettyJobs);
+				var field = zone.GetType().GetField("allowSow");
+				if (field != null)
+				{
+					field.SetValue(zone, !(validPlants > 0 && 1 - (validPlants / (float)numOfCells) < ReGrowthCore_SmartFarming.ModSettings.pettyJobs));
+				}
 			}
 			//If not using petty jobs, validate the sowmode
-			else zone.allowSow = zoneData.sowMode != SowMode.Off;
+			else
+			{
+				var field = zone.GetType().GetField("allowSow");
+				if (field != null)
+				{
+					field.SetValue(zone, zoneData.sowMode != SowMode.Off);
+				}
+			}
 		}
 
-		private long CalculateDaysToHarvest(Zone_Growing zone, ZoneData zoneData, bool forSowing = false)
+		private long CalculateDaysToHarvest(Zone zone, ZoneData zoneData, bool forSowing = false)
 		{
 			//Check for toxic fallout first
 			if (map.gameConditionManager.ConditionIsActive(GameConditionDefOf.ToxicFallout) && !map.roofGrid.Roofed(zone.Position))
@@ -135,7 +141,7 @@ namespace ReGrowthCore
 				return -1;
 			}
 
-			ThingDef plant = zone.GetPlantDefToGrow();
+			ThingDef plant = (zone as IPlantToGrowSettable).GetPlantDefToGrow();
 			if (plant == null) return -1;
 
 			//Prepare variables
@@ -161,13 +167,13 @@ namespace ReGrowthCore
 			{
 				string reportPrint = simulationReport.Count > 0 ? ("\n" + string.Join("\n", simulationReport)) : "skipped";
 				report.Add(" - " + (forSowing ? "new sowing " : "") + "report for " +
-					zone.Position.ToString() + " (" + zone.plantDefToGrow?.defName + ") : " + reportPrint);
+					zone.Position.ToString() + " (" + (zone as IPlantToGrowSettable).GetPlantDefToGrow()?.defName + ") : " + reportPrint);
 			}
 
 			return simulatedGrowth == -1 ? -1 : (numOfDays * 60000) + Find.TickManager.TicksAbs;
 		}
 
-		int SimulateDay(int numOfDays, int simulatedGrowth, Zone_Growing zone, ThingDef plant, ZoneData zoneData, RimWorld.Planet.World world, int tile, List<string> simulationReport)
+		int SimulateDay(int numOfDays, int simulatedGrowth, Zone zone, ThingDef plant, ZoneData zoneData, RimWorld.Planet.World world, int tile, List<string> simulationReport)
 		{
 			int ticksOfLight = 32500; // 32500 = 60,000 ticks * .54167, only the hours this plant is "awake"
 
@@ -230,19 +236,19 @@ namespace ReGrowthCore
 			return (float)System.Math.Cos(6.2831855f * (num - worldAverage)) * -longitudeTuning;
 		}
 
-		void CalculateYield(Zone_Growing zone, ZoneData zoneData)
+		void CalculateYield(Zone zone, ZoneData zoneData)
 		{
 			//Reset
 			zoneData.nutritionYield = 0f;
-
-			if (zone.plantDefToGrow == null) return;
+			var plantDefToGrow = (zone as IPlantToGrowSettable).GetPlantDefToGrow();
+			if (plantDefToGrow == null) return;
 
 			//Fetch plant's produce
-			if (zone.plantDefToGrow.plant.harvestedThingDef == null) return;
+			if (plantDefToGrow.plant.harvestedThingDef == null) return;
 
 			//Calculate the yield
-			float num = zone.plantDefToGrow.plant.harvestYield * Current.gameInt.storyteller.difficulty.cropYieldFactor * zone.cells.Count;
-			if (zoneData.nutritionCache == 0) zoneData.nutritionCache = zone.plantDefToGrow?.plant?.harvestedThingDef?.GetStatValueAbstract(StatDefOf.Nutrition, null) ?? 0;
+			float num = plantDefToGrow.plant.harvestYield * Current.gameInt.storyteller.difficulty.cropYieldFactor * zone.cells.Count;
+			if (zoneData.nutritionCache == 0) zoneData.nutritionCache = plantDefToGrow?.plant?.harvestedThingDef?.GetStatValueAbstract(StatDefOf.Nutrition, null) ?? 0;
 			zoneData.nutritionYield = zoneData.nutritionCache * num;
 		}
 
@@ -278,13 +284,12 @@ namespace ReGrowthCore
 			report.Clear();
 			foreach (Zone zone in map.zoneManager.AllZones)
 			{
-				Zone_Growing growZone = zone as Zone_Growing;
-				if (growZone != null) CalculateAll(growZone, false);
+				if (zone is IPlantToGrowSettable) CalculateAll(zone, false);
 			}
 			if (ReGrowthCore_SmartFarming.ModSettings.logging && Prefs.DevMode) Log.Message("[Smart Farming] Simulation report: \n" + string.Join("\n", report));
 		}
 
-		public void CalculateAll(Zone_Growing zone, bool cacheNow = true)
+		public void CalculateAll(Zone zone, bool cacheNow = true)
 		{
 			if (growZoneRegistry.TryGetValue(zone.ID, out ZoneData zoneData))
 			{
@@ -301,10 +306,10 @@ namespace ReGrowthCore
 				zoneData.minHarvestDay = CalculateDaysToHarvest(zone, zoneData, false);
 				zoneData.minHarvestDayForNewlySown = CalculateDaysToHarvest(zone, zoneData, true);
 				CalculateYield(zone, zoneData);
-
+				var plantDefToGrow = (zone as IPlantToGrowSettable).GetPlantDefToGrow();
 				//Sanity check on alwaysSow in case settings were changed
-				if (ReGrowthCore_SmartFarming.ModSettings.coldSowing && zoneData.sowMode == SowMode.Smart && zone.plantDefToGrow != null && !zone.plantDefToGrow.plant.dieIfLeafless &&
-					(zone.plantDefToGrow.plant.forceIsTree || zone.plantDefToGrow.plant.harvestTag == "Wood"))
+				if (ReGrowthCore_SmartFarming.ModSettings.coldSowing && zoneData.sowMode == SowMode.Smart && plantDefToGrow != null && !plantDefToGrow.plant.dieIfLeafless &&
+					(plantDefToGrow.plant.forceIsTree || plantDefToGrow.plant.harvestTag == "Wood"))
 				{
 					zoneData.alwaysSow = true;
 				}
@@ -321,9 +326,10 @@ namespace ReGrowthCore
 			hour = GenDate.HourOfDay(Current.gameInt.tickManager.ticksGameInt, latitude);
 		}
 
-		public int HarvestNow(Zone_Growing zone, bool roofCheck = true, bool checkSensitivity = true)
+		public int HarvestNow(Zone zone, bool roofCheck = true, bool checkSensitivity = true)
 		{
-			ThingDef crop = zone?.plantDefToGrow;
+			if (zone == null) return 0;
+			ThingDef crop = (zone as IPlantToGrowSettable).GetPlantDefToGrow();
 			if (crop == null) return 0;
 
 			int result = 0;
@@ -348,9 +354,9 @@ namespace ReGrowthCore
 
 		public static void DrawFieldEdges(List<IntVec3> cells, int renderQueue, Zone zone)
 		{
-			if (zone is Zone_Growing gZone &&
+			if (zone is IPlantToGrowSettable &&
 				ReGrowthCore_SmartFarming.compCache.TryGetValue(Find.CurrentMap?.uniqueID ?? -1, out MapComponent_SmartFarming mapComp) &&
-				mapComp.growZoneRegistry.TryGetValue(gZone.ID, out ZoneData zoneData))
+				mapComp.growZoneRegistry.TryGetValue(zone.ID, out ZoneData zoneData))
 			{
 				UnityEngine.Color color;
 				switch (zoneData.priority)

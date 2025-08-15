@@ -7,14 +7,23 @@ using System.Text;
 using UnityEngine;
 using static ReGrowthCore.ZoneData;
 using Verse.AI;
+using System.Reflection;
+using System.Linq;
 
 namespace ReGrowthCore
 {
 	//This handles the zone gizmos
-	[HarmonyPatch(typeof(Zone_Growing), nameof(Zone_Growing.GetGizmos))]
+	[HarmonyPatch]
 	static class Patch_GetGizmos
 	{
-		static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> values, Zone_Growing __instance)
+		static IEnumerable<MethodBase> TargetMethods()
+		{
+			return typeof(Zone).AllSubclasses()
+				.Where(t => typeof(IPlantToGrowSettable).IsAssignableFrom(t))
+				.Select(t => AccessTools.DeclaredMethod(t, "GetGizmos"))
+				.Where(m => m != null);
+		}
+		static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> values, Zone __instance)
 		{
 			if (!ReGrowthCore_SmartFarming.ModSettings.enabled)
 			{
@@ -54,7 +63,7 @@ namespace ReGrowthCore
 				if (AllowHarvest.allowHarvestGizmoPatched) yield return zoneData.allowHarvestGizmo;
 
 				//Harvest now gizmo
-				ThingDef crop = __instance.plantDefToGrow;
+				ThingDef crop = (__instance as IPlantToGrowSettable).GetPlantDefToGrow();
 				if (crop == null) yield break;
 
 				if (HarvestNowGizmo(__instance, map, crop)) yield return zoneData.harvestGizmo;
@@ -64,7 +73,7 @@ namespace ReGrowthCore
 			}
 		}
 
-		static bool HarvestNowGizmo(Zone_Growing zone, Map map, ThingDef plantDefToGrow)
+		static bool HarvestNowGizmo(Zone zone, Map map, ThingDef plantDefToGrow)
 		{
 			var cells = zone.cells;
 			var thingGrid = map.thingGrid;
@@ -79,14 +88,14 @@ namespace ReGrowthCore
 			return false;
 		}
 
-		static IEnumerable<Gizmo> GetMultiZoneGizmos(MapComponent_SmartFarming comp, ZoneData zoneData, Zone_Growing thisZone)
+		static IEnumerable<Gizmo> GetMultiZoneGizmos(MapComponent_SmartFarming comp, ZoneData zoneData, Zone thisZone)
 		{
 			ZoneData basisZoneData = zoneData;
-			Zone_Growing basisZone = null;
+			Zone basisZone = null;
 			var selected = Find.Selector.selected;
 			for (int i = selected.Count; i-- > 0;)
 			{
-				if (selected[i] is Zone_Growing growZone && comp.growZoneRegistry.TryGetValue(growZone.ID, out basisZoneData))
+				if (selected[i] is Zone growZone && growZone is IPlantToGrowSettable && comp.growZoneRegistry.TryGetValue(growZone.ID, out basisZoneData))
 				{
 					basisZone = growZone;
 					break;
@@ -113,7 +122,7 @@ namespace ReGrowthCore
 					var selectedZones = Find.Selector.SelectedObjects;
 					foreach (var obj in selectedZones)
 					{
-						if (obj is Zone_Growing growZone && comp.growZoneRegistry.TryGetValue(growZone.ID, out ZoneData data))
+						if (obj is Zone growZone && growZone is IPlantToGrowSettable && comp.growZoneRegistry.TryGetValue(growZone.ID, out ZoneData data))
 						{
 							data.SwitchSowMode(comp, growZone, newMode);
 						}
@@ -133,7 +142,7 @@ namespace ReGrowthCore
 					var selectedZones = Find.Selector.SelectedObjects;
 					foreach (var obj in selectedZones)
 					{
-						if (obj is Zone_Growing growZone && comp.growZoneRegistry.TryGetValue(growZone.ID, out ZoneData data))
+						if (obj is Zone growZone && growZone is IPlantToGrowSettable && comp.growZoneRegistry.TryGetValue(growZone.ID, out ZoneData data))
 						{
 							data.SwitchPriority(newPriority);
 						}
@@ -182,8 +191,8 @@ namespace ReGrowthCore
 		static bool Prefix(Pawn pawn, IntVec3 c)
 		{
 			var map = pawn.Map;
-			Zone_Growing zone = map.zoneManager.zoneGrid[c.z * map.info.sizeInt.x + c.x] as Zone_Growing;
-			if (zone != null && ReGrowthCore_SmartFarming.compCache.TryGetValue(map.uniqueID, out MapComponent_SmartFarming comp) && comp.growZoneRegistry.TryGetValue(zone.ID, out ZoneData zoneData))
+			var zone = map.zoneManager.zoneGrid[c.z * map.info.sizeInt.x + c.x];
+			if (zone != null && zone is IPlantToGrowSettable && ReGrowthCore_SmartFarming.compCache.TryGetValue(map.uniqueID, out MapComponent_SmartFarming comp) && comp.growZoneRegistry.TryGetValue(zone.ID, out ZoneData zoneData))
 			{
 				switch (zoneData.sowMode)
 				{
@@ -210,11 +219,18 @@ namespace ReGrowthCore
 	}
 
 	//This adds information to the inspector window
-	[HarmonyPatch(typeof(Zone_Growing), nameof(Zone_Growing.GetInspectString))]
+	[HarmonyPatch]
 	static class Patch_GetInspectString
 	{
+		static IEnumerable<MethodBase> TargetMethods()
+		{
+			return typeof(Zone).AllSubclasses()
+				.Where(t => typeof(IPlantToGrowSettable).IsAssignableFrom(t))
+				.Select(t => AccessTools.DeclaredMethod(t, "GetInspectString"))
+				.Where(m => m != null);
+		}
 		static float totalHungerRate = 0f;
-		static string Postfix(string __result, Zone_Growing __instance)
+		static string Postfix(string __result, Zone __instance)
 		{
 			Map map = __instance.Map;
 			if (ReGrowthCore_SmartFarming.compCache.TryGetValue(map.uniqueID, out MapComponent_SmartFarming mapComp) && mapComp.growZoneRegistry.TryGetValue(__instance.ID, out ZoneData zoneData))
@@ -234,7 +250,7 @@ namespace ReGrowthCore
 				}
 
 				StringBuilder builder = new StringBuilder(__result, 10);
-				if (zoneData.averageGrowth < __instance.plantDefToGrow?.plant.harvestMinGrowth)
+				if (zoneData.averageGrowth < (__instance as IPlantToGrowSettable).GetPlantDefToGrow()?.plant.harvestMinGrowth)
 				{
 					if (zoneData.minHarvestDay > 0)
 					{
@@ -251,7 +267,7 @@ namespace ReGrowthCore
 					builder.Append(ResourceBank.yield);
 					builder.Append(Math.Round(zoneData.nutritionYield, 2));
 				}
-				if (__instance.plantDefToGrow?.plant.harvestedThingDef?.ingestible?.HumanEdible ?? false)
+				if ((__instance as IPlantToGrowSettable).GetPlantDefToGrow()?.plant.harvestedThingDef?.ingestible?.HumanEdible ?? false)
 					builder.Append("SmartFarming.Inspector.DaysWorth".Translate(Math.Round(zoneData.nutritionYield * ReGrowthCore_SmartFarming.ModSettings.processedFoodFactor / totalHungerRate, 2)));
 
 				return builder.ToString();
@@ -287,7 +303,7 @@ namespace ReGrowthCore
 		{
 			Map map = __instance.Map;
 			if (__instance.def.plant.dieIfLeafless && ReGrowthCore_SmartFarming.compCache.TryGetValue(map.uniqueID, out MapComponent_SmartFarming mapComp) &&
-				map.zoneManager.ZoneAt(__instance.Position) is Zone_Growing zone)
+				map.zoneManager.ZoneAt(__instance.Position) is Zone zone && zone is IPlantToGrowSettable)
 			{
 				mapComp.HarvestNow(zone);
 			}
@@ -327,9 +343,9 @@ namespace ReGrowthCore
 	{
 		static bool Prefix(Zone __instance)
 		{
-			return !(__instance is Zone_Growing zone &&
-			ReGrowthCore_SmartFarming.compCache.TryGetValue(zone.zoneManager.map.uniqueID, out MapComponent_SmartFarming mapComp) &&
-			mapComp.growZoneRegistry.TryGetValue(zone.ID, out ZoneData zoneData) && zoneData.isMerged);
+			return !(__instance is IPlantToGrowSettable &&
+			ReGrowthCore_SmartFarming.compCache.TryGetValue(__instance.zoneManager.map.uniqueID, out MapComponent_SmartFarming mapComp) &&
+			mapComp.growZoneRegistry.TryGetValue(__instance.ID, out ZoneData zoneData) && zoneData.isMerged);
 		}
 	}
 }

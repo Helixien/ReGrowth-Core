@@ -25,26 +25,40 @@
 				</value>
 			</li>
 			<!-- ================================ HD Moss Gauranlen ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_MossGauranlen"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Plant/RG_GauranlenMoss</texPath>
-				</value>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Ideology Expanded - Anima Theme</li>
+				</mods>
+				<nomatch Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Plant_MossGauranlen"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Plant/RG_GauranlenMoss</texPath>
+					</value>
+				</nomatch>
 			</li>
 			<!-- ================================ HD Gauranlen Tree ====================== -->
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Plant/RG_GauranlenTree</texPath>
-				</value>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Ideology Expanded - Anima Theme</li>
+				</mods>
+				<nomatch Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Plant/RG_GauranlenTree</texPath>
+					</value>
+				</nomatch>
 			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/plant/immatureGraphicPath</xpath>
-				<value>
-					<immatureGraphicPath>Things/Plant/_Immature/RG_GauranlenTree_Immature</immatureGraphicPath>
-				</value>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Ideology Expanded - Anima Theme</li>
+				</mods>
+				<nomatch Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="Plant_TreeGauranlen"]/plant/immatureGraphicPath</xpath>
+					<value>
+						<immatureGraphicPath>Things/Plant/_Immature/RG_GauranlenTree_Immature</immatureGraphicPath>
+					</value>
+				</nomatch>
 			</li>
-
 		</operations>
 	</Operation>
 </Patch>

@@ -253,6 +253,17 @@
 						<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1.2</Plant_Reeds>
 						<Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_LilyPad>
 						<Plant_Lotus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_Lotus>
+						<!-- ================ New plants ================ -->
+						<RG_Plant_TropicalIvy>1.5</RG_Plant_TropicalIvy>
+						<RG_Plant_TropicalFern>0.8</RG_Plant_TropicalFern>
+						<RG_Plant_TropicalChokevine>1.5</RG_Plant_TropicalChokevine>
+						<RG_Plant_Oxalis>0.4</RG_Plant_Oxalis>
+						<RG_Plant_Plumeria>0.4</RG_Plant_Plumeria>
+						<RG_Plant_Tidalis>0.8</RG_Plant_Tidalis>
+						<!--<RG_Plant_Bromeliad>0.6</RG_Plant_Bromeliad>-->
+						<RG_NeoAmanita>0.025</RG_NeoAmanita>
+						<RG_Plant_TreeDwarfPalm>0.5</RG_Plant_TreeDwarfPalm>
+						<RG_Plant_TallPalmTree>0.05</RG_Plant_TallPalmTree>
 					</wildPlants>
 				</value>
 			</li>
@@ -281,6 +292,16 @@
 						<Plant_LilyPad MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_LilyPad>
 						<Plant_Lotus MayRequire="Ludeon.RimWorld.Odyssey">0.1</Plant_Lotus>
 						<!-- ================ New plants ================ -->
+						<RG_Plant_TropicalIvy>1.5</RG_Plant_TropicalIvy>
+						<RG_Plant_TropicalFern>0.8</RG_Plant_TropicalFern>
+						<RG_Plant_TropicalChokevine>1.5</RG_Plant_TropicalChokevine>
+						<RG_Plant_Oxalis>0.4</RG_Plant_Oxalis>
+						<RG_Plant_Plumeria>0.4</RG_Plant_Plumeria>
+						<RG_Plant_Tidalis>0.8</RG_Plant_Tidalis>
+						<!--<RG_Plant_Bromeliad>0.6</RG_Plant_Bromeliad>-->
+						<RG_NeoAmanita>0.025</RG_NeoAmanita>
+						<RG_Plant_TreeDwarfPalm>0.5</RG_Plant_TreeDwarfPalm>
+						<RG_Plant_TallPalmTree>0.05</RG_Plant_TallPalmTree>
 						<RG_Plant_SwampPod>0.05</RG_Plant_SwampPod>
 					</wildPlants>
 				</value>

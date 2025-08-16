@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<!-- ================ Glowforest ================ -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "Glowforest"]/wildPlants</xpath>
+				<value>
+					<wildPlants>
+						<Plant_Timbershroom>0.2</Plant_Timbershroom>
+						<Plant_Nightgrass>6.0</Plant_Nightgrass>
+						<Boomshroom>0.01</Boomshroom>
+						<Plant_Willowgill>0.2</Plant_Willowgill>
+						<Glowstool>0.01</Glowstool>
+						<Agarilux>0.01</Agarilux>
+						<Bryolux>0.05</Bryolux>
+						<Plant_Psilocap>0.01</Plant_Psilocap>
+						<Plant_NightRafflesia>0.01</Plant_NightRafflesia>
+						<!-- ================ New plants ================ -->
+						<!--<RG_Plant_Parashroom>0.005</RG_Plant_Parashroom>-->
+						<RG_Plant_Nightguide>0.1</RG_Plant_Nightguide>
+					</wildPlants>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

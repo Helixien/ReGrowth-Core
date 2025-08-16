@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--=============== Tropical Ivy ==============-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_TropicalIvy</defName>
+		<label>ivy</label>
+		<description>Wild ivy with leafs that grows in patches of leaves in areas of tropical temperatures.</description>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>0.6</Flammability>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RG_TropicalIvy</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.2</fertilitySensitivity>
+			<growDays>15</growDays>
+			<leaflessGraphicPath>Things/Plant/_Leafless/RG_TropicalIvy_Leafless</leaflessGraphicPath>
+			<harvestWork>75</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<visualSizeRange>0.7~1.2</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	<!--=============== Tropical Fern ==============-->
+	<ThingDef ParentName="BushBase">
+		<defName>RG_Plant_TropicalFern</defName>
+		<label>fern</label>
+		<description>A short shrub with long, fine leaves. Grows in tropical areas.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_TropicalFern</texPath>
+			<drawSize>1.15</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconScale>0.85</uiIconScale>
+		<plant>
+			<growDays>3</growDays>
+			<leaflessGraphicPath>Things/Plant/_Leafless/RG_TropicalFern_Leafless</leaflessGraphicPath>
+			<harvestWork>75</harvestWork>
+		</plant>
+	</ThingDef>
+	<!--=============== Tropical Chokevine ==============-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_TropicalChokevine</defName>
+		<label>chokevine</label>
+		<description>Tangled masses of cord-like, spiky vines which coil in great masses along the ground. Chokevine greatly slows down anyone who moves over it. Multiple tribes have independently generated stories of chokevine strangling children to death in the night, as a way to scare kids into coming home before dark.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<pathCost>42</pathCost>
+		<graphicData>
+			<texPath>Things/Plant/RG_TropicalChokevine</texPath>
+			<drawSize>2.25</drawSize>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>5</growDays>
+			<harvestWork>150</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<leaflessGraphicPath>Things/Plant/_Leafless/RG_Chokevine_Leafless</leaflessGraphicPath>
+			<pollutedGraphicPath>Things/Plant/_Polluted/RG_Chokevine_Polluted</pollutedGraphicPath>
+			<visualSizeRange>0.78~0.88</visualSizeRange>
+			<topWindExposure>0.16</topWindExposure>
+			<wildClusterRadius>6</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<pollution>Any</pollution>
+		</plant>
+	</ThingDef>
+	<!--=============== Tidalis ==============-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_Tidalis</defName>
+		<label>tidalis</label>
+		<description>A genetically altered version of common ivy crossed with a tropical flower adapted to thrive in tropical areas.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_Tidalis</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>0.6</Flammability>
+			<Nutrition>0.15</Nutrition>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+		</statBases>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.2</fertilitySensitivity>
+			<growDays>15</growDays>
+			<harvestWork>75</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>4</wildClusterWeight>
+			<visualSizeRange>0.25~0.75</visualSizeRange>
+			<topWindExposure>0.25</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	<!--=============== Bromeliad ==============-->
+<!--	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_Bromeliad</defName>
+		<label>bromeliad</label>
+		<description>A beautiful flower with broad leaves which grows in large clusters.</description>
+		<graphicData>
+			<texPath>Things/Plant/Bromeliad</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1.15</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>0.6</Flammability>
+			<Nutrition>0.15</Nutrition>
+			<Beauty>3</Beauty>
+			<BeautyOutdoors>3</BeautyOutdoors>
+		</statBases>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.2</fertilitySensitivity>
+			<growDays>15</growDays>
+			<harvestWork>75</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>4</wildClusterWeight>
+			<visualSizeRange>0.25~0.65</visualSizeRange>
+			<topWindExposure>0.25</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>-->
+	<!--=============== Tropical Oxalis ==============-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_Oxalis</defName>
+		<label>oxalis</label>
+		<description>A small purple flower which grows in large clusters.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.18</Nutrition>
+			<Beauty>5</Beauty>
+			<BeautyOutdoors>5</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RG_TropicalOxalis</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<sowResearchPrerequisites/>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.3~0.4</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	<!--=============== Plumeria ==============-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_Plumeria</defName>
+		<label>plumeria</label>
+		<description>A soft	velvety flower which grows in large clusters.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<BeautyOutdoors>4</BeautyOutdoors>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/RG_Plumeria</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<sowResearchPrerequisites/>
+			<growDays>2.5</growDays>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<fertilityMin>0.05</fertilityMin>
+			<maxMeshCount>25</maxMeshCount>
+			<visualSizeRange>0.3~0.4</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<purpose>Beauty</purpose>
+		</plant>
+	</ThingDef>
+	<!--=============== Tropical Brambles ==============-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_Plant_TropicalBrambles</defName>
+		<label>brambles</label>
+		<description>Tangled, thorny, woody shoots covered with leaves. Brambles grow in clusters, and slow down anyone moving over them.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<pathCost>15</pathCost>
+		<graphicData>
+			<texPath>Things/Plant/RG_TropicalBrambles</texPath>
+			<drawSize>1.7</drawSize>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<leaflessGraphicPath>Things/Plant/_Leafless/RG_Brambles_Leafless</leaflessGraphicPath>
+			<pollutedGraphicPath>Things/Plant/_Polluted/RG_Chokevine_Polluted</pollutedGraphicPath>
+			<visualSizeRange>0.7~0.85</visualSizeRange>
+			<topWindExposure>0.15</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+		</plant>
+	</ThingDef>
+	<!--=============== Neo Amanita ==============-->
+	<ThingDef ParentName="PlantBase">
+		<defName>RG_NeoAmanita</defName>
+		<label>neo amanita</label>
+		<description>A genetically engineered version of the common amanita to be save for human consumption growing in clusters. It grows exclusively in tropical regions.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_NeoAmanita</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Nutrition>0.4</Nutrition>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>15</pathCost>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.04</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>16</growDays>
+			<maxMeshCount>4</maxMeshCount>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>28</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawFungus</harvestedThingDef>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>0.5~0.7</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<purpose>Food</purpose>
+		</plant>
+	</ThingDef>
+	<!--=============== Dwarf Palm Tree ==============-->
+	<ThingDef ParentName="TreeBase">
+		<defName>RG_Plant_TreeDwarfPalm</defName>
+		<label>dwarf palm tree</label>
+		<description>A short tropical tree with a naked trunk topped by a cluster of very broad leaves.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_TreeTinyPalm</texPath>
+			<drawSize>1</drawSize>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+				<offset>(0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<BeautyOutdoors>1</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>6</growDays>
+			<harvestWork>205</harvestWork>
+			<harvestYield>5</harvestYield>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>11</wildClusterWeight>
+			<topWindExposure>0.15</topWindExposure>
+		</plant>
+		<ingestible/>
+	</ThingDef>
+	<!--=============== Tall Palm Tree ==============-->
+	<ThingDef ParentName="TreeBase">
+		<defName>RG_Plant_TallPalmTree</defName>
+		<label>palm tree</label>
+		<description>A tropical tree with a long naked trunk topped by a cluster of very broad leaves. Unfortunately, this variety doesn't produce any edible coconuts.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_TreeTallPalm</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.05, 0.6, 0.15)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<BeautyOutdoors>2</BeautyOutdoors>
+		</statBases>
+		<plant>
+			<growDays>48</growDays>
+			<visualSizeRange>2.0~3.0</visualSizeRange>
+			<harvestWork>1100</harvestWork>
+			<harvestYield>32</harvestYield>
+			<immatureGraphicPath>Things/Plant/_Immature/RG_TreePalm_Immature</immatureGraphicPath>
+		</plant>
+	</ThingDef>
+</Defs>

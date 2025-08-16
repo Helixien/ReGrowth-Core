@@ -29,6 +29,13 @@
 					<texPath>Things/Plant/RG_Dandelion</texPath>
 				</value>
 			</li>
+			<!-- ================================ HD Clivia ====================== -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_Clivia"]/graphicData/texPath</xpath>
+				<value>
+					<texPath>Things/Plant/RG_Clivia</texPath>
+				</value>
+			</li>
 			<!-- ================================ HD Moss ====================== -->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="Plant_Moss"]/graphicData/texPath</xpath>

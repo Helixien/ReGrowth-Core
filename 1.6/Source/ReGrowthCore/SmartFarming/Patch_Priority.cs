@@ -26,7 +26,7 @@ namespace ReGrowthCore
 			if (!ReGrowthCore_SmartFarming.agriWorkTypes.Contains(__instance.def.index)) return __result;
 
 			Map map = pawn.Map;
-			var zone = map.zoneManager.zoneGrid[t.cellInt.z * map.info.sizeInt.x + t.cellInt.x] as Zone_Growing;
+			var zone = map.zoneManager.zoneGrid[t.cellInt.z * map.info.sizeInt.x + t.cellInt.x];
 
 			if (zone == null)
 			{

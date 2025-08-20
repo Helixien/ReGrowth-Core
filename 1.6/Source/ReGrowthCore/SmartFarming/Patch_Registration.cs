@@ -2,6 +2,10 @@ using HarmonyLib;
 using Verse;
 using RimWorld;
 using RimWorld.Planet;
+using System.Collections.Generic;
+using System.Reflection;
+using System;
+using System.Linq;
 
 namespace ReGrowthCore
 {
@@ -17,17 +21,16 @@ namespace ReGrowthCore
             }
             try
             {
-                Zone_Growing growZone = __instance as Zone_Growing;
                 if
                 (
-                    growZone != null && //Is a grow zone?
-                    ReGrowthCore_SmartFarming.compCache.TryGetValue(growZone.Map?.uniqueID ?? -1, out MapComponent_SmartFarming comp) && //Can find map component?
+                    __instance is IPlantToGrowSettable && //Is a grow zone?
+                    ReGrowthCore_SmartFarming.compCache.TryGetValue(__instance.Map?.uniqueID ?? -1, out MapComponent_SmartFarming comp) && //Can find map component?
                     !comp.growZoneRegistry.ContainsKey(__instance.ID) //Zone data not yet made?
                 )
                 {
-                    comp.growZoneRegistry.Add(growZone.ID, new ZoneData());
-                    comp.growZoneRegistry[growZone.ID].Init(comp, growZone);
-                    if (Prefs.DevMode && ReGrowthCore_SmartFarming.ModSettings.logging) Log.Message("Zone ID " + growZone.ID + " registered.");
+                    comp.growZoneRegistry.Add(__instance.ID, new ZoneData());
+                    comp.growZoneRegistry[__instance.ID].Init(comp, __instance);
+                    if (Prefs.DevMode && ReGrowthCore_SmartFarming.ModSettings.logging) Log.Message("Zone ID " + __instance.ID + " registered.");
                 }
             }
             catch (System.Exception ex)
@@ -43,15 +46,22 @@ namespace ReGrowthCore
     {
         static void Prefix(Zone __instance)
         {
-            if (__instance is Zone_Growing) ReGrowthCore_SmartFarming.compCache.TryGetValue(__instance.Map?.uniqueID ?? -1)?.growZoneRegistry?.Remove(__instance.ID);
+            if (__instance is IPlantToGrowSettable) ReGrowthCore_SmartFarming.compCache.TryGetValue(__instance.Map?.uniqueID ?? -1)?.growZoneRegistry?.Remove(__instance.ID);
         }
     }
 
     //Change plant type
-    [HarmonyPatch(typeof(Zone_Growing), nameof(Zone_Growing.SetPlantDefToGrow))]
+    [HarmonyPatch]
     static class Patch_SetPlantDefToGrow
     {
-        static void Postfix(Zone_Growing __instance)
+        static IEnumerable<MethodBase> TargetMethods()
+        {
+            return typeof(Zone).AllSubclasses()
+                .Where(t => typeof(IPlantToGrowSettable).IsAssignableFrom(t))
+                .Select(t => AccessTools.DeclaredMethod(t, "SetPlantDefToGrow"))
+                .Where(m => m != null);
+        }
+        static void Postfix(Zone __instance)
         {
             if (ReGrowthCore_SmartFarming.compCache.TryGetValue(__instance.zoneManager.map.uniqueID, out MapComponent_SmartFarming mapComp))
             {
@@ -61,10 +71,17 @@ namespace ReGrowthCore
     }
 
     //Zone expand
-    [HarmonyPatch(typeof(Zone_Growing), nameof(Zone_Growing.AddCell))]
+    [HarmonyPatch]
     static class Patch_AddCell
     {
-        static void Postfix(Zone_Growing __instance)
+        static IEnumerable<MethodBase> TargetMethods()
+        {
+            return typeof(Zone).AllSubclasses()
+                .Where(t => typeof(IPlantToGrowSettable).IsAssignableFrom(t))
+                .Select(t => AccessTools.DeclaredMethod(t, "AddCell"))
+                .Where(m => m != null);
+        }
+        static void Postfix(Zone __instance)
         {
             if (ReGrowthCore_SmartFarming.compCache.TryGetValue(__instance.zoneManager.map.uniqueID, out MapComponent_SmartFarming mapComp))
             {
@@ -80,10 +97,10 @@ namespace ReGrowthCore
     {
         static void Postfix(Zone __instance)
         {
-            if (__instance is Zone_Growing zone && zone.cells.Count > 0 && ReGrowthCore_SmartFarming.compCache.TryGetValue(zone.zoneManager.map.uniqueID, out MapComponent_SmartFarming mapComp))
+            if (__instance is IPlantToGrowSettable && __instance.cells.Count > 0 && ReGrowthCore_SmartFarming.compCache.TryGetValue(__instance.zoneManager.map.uniqueID, out MapComponent_SmartFarming mapComp))
             {
-                mapComp.CalculateAll(zone);
-                if (mapComp.growZoneRegistry.TryGetValue(zone.ID, out ZoneData zoneData)) zoneData.CalculateCornerCell(zone);
+                mapComp.CalculateAll(__instance);
+                if (mapComp.growZoneRegistry.TryGetValue(__instance.ID, out ZoneData zoneData)) zoneData.CalculateCornerCell(__instance);
             }
         }
     }

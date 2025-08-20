@@ -45,7 +45,7 @@ namespace ReGrowthCore
 			Scribe_Values.Look<bool>(ref allowHarvest, "allowHarvest", true);
 			Scribe_Values.Look<bool>(ref orchardAlignment, "orchardAlignment");
 		}
-		public void Init(MapComponent_SmartFarming comp, Zone_Growing zone)
+		public void Init(MapComponent_SmartFarming comp, Zone zone)
 		{
 			sowGizmo = new Command_Action()
 			{
@@ -102,7 +102,7 @@ namespace ReGrowthCore
 			UpdateGizmos();
 			CalculateCornerCell(zone);
 		}
-		public void SwitchSowMode(MapComponent_SmartFarming comp, Zone_Growing zone, SowMode? hardSet = null)
+		public void SwitchSowMode(MapComponent_SmartFarming comp, Zone zone, SowMode? hardSet = null)
 		{
 			SoundDefOf.Click.PlayOneShotOnCamera(null);
 			if (hardSet != null)
@@ -119,8 +119,11 @@ namespace ReGrowthCore
 					default: sowMode = SowMode.On; break;
 				}
 			}
-
-			zone.allowSow = sowMode != SowMode.Off;
+			var field = zone.GetType().GetField("allowSow");
+			if (field != null)
+			{
+				field.SetValue(zone, sowMode != SowMode.Off);
+			}
 			if (sowMode == SowMode.Smart)
 			{
 				comp.CalculateAll(zone);
@@ -166,7 +169,7 @@ namespace ReGrowthCore
 					break;
 			}
 		}
-		public void CalculateCornerCell(Zone_Growing zone)
+		public void CalculateCornerCell(Zone zone)
 		{
 			int southMost = Int16.MaxValue, westMost = Int16.MaxValue;
 			var cells = zone.cells;
@@ -178,7 +181,7 @@ namespace ReGrowthCore
 			}
 			this.cornerCell = new IntVec3(southMost, 0, westMost);
 		}
-		public void MergeZones(Zone_Growing thisZone, Zone_Growing otherZone)
+		public void MergeZones(Zone thisZone, Zone otherZone)
 		{
 			if (thisZone == otherZone)
 			{

@@ -33,7 +33,7 @@ namespace ReGrowthCore
 		static ReGrowthCore_SmartFarming()
 		{
 			agriWorkTypes = DefDatabase<WorkGiverDef>.AllDefsListForReading
-				.Where(x => x.defName == "GrowerHarvest" || x.defName == "GrowerSow")
+				.Where(x => x.workType == WorkTypeDefOf.Growing)
 				.Select(y => y.index)
 				.ToHashSet();
 		}

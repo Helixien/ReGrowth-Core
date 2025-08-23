@@ -305,6 +305,26 @@
 			</li>
 		</operations>
 	</Operation>
+	<!-- ================ Replantable Archean Tree ================ -->
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>False</defaultValue>
+		<label>Make archean tree replantable</label>
+		<tooltip>Allows for the archean  tree to be replanted. Might lead to errors if used with another mod that does the same thing. (Default: False)</tooltip>
+		<id>RG_ArcheanTreeReplant</id>
+		<category>RG_Core</category>
+		<order>63</order>
+		<mods>
+			<li>Odyssey</li>
+		</mods>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="Plant_TreeArchean"]/minifiedDef</xpath>
+				<value>
+					<minifiedDef>MinifiedTree</minifiedDef>
+				</value>
+			</li>
+		</operations>
+	</Operation>
 	<!-- ================ Realistic Faction Placement ================ -->
 	<Operation Class="ModSettingsFramework.PatchOperationModOption">
 		<defaultValue>True</defaultValue>

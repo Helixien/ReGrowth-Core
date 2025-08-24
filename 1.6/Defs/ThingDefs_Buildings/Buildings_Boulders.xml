@@ -13,7 +13,7 @@
 		<rotatable>false</rotatable>
 		<saveCompressible>true</saveCompressible>
 		<coversFloor>false</coversFloor>
-		<castEdgeShadows>true</castEdgeShadows>
+		<castEdgeShadows>false</castEdgeShadows>
 		<blockWind>true</blockWind>
 		<canOverlapZones>false</canOverlapZones>
 		<fertility>0</fertility>

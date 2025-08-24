@@ -27,6 +27,7 @@
 			<maxGrowthTemperature>75</maxGrowthTemperature>
 		</plant>
 	</ThingDef>
+	<!--====================================== Tall Grass Base ======================================== -->
 	<ThingDef Name="RG_TallGrassBase" ParentName="PlantBase" Abstract="True">
 		<label>tall grass</label>
 		<statBases>
@@ -53,6 +54,64 @@
 			<leaflessGraphicPath>Things/Plant/_Leafless/RG_Grass_Leafless</leaflessGraphicPath>
 			<pollutedGraphicPath>Things/Plant/_Polluted/RG_Grass_Polluted</pollutedGraphicPath>
 			<maxGrowthTemperature>75</maxGrowthTemperature>
+		</plant>
+	</ThingDef>
+	<!--====================================== Brambles Base ======================================== -->
+	<ThingDef Name="RG_BramblesBase" ParentName="PlantBase" Abstract="True">
+		<label>brambles</label>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0.50</Nutrition>
+		</statBases>
+		<pathCost>14</pathCost>
+		<graphicData>
+			<drawSize>1.7</drawSize>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<fertilitySensitivity>0.7</fertilitySensitivity>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<leaflessGraphicPath>Things/Plant/_Leafless/RG_Brambles_Leafless</leaflessGraphicPath>
+			<pollutedGraphicPath>Things/Plant/_Polluted/RG_Brambles_Polluted</pollutedGraphicPath>
+			<visualSizeRange>0.7~0.85</visualSizeRange>
+			<topWindExposure>0.15</topWindExposure>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>200</wildClusterWeight>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<pollution>Any</pollution>
+		</plant>
+	</ThingDef>
+	<!--====================================== Carpet Plant Base ======================================== -->
+	<ThingDef Name="RG_CarpetScrubsBase" ParentName="PlantBase" Abstract="True">
+		<label>carpet scrubs</label>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>0.6</Flammability>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
+		<ingestible/>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.2</fertilitySensitivity>
+			<growDays>5</growDays>
+			<harvestWork>50</harvestWork>
+			<leaflessGraphicPath>Things/Plant/_Leafless/RG_CarpetScrubs_Leafless</leaflessGraphicPath>
+			<pollutedGraphicPath>Things/Plant/_Polluted/RG_CarpetScrubs_Polluted</pollutedGraphicPath>
+			<maxMeshCount>16</maxMeshCount>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>8</wildClusterWeight>
+			<visualSizeRange>0.5~0.9</visualSizeRange>
+			<topWindExposure>0.2</topWindExposure>
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
 </Defs>

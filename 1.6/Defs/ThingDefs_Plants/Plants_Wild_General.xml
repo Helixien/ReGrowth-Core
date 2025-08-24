@@ -8,11 +8,20 @@
 			<texPath>Things/Plant/RG_Grass</texPath>
 		</graphicData>
 	</ThingDef>
+	<!--====================================== Tall Grass ======================================== -->
 	<ThingDef ParentName="RG_TallGrassBase">
 		<defName>Plant_TallGrass</defName>
 		<description>Wild tall grass. Slows down anyone moving over it.</description>
 		<graphicData>
 			<texPath>Things/Plant/RG_Grass</texPath>
+		</graphicData>
+	</ThingDef>
+	<!--====================================== Brambles ======================================== -->
+	<ThingDef ParentName="RG_BramblesBase" Name="Plant_Brambles">
+		<defName>Plant_Brambles</defName>
+		<description>Tangled, thorny, woody shoots covered with leaves. Brambles grow in clusters, and slow down anyone moving over them.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_Brambles</texPath>
 		</graphicData>
 	</ThingDef>
 </Defs>

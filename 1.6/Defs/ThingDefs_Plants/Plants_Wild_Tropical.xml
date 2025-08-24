@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<!--=============== Tropical Brambles ==============-->
+	<ThingDef ParentName="RG_BramblesBase">
+		<defName>RG_Plant_TropicalBrambles</defName>
+		<description>Tangled, thorny, woody shoots covered with leaves. Brambles grow in clusters, and slow down anyone moving over them.</description>
+		<graphicData>
+			<texPath>Things/Plant/RG_TropicalBrambles</texPath>
+		</graphicData>
+	</ThingDef>
 	<!--=============== Tropical Ivy ==============-->
 	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_TropicalIvy</defName>
@@ -114,7 +122,7 @@
 		</plant>
 	</ThingDef>
 	<!--=============== Bromeliad ==============-->
-<!--	<ThingDef ParentName="PlantBase">
+	<!--	<ThingDef ParentName="PlantBase">
 		<defName>RG_Plant_Bromeliad</defName>
 		<label>bromeliad</label>
 		<description>A beautiful flower with broad leaves which grows in large clusters.</description>
@@ -213,37 +221,6 @@
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
 			<purpose>Beauty</purpose>
-		</plant>
-	</ThingDef>
-	<!--=============== Tropical Brambles ==============-->
-	<ThingDef ParentName="PlantBase">
-		<defName>RG_Plant_TropicalBrambles</defName>
-		<label>brambles</label>
-		<description>Tangled, thorny, woody shoots covered with leaves. Brambles grow in clusters, and slow down anyone moving over them.</description>
-		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Nutrition>0.2</Nutrition>
-		</statBases>
-		<pathCost>15</pathCost>
-		<graphicData>
-			<texPath>Things/Plant/RG_TropicalBrambles</texPath>
-			<drawSize>1.7</drawSize>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<ingestible/>
-		<plant>
-			<fertilitySensitivity>0.7</fertilitySensitivity>
-			<growDays>3</growDays>
-			<harvestWork>60</harvestWork>
-			<maxMeshCount>4</maxMeshCount>
-			<leaflessGraphicPath>Things/Plant/_Leafless/RG_Brambles_Leafless</leaflessGraphicPath>
-			<pollutedGraphicPath>Things/Plant/_Polluted/RG_Chokevine_Polluted</pollutedGraphicPath>
-			<visualSizeRange>0.7~0.85</visualSizeRange>
-			<topWindExposure>0.15</topWindExposure>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>200</wildClusterWeight>
-			<wildOrder>1</wildOrder>
-			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
 		</plant>
 	</ThingDef>
 	<!--=============== Neo Amanita ==============-->
